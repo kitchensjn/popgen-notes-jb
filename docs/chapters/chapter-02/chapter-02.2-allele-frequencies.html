@@ -1,0 +1,782 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Allele Frequencies &#8212; Population And Quantitative Genetics</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Allele Sharing Among Related Individuals And Identity By Descent" href="chapter-02.3-allele-sharing-among-related-individuals-and-identity-by-descent.html" />
+    <link rel="prev" title="Allele And Genotype Frequencies" href="chapter-02.1-allele-and-genotype-frequencies.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Population And Quantitative Genetics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../chapter-01-introduction.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="chapter-02.1-allele-and-genotype-frequencies.html">
+   Allele And Genotype Frequencies
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Allele Frequencies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-02.3-allele-sharing-among-related-individuals-and-identity-by-descent.html">
+     Allele Sharing Among Related Individuals And Identity By Descent
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-02.4-chapter-summary.html">
+     Chapter Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-02.5-further-questions.html">
+     Further Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../chapter-00-bibliography.html">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapters/chapter-02/chapter-02.2-allele-frequencies.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/chapters/chapter-02/chapter-02.2-allele-frequencies.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#measures-of-genetic-variability">
+   Measures of genetic variability
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nucleotide-diversity-pi">
+     Nucleotide diversity (
+     <span class="math notranslate nohighlight">
+      \(\pi\)
+     </span>
+     )
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#number-of-segregating-sites">
+     Number of segregating sites
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-frequency-spectrum">
+     The frequency spectrum
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#levels-of-genetic-variability-across-species">
+     Levels of genetic variability across species
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hardy-weinberg-proportions">
+   Hardy–Weinberg proportions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assortative-mating">
+   Assortative mating
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Allele Frequencies</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#measures-of-genetic-variability">
+   Measures of genetic variability
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nucleotide-diversity-pi">
+     Nucleotide diversity (
+     <span class="math notranslate nohighlight">
+      \(\pi\)
+     </span>
+     )
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#number-of-segregating-sites">
+     Number of segregating sites
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-frequency-spectrum">
+     The frequency spectrum
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#levels-of-genetic-variability-across-species">
+     Levels of genetic variability across species
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hardy-weinberg-proportions">
+   Hardy–Weinberg proportions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assortative-mating">
+   Assortative mating
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="allele-frequencies">
+<h1>Allele Frequencies<a class="headerlink" href="#allele-frequencies" title="Permalink to this headline">#</a></h1>
+<p>Allele frequencies are a central unit of population genetics analysis, but from diploid individuals we only get to observe genotype counts. Our first task then is to calculate allele frequencies from genotype counts. Consider a diploid autosomal locus segregating for two alleles (<span class="math notranslate nohighlight">\(A_1\)</span> and <span class="math notranslate nohighlight">\(A_2\)</span>). We’ll use these arbitrary labels for our alleles, merely to keep this general. Let <span class="math notranslate nohighlight">\(N_{11}\)</span> and <span class="math notranslate nohighlight">\(N_{12}\)</span> be the number of <span class="math notranslate nohighlight">\(A_1A_1\)</span> homozygotes and <span class="math notranslate nohighlight">\(A_1A_2\)</span> heterozygotes, respectively. Moreover, let <span class="math notranslate nohighlight">\(N\)</span> be the total number of diploid individuals in the population. We can then define the relative frequencies of <span class="math notranslate nohighlight">\(A_1A_1\)</span> and <span class="math notranslate nohighlight">\(A_1A_2\)</span> genotypes as <span class="math notranslate nohighlight">\(f_{11} = N_{11}/N\)</span> and <span class="math notranslate nohighlight">\(f_{12} = N_{12}/N\)</span>, respectively. The frequency of allele <span class="math notranslate nohighlight">\(A_1\)</span> in the population is then given by</p>
+<div class="math notranslate nohighlight" id="equation-eq-2-1">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq-2-1" title="Permalink to this equation">#</a></span>\[p = \frac{2 N_{11} + N_{12}}{2N} = f_{11} + \frac{1}{2} f_{12}.\]</div>
+<p>Note that this follows directly from how we count alleles given individuals’ genotypes, and holds independently of Hardy–Weinberg proportions and equilibrium (discussed below). The frequency of the alternate allele (<span class="math notranslate nohighlight">\(A_2\)</span>) is then just <span class="math notranslate nohighlight">\(q=1-p\)</span>.</p>
+<section id="measures-of-genetic-variability">
+<h2>Measures of genetic variability<a class="headerlink" href="#measures-of-genetic-variability" title="Permalink to this headline">#</a></h2>
+<section id="nucleotide-diversity-pi">
+<h3>Nucleotide diversity (<span class="math notranslate nohighlight">\(\pi\)</span>)<a class="headerlink" href="#nucleotide-diversity-pi" title="Permalink to this headline">#</a></h3>
+<p>One common measure of genetic diversity is the average number of single nucleotide differences between haplotypes chosen at random from a sample. This is called <em>nucleotide diversity</em> and is often denoted by <span class="math notranslate nohighlight">\(\pi\)</span>. For example, we can calculate <span class="math notranslate nohighlight">\(\pi\)</span> for our ADH locus from <a class="reference internal" href="chapter-02.1-allele-and-genotype-frequencies.html#table-2-1"><span class="std std-numref">Table 1</span></a> above: we have 6 sequences from <em>D. simulans</em> (a-f), there’s a total of 15 ways of pairing these sequences, and</p>
+<div class="math notranslate nohighlight" id="equation-eq-2-2">
+<span class="eqno">(2)<a class="headerlink" href="#equation-eq-2-2" title="Permalink to this equation">#</a></span>\[\pi=\frac{1}{15} \big( (2 + 1 + 1 + 1 + 0 ) + (3 + 3 + 3 + 2 ) +(0 + 0 + 1) + (0 + 1) + (1)  \big)=1.2\overline{6}\]</div>
+<p>where the first bracketed term gives the pairwise differences between a and b-f, the second bracketed term the differences between b and c-f and so on.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Technically we would need to divide by the total number of possible point mutations that would result in a synonymous change; this is because some mutational changes at a particular nucleotide will result in a non-synonymous or synonymous change depending on the base-pair change.</p>
+</aside>
+<p>Our <span class="math notranslate nohighlight">\(\pi\)</span> measure will depend on the length of sequence it is calculated for. Therefore, <span class="math notranslate nohighlight">\(\pi\)</span> is usually normalized by the length of sequence, to be a per site (or per base) measure. For example, our ADH sequence covers 397bp of DNA and so <span class="math notranslate nohighlight">\(\pi = \frac{1.2\overline{6}}{397}=0.0032\)</span> per site in <em>D. simulans</em> for this region. Note that we could also calculate <span class="math notranslate nohighlight">\(\pi\)</span> per synonymous site (or non-synonymous). For synonymous site <span class="math notranslate nohighlight">\(\pi\)</span>, we would count up number of synonymous differences between our pairs of sequences, and then divide by the total number of sites where a synonymous change could have occurred.</p>
+</section>
+<section id="number-of-segregating-sites">
+<h3>Number of segregating sites<a class="headerlink" href="#number-of-segregating-sites" title="Permalink to this headline">#</a></h3>
+<p>Another measure of genetic variability is the total number of sites that are polymorphic (segregating) in our sample. One issue is that the number of segregating sites will grow as we sequence more individuals (unlike <span class="math notranslate nohighlight">\(\pi\)</span>). Later in the course, we’ll talk about how to standardize the
+number of segregating sites for the number of individuals sequenced (see <strong>\eqn \eqref{watterson_theta}</strong>).</p>
+</section>
+<section id="the-frequency-spectrum">
+<h3>The frequency spectrum<a class="headerlink" href="#the-frequency-spectrum" title="Permalink to this headline">#</a></h3>
+<p>We also often want to compile information about the frequency of alleles across sites.  We call alleles that are found once in a sample <em>singletons</em>, alleles that are found twice in a sample <em>doubletons</em>, and so on. We count up the number of loci where an allele is found <span class="math notranslate nohighlight">\(i\)</span> times out of <span class="math notranslate nohighlight">\(n\)</span>, e.g. how many singletons are there in the sample, and this is called the <em>frequency spectrum</em>. We’ll want to do this in some consistent manner, such as calculating the frequency spectrum of the minor allele or the derived allele.</p>
+<div class="admonition-question-2 admonition" id="question-2-2">
+<p class="admonition-title">Question 2</p>
+<p>How many minor-allele singletons are there in <em>D. simulans</em> in the ADH region? [Defining minor allele just within <em>D. simulans</em>.]</p>
+</div>
+</section>
+<section id="levels-of-genetic-variability-across-species">
+<h3>Levels of genetic variability across species<a class="headerlink" href="#levels-of-genetic-variability-across-species" title="Permalink to this headline">#</a></h3>
+<p>Two observations have puzzled population geneticists since the inception of molecular population genetics. The first is the relatively high level of genetic variation observed in most obligately sexual species. This first observation, in part, drove the development of the Neutral theory of molecular evolution, the idea that much of this molecular polymorphism may simply reflect a balance between genetic drift and mutation.</p>
+<p>The second observation is the relatively narrow range of polymorphism across species with vastly different census sizes. This observation represented a puzzle as the Neutral theory predicts that levels of genetic diversity should scale with population size. Much effort in theoretical and empirical population genetics has been devoted to trying to reconcile models with these various observations. We’ll return to discuss these ideas throughout our course.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-2-2">
+<img alt="../../_images/21016139168_2a8a57ded3_z.jpg" src="../../_images/21016139168_2a8a57ded3_z.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">- Sea Squirt (<em>Ciona intestinalis</em>). <span style="font-size: smaller;">Einleitung in die vergleichende gehirnphysi- ologie und Vergleichende psychologie. Loeb, J. 1899. Image from the Biodiversity Heritage Library. Contributed by MBLWHOI Library. No known copyright restrictions.</span></span><a class="headerlink" href="#figure-2-2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<p>The first observations of molecular genetic diversity within natural populations were made from surveys of allozyme data, but we can revisit these general patterns with modern data. For example, <span id="id1">[<a class="reference internal" href="../chapter-00-bibliography.html#id285" title="Ellen M Leffler, Kevin Bullaughey, Daniel R Matute, Wynn K Meyer, Laure Segurel, Aarti Venkat, Peter Andolfatto, and Molly Przeworski. Revisiting an old riddle: what determines genetic diversity levels within species? PLoS biology, 10(9):e1001388, 2012.">Leffler <em>et al.</em>, 2012</a>]</span> compiled data on levels of within-population, autosomal nucleotide diversity (<span class="math notranslate nohighlight">\(\pi\)</span>) for 167 species across 14 phyla from non-coding and synonymous sites (<a class="reference internal" href="#figure-2-3"><span class="std std-numref">Fig. 3</span></a>). The species with the lowest levels of <span class="math notranslate nohighlight">\(\pi\)</span> in their survey was Lynx, with <span class="math notranslate nohighlight">\(\pi = 0.01\%\)</span>, i.e. only <span class="math notranslate nohighlight">\(\frac{1}{10000}\)</span> bases differed between two sequences. In contrast, some of the highest levels of diversity were found in <em>Ciona savignyi</em>, Sea Squirts, where a remarkable <span class="math notranslate nohighlight">\(\frac{1}{12}\)</span> bases differ between pairs of sequences. This 800-fold range of diversity seems impressive, but census population sizes have a much larger range.</p>
+<figure class="align-left" id="figure-2-3">
+<img alt="../../_images/Leffer_riddle_diversity.png" src="../../_images/Leffer_riddle_diversity.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">- Levels of autosomal nucleotide diversity for 167 species across 14 phyla. Figure 1 from <span id="id2">[<a class="reference internal" href="../chapter-00-bibliography.html#id285" title="Ellen M Leffler, Kevin Bullaughey, Daniel R Matute, Wynn K Meyer, Laure Segurel, Aarti Venkat, Peter Andolfatto, and Molly Przeworski. Revisiting an old riddle: what determines genetic diversity levels within species? PLoS biology, 10(9):e1001388, 2012.">Leffler <em>et al.</em>, 2012</a>]</span>, licensed under CC BY 4.0. Points are ranked by their <span class="math notranslate nohighlight">\(\pi\)</span>, and coloured by their phylum. Note the log-scale.</span><a class="headerlink" href="#figure-2-3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-2-4">
+<img alt="../../_images/20731949565_8a065700af_z.jpg" src="../../_images/20731949565_8a065700af_z.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">- Eurasian Lynx (<em>Lynx lynx</em>). <span style="font-size: smaller;">An introduction to the study of mammals living and extinct. Flower, W.H. and Lydekker, R. 1891. Image from the <a class="reference external" href="https://www.flickr.com/photos/internetarchivebookimages/20731949565/in/photolist-x5Jzv2-x6QVyp-xir9rH-wYHrQD-wPn1sP-w9PsqY-xDcqri-sMcQoB-trrkVd-x6Nx1H-wPea7N-sM28N9-tJ3zsp-xneVdx-wGJRtQ-xnfHZ8-wPfga7-xCUPrN-x7kXDV-xmAb9E-xm3x4k-xBoSKb-wGTgyB-xBoSbf-wGGvzA-xmzYTJ-oeKJcH-xA1Ffr-xA1Eji-xqWTQZ-xF4Lru-oxJfrH-x7ojSn-xra8zP-wGGibY-xgb21y-xY1jH9-xY1iyf-wGHxTS-wGQEoR-xmtPQh-x8uFKK-xdTkoU-wPggQf-wPfvHN-wPfc27-w9YnGF-wPeauS-wPiVxK-w6aiSi">Biodiversity Heritage Library</a>. Contributed by Cornell University Library. No known copyright restrictions.</span></span><a class="headerlink" href="#figure-2-4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+</section>
+</section>
+<section id="hardy-weinberg-proportions">
+<h2>Hardy–Weinberg proportions<a class="headerlink" href="#hardy-weinberg-proportions" title="Permalink to this headline">#</a></h2>
+<p>Imagine a population mating at random with respect to genotypes, i.e. no inbreeding, no assortative mating, no population structure, and no sex differences in allele frequencies. The frequency of allele <span class="math notranslate nohighlight">\(A_1\)</span> in the population at the time of reproduction is <span class="math notranslate nohighlight">\(p\)</span>. An <span class="math notranslate nohighlight">\(A_1A_1\)</span> genotype is made by reaching out into our population and independently drawing two <span class="math notranslate nohighlight">\(A_1\)</span> allele gametes to form a zygote. Therefore, the probability that an individual is an <span class="math notranslate nohighlight">\(A_1A_1\)</span> homozygote is <span class="math notranslate nohighlight">\(p^2\)</span>. This probability is also the expected frequencies of the <span class="math notranslate nohighlight">\(A_1A_1\)</span> homozygote in the population. The expected frequency of the three possible genotypes are</p>
+<center>
+<div style="width: 50%;">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p><span class="math notranslate nohighlight">\(f_{11}\)</span></p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(f_{12}\)</span></p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(f_{22}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(p^2\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(2pq\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(q^2\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</center>
+<p>i.e. their Hardy-Weinberg expectations <span id="id3">[<a class="reference internal" href="../chapter-00-bibliography.html#id12" title="Godfrey H Hardy and others. Mendelian proportions in a mixed population. Science, 28(706):49–50, 1908.">Hardy and others, 1908</a>, <a class="reference internal" href="../chapter-00-bibliography.html#id14" title="Wilhelm Weinberg. Über den nachweis der vererbung beim menschen. Jahres. Wiertt. Ver. Vaterl. Natkd., 64:369–382, 1908.">Weinberg, 1908</a>]</span>. Note that we only need to assume random mating with respect to our focal allele in order for these expected frequencies to hold in the zygotes forming the next generation. Evolutionary forces, such as selection, change allele frequencies within generations, but do not change this expectation for new zygotes, as long as <span class="math notranslate nohighlight">\(p\)</span> is the frequency of the <span class="math notranslate nohighlight">\(A_1\)</span> allele in the population at the time when gametes fuse. We only need the assumptions of no migration, selection, and mutation in order for these Hardy-Weinberg expectations of genotypes to represent a long term equilibrium.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-2-5">
+<img alt="../../_images/EIiK2dsWoAAmUOf.jpeg" src="../../_images/EIiK2dsWoAAmUOf.jpeg" />
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">- Kermode’s bear (<em>Ursus americanus kermodei</em>). It’s possible that this morph is favoured as the salmon these bears eat have a harder time seeing the light morph <span id="id4">[<a class="reference internal" href="../chapter-00-bibliography.html#id56" title="Dan R Klinka and Thomas E Reimchen. Adaptive coat colour polymorphism in the kermode bear of coastal british columbia. Biological Journal of the Linnean Society, 98(3):479–488, 2009.">Klinka and Reimchen, 2009</a>]</span>. The adaptive value of tasting like cinnamon is unknown. <span style="font-size: smaller;">Field book of North American mammals; descriptions of every mammal known north of the Rio Grande. Anthony, (1928) H. E. Image from the <a class="reference external" href="https://www.biodiversitylibrary.org/item/38166#page/115/mode/1up">Biodiversity Heritage Library</a>. Contributed by MBLWHOI Library. No known copyright restrictions.</span></span><a class="headerlink" href="#figure-2-5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<div class="admonition-question-3 admonition" id="question-2-3">
+<p class="admonition-title">Question 3</p>
+<p>On the coastal islands of British Columbia there is a subspecies of black bear (<em>Ursus americanus kermodei</em>, Kermode’s bear). Many members of this black bear subspecies are white; they’re sometimes called spirit bears. These bears aren’t hybrids with polar bears, nor are they albinos. They are homozygotes for a recessive change at the MC1R gene. Individuals who are <span class="math notranslate nohighlight">\(GG\)</span> at this SNP are white, while <span class="math notranslate nohighlight">\(AA\)</span> and <span class="math notranslate nohighlight">\(AG\)</span> individuals are black.</p>
+<p>Below are the genotype counts for the MC1R polymorphism in a sample of bears from British Columbia’s island populations from <span id="id5">Ritland <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id290" title="Kermit Ritland, Craig Newton, and H.Dawn Marshall. Inheritance and population structure of the white-phased “kermode” black bear. Current Biology, 11(18):1468 - 1472, 2001. URL: http://www.sciencedirect.com/science/article/pii/S0960982201004481, doi:https://doi.org/10.1016/S0960-9822(01)00448-1.">2001</a>]</span>.</p>
+<center>
+<div style="width: 50%;">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p><span class="math notranslate nohighlight">\(AA\)</span></p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(AG\)</span></p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(GG\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>42</p></td>
+<td class="text-align:center"><p>24</p></td>
+<td class="text-align:center"><p>21</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</center>
+<p>What are the expected frequencies of the three genotypes under HW?</p>
+</div>
+<p>See <a class="reference internal" href="#figure-2-6"><span class="std std-numref">Fig. 6</span></a> for a nice empirical demonstration of Hardy–Weinberg proportions. The mean frequency of each genotype closely matches its HW expectations, and much of the scatter of the dots around the expected line is due to our small sample size (~60 individuals). While HW often seems like a silly model, it often holds remarkably well within populations. This is because individuals don’t mate at random, but they do mate at random with respect to their genotype at most of the loci in the genome.</p>
+<div class="admonition-question-4 admonition" id="question-2-4">
+<p class="admonition-title">Question 4</p>
+<p>You are investigating a locus with three alleles, A, B, and C, with allele frequencies <span class="math notranslate nohighlight">\(p_A\)</span>, <span class="math notranslate nohighlight">\(p_B\)</span>, and <span class="math notranslate nohighlight">\(p_C\)</span>. What fraction of the population is expected to be homozygotes under Hardy–Weinberg?</p>
+</div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>CODIS: Combined DNA Index System</p>
+</aside>
+<p>Microsatellites are regions of the genome where individuals vary for the number of copies of some short DNA repeat that they carry. These regions are often highly variable across individuals, making them a suitable way to identify individuals from a DNA sample. This so-called DNA fingerprinting has a range of applications from establishing paternity and identifying human remains to matching individuals to DNA samples from a crime scene. The FBI make use of the CODIS database. The CODIS database contains the genotypes of over 13 million people, most of whom have been convicted of a crime. Most of the profiles record genotypes at 13 microsatellite loci that are tetranucleotide repeats (since 2017, 20 sites have been genotyped).</p>
+<p>The allele counts for two loci (D16S539 and TH01) are shown in table <a class="reference internal" href="#table-2-2"><span class="std std-numref">Table 2</span></a> and <a class="reference internal" href="#table-2-3"><span class="std std-numref">Table 3</span></a> for a sample of 155 people of European ancestry. You can assume these two loci are on different chromosomes.</p>
+<table class="table" id="table-2-2">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">- Data for 155 Europeans at the D16S539 microsatellite from CODIS from <span id="id6">Algee-Hewitt <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id227" title="Bridget FB Algee-Hewitt, Michael D Edge, Jaehee Kim, Jun Z Li, and Noah A Rosenberg. Individual identifiability predicts population identifiability in forensic microsatellite markers. Current Biology, 26(7):935–942, 2016.">2016</a>]</span>. The top row gives the number of tetranucleotide repeats for each allele, the bottom row gives the sample counts.</span><a class="headerlink" href="#table-2-2" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>allele name</p></td>
+<td><p>80</p></td>
+<td><p>90</p></td>
+<td><p>100</p></td>
+<td><p>110</p></td>
+<td><p>120</p></td>
+<td><p>121</p></td>
+<td><p>130</p></td>
+<td><p>140</p></td>
+<td><p>150</p></td>
+</tr>
+<tr class="row-even"><td><p>allele count</p></td>
+<td><p>3</p></td>
+<td><p>34</p></td>
+<td><p>13</p></td>
+<td><p>102</p></td>
+<td><p>97</p></td>
+<td><p>1</p></td>
+<td><p>44</p></td>
+<td><p>13</p></td>
+<td><p>3</p></td>
+</tr>
+</tbody>
+</table>
+<table class="table" id="table-2-3">
+<caption><span class="caption-number">Table 3 </span><span class="caption-text">- Same as <a class="reference internal" href="#table-2-2"><span class="std std-numref">Table 2</span></a> but for the TH01 microsatellite.</span><a class="headerlink" href="#table-2-3" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>allele name</p></td>
+<td><p>60</p></td>
+<td><p>70</p></td>
+<td><p>80</p></td>
+<td><p>90</p></td>
+<td><p>93</p></td>
+<td><p>100</p></td>
+<td><p>110</p></td>
+</tr>
+<tr class="row-even"><td><p>allele count</p></td>
+<td><p>84</p></td>
+<td><p>42</p></td>
+<td><p>37</p></td>
+<td><p>67</p></td>
+<td><p>77</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-question-5 admonition" id="question-2-5">
+<p class="admonition-title">Question 5</p>
+<p>You extract a DNA sample from a crime scene. The genotype is 100/80 at the D16S539 locus and 70/93 at TH01.</p>
+<p><strong>A)</strong> You have a suspect in custody. Assuming this suspect is innocent and of European ancestry, what is the probability that their genotype would match this profile by chance (a false-match probability)?</p>
+<p><strong>B)</strong> The FBI uses <span class="math notranslate nohighlight">\(\geq\)</span> 13 markers. Why is this higher number necessary to make the match statement convincing evidence in court?</p>
+<p><strong>C)</strong> An early case that triggered debate among forensic geneticists was a crime among the Abenaki, a Native American community in Vermont (see <span id="id7">[<a class="reference internal" href="../chapter-00-bibliography.html#id224" title="R. C. Lewontin. [dna fingerprinting: a review of the controversy]: comment: the use of dna profiles in forensic contexts. Statist. Sci., 9(2):259–262, 05 1994. URL: https://doi.org/10.1214/ss/1177010492, doi:10.1214/ss/1177010492.">Lewontin, 1994</a>]</span> for discussion). There was a DNA sample from the crime scene, and the perpetrator was thought likely to be a member of the Abenaki community. Given that allele frequencies vary among populations, why would people be concerned about using data from a non-Abenaki population to compute a false match probability?</p>
+</div>
+<figure class="align-left" id="figure-2-6">
+<img alt="../../_images/CEU_YRI_separately_HWE.png" src="../../_images/CEU_YRI_separately_HWE.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">- Demonstrating Hardy–Weinberg proportions using 10,000 SNPs from the HapMap European (CEU)  and African (YRI) populations. Within each of these populations the allele frequency against the frequency of the 3 genotypes; each SNP is represented by 3 different coloured points. The solid lines show the mean genotype frequency. The dashed lines show the predicted genotype frequency from Hardy–Weinberg equilibrium. Code <a class="reference external" href="https://github.com/cooplab/popgen-notes/blob/master/Rcode/HWE_exercise/HWE_HAPMAP.R">here</a>. Blog post on figure <a class="reference external" href="http://gcbias.org/2011/10/13/population-genetics-course-resources-Hardy--Weinberg-eq/">here</a>.</span><a class="headerlink" href="#figure-2-6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="assortative-mating">
+<h2>Assortative mating<a class="headerlink" href="#assortative-mating" title="Permalink to this headline">#</a></h2>
+<p>One major violation of the assumptions of Hardy Weinberg is non-random mating with respect to the genotype at a locus. One way that individuals can mate non-randomly is if individuals choose to mate based on a phenotype determined by (in part) the genotype at a locus. This non-random mating can be between: 1) individuals with similar phenotype, so called positive assortative mating or 2) individuals with dissimilar phenotypes, negative assortative mating or disassortative mating. Here we’ll briefly discuss a couple of real examples of assortative mating to make sure we’re all on the same page. We’ll encounter other forms of non-random mating, due to inbreeding and population structure, in the next few chapters.</p>
+<figure class="align-left" id="figure-2-7">
+<img alt="../../_images/trimmed_Heliconius_Merrill_assort_mating.png" src="../../_images/trimmed_Heliconius_Merrill_assort_mating.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">- Wing pattern phenotypes of top, <em>H. cydno chioneus</em> (left), <em>H. melpomene rosina</em> (right), their nonmimetic first-generation hybrid (center); and bottom, their sympatric comimics <em>H. sapho sapho</em> (left) and <em>H. erato demophoon</em> (right). Figure and caption modified from <span id="id8">[<a class="reference internal" href="../chapter-00-bibliography.html#id47" title="Richard M Merrill, Pasi Rastas, Simon H Martin, Maria C Melo, Sarah Barker, John Davey, W Owen McMillan, and Chris D Jiggins. Genetic dissection of assortative mating behavior. PLoS biology, 2019.">Merrill <em>et al.</em>, 2019</a>]</span>, licensed under CC BY 4.0.</span><a class="headerlink" href="#figure-2-7" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Positive assortative mating on the basis of a phenotype can create an excess of homozygotes. Heliconius butterflies are famous for their mimicry, where poisonous pairs of distantly related species mimic each others’ bright colour patterns and so share the benefits of being avoided by visual predators (Müllerian mimics). <em>H. melpomene rosina</em> and <em>H. cydno chioneus</em> are closely related species that co-occur in central Panama, but mimic different other co-occuring species (<a class="reference internal" href="#figure-2-7"><span class="std std-numref">Fig. 7</span></a>). These differences in colouration pattern are due to a few loci with large phenotypic effects. The two species can hybridize and produce viable F1 hybrids. These F1 hybrids are heterozygotes at the colour loci, and their intermediate appearance means that they’re poor mimics and so are quickly eaten by predators. However, these heterzygote (F1) hybrids are very rare in nature <span class="math notranslate nohighlight">\(&lt;\frac{1}{1000}\)</span>, as the parental species show strong positive assortatively mating based on colour pattern, based on genetic differences in mate preference <span id="id9">[<a class="reference internal" href="../chapter-00-bibliography.html#id47" title="Richard M Merrill, Pasi Rastas, Simon H Martin, Maria C Melo, Sarah Barker, John Davey, W Owen McMillan, and Chris D Jiggins. Genetic dissection of assortative mating behavior. PLoS biology, 2019.">Merrill <em>et al.</em>, 2019</a>]</span>.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-2-8">
+<img alt="../../_images/white_throated_sparrow.jpg" src="../../_images/white_throated_sparrow.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">- White-throated sparrows (<em>Zonotrichia albicollis</em>) with a white morph (bottom, male) and tan morph (top, female). The difference between the morphs wasn’t fully appreciated until the 1960’s <span id="id10">[<a class="reference internal" href="../chapter-00-bibliography.html#id46" title="James K Lowther. Polymorphism in the white-throated sparrow, zonotrichia albicollis (gmelin). Canadian Journal of Zoology, 39(3):281–292, 1961.">Lowther, 1961</a>]</span>, previously birders thought the tan morphs were just young or females individuals (so Audubon’s male and female labels may well by wrong). There are also a number of behavioural differences, with both sexes of the white-striped morph invest more in territorial defense and the tan-striped morphs more parental care. <span style="font-size: smaller;">From John James Audubon’s Birds of America (1827). Image from <a class="reference external" href="https://www.audubon.org/birds-of-america/white-throated-sparrow">Audubon.org</a>, public domain.</span><a class="headerlink" href="#figure-2-8" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<p>Disassortative mating, mating of unlike individuals, can lead to an excess of heterozygotes and a deficit of homozygotes. One example of very strong disassortative mating is offered by white-throated sparrows (<em>Zonotrichia albicollis</em>). In white-throated sparrows, there is a white-striped and a tan-striped morph, with female and male white-striped morphs have a much brighter white stripe and throat. There is very strong disassortative mating in this system, with 1099 out of 1116 nesting pairs consisting of one tan- and one white-striped morph and only 17 of these nesting pairs being different morphs <span id="id11">[<a class="reference internal" href="../chapter-00-bibliography.html#id50" title="Elaina M Tuttle, Alan O Bergland, Marisa L Korody, Michael S Brewer, Daniel J Newhouse, Patrick Minx, Maria Stager, Adam Betuel, Zachary A Cheviron, Wesley C Warren, and others. Divergence and functional degradation of a sex chromosome-like supergene. Current Biology, 26(3):344–350, 2016.">Tuttle <em>et al.</em>, 2016</a>]</span>. The difference between these morphs has a simple inheritance pattern, with white being due to a single dominant allele (called 2m) and tan colour from a recessive allele called 2. Thus strong disassortative mating has a strong effect on the genotype frequencies:</p>
+<center>
+<div style="width: 50%;">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Tan</p></th>
+<th class="text-align:center head"><p>White</p></th>
+<th class="text-align:center head"><p>(Super)White</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>2/2</p></td>
+<td class="text-align:center"><p>2/2m</p></td>
+<td class="text-align:center"><p>2m/2m</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>978</p></td>
+<td class="text-align:center"><p>1011</p></td>
+<td class="text-align:center"><p>3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</center>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-2-9">
+<img alt="illustration_images/alleles_genotypes/Sparassis_crispa/Sparassis_crispa_cauliflower_mushroom.pdfSparassis_crispa_cauliflower_mushroom.pdf" src="illustration_images/alleles_genotypes/Sparassis_crispa/Sparassis_crispa_cauliflower_mushroom.pdfSparassis_crispa_cauliflower_mushroom.pdf" />
+<figcaption>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">- Cauliflower mushrooms (<em>Sparassis crispa</em>) parasitize tree roots and form these amazing, edible fruiting bodies, which can weigh in at up to 30lb and apparently taste like noodles. In a collection of 18 fruiting bodies from a <em>Sparassis</em> population, all individuals were heterozygotes for mating type and 17 different mating types were genetically identified <span id="id12">[<a class="reference internal" href="../chapter-00-bibliography.html#id45" title="Timothy Y James. Why mushrooms have evolved to be so promiscuous: insights from evolutionary and ecological patterns. Fungal biology reviews, 29(3-4):167–178, 2015.">James, 2015</a>, <a class="reference internal" href="../chapter-00-bibliography.html#id4" title="KJ Martin and RL Gilbertson. Decay of douglas-fir by sparassis radicata in arizona. Phytopathology, 68:149–154, 1978.">Martin and Gilbertson, 1978</a>]</span>. <span style="font-size: smaller;">Atlas champignons comestibles et vénéneux (1891 ). Dufour, L Image from the Biodiversity Heritage Library. Contributed by New York Botanical Garden. Not in copyright.</span></span><a class="headerlink" href="#figure-2-9" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<p>There are almost no 2m homozygotes (so called Super white individuals) despite the 2m allele being common in the population (data from <span id="id13">[<a class="reference internal" href="../chapter-00-bibliography.html#id50" title="Elaina M Tuttle, Alan O Bergland, Marisa L Korody, Michael S Brewer, Daniel J Newhouse, Patrick Minx, Maria Stager, Adam Betuel, Zachary A Cheviron, Wesley C Warren, and others. Divergence and functional degradation of a sex chromosome-like supergene. Current Biology, 26(3):344–350, 2016.">Tuttle <em>et al.</em>, 2016</a>]</span>, table S1).</p>
+<p>Another important example of disassortative mating are mating type systems, which are present in many fungi, algae, and protozoa. Gametes of the same species can only fuse to form a zygote if they differ in mating type. The mating type of gametes is genetically controled by a mating type locus, and so individuals are nearly always heterozygous at this locus. In some groups of organisms, there are just two different alleles, in other clades these loci have tens or hundreds of alleles.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters/chapter-02"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="chapter-02.1-allele-and-genotype-frequencies.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Allele And Genotype Frequencies</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="chapter-02.3-allele-sharing-among-related-individuals-and-identity-by-descent.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Allele Sharing Among Related Individuals And Identity By Descent</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Graham Coop<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
