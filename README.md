@@ -6,5 +6,5 @@
 
 Use pandoc to convert latex files to markdown and then edit any errors that come up during conversion.
 
-CMD: jupyter-book build popgen-notes-jb
+CMD: **jupyter-book build popgen-notes-jb**
 creates a /_build directory within /popgen-notes-jb using the source files. I just moved /_build/html to /docs for deployment.
