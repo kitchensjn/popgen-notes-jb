@@ -1,8 +1,8 @@
 # popgen-notes-jb
 
-/chapters - Graham's latex files
-/docs - contains the static HTML from JupyterBook and used for the GitHub Pages deployment
-/popgen-notes-jb - all of the source files
+- /chapters - Graham's latex files
+- /docs - contains the static HTML from JupyterBook and used for the GitHub Pages deployment
+- /popgen-notes-jb - all of the source files
 
 Use pandoc to convert latex files to markdown and then edit any errors that come up during conversion.
 
