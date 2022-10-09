@@ -1,0 +1,13 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: chapters/chapter-01-introduction
+chapters:
+- file: chapters/chapter-02/chapter-02.1-allele-and-genotype-frequencies
+  sections:
+  - file: chapters/chapter-02/chapter-02.2-allele-frequencies
+  - file: chapters/chapter-02/chapter-02.3-allele-sharing-among-related-individuals-and-identity-by-descent
+  - file: chapters/chapter-02/chapter-02.4-chapter-summary
+  - file: chapters/chapter-02/chapter-02.5-further-questions
+- file: chapters/chapter-00-bibliography
