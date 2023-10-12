@@ -210,11 +210,8 @@ The offspring can be homozygous for the $A_1$ allele in two different ways. They
 :::{math}
 :label: eq-2.10
 
-P(A_{1}A_{2}) = P(A_{1}A_{2} \text{ | I&J not IBD})P(\text{I&J not IBD})
-
-+ P(A_{1}A_{2} \text{ | I&J IBD})P(\text{I&J IBD})
-
-= p^{2}(1-F_{ij}+pF_{ij})
+P(A_{1}A_{2}) &= P(A_{1}A_{2} \text{ | I&J not IBD})P(\text{I&J not IBD}) + P(A_{1}A_{2} \text{ | I&J IBD})P(\text{I&J IBD})\\
+    &= p^{2}(1-F_{ij}+pF_{ij})
 :::
 
 using the Law of Total Probability (see Appendix Equation {eq}`eq-A.12`). Therefore, the frequencies of the three possible genotypes can be written as given in {numref}`table-2.5`, which provides a generalization of the Hardy--Weinberg proportions.

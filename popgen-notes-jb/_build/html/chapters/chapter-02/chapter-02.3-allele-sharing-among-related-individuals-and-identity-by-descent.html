@@ -436,7 +436,7 @@ title="Print to PDF"
 <h1>Allele Sharing Among Related Individuals And Identity By Descent<a class="headerlink" href="#allele-sharing-among-related-individuals-and-identity-by-descent" title="Permalink to this headline">#</a></h1>
 <p>All of the individuals in a population are related to each other by a giant pedigree (family tree). For most pairs of individuals in a population these relationships are very distant (e.g. distant cousins), while some individuals will be more closely related (e.g. sibling/first cousins). All individuals are related to one another by varying levels of relatedness, or <em>kinship</em>. Related individuals can share alleles that have both descended from the shared common ancestor. To be shared, these alleles must be inherited through all meioses connecting the two individuals (e.g. surviving the <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> probability of segregation each meiosis). As closer relatives are separated by fewer meioses, closer relatives share more alleles. In <a class="reference internal" href="#figure-2-10"><span class="std std-numref">Fig. 10</span></a>, we show the sharing of chromosomal regions between two cousins. As we’ll see, many population and quantitative genetic concepts rely on how closely related individuals are, and thus we need some way to quantify the degree of kinship among individuals.</p>
 <figure class="align-left" id="figure-2-10">
-<img alt="figures/Cousins_IBD_chromo_cartoon.png" src="figures/Cousins_IBD_chromo_cartoon.png" />
+<img alt="../../_images/Cousins_IBD_chromo_cartoon.png" src="../../_images/Cousins_IBD_chromo_cartoon.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 10 </span><span class="caption-text">- First cousins sharing a stretch of chromosome identical by descent. The different grandparental diploid chromosomes are coloured so we can track them and recombinations between them across the generations. Notice that the identity by descent between the cousins persists for a long stretch of chromosome due to the limited number of generations for recombination. The squares represent males and circles females.</span><a class="headerlink" href="#figure-2-10" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -450,7 +450,7 @@ some configurations of IBD.</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <figure class="align-left" id="figure-2-11">
-<img alt="figures/sharing_relatives/IBD_0_1_2.pdf" src="figures/sharing_relatives/IBD_0_1_2.pdf" />
+<img alt="../../_images/IBD_0_1_2.pdf" src="../../_images/IBD_0_1_2.pdf" />
 <figcaption>
 <p><span class="caption-number">Fig. 11 </span><span class="caption-text">- A pair of diploid individ- uals (i and j) sharing 0, 1, or 2 alleles IBD where lines show the sharing of alleles by descent (e.g. from a shared ancestor). Here we’ll focus on IBD of outbred individuals. Dealing with sharing between inbred individuals requires 6 more identity-by-descent r coefficients, which honestly makes my head spin.</span><a class="headerlink" href="#figure-2-11" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -532,7 +532,7 @@ some configurations of IBD.</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <figure class="align-left" id="figure-2-12">
-<img alt="illustration_images/alleles_genotypes/Florida_scrub_jay/8576533889_3a131ffc4c_z.jpg" src="illustration_images/alleles_genotypes/Florida_scrub_jay/8576533889_3a131ffc4c_z.jpg" />
+<img alt="../../_images/8576533889_3a131ffc4c_z.jpg" src="../../_images/8576533889_3a131ffc4c_z.jpg" />
 <figcaption>
 <p><span class="caption-number">Fig. 12 </span><span class="caption-text">- Florida Scrub-Jays (<em>Aphelocoma coerulescens</em>). <span style="font-size: smaller;">The birds of America : from drawings made in the United States and their territories. 1880. Audubon J.J. Image from the <a class="reference external" href="https://www.biodiversitylibrary.org/page/40447048%5C#page/169/mode/1up">Biodiversity Heritage Library</a>. Contributed by Smithsonian Libraries. Licensed under CC BY-2.0.</span></span><a class="headerlink" href="#figure-2-12" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -551,7 +551,7 @@ and our suspect:</p>
 </div>
 <p>There’s a variety of ways to estimate the relationships among individuals using genetic data. An example of using allele sharing to identify relatives is offered by the work of Nancy Chen [in collaboration with Stepfanie Aguillon, see <span id="id2">[<a class="reference internal" href="../chapter-00-bibliography.html#id226" title="Stepfanie M. Aguillon, John W. Fitzpatrick, Reed Bowman, Stephan J. Schoech, Andrew G. Clark, Graham Coop, and Nancy Chen. Deconstructing isolation-by-distance: the genomic consequences of limited dispersal. PLOS Genetics, 13(8):1-27, 08 2017. URL: https://doi.org/10.1371/journal.pgen.1006911, doi:10.1371/journal.pgen.1006911.">Aguillon <em>et al.</em>, 2017</a>, <a class="reference internal" href="../chapter-00-bibliography.html#id225" title="Nancy Chen, Elissa J. Cosgrove, Reed Bowman, John W. Fitzpatrick, and Andrew G. Clark. Genomic consequences of population decline in the endangered florida scrub-jay. Current Biology, 26(21):2974 - 2979, 2016. URL: http://www.sciencedirect.com/science/article/pii/S0960982216310077, doi:https://doi.org/10.1016/j.cub.2016.08.062.">Chen <em>et al.</em>, 2016</a>]</span>. <span id="id3">Chen <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id225" title="Nancy Chen, Elissa J. Cosgrove, Reed Bowman, John W. Fitzpatrick, and Andrew G. Clark. Genomic consequences of population decline in the endangered florida scrub-jay. Current Biology, 26(21):2974 - 2979, 2016. URL: http://www.sciencedirect.com/science/article/pii/S0960982216310077, doi:https://doi.org/10.1016/j.cub.2016.08.062.">2016</a>]</span> has collected genotyping data from thousands of Florida Scrub Jays at over ten thousand loci. These Jays live at the Archbold field site, and have been carefully monitored for many decades allowing the pedigree of many of the birds to be known. Using these data, she estimates allele frequencies at each locus. Then by equating the observed number of times that a pair of individuals share <span class="math notranslate nohighlight">\(0\)</span>, <span class="math notranslate nohighlight">\(1\)</span>, or <span class="math notranslate nohighlight">\(2\)</span> alleles to the theoretical expectation, she estimates the probability of <span class="math notranslate nohighlight">\(r_0\)</span>, <span class="math notranslate nohighlight">\(r_1\)</span>, and <span class="math notranslate nohighlight">\(r_2\)</span> for each pair of birds. A plot of these are shown in <a class="reference internal" href="#figure-2-13"><span class="std std-numref">Fig. 13</span></a>, showing how well the estimates match those known from the pedigree.</p>
 <figure class="align-left" id="figure-2-13">
-<img alt="figures/FSJ_IBD.jpg" src="figures/FSJ_IBD.jpg" />
+<img alt="../../_images/FSJ_IBD.jpg" src="../../_images/FSJ_IBD.jpg" />
 <figcaption>
 <p><span class="caption-number">Fig. 13 </span><span class="caption-text">- Estimated coefficient of kinship from Florida Scrub Jays. Each point is a pair of individuals, plotted by their estimated IBD (<span class="math notranslate nohighlight">\(r_1\)</span> and <span class="math notranslate nohighlight">\(r_2\)</span>) from their genetic data. The points are coloured by their known pedigree relationships. Note that most pairs have low kinship, and no recent genealogical relationship, and so appear as black points in the lower left corner. Thanks to Nancy Chen for supplying the data. Code <a class="reference external" href="https://github.com/cooplab/popgen-notes/blob/master/Rcode/FSJ_IBD/FSJ_IBD_plotting.R">here</a>.</span><a class="headerlink" href="#figure-2-13" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -560,7 +560,7 @@ and our suspect:</p>
 <section id="sharing-of-genomic-blocks-among-relatives">
 <h2>Sharing of genomic blocks among relatives.<a class="headerlink" href="#sharing-of-genomic-blocks-among-relatives" title="Permalink to this headline">#</a></h2>
 <figure class="align-left" id="figure-2-14">
-<img alt="figures/sharing_relatives/First_cousin_overlap.pdf" src="figures/sharing_relatives/First_cousin_overlap.pdf" />
+<img alt="../../_images/First_cousin_overlap.pdf" src="../../_images/First_cousin_overlap.pdf" />
 <figcaption>
 <p><span class="caption-number">Fig. 14 </span><span class="caption-text">- A simulation of sharing between first cousins. The regions of your grandmother’s 22 autosomes that you inherited are coloured red, those that your cousins inherited are coloured blue. In the third panel we show the overlapping genomic regions in purple, these regions will be IBD in you and your cousin. If you are full first cousins, you will also have shared genomic regions from your shared grandfather, not shown here. Details about how we made these simulations <a class="reference external" href="https://gcbias.org/2013/12/02/how-many-genomic-blocks-do-you-share-with-a-cousin/">here</a>.</span><a class="headerlink" href="#figure-2-14" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -569,7 +569,7 @@ and our suspect:</p>
 <p>First cousins will share at least one allele of your genotype at all of the polymorphic loci in these purple regions. There’s a range of methods to detect such sharing. One way is to look for unusually long stretches of the genome where two individuals are never homozygous for different alleles. By identifying pairs of individuals who share an unusually large number of such putative IBD blocks, we can hope to identify unknown relatives in genotyping datasets. In fact, companies like 23&amp;me and <a class="reference external" href="http://Ancestry.com">Ancestry.com</a> use signals of IBD to help identify family ties.</p>
 <p>As another example, consider the case of third cousins. You share one of eight sets of great-great-grandparents with each of your (likely many) third cousins. On average, you and each of your third cousins each inherit one-sixteenth of your genome from each of those two great-great-grandparents. This turns out to imply that on average, a little less than one percent of your and your third cousin’s genomes (<span class="math notranslate nohighlight">\(2 \times (\frac{1}{16})^2 =0.78\%\)</span>) will be identical by virtue of descent from those shared ancestors. A simulated example where third cousins share blocks of their genome (on chromosome 16 and 2) due to their great-great-grandmother is shown in <a class="reference internal" href="#figure-2-15"><span class="std std-numref">Fig. 15</span></a>.</p>
 <figure class="align-left" id="figure-2-15">
-<img alt="figures/sharing_relatives/Third_cousin_overlap_1.png" src="figures/sharing_relatives/Third_cousin_overlap_1.png" />
+<img alt="../../_images/Third_cousin_overlap_1.png" src="../../_images/Third_cousin_overlap_1.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 15 </span><span class="caption-text">- A simulation of sharing between third cousins, the details are the same as in <a class="reference internal" href="#figure-2-14"><span class="std std-numref">Fig. 14</span></a>.</span><a class="headerlink" href="#figure-2-15" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -586,7 +586,7 @@ and our suspect:</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <figure class="align-left" id="figure-2-16">
-<img alt="figures/Child_first_cousins_Homozy_BD.png" src="figures/Child_first_cousins_Homozy_BD.png" />
+<img alt="../../_images/Child_first_cousins_Homozy_BD.png" src="../../_images/Child_first_cousins_Homozy_BD.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 16 </span><span class="caption-text">- Alleles being transmitted through an inbred pedigree. The two sisters (mum and aunt) share two alleles identical by descent (IBD). The cousins share one pink  allele IBD. The offspring of first cousins is homozygous by descent at this locus for the pink allele. You can simulate more examples for yourself <a class="reference external" href="https://cooplab.shinyapps.io/Shiny_pedigree_sims/">here</a>.</span><a class="headerlink" href="#figure-2-16" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -639,7 +639,7 @@ and our suspect:</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <figure class="align-left" id="figure-2-18">
-<img alt="illustration_images/alleles_genotypes/Carlos_second/378px-Juan_de_Miranda_Carreno_002.jpg" src="illustration_images/alleles_genotypes/Carlos_second/378px-Juan_de_Miranda_Carreno_002.jpg" />
+<img alt="../../_images/378px-Juan_de_Miranda_Carreno_002.jpg" src="../../_images/378px-Juan_de_Miranda_Carreno_002.jpg" />
 <figcaption>
 <p><span class="caption-number">Fig. 17 </span><span class="caption-text">Charles II of Spain (by Juan Carreño de Miranda, 1685). <a class="reference external" href="https://it.wikipedia.org/wiki/Carlo_II_di_Spagna%5C#/media/File:Juan_de_Miranda_Carreno_002.jpg">Public Domain</a>.</span><a class="headerlink" href="#figure-2-18" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -701,7 +701,7 @@ B denotes the “slow” allele):</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <figure class="align-left" id="figure-2-19">
-<img alt="illustration_images/alleles_genotypes/grey_wolf/5988399184_0c36a8e51c_z.jpg" src="illustration_images/alleles_genotypes/grey_wolf/5988399184_0c36a8e51c_z.jpg" />
+<img alt="../../_images/5988399184_0c36a8e51c_z.jpg" src="../../_images/5988399184_0c36a8e51c_z.jpg" />
 <figcaption>
 <p><span class="caption-number">Fig. 19 </span><span class="caption-text">- Grey wolf (<em>Canis lupus</em>). <span style="font-size: smaller;">Dogs, jackals, wolves, and foxes: a monograph of the Canidae. 1890. y J.G. Keulemans. Image from the <a class="reference external" href="https://www.biodiversitylibrary.org/page/17002968%5C#page/58/mode/1up">Biodiversity Heritage Library</a>. Contributed by University of Toronto - Gerstein Science Information Centre. Not in copyright.</span></span><a class="headerlink" href="#figure-2-19" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -714,7 +714,7 @@ B denotes the “slow” allele):</p>
 <h3>Genomic blocks of homozygosity due to inbreeding.<a class="headerlink" href="#genomic-blocks-of-homozygosity-due-to-inbreeding" title="Permalink to this headline">#</a></h3>
 <p>As we saw above, close relatives are expected to share alleles IBD in large genomic blocks. Thus, when related individuals mate and transmit alleles to an inbred offspring, they transmit these alleles in big blocks through meiosis. As an example, let’s return to the case of our hypothetical first cousins from <a class="reference internal" href="#figure-2-10"><span class="std std-numref">Fig. 10</span></a>. If this pair of individuals had a child, one possible pattern of genetic transmission is shown in <a class="reference internal" href="#figure-2-20"><span class="std std-numref">Fig. 20</span></a>. The child has inherited the red stretch of chromosome via two different routes through their predigree from the grandparents. This is an example of an autozygous segment, where the child is homozygous by descent at all of the loci in this red region. The inbreeding coefficient of the child sets the proportion of their genome that will be in these autozygous segments. For example, a child of first full cousins is expected to have <span class="math notranslate nohighlight">\(1/16\)</span> of their genome in these segments. The more distant the loop in the pedigree, the more meioses that chromosomes have been through and the shorter individual blocks will be. A child of first cousins will have longer blocks than a child of second cousins, for example.</p>
 <figure class="align-left" id="figure-2-20">
-<img alt="figures/sharing_relatives/first_cousin_offspring.pdf" src="figures/sharing_relatives/first_cousin_offspring.pdf" />
+<img alt="../../_images/first_cousin_offspring.pdf" src="../../_images/first_cousin_offspring.pdf" />
 <figcaption>
 <p><span class="caption-number">Fig. 20 </span><span class="caption-text">- A pedigree showing the offspring of first cousins. The chromosomes of their great-grandparents are coloured different colours so their transmission can be tracked. The child is homozygous by descent (HBD) for a section of the red chromosome.</span><a class="headerlink" href="#figure-2-20" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -723,7 +723,7 @@ B denotes the “slow” allele):</p>
 <p>We can hope to detect these blocks by looking for unusually long genomic runs of homozygosity (ROH) sites in an individual’s genome. One way to estimate an individual’s inbreeding coefficient is then to total up the proportion of an individual’s genome that falls in such ROH regions. This estimate is called <span class="math notranslate nohighlight">\(F_{ROH}\)</span>.</p>
 <p>An example of using <span class="math notranslate nohighlight">\(F_{ROH}\)</span> to study inbreeding comes from the work of <span id="id5">Sams and Boyko [<a class="reference internal" href="../chapter-00-bibliography.html#id217" title="Aaron J Sams and Adam R Boyko. Fine-scale resolution of runs of homozygosity reveal patterns of inbreeding and substantial overlap with recessive disease genotypes in domestic dogs. G3: Genes, Genomes, Genetics, pages g3–200836, 2018.">2018</a>]</span>, who identified runs of homozygosity in 2,500 dogs, ranging from 500kb up to many megabases. <a class="reference internal" href="#figure-2-21"><span class="std std-numref">Fig. 21</span></a> shows the distribution of <span class="math notranslate nohighlight">\(F_{ROH}\)</span> of individuals in each dog breed for the X and autosome. In <a class="reference internal" href="#figure-2-23"><span class="std std-numref">Fig. 23</span></a> this is broken down by the length of ROH segments.</p>
 <figure class="align-left" id="figure-2-21">
-<img alt="figures/sharing_relatives/dogs_FROH.pdf" src="figures/sharing_relatives/dogs_FROH.pdf" />
+<img alt="../../_images/dogs_FROH.pdf" src="../../_images/dogs_FROH.pdf" />
 <figcaption>
 <p><span class="caption-number">Fig. 21 </span><span class="caption-text">- The distribution of FROH of individuals from various dog breeds from <span id="id6">Sams and Boyko [<a class="reference internal" href="../chapter-00-bibliography.html#id218" title="Aaron J Sams and Adam R Boyko. Fine-scale resolution and analysis of runs of homozygosity in domestic dogs. bioRxiv, 2018. URL: https://www.biorxiv.org/content/early/2018/05/07/315770, arXiv:https://www.biorxiv.org/content/early/2018/05/07/315770.full.pdf, doi:10.1101/315770.">2018</a>]</span>, licensed under CC BY 4.0.</span><a class="headerlink" href="#figure-2-21" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -731,14 +731,14 @@ B denotes the “slow” allele):</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <figure class="align-left" id="figure-2-22">
-<img alt="illustration_images/alleles_genotypes/english_bulldog/14752595581_4330377c97_z.jpg" src="illustration_images/alleles_genotypes/english_bulldog/14752595581_4330377c97_z.jpg" />
+<img alt="../../_images/14752595581_4330377c97_z.jpg" src="../../_images/14752595581_4330377c97_z.jpg" />
 <figcaption>
 <p><span class="caption-number">Fig. 22 </span><span class="caption-text">- English bulldog. The dogs of Boytown. 1918. Dyer, W. A.</span><a class="headerlink" href="#figure-2-22" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </aside>
 <figure class="align-left" id="figure-2-23">
-<img alt="figures/sharing_relatives/dog_FROH_dist.pdf" src="figures/sharing_relatives/dog_FROH_dist.pdf" />
+<img alt="../../_images/dog_FROH_dist.pdf" src="../../_images/dog_FROH_dist.pdf" />
 <figcaption>
 <p><span class="caption-number">Fig. 23 </span><span class="caption-text">- Cumulative density of ROH length, measured in megabases (Mb) from <span id="id7">Sams and Boyko [<a class="reference internal" href="../chapter-00-bibliography.html#id218" title="Aaron J Sams and Adam R Boyko. Fine-scale resolution and analysis of runs of homozygosity in domestic dogs. bioRxiv, 2018. URL: https://www.biorxiv.org/content/early/2018/05/07/315770, arXiv:https://www.biorxiv.org/content/early/2018/05/07/315770.full.pdf, doi:10.1101/315770.">2018</a>]</span> for various dog breeds (li- censed under CC BY 4.0). Note that longer lengths of ROH are on the left of the plot.</span><a class="headerlink" href="#figure-2-23" title="Permalink to this image">#</a></p>
 </figcaption>
