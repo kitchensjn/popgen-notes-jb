@@ -246,7 +246,7 @@ Disassortative mating, mating of unlike individuals, can lead to an excess of he
 </center>
 
 :::{margin}
-```{figure} ../../illustration_images/alleles_genotypes/Sparassis_crispa/Sparassis_crispa_cauliflower_mushroom.pdfSparassis_crispa_cauliflower_mushroom.pdf
+```{figure} ../../illustration_images/alleles_genotypes/Sparassis_crispa/Sparassis_crispa_cauliflower_mushroom.pdf
 :name: figure-2.9
 :align: left
 

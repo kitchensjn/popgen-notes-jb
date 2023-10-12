@@ -9,7 +9,7 @@ Populations can often differ in their allele frequencies, either due to genetic 
 Our statements about inbreeding, and inbreeding coefficients, represent one natural way to summarize population structure. In the previous chapter, we defined inbreeding as having parents that are more closely related to each other than two individuals drawn at random from some reference population. The question that naturally arises is: Which reference population should we use? While I might not look inbred in comparison to allele frequencies in the United Kingdom (UK), where I am from, my parents certainly are not two individuals drawn at random from the world-wide population. If we estimated my inbreeding coefficient $F$ using allele frequencies within the UK, it would be close to zero, but would likely be larger if we used world-wide frequencies. This is because there is a somewhat lower level of expected heterozygosity within the UK than in the human population across the world as a whole.
 
 :::{margin}
-```{figure} ../../figures/Pop_struct/FST_hierarchy.pdf
+```{figure} ../figures/Pop_struct/FST_hierarchy.pdf
 ---
 name: figure-3.1
 align: left
@@ -76,7 +76,7 @@ In a species of lemurs, you estimate the allele frequency to be $20\%$. In a par
 As an example of comparing a genome-wide estimate of $F_{ST}$ to that at individual loci we can look at some data from blue- and golden-winged warblers (*Vermivora cyanoptera* and *V. chrysoptera* 1-2 & 5-6 in {numref}`figure-3.2`).
 
 :::{margin}
-```{figure} ../../illustration_images/alleles_genotypes/blue_golden_winged_warblers/The_warblers_of_North_America_6309257188.jpg
+```{figure} ../illustration_images/alleles_genotypes/blue_golden_winged_warblers/The_warblers_of_North_America_6309257188.jpg
 ---
 name: figure-3.2
 align: left
@@ -88,7 +88,7 @@ align: left
 
 These two species are spread across eastern Northern America, with the golden-winged warbler having a smaller, more northernly range. They're quite different in terms of plumage, but have long been known to have similar songs and ecologies. The two species hybridize readily in the wild; in fact two other previously-recognized species, Brewster's and Lawrence's warbler (4 & 3 in {numref}`figure-3.2`), are actually found to just be hybrids between theses two species. The golden-winged warbler is listed as 'threatened' under the Canadian endangered species act as its habitat is under pressure from human activity and and due to increasing hybridization with the blue-winged warbler, which is moving north into its range. {cite:t}`Toews:16` investigated the population genomics of these warblers, sequencing ten golden- and ten blue-winged warblers. They found very low divergence among these species, with a genome-wide $F_{ST}=0.0045$. In {numref}`figure-3.3`, per SNP $F_{ST}$ is averaged in $2000$bp windows moving along the genome. The average is very low, but some regions of very high $F_{ST}$ stand out. Nearly all of these regions correspond to large allele frequency differences at loci in, or close, to genes known to be involved in plumage colouration differences in other birds.
 
-```{figure} ../../Journal_figs/alleles_genotypes/blue_golden_winged_warblers/GW_FST_warblers.png
+```{figure} ../Journal_figs/alleles_genotypes/blue_golden_winged_warblers/GW_FST_warblers.png
 ---
 name: figure-3.3
 align: left
@@ -240,7 +240,7 @@ Returning to our chimp example, imagine that we have genotyped a set of individu
 :::
 
 :::{margin}
-```{figure} ../../Journal_figs/alleles_genotypes/chimp/chimp.png
+```{figure} ../Journal_figs/alleles_genotypes/chimp/chimp.png
 :name: figure-3.4
 :align: left
 
@@ -258,7 +258,7 @@ While it is great to be able to assign our individuals to a particular populatio
 
 We iterate steps 1 and 2 for many iterations (technically, this approach is known as *Gibbs Sampling*). If the data is sufficiently informative, the assignments and allele frequencies will quickly converge on a set of likely population assignments and allele frequencies for these populations.
 
-```{figure} ../../figures/Becquet_et_al_STRUCTURE_journal_pgen_0030066_g001.png
+```{figure} ../figures/Becquet_et_al_STRUCTURE_journal_pgen_0030066_g001.png
 :name: figure-3.5
 :align: left
 
