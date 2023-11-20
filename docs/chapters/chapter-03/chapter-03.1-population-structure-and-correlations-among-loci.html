@@ -1,0 +1,987 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Population Structure and Correlations Among Loci &#8212; Population And Quantitative Genetics</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Chapter Summary" href="chapter-03.2-chapter-summary.html" />
+    <link rel="prev" title="Further Questions" href="../chapter-02/chapter-02.5-further-questions.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Population And Quantitative Genetics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../chapter-01-introduction.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chapter-02/chapter-02.1-allele-and-genotype-frequencies.html">
+   Allele And Genotype Frequencies
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter-02/chapter-02.2-allele-frequencies.html">
+     Allele Frequencies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter-02/chapter-02.3-allele-sharing-among-related-individuals-and-identity-by-descent.html">
+     Allele Sharing Among Related Individuals And Identity By Descent
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter-02/chapter-02.4-chapter-summary.html">
+     Chapter Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter-02/chapter-02.5-further-questions.html">
+     Further Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Population Structure and Correlations Among Loci
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-03.2-chapter-summary.html">
+     Chapter Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-03.3-further-questions.html">
+     Further Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../chapter-00-bibliography.html">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapters/chapter-03/chapter-03.1-population-structure-and-correlations-among-loci.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/chapters/chapter-03/chapter-03.1-population-structure-and-correlations-among-loci.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inbreeding-as-a-summary-of-population-structure">
+   Inbreeding as a summary of population structure
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interpretations-of-f-statistics">
+     Interpretations of F-statistics
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#other-approaches-to-population-structure">
+   Other approaches to population structure
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignment-methods">
+   Assignment Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-simple-assignment-method">
+     A simple assignment method
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clustering-based-on-assignment-methods">
+     Clustering based on assignment methods
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#principal-components-analysis">
+   Principal components analysis
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#correlations-between-loci-linkage-disequilibrium-and-recombination">
+   Correlations between loci, linkage disequilibrium, and recombination
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recombination">
+     Recombination
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#linkage-disequilibrium">
+     Linkage disequilibrium
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-generation-of-ld">
+     The generation of LD
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-decay-of-ld-due-to-recombination">
+     The decay of LD due to recombination
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Population Structure and Correlations Among Loci</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inbreeding-as-a-summary-of-population-structure">
+   Inbreeding as a summary of population structure
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interpretations-of-f-statistics">
+     Interpretations of F-statistics
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#other-approaches-to-population-structure">
+   Other approaches to population structure
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignment-methods">
+   Assignment Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-simple-assignment-method">
+     A simple assignment method
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clustering-based-on-assignment-methods">
+     Clustering based on assignment methods
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#principal-components-analysis">
+   Principal components analysis
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#correlations-between-loci-linkage-disequilibrium-and-recombination">
+   Correlations between loci, linkage disequilibrium, and recombination
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recombination">
+     Recombination
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#linkage-disequilibrium">
+     Linkage disequilibrium
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-generation-of-ld">
+     The generation of LD
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-decay-of-ld-due-to-recombination">
+     The decay of LD due to recombination
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="population-structure-and-correlations-among-loci">
+<h1>Population Structure and Correlations Among Loci<a class="headerlink" href="#population-structure-and-correlations-among-loci" title="Permalink to this headline">#</a></h1>
+<p><em>INDIVIDUALS RARELY MATE COMPLETELY AT RANDOM</em>; your parents weren’t two Bilateria plucked at random from the tree of life. Even within species, there’s often geographically-restricted mating among individuals. Individuals tend to mate with individuals from the same, or closely related sets of populations. This form of non-random mating is called population structure and can have profound effects on the distribution of genetic variation within and among natural populations.</p>
+<p>Populations can often differ in their allele frequencies, either due to genetic drift or selection driving differentiation among populations. In this chapter we’ll talk through some ways to summarize and visualize population genetic structure. Population differentiation is also a major driver of correlations in allelic state among loci, and we’ll start our discussion of these correlations at the end of this chapter. One reason for talking about population structure so early in the book is that summarizing population structure is often a key initial stage in population genomic analyses. Thus you’ll often encounter summaries and visualizations of population structure when we read research papers, so it’s good to have some understanding of what they represent.</p>
+<section id="inbreeding-as-a-summary-of-population-structure">
+<h2>Inbreeding as a summary of population structure<a class="headerlink" href="#inbreeding-as-a-summary-of-population-structure" title="Permalink to this headline">#</a></h2>
+<p>Our statements about inbreeding, and inbreeding coefficients, represent one natural way to summarize population structure. In the previous chapter, we defined inbreeding as having parents that are more closely related to each other than two individuals drawn at random from some reference population. The question that naturally arises is: Which reference population should we use? While I might not look inbred in comparison to allele frequencies in the United Kingdom (UK), where I am from, my parents certainly are not two individuals drawn at random from the world-wide population. If we estimated my inbreeding coefficient <span class="math notranslate nohighlight">\(F\)</span> using allele frequencies within the UK, it would be close to zero, but would likely be larger if we used world-wide frequencies. This is because there is a somewhat lower level of expected heterozygosity within the UK than in the human population across the world as a whole.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-3-1">
+<img alt="chapters/figures/Pop_struct/FST_hierarchy.pdf" src="chapters/figures/Pop_struct/FST_hierarchy.pdf" />
+<figcaption>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">- The hierarchical nature of F-statistics. The two dots within an individual represent the two alleles at a locus for an individual <span class="math notranslate nohighlight">\(I\)</span>. We can compare the heterozygosity in individuals (<span class="math notranslate nohighlight">\(H_I\)</span>), to that found by randomly drawing alleles from the sub-population (S), to that found in the total population (T).</span><a class="headerlink" href="#figure-3-1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<p>Building on this idea of inbreeding coefficients estimated at various levels, <span id="id1">Wright [<a class="reference internal" href="../chapter-00-bibliography.html#id315" title="Sewall Wright. Isolation by distance. Genetics, 28(2):114–138, 1943. URL: http://www.genetics.org/content/28/2/114, arXiv:http://www.genetics.org/content/28/2/114.full.pdf.">1943</a>]</span> developed a set of ‘F-statistics’ (also called ‘fixation indices’) that formalize the idea of inbreeding with respect to different levels of population structure <span id="id2">[<a class="reference internal" href="../chapter-00-bibliography.html#id315" title="Sewall Wright. Isolation by distance. Genetics, 28(2):114–138, 1943. URL: http://www.genetics.org/content/28/2/114, arXiv:http://www.genetics.org/content/28/2/114.full.pdf.">Wright, 1943</a>, <a class="reference internal" href="../chapter-00-bibliography.html#id314" title="Sewall Wright. The genetical structure of populations. Annals of Eugenics, 15(1):323-354, 1949. URL: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1949.tb02451.x, arXiv:https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1469-1809.1949.tb02451.x, doi:10.1111/j.1469-1809.1949.tb02451.x.">Wright, 1949</a>]</span>. See <a class="reference internal" href="#figure-3-1"><span class="std std-numref">Fig. 24</span></a> for a schematic diagram. Wright defined <span class="math notranslate nohighlight">\(F_{XY}\)</span> as the correlation between random gametes, drawn from the same level <span class="math notranslate nohighlight">\(X\)</span>, relative to level <span class="math notranslate nohighlight">\(Y\)</span>. We will return to why <span class="math notranslate nohighlight">\(F\)</span>-statistics are statements about correlations between alleles in just a moment. One commonly used <span class="math notranslate nohighlight">\(F\)</span>-statistic is <span class="math notranslate nohighlight">\(F_{IS}\)</span>, which is the inbreeding coefficient between an individual (<span class="math notranslate nohighlight">\(I\)</span>) and the subpopulation (<span class="math notranslate nohighlight">\(S\)</span>). Consider a single locus, where in a subpopulation (<span class="math notranslate nohighlight">\(S\)</span>) a fraction <span class="math notranslate nohighlight">\(H_I=f_{12}\)</span> of individuals are heterozygous. In this subpopulation, let the frequency of allele <span class="math notranslate nohighlight">\(A_1\)</span> be <span class="math notranslate nohighlight">\(p_S\)</span>, such that the expected heterozygosity under random mating is <span class="math notranslate nohighlight">\(H_S = 2 p_S (1 - p_S)\)</span>. We will write <span class="math notranslate nohighlight">\(F_{IS}\)</span> as</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-1">
+<span class="eqno">(14)<a class="headerlink" href="#equation-eq-3-1" title="Permalink to this equation">#</a></span>\[F_{IS} = 1-\frac{H_I}{H_S}= 1-\frac{f_{12}}{2p_Sq_S},\]</div>
+<p>a direct analog of Equation <a class="reference internal" href="../chapter-02/chapter-02.3-allele-sharing-among-related-individuals-and-identity-by-descent.html#equation-eq-2-12">(12)</a>. Hence, <span class="math notranslate nohighlight">\(F_{IS}\)</span> is the relative difference between observed and expected heterozygosity due to a deviation from random mating within the subpopulation. We could also compare the observed heterozygosity in individuals (<span class="math notranslate nohighlight">\(H_I\)</span>) to that expected in the total population, <span class="math notranslate nohighlight">\(H_T\)</span>. If the frequency of allele <span class="math notranslate nohighlight">\(A_1\)</span> in the total population is <span class="math notranslate nohighlight">\(p_T\)</span>, then we can write <span class="math notranslate nohighlight">\(F_{IT}\)</span> as</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-2">
+<span class="eqno">(15)<a class="headerlink" href="#equation-eq-3-2" title="Permalink to this equation">#</a></span>\[F_{IT} =1-\frac{H_I}{H_T}= 1-\frac{f_{12}}{2p_Tq_T},\]</div>
+<p>which compares heterozygosity in individuals to that expected in the total population. As a simple extension of this, we could imagine comparing the expected heterozygosity in the subpopulation (<span class="math notranslate nohighlight">\(H_S\)</span>) to that expected in the total population <span class="math notranslate nohighlight">\(H_T\)</span>, via <span class="math notranslate nohighlight">\(F_{ST}\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-3">
+<span class="eqno">(16)<a class="headerlink" href="#equation-eq-3-3" title="Permalink to this equation">#</a></span>\[F_{ST} = 1-\frac{H_S}{H_T}=1-\frac{2p_Sq_S}{2p_Tq_T}.\]</div>
+<p>We can relate the three <span class="math notranslate nohighlight">\(F\)</span>-statistics to each other as</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-4">
+<span class="eqno">(17)<a class="headerlink" href="#equation-eq-3-4" title="Permalink to this equation">#</a></span>\[(1-F_{IT}) =\frac{H_I}{H_S} \frac{H_S}{H_T}=(1-F_{IS})(1-F_{ST}).\]</div>
+<p>Hence, the reduction in heterozygosity within individuals compared to that expected in the total population can be decomposed to the reduction in heterozygosity of individuals compared to the subpopulation, and the reduction in heterozygosity from the total population to that in the subpopulation.</p>
+<p>If we want a summary of population structure across multiple subpopulations, we can average <span class="math notranslate nohighlight">\(H_I\)</span> and/or <span class="math notranslate nohighlight">\(H_S\)</span> across populations, and use a <span class="math notranslate nohighlight">\(p_T\)</span> calculated by averaging <span class="math notranslate nohighlight">\(p_S\)</span> across subpopulations (or our samples from sub-populations). For example, the average <span class="math notranslate nohighlight">\(\bar{F_{ST}}\)</span> across <span class="math notranslate nohighlight">\(K\)</span> subpopulations (sampled with equal effort) is</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-5">
+<span class="eqno">(18)<a class="headerlink" href="#equation-eq-3-5" title="Permalink to this equation">#</a></span>\[\bar{F_{ST}} = 1 - \frac{\bar{H}_{S}}{H_T},\]</div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Averaging heterozygosity across loci first, then calculating <span class="math notranslate nohighlight">\(F_{ST}\)</span>, rather than calculating <span class="math notranslate nohighlight">\(F_{ST}\)</span> for each locus individually and then taking the average, has better statistical properties as statistical noise in the denominator is averaged out.</p>
+</aside>
+<p>where <span class="math notranslate nohighlight">\(\bar{H}_S = \frac{1}{K} \sum_{i = 1}^{K} H_{S}^{(i)}\)</span>, and <span class="math notranslate nohighlight">\(H_{S}^{(i)} = 2 p_{i} q_{i}\)</span> is the expected heterozygosity in subpopulation <span class="math notranslate nohighlight">\(i\)</span>. It follows that the average heterozygosity of the sub-populations <span class="math notranslate nohighlight">\(\bar{H}_S  \leq H_T\)</span>, and so <span class="math notranslate nohighlight">\(\bar{F_{ST}} \geq 0\)</span> and <span class="math notranslate nohighlight">\(\bar{F_{IS}} \leq \bar{F_{IT}}\)</span>. This observation that the average heterozygosity of the sub-populations must be less than of equal to that of the total population is called the Wahlund effect <span id="id3">[<a class="reference internal" href="../chapter-00-bibliography.html#id282" title="Sten Wahlund. Zusammensetzung von populationen und korrelationserscheinungen vom standpunkt der vererbungslehre aus betrachtet. Hereditas, 11(1):65–106, 1928.">Wahlund, 1928</a>]</span>. Furthermore, if we have multiple sites, we can replace <span class="math notranslate nohighlight">\(H_I\)</span>, <span class="math notranslate nohighlight">\(H_S\)</span>, and <span class="math notranslate nohighlight">\(H_T\)</span> with their averages across loci (as above).</p>
+<div class="admonition-question-1 admonition" id="question-3-1">
+<p class="admonition-title">Question 1</p>
+<p>In a species of lemurs, you estimate the allele frequency to be <span class="math notranslate nohighlight">\(20\%\)</span>. In a particular population, you estimate that the allele frequency is <span class="math notranslate nohighlight">\(10\%\)</span>. In this population, only <span class="math notranslate nohighlight">\(9\%\)</span> of individuals are heterozygote. What is <span class="math notranslate nohighlight">\(F_{IT}\)</span>, <span class="math notranslate nohighlight">\(F_{ST}\)</span>, and <span class="math notranslate nohighlight">\(F_{IS}\)</span> for this population?</p>
+</div>
+<p>As an example of comparing a genome-wide estimate of <span class="math notranslate nohighlight">\(F_{ST}\)</span> to that at individual loci we can look at some data from blue- and golden-winged warblers (<em>Vermivora cyanoptera</em> and <em>V. chrysoptera</em> 1-2 &amp; 5-6 in <a class="reference internal" href="#figure-3-2"><span class="std std-numref">Fig. 25</span></a>).</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-3-2">
+<img alt="chapters/illustration_images/alleles_genotypes/blue_golden_winged_warblers/The_warblers_of_North_America_6309257188.jpg" src="chapters/illustration_images/alleles_genotypes/blue_golden_winged_warblers/The_warblers_of_North_America_6309257188.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">- Blue-, golden-winged, and Lawrence’s warblers (<em>Vermivora</em>). <span style="font-size: smaller;">The warblers of North America. Chapman, F.M. 1907. Image from the <a class="reference external" href="https://www.biodiversitylibrary.org/page/9165714#page/101/mode/1up">Biodiversity Heritage Library</a>. Contributed by American Museum of Natural History Library. Not in copyright.</span></span><a class="headerlink" href="#figure-3-2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<p>These two species are spread across eastern Northern America, with the golden-winged warbler having a smaller, more northernly range. They’re quite different in terms of plumage, but have long been known to have similar songs and ecologies. The two species hybridize readily in the wild; in fact two other previously-recognized species, Brewster’s and Lawrence’s warbler (4 &amp; 3 in <a class="reference internal" href="#figure-3-2"><span class="std std-numref">Fig. 25</span></a>), are actually found to just be hybrids between theses two species. The golden-winged warbler is listed as ‘threatened’ under the Canadian endangered species act as its habitat is under pressure from human activity and and due to increasing hybridization with the blue-winged warbler, which is moving north into its range. <span id="id4">Toews <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id246" title="David P.L. Toews, Scott A. Taylor, Rachel Vallender, Alan Brelsford, Bronwyn G. Butcher, Philipp W. Messer, and Irby J. Lovette. Plumage genes and little else distinguish the genomes of hybridizing warblers. Current Biology, 26(17):2313 - 2318, 2016. URL: http://www.sciencedirect.com/science/article/pii/S096098221630673X, doi:https://doi.org/10.1016/j.cub.2016.06.034.">2016</a>]</span> investigated the population genomics of these warblers, sequencing ten golden- and ten blue-winged warblers. They found very low divergence among these species, with a genome-wide <span class="math notranslate nohighlight">\(F_{ST}=0.0045\)</span>. In <a class="reference internal" href="#figure-3-3"><span class="std std-numref">Fig. 26</span></a>, per SNP <span class="math notranslate nohighlight">\(F_{ST}\)</span> is averaged in <span class="math notranslate nohighlight">\(2000\)</span>bp windows moving along the genome. The average is very low, but some regions of very high <span class="math notranslate nohighlight">\(F_{ST}\)</span> stand out. Nearly all of these regions correspond to large allele frequency differences at loci in, or close, to genes known to be involved in plumage colouration differences in other birds.</p>
+<figure class="align-left" id="figure-3-3">
+<img alt="chapters/Journal_figs/alleles_genotypes/blue_golden_winged_warblers/GW_FST_warblers.png" src="chapters/Journal_figs/alleles_genotypes/blue_golden_winged_warblers/GW_FST_warblers.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">- FST between blue- and golden-winged warbler population samples at SNPs across the genome. Each dot is a SNP, and SNPs are coloured alternating by scaffold. Thanks to David Toews for the figure.</span><a class="headerlink" href="#figure-3-3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>To illustrate these frequency differences <span id="id5">Toews <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id246" title="David P.L. Toews, Scott A. Taylor, Rachel Vallender, Alan Brelsford, Bronwyn G. Butcher, Philipp W. Messer, and Irby J. Lovette. Plumage genes and little else distinguish the genomes of hybridizing warblers. Current Biology, 26(17):2313 - 2318, 2016. URL: http://www.sciencedirect.com/science/article/pii/S096098221630673X, doi:https://doi.org/10.1016/j.cub.2016.06.034.">2016</a>]</span> genotyped a SNP in each of these high-<span class="math notranslate nohighlight">\(F_{ST}\)</span> regions. Here’s their genotyping counts from the SNP, segregating for an allele 1 and 2, in the <em>Wnt</em> region, a key regulatory gene involved in feather development:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Species-Genotypes</p></th>
+<th class="text-align:center head"><p>11</p></th>
+<th class="text-align:center head"><p>12</p></th>
+<th class="text-align:center head"><p>22</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>Blue-winged</p></td>
+<td class="text-align:center"><p>2</p></td>
+<td class="text-align:center"><p>21</p></td>
+<td class="text-align:center"><p>31</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Golden-winged</p></td>
+<td class="text-align:center"><p>48</p></td>
+<td class="text-align:center"><p>12</p></td>
+<td class="text-align:center"><p>1</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-question-2 admonition" id="question-3-2">
+<p class="admonition-title">Question 2</p>
+<p>With reference to the table of <em>Wnt</em>-allele counts:</p>
+<ul class="simple">
+<li><p><strong>A)</strong> Calculate <span class="math notranslate nohighlight">\(F_{IS}\)</span> in blue-winged warblers.</p></li>
+<li><p><strong>B)</strong> Calculate <span class="math notranslate nohighlight">\(F_{ST}\)</span> for the sub-population of blue-winged warblers compared to the combined sample.</p></li>
+<li><p><strong>C)</strong> Calculate mean <span class="math notranslate nohighlight">\(F_{ST}\)</span> across both sub-populations.</p></li>
+</ul>
+</div>
+<section id="interpretations-of-f-statistics">
+<h3>Interpretations of F-statistics<a class="headerlink" href="#interpretations-of-f-statistics" title="Permalink to this headline">#</a></h3>
+<p>Let’s now return to Wright’s definition of the <span class="math notranslate nohighlight">\(F\)</span>-statistics as correlations between random gametes, drawn from the same level <span class="math notranslate nohighlight">\(X\)</span>, relative to level <span class="math notranslate nohighlight">\(Y\)</span>. Without loss of generality, we may think about <span class="math notranslate nohighlight">\(X\)</span> as individuals and <span class="math notranslate nohighlight">\(S\)</span> as the subpopulation. Rewriting <span class="math notranslate nohighlight">\(F_{IS}\)</span> in terms of the observed homozygote frequencies (<span class="math notranslate nohighlight">\(f_{11}\)</span>, <span class="math notranslate nohighlight">\(f_{22}\)</span>) and expected homozygosities (<span class="math notranslate nohighlight">\(p_{S}^2\)</span>, <span class="math notranslate nohighlight">\(q_{S}^2\)</span>) we find</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-6">
+<span class="eqno">(19)<a class="headerlink" href="#equation-eq-3-6" title="Permalink to this equation">#</a></span>\[F_{IS} = \frac{2p_Sq_S - f_{12}}{2p_Sq_S} = \frac{f_{11}+f_{22} - p_S^2 - q_S^2}{2p_Sq_S},\]</div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>To see why the numerator of Equation <a class="reference internal" href="#equation-eq-3-6">(19)</a> is the covariance of a discrete random variable see Appendix Equation <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.41</span></code>, where we imagine that the random variable is <span class="math notranslate nohighlight">\(1\)</span> if the alleles drawn from the population are the same and <span class="math notranslate nohighlight">\(0\)</span> if not. The denominator is the binomial variance of a sample of two, and so our equation is a covariance divided by a variance and so interpretable as a correlation (see Appendix Equation <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.43</span></code>).</p>
+</aside>
+<p>using the fact that <span class="math notranslate nohighlight">\(p^2+2pq+q^2=1\)</span>, and <span class="math notranslate nohighlight">\(f_{12} = 1 - f_{11} - f_{12}\)</span>. The form of Equation <a class="reference internal" href="#equation-eq-3-6">(19)</a> reveals that <span class="math notranslate nohighlight">\(F_{IS}\)</span> is the covariance between pairs of alleles found in an individual, divided by the expected variance under binomial sampling. Thus, <span class="math notranslate nohighlight">\(F\)</span>-statistics can be understood as the correlation between alleles drawn from a population (or an individual) above that expected by chance (i.e. drawing alleles sampled at random from some broader population).</p>
+<p>We can also interpret <span class="math notranslate nohighlight">\(F\)</span>-statistics as proportions of variance explained by different levels of population structure. To see this, let us think about <span class="math notranslate nohighlight">\(F_{ST}\)</span> averaged over <span class="math notranslate nohighlight">\(K\)</span> subpopulations, whose frequencies are <span class="math notranslate nohighlight">\(p_1,\dots,p_K\)</span>. The frequency in the total population is <span class="math notranslate nohighlight">\(p_T=\bar{p} = \frac{1}{K} \sum_{i=1}^K p_i\)</span>. Then, we can write</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-7">
+<span class="eqno">(20)<a class="headerlink" href="#equation-eq-3-7" title="Permalink to this equation">#</a></span>\[\begin{split}F_{ST} &amp;= \frac{2 \bar{p}\bar{q} - \frac{1}{K}\sum_{i=1}^K 2p_iq_i }{2 \bar{p}\bar{q}} = \frac{ \left(\frac{1}{K} \sum_{i=1}^K p_i^2 + \frac{1}{K} \sum_{i=1}^K q_i^2 \right) -  \bar{p}^2-\bar{q}^2 }{2\bar{p}\bar{q}}\\
+    &amp;= \frac{\mathrm{Var}(p_1,\dots,p_K)}{\mathrm{Var}(\bar{p})},\end{split}\]</div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>This follows because the numerator, in the middle step of Equation <a class="reference internal" href="#equation-eq-3-7">(20)</a>, is the averaged squared frequency minus the squared frequency, i.e. the variance (see Appendix Equation <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.23</span></code>).</p>
+</aside>
+<p>which shows that <span class="math notranslate nohighlight">\(F_{ST}\)</span> is the proportion of the variance explained by the subpopulation labels.</p>
+</section>
+</section>
+<section id="other-approaches-to-population-structure">
+<h2>Other approaches to population structure<a class="headerlink" href="#other-approaches-to-population-structure" title="Permalink to this headline">#</a></h2>
+<p>There is a broad spectrum of methods to describe patterns of population structure in population genetic datasets. We’ll briefly discuss two broad-classes of methods that appear often in the literature: assignment methods and principal components analysis.</p>
+</section>
+<section id="assignment-methods">
+<h2>Assignment Methods<a class="headerlink" href="#assignment-methods" title="Permalink to this headline">#</a></h2>
+<p>Here we’ll describe a simple probabilistic assignment to find the probability that an individual of unknown population comes from one of <span class="math notranslate nohighlight">\(K\)</span> predefined populations. For example, there are three broad populations of common chimpanzee (<em>Pan troglodytes</em>) in Africa: western, central, and eastern. Imagine that we have a chimpanzee whose population of origin is unknown (e.g. it’s from an illegal private collection). If we have genotyped a set of unlinked markers from a panel of individuals representative of these populations, we can calculate the probability that our chimp comes from each of these populations.</p>
+<p>We’ll then briefly explain how to extend this idea to cluster a set of individuals into <span class="math notranslate nohighlight">\(K\)</span> initially unknown populations. This method is a simplified version of what population genetics clustering algorithms such as STRUCTURE and ADMIXTURE do <span id="id6">[<a class="reference internal" href="../chapter-00-bibliography.html#id312" title="David H Alexander, John Novembre, and Kenneth Lange. Fast model-based estimation of ancestry in unrelated individuals. Genome research, 19(9):1655–1664, 2009.">Alexander <em>et al.</em>, 2009</a>, <a class="reference internal" href="../chapter-00-bibliography.html#id297" title="Jonathan K Pritchard, Matthew Stephens, and Peter Donnelly. Inference of population structure using multilocus genotype data. Genetics, 155(2):945–959, 2000.">Pritchard <em>et al.</em>, 2000</a>]</span>.</p>
+<section id="a-simple-assignment-method">
+<h3>A simple assignment method<a class="headerlink" href="#a-simple-assignment-method" title="Permalink to this headline">#</a></h3>
+<p>We have genotype data from unlinked <span class="math notranslate nohighlight">\(S\)</span> biallelic loci for <span class="math notranslate nohighlight">\(K\)</span> populations. The allele frequency of allele <span class="math notranslate nohighlight">\(A_1\)</span> at locus <span class="math notranslate nohighlight">\(l\)</span> in population <span class="math notranslate nohighlight">\(k\)</span> is denoted by <span class="math notranslate nohighlight">\(p_{k,l}\)</span>, so that the allele frequencies in population 1 are <span class="math notranslate nohighlight">\(p_{1,1},\dots, p_{1,L}\)</span> and population 2 are <span class="math notranslate nohighlight">\(p_{2,1},\dots, p_{2,L}\)</span> and so on.</p>
+<p>You genotype a new individual from an unknown population at these <span class="math notranslate nohighlight">\(L\)</span> loci. This individual’s genotype at locus <span class="math notranslate nohighlight">\(l\)</span> is <span class="math notranslate nohighlight">\(g_l\)</span>, where <span class="math notranslate nohighlight">\(g_l\)</span> denotes the number of copies of allele <span class="math notranslate nohighlight">\(A_1\)</span> this individual carries at this locus (<span class="math notranslate nohighlight">\(g_l=0,1,2\)</span>).</p>
+<p>The probability of this individual’s genotype at locus <span class="math notranslate nohighlight">\(l\)</span> conditional on coming from population <span class="math notranslate nohighlight">\(k\)</span>, i.e. their alleles being a random HW draw from population <span class="math notranslate nohighlight">\(k\)</span>, is</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-8">
+<span class="eqno">(21)<a class="headerlink" href="#equation-eq-3-8" title="Permalink to this equation">#</a></span>\[\begin{split}P(g_l | \textrm{pop k}) =
+    \begin{cases}
+        (1-p_{k,l})^2  &amp; g_l=0 \\
+        2 p_{k,l} (1-p_{k,l}) &amp; g_l=1\\
+        p_{k,l}^2  &amp; g_l=2
+    \end{cases}\end{split}\]</div>
+<p>Assuming that the loci are independent, the probability of the individual’s genotype across all S loci, conditional on the individual coming from population <span class="math notranslate nohighlight">\(k\)</span>, is</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-9">
+<span class="eqno">(22)<a class="headerlink" href="#equation-eq-3-9" title="Permalink to this equation">#</a></span>\[P(\textrm{ind.} | \textrm{pop k})  = \prod_{l=1}^S P(g_l | \textrm{pop k})\]</div>
+<p>We wish to know the probability that this new individual comes from population <span class="math notranslate nohighlight">\(k\)</span>, i.e. <span class="math notranslate nohighlight">\(P(\textrm{pop k} | \textrm{ind.})\)</span>. We can obtain this through Bayes’ rule</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-10">
+<span class="eqno">(23)<a class="headerlink" href="#equation-eq-3-10" title="Permalink to this equation">#</a></span>\[P(\textrm{pop k} | \textrm{ind.})  = \frac{P(\textrm{ind.} | \textrm{pop k}) P(\textrm{pop k})}{P(\textrm{ind.})}\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-11">
+<span class="eqno">(24)<a class="headerlink" href="#equation-eq-3-11" title="Permalink to this equation">#</a></span>\[P(\textrm{ind.}) = \sum_{k=1}^K  P(\textrm{ind.} | \textrm{pop k}) P(\textrm{pop k})\]</div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>See the Appendix Equation <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.16</span></code> for more on Bayes’ Rule</p>
+</aside>
+<p>is the normalizing constant. We can interpret <span class="math notranslate nohighlight">\(P(\textrm{pop k})\)</span> as the prior probability of the individual coming from population <span class="math notranslate nohighlight">\(k\)</span>, and unless we have some other prior knowledge we will assume that the new individual has a equal probability of coming from each population <span class="math notranslate nohighlight">\(P(\textrm{pop k})=\frac{1}{K}\)</span>.</p>
+<p>We interpret</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-12">
+<span class="eqno">(25)<a class="headerlink" href="#equation-eq-3-12" title="Permalink to this equation">#</a></span>\[P(\textrm{pop k} | \textrm{ind.})\]</div>
+<p>as the posterior probability that our new individual comes from each of our <span class="math notranslate nohighlight">\(1,\dots, K\)</span> populations.</p>
+<p>More sophisticated versions of this are now used to allow for hybrids, e.g, we can have a proportion <span class="math notranslate nohighlight">\(q_k\)</span> of our individual’s genome come from population <span class="math notranslate nohighlight">\(k\)</span> and estimate the set of <span class="math notranslate nohighlight">\(q_k\)</span>’s.</p>
+<div class="admonition-question-3 admonition" id="question-3-3">
+<p class="admonition-title">Question 3</p>
+<p>Returning to our chimp example, imagine that we have genotyped a set of individuals from the Western and Eastern populations at two SNPs (we’ll ignore the central population to keep things simpler). The frequency of the capital allele at two SNPs (<span class="math notranslate nohighlight">\(A/a\)</span> and <span class="math notranslate nohighlight">\(B/b\)</span>) is given by</p>
+<center>
+<div style="width: 50%;">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Population</p></th>
+<th class="text-align:center head"><p>locus A</p></th>
+<th class="text-align:center head"><p>locus B</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>Western</p></td>
+<td class="text-align:center"><p>0.1</p></td>
+<td class="text-align:center"><p>0.85</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Eastern</p></td>
+<td class="text-align:center"><p>0.95</p></td>
+<td class="text-align:center"><p>0.2</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</center>
+<ul class="simple">
+<li><p><strong>A)</strong> Our individual, whose origin is unknown, has the genotype <span class="math notranslate nohighlight">\(AA\)</span> at the first locus and <span class="math notranslate nohighlight">\(bb\)</span> at the second. What is the posterior probability that our individual comes from the Western population versus Eastern chimp population?</p></li>
+<li><p><strong>B)</strong> (Trickier) Lets assume that our individual from part A is a hybrid (not necessarily an F1). At each locus, with probability <span class="math notranslate nohighlight">\(q_W\)</span> our individual draws an allele from the Western population and with probability <span class="math notranslate nohighlight">\(q_E=1-q_W\)</span> they draw an allele from the Eastern population. What is the probability of our individual’s genotype given <span class="math notranslate nohighlight">\(q_W\)</span>?</p></li>
+<li><p><strong>Optional</strong> You could plot this probability as a function of <span class="math notranslate nohighlight">\(q_W\)</span>. How does your plot change if our individual is heterozygous at both loci?</p></li>
+</ul>
+</div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-3-4">
+<img alt="chapters/Journal_figs/alleles_genotypes/chimp/chimp.png" src="chapters/Journal_figs/alleles_genotypes/chimp/chimp.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">- Chimpanzee <span style="font-size: smaller;">Archives du Muséum d’Histoire Naturelle, Paris. (tome X, 1856) Image from the <a class="reference external" href="https://www.flickr.com/photos/biodivlibrary/19930229848/in/photolist-XGMmmV-wnaCYy-wDMHFP-dpNAc7-bw9qDC-bw9orQ-bJPuCF-eV4etD-d9s1By-cbcysm-c5izpA-bvSkgm-bu7ij8-azL7vS-ayF5zC-atDTpg-atDTuz-akH6mL-ag15Rf-ag15Lb">Biodiversity Heritage Library</a>. Contributed by Natural History Museum Library, London. Licensed under CC BY-2.0.</span></span><a class="headerlink" href="#figure-3-4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+</section>
+<section id="clustering-based-on-assignment-methods">
+<h3>Clustering based on assignment methods<a class="headerlink" href="#clustering-based-on-assignment-methods" title="Permalink to this headline">#</a></h3>
+<p>While it is great to be able to assign our individuals to a particular population, these ideas can be pushed to learn about how best to describe our genotype data in terms of discrete populations without assigning any of our individuals to populations <em>a priori</em>. We wish to cluster our individuals into <span class="math notranslate nohighlight">\(K\)</span> unknown populations. We begin by assigning our individuals at random to these <span class="math notranslate nohighlight">\(K\)</span> populations.</p>
+<ol class="simple">
+<li><p>Given these assignments we estimate the allele frequencies at all of our loci in each population.</p></li>
+<li><p>Given these allele frequencies we chose to reassign each individual to a population <span class="math notranslate nohighlight">\(k\)</span> with a probability given by Equation <a class="reference internal" href="#equation-eq-3-9">(22)</a>.</p></li>
+</ol>
+<p>We iterate steps 1 and 2 for many iterations (technically, this approach is known as <em>Gibbs Sampling</em>). If the data is sufficiently informative, the assignments and allele frequencies will quickly converge on a set of likely population assignments and allele frequencies for these populations.</p>
+<figure class="align-left" id="figure-3-5">
+<img alt="chapters/figures/Becquet_et_al_STRUCTURE_journal_pgen_0030066_g001.png" src="chapters/figures/Becquet_et_al_STRUCTURE_journal_pgen_0030066_g001.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 28 </span><span class="caption-text">- <span id="id7">Becquet <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id222" title="Celine Becquet, Nick Patterson, Anne C Stone, Molly Przeworski, and David Reich. Genetic structure of chimpanzee populations. PLoS genetics, 3(4):e66, 2007.">2007</a>]</span> genotyped 78 common chimpanzee and 6 bonobo at over 300 polymorphic markers (in this case microsatellites). They ran STRUCTURE to cluster the individuals using these data into <span class="math notranslate nohighlight">\(K=4\)</span> populations. In <span id="id8">Becquet <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id222" title="Celine Becquet, Nick Patterson, Anne C Stone, Molly Przeworski, and David Reich. Genetic structure of chimpanzee populations. PLoS genetics, 3(4):e66, 2007.">2007</a>]</span> above figure they show each individual as a vertical bar divided into four colours depicting the estimate of the fraction of ancestry that each individual draws from each of the four estimated populations (licensed under CC BY 4.0). We can see that these four colours/populations correspond to: Red, central; blue, eastern; green, western; yellow, bonobo.</span><a class="headerlink" href="#figure-3-5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>To do this in a full Bayesian scheme we need to place priors on the allele frequencies (for example, one could use a beta distribution prior). Technically we are using the joint posterior of our allele frequencies and assignments. Programs like STRUCTURE, use this type of algorithm to cluster the individuals in an “unsupervised” manner (i.e. they work out how to assign individuals to an unknown set of populations). See <a class="reference internal" href="#figure-3-5"><span class="std std-numref">Fig. 28</span></a> for an example of <span id="id9">Becquet <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id222" title="Celine Becquet, Nick Patterson, Anne C Stone, Molly Przeworski, and David Reich. Genetic structure of chimpanzee populations. PLoS genetics, 3(4):e66, 2007.">2007</a>]</span> using STRUCTURE to determine the population structure of chimpanzees.</p>
+<p>STRUCTURE-like methods have proven incredible popular and useful in examining population structure within species. However, the results of these methods are open to misinterpretation; see <span id="id10">Lawson <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id207" title="Daniel J Lawson, Lucy Van Dorp, and Daniel Falush. A tutorial on how not to over-interpret structure and admixture bar plots. Nature communications, 9(1):3258, 2018.">2018</a>]</span> for a recent discussion. Two common mistakes are 1) taking the results of STRUCTURE-like approaches for some particular value of K and taking this to represent the best way to describe population-genetic variation. 2) Thinking that these clusters represent ‘pure’ ancestral populations.</p>
+<p>There is no right choice of K, the number of clusters to partition into. There are methods of judging the ‘best’ K by some statistical measure given some particular dataset, but that is not the same as saying this is the most meaningful level on which to summarize population structure in data. For example, running STRUCTURE on world-wide human populations for low value of K will result in population clusters that roughly align with continental populations <span id="id11">[<a class="reference internal" href="../chapter-00-bibliography.html#id206" title="Noah A Rosenberg, Jonathan K Pritchard, James L Weber, Howard M Cann, Kenneth K Kidd, Lev A Zhivotovsky, and Marcus W Feldman. Genetic structure of human populations. science, 298(5602):2381–2385, 2002.">Rosenberg <em>et al.</em>, 2002</a>]</span>. However, that does not tell us that assigning ancestry at the level of continents is a particularly meaningful way of partitioning individuals. Running the same data for higher value of K, or within continental regions, will result in much finer-scale partitioning of continental groups <span id="id12">[<a class="reference internal" href="../chapter-00-bibliography.html#id205" title="Jun Z Li, Devin M Absher, Hua Tang, Audrey M Southwick, Amanda M Casto, Sohini Ramachandran, Howard M Cann, Gregory S Barsh, Marcus Feldman, Luigi L Cavalli-Sforza, and others. Worldwide human relationships inferred from genome-wide patterns of variation. science, 319(5866):1100–1104, 2008.">Li <em>et al.</em>, 2008</a>, <a class="reference internal" href="../chapter-00-bibliography.html#id206" title="Noah A Rosenberg, Jonathan K Pritchard, James L Weber, Howard M Cann, Kenneth K Kidd, Lev A Zhivotovsky, and Marcus W Feldman. Genetic structure of human populations. science, 298(5602):2381–2385, 2002.">Rosenberg <em>et al.</em>, 2002</a>]</span>. No one of these layers of population structure identified is privileged as being more meaningful than another.</p>
+<p>It is tempting to think of these clusters as representing ancestral populations, which themselves are not the result of admixture. However, that is not the case, for example, running STRUCTURE on world-wide human data identifies a cluster that contains many European individuals, however, on the basis of ancient DNA we know that modern Europeans are a mixture of distinct ancestral groups.</p>
+</section>
+</section>
+<section id="principal-components-analysis">
+<h2>Principal components analysis<a class="headerlink" href="#principal-components-analysis" title="Permalink to this headline">#</a></h2>
+<p>Principal component analysis (PCA) is a common statistical approach to visualize high dimensional data, and used by many fields. The idea of PCA is to give a location to each individual data-point on each of a small number principal component axes. These PC axes are chosen to reflect major axes of variation in the data, with the first PC being that which explains largest variance, the second the second most, and so on. The use of PCA in population genetics was pioneered by Cavalli-Sforza and colleagues and now with large genotyping datasets, PCA has made a comeback <span id="id13">[<a class="reference internal" href="../chapter-00-bibliography.html#id311" title="Paolo Menozzi, Alberto Piazza, and L Cavalli-Sforza. Synthetic maps of human gene frequencies in europeans. Science, 201(4358):786–792, 1978.">Menozzi <em>et al.</em>, 1978</a>, <a class="reference internal" href="../chapter-00-bibliography.html#id310" title="Nick Patterson, Alkes L Price, and David Reich. Population structure and eigenanalysis. PLoS genetics, 2(12):e190, 2006.">Patterson <em>et al.</em>, 2006</a>]</span>.</p>
+<p>Consider a dataset consisting of N individuals at <span class="math notranslate nohighlight">\(S\)</span> biallelic SNPs. The <span class="math notranslate nohighlight">\(i^{th}\)</span> individual’s genotype data at locus <span class="math notranslate nohighlight">\(\ell\)</span> takes a value <span class="math notranslate nohighlight">\(g_{i,\ell}=0,1,\; \text{or} \; 2\)</span> (corresponding to the number of copies of allele <span class="math notranslate nohighlight">\(A_1\)</span> an individual carries at this SNP). We can think of this as a <span class="math notranslate nohighlight">\(N \times S\)</span> matrix (where usually <span class="math notranslate nohighlight">\(N \ll S\)</span>).</p>
+<p>Denoting the sample mean allele frequency at SNP <span class="math notranslate nohighlight">\(\ell\)</span> by <span class="math notranslate nohighlight">\(p_{\ell}\)</span>, it’s common to standardize the genotype in the following way</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-13">
+<span class="eqno">(26)<a class="headerlink" href="#equation-eq-3-13" title="Permalink to this equation">#</a></span>\[\frac{g_{i,\ell} - 2 p_{\ell}}{\sqrt{2 p_{\ell}(1-p_{\ell})}}\]</div>
+<p>i.e. at each SNP we center the genotypes by subtracting the mean genotype (<span class="math notranslate nohighlight">\(2p_{\ell}\)</span>) and divide through by the square root of the expected variance assuming that alleles are sampled binomially from the mean frequency (<span class="math notranslate nohighlight">\(\sqrt{2 p_{\ell}(1-p_{\ell})}\)</span>). Doing this to all of our genotypes, we form a data matrix (of dimension <span class="math notranslate nohighlight">\(N \times S\)</span>). We can then perform principal component analysis of this data matrix to uncover the major axes of genotype variance in our sample. <a class="reference internal" href="#figure-3-6"><span class="std std-numref">Fig. 29</span></a> shows a PCA from <span id="id14">Becquet <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id222" title="Celine Becquet, Nick Patterson, Anne C Stone, Molly Przeworski, and David Reich. Genetic structure of chimpanzee populations. PLoS genetics, 3(4):e66, 2007.">2007</a>]</span> using the same chimpanzee data as in <a class="reference internal" href="#figure-3-5"><span class="std std-numref">Fig. 28</span></a>.</p>
+<figure class="align-left" id="figure-3-6">
+<img alt="chapters/figures/Becquet_et_al_STRUCTURE_journal_pgen_0030066_g002.png" src="chapters/figures/Becquet_et_al_STRUCTURE_journal_pgen_0030066_g002.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 29 </span><span class="caption-text">- Principal Component Analysis by <span id="id15">Becquet <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id222" title="Celine Becquet, Nick Patterson, Anne C Stone, Molly Przeworski, and David Reich. Genetic structure of chimpanzee populations. PLoS genetics, 3(4):e66, 2007.">2007</a>]</span> using the same chimpanzee data as in <a class="reference internal" href="#figure-3-5"><span class="std std-numref">Fig. 28</span></a>. Here <span id="id16">Becquet <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id222" title="Celine Becquet, Nick Patterson, Anne C Stone, Molly Przeworski, and David Reich. Genetic structure of chimpanzee populations. PLoS genetics, 3(4):e66, 2007.">2007</a>]</span> plot the location of each individual on the first two principal components (called eigenvectors) in the left panel, and on the second and third principal components (eigenvectors) in the right panel (licensed under CC BY 4.0). In the PCA, individuals identified as all of one ancestry by STRUCTURE cluster together by population (solid circles). While the nine individuals identified by STRUCTURE as hybrids (open circles) for the most part fall at intermediate locations in the PCA. There are two individuals (red open circles) reported as being of a particular population but that but appear to be hybrids.</span><a class="headerlink" href="#figure-3-6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>It is worth taking a moment to delve further into what we are doing here. There’s a number of equivalent ways of thinking about what PCA is doing. One of these ways is to think that when we do PCA we are building the individual by individual covariance matrix and performing an eigenvalue decomposition of this matrix (with the eigenvectors being the PCs). This individual by individual covariance matrix has entries the <span class="math notranslate nohighlight">\([i,~j]\)</span> given by</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-14">
+<span class="eqno">(27)<a class="headerlink" href="#equation-eq-3-14" title="Permalink to this equation">#</a></span>\[\frac{1 }{S-1} \sum_{\ell=1}^S \frac{(g_{i,\ell} - 2p_{\ell})(g_{j,\ell} -
+  2p_{\ell})}{2 p_{\ell}(1-p_{\ell})}\]</div>
+<p>Note that this is the sample covariance of our standardized allele frequencies (Equation <a class="reference internal" href="#equation-eq-3-13">(26)</a>), and is very similar to those we encountered in discussing <span class="math notranslate nohighlight">\(F\)</span>-statistics as correlations (Equation <a class="reference internal" href="#equation-eq-3-6">(19)</a>), except now we are asking about the covariance between two individuals above that expected if they were both drawn from the total sample at random (rather than the covariance of alleles within a single individual). So by performing PCA on the data we are learning about the major (orthogonal) axes of the kinship matrix.</p>
+<p>As an example of the application of PCA, let’s consider the case of the putative ring species in the greenish warbler (<em>Phylloscopus trochiloides</em>) species complex. This set of subspecies exists in a ring around the edge of the Himalayan plateau. <span id="id17">Alcaide <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id221" title="Miguel Alcaide, Elizabeth SC Scordato, Trevor D Price, and Darren E Irwin. Genomic divergence in a ring species complex. Nature, 511(7507):83, 2014.">2014</a>]</span> collected <span class="math notranslate nohighlight">\(95\)</span> greenish warbler samples from <span class="math notranslate nohighlight">\(22\)</span> sites around the ring, and the sampling locations are shown in <a class="reference internal" href="#figure-3-7"><span class="std std-numref">Fig. 30</span></a>.</p>
+<figure class="align-left" id="figure-3-7">
+<img alt="chapters/figures/warbler_PCA_figs/warbler_geo_map.jpg" src="chapters/figures/warbler_PCA_figs/warbler_geo_map.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 30 </span><span class="caption-text">- The sampling locations of 22 populations of greenish warblers from <span id="id18">Alcaide <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id221" title="Miguel Alcaide, Elizabeth SC Scordato, Trevor D Price, and Darren E Irwin. Genomic divergence in a ring species complex. Nature, 511(7507):83, 2014.">2014</a>]</span>. The samples are coloured by the subspecies.</span><a class="headerlink" href="#figure-3-7" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-3-8">
+<img alt="chapters/illustration_images/alleles_genotypes/greenish_warbler/10036311396_14915d1715_z.jpg" src="chapters/illustration_images/alleles_genotypes/greenish_warbler/10036311396_14915d1715_z.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text">- Greenish warbler, subspp. viridanus (<em>Phylloscopus trochiloides viridanus</em>). <span style="font-size: smaller;">Coloured figures of the birds of the British Islands. 1885. Lilford T. L. P.. Image from the <a class="reference external" href="https://www.biodiversitylibrary.org/page/34576931%5C#page/147/mode/1up">Biodiversity Heritage Library</a>. Contributed by American Museum of Natural History Library. Not in copyright. (Greenish warblers are rare visitors to the UK.)</span><a class="headerlink" href="#figure-3-8" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<p>It is thought that these warblers spread from the south, northward in two different directions around the inhospitable Himalayan plateau, establishing populations along the western edge (green and blue populations) and the eastern edge (yellow and red populations). When they came into secondary contact in Siberia, they were reproductively isolated from one another, having evolved different songs and accumulated other reproductive barriers from each other as they spread independently north around the plateau, such that <em>P. t. viridanus</em> (blue) and <em>P. t. plumbeitarsus</em> (red) populations presently form a stable hybrid zone.</p>
+<p><span id="id19">Alcaide <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id221" title="Miguel Alcaide, Elizabeth SC Scordato, Trevor D Price, and Darren E Irwin. Genomic divergence in a ring species complex. Nature, 511(7507):83, 2014.">2014</a>]</span> obtained sequence data for their samples at 2,334 snps. In <a class="reference internal" href="#figure-3-9"><span class="std std-numref">Fig. 32</span></a>, you can see the matrix of kinship coefficients, using Equation <a class="reference internal" href="#equation-eq-3-14">(27)</a>, between all pairs of samples. You can already see a lot about population structure in this matrix. Note how the red and yellow samples, thought to be derived from the Eastern route around the Himalayas, have higher kinship with each other, and blue and the (majority) of the green samples, from the Western route, form a similarly close group in terms of their higher kinship.</p>
+<figure class="align-left" id="figure-3-9">
+<img alt="chapters/figures/warbler_PCA_figs/warbler_heatmap.png" src="chapters/figures/warbler_PCA_figs/warbler_heatmap.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 32 </span><span class="caption-text">- The matrix of kinship coefficients calcuated for the 95 samples of greenish warblers. Each cell in the matrix gives the pairwise kinship coefficient calculated for a particular pair. Hotter colours indicating higher kinship. The <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> labels of individuals are the population labels from <a class="reference internal" href="#figure-3-7"><span class="std std-numref">Fig. 30</span></a>, and coloured by subspecies label as in that figure. The rows and columns have been organized to cluster individuals with high kinship.</span><a class="headerlink" href="#figure-3-9" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We can then perform PCA on this kinship matrix to identify the major axes of variation in the dataset. <a class="reference internal" href="#figure-3-10"><span class="std std-numref">Fig. 33</span></a> shows the samples plotted on the first two PCs. The two major routes of expansion clearly occupy different parts of PC space. The first principal component distinguishes populations running North to South along the western route of expansion, while the second principal component distinguishes among populations running North to South along the Eastern route of expansion. Thus genetic data supports the hypothesis that the greenish warblers speciated as they moved around the Himalayan plateau. However, as noted by <span id="id20">Alcaide <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id221" title="Miguel Alcaide, Elizabeth SC Scordato, Trevor D Price, and Darren E Irwin. Genomic divergence in a ring species complex. Nature, 511(7507):83, 2014.">2014</a>]</span>, it also suggests additional complications to the traditional view of these warblers as an unbroken ring species, a case of speciation by continuous geographic isolation. The <em>Ludlowi</em> subspecies shows a significant genetic break, with the southern most MN samples clustering with the <em>Trochiloides</em> subspecies, in both the PCA and kinship matrix (<a class="reference internal" href="#figure-3-10"><span class="std std-numref">Fig. 33</span></a> and <a class="reference internal" href="#figure-3-9"><span class="std std-numref">Fig. 32</span></a>), despite being much more geographically close to the other <em>Ludlowi</em> samples. This suggests that genetic isolation is not just a result of geographic distance, and other biogeographic barriers must be considered in the case of this broken ring species.</p>
+<figure class="align-left" id="figure-3-10">
+<img alt="chapters/figures/warbler_PCA_figs/warbler_PCAmap.jpg" src="chapters/figures/warbler_PCA_figs/warbler_PCAmap.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 33 </span><span class="caption-text">- The 95 greenish warbler samples plotted on their locations on the first two principal components. The labels of individuals are the population labels from <a class="reference internal" href="#figure-3-7"><span class="std std-numref">Fig. 30</span></a>, and coloured by subspecies label as in that figure. Code <a class="reference external" href="https://github.com/cooplab/popgen-notes/blob/master/Rcode/warblerdata/warbler_ind_PCA.R">here</a>.</span><a class="headerlink" href="#figure-3-10" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Finally, while PCA is a wonderful tool for visualizing genetic data, care must be taken in its interpretation. The U-like shape in the case of the greenish warbler PC might be consistent with some low level of gene flow between the red and the blue populations, pulling them genetically closer together and helping to form a genetic ring as well as a geographic ring. However, U-like shapes are expected to appear in PCAs even if our populations are just arrayed along a line, and more complex geometric arrangements of populations in PC space can result under simple geographic models <span id="id21">[<a class="reference internal" href="../chapter-00-bibliography.html#id219" title="John Novembre and Matthew Stephens. Interpreting principal component analyses of spatial population genetic variation. Nature genetics, 40(5):646, 2008.">Novembre and Stephens, 2008</a>]</span>. Inferring the geographical and population-genetic history of species requires the application of a range of tools; see <span id="id22">Alcaide <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id221" title="Miguel Alcaide, Elizabeth SC Scordato, Trevor D Price, and Darren E Irwin. Genomic divergence in a ring species complex. Nature, 511(7507):83, 2014.">2014</a>]</span> and <span id="id23">Bradburd <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id220" title="Gideon S Bradburd, Peter L Ralph, and Graham M Coop. A spatial framework for understanding population structure and admixture. PLoS genetics, 12(1):e1005703, 2016.">2016</a>]</span> for more discussion of the greenish warblers.</p>
+</section>
+<section id="correlations-between-loci-linkage-disequilibrium-and-recombination">
+<h2>Correlations between loci, linkage disequilibrium, and recombination<a class="headerlink" href="#correlations-between-loci-linkage-disequilibrium-and-recombination" title="Permalink to this headline">#</a></h2>
+<p>Up to now we have been interested in correlations between alleles at the same locus, e.g. correlations within individuals (inbreeding) or between individuals (relatedness). We have seen how relatedness between parents affects the extent to which their offspring is inbred. We now turn to correlations between alleles at different loci.</p>
+<section id="recombination">
+<h3>Recombination<a class="headerlink" href="#recombination" title="Permalink to this headline">#</a></h3>
+<p>To understand correlations between loci we need to understand recombination a bit more carefully. Let us consider a heterozygous individual, containing <span class="math notranslate nohighlight">\(AB\)</span> and <span class="math notranslate nohighlight">\(ab\)</span> haplotypes. If no recombination occurs between our two loci in this individual, then these two haplotypes will be transmitted intact to the next generation. While if a recombination (i.e. an odd number of crossing over events) occurs between the two parental haplotypes, then <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> the time the child receives an <span class="math notranslate nohighlight">\(Ab\)</span> haplotype and <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> the time the child receives an <span class="math notranslate nohighlight">\(aB\)</span> haplotype. See <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-3.11</span></code>. Effectively, recombination breaks up the association between loci. For linked markers we’ll define the recombination fraction (<span class="math notranslate nohighlight">\(x\)</span>) to be the probability of an odd number of crossing over events between our loci in a single meiosis. The recombination fraction between a pair of loci can range from <span class="math notranslate nohighlight">\(0\)</span> to <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>, with <span class="math notranslate nohighlight">\(c=\frac{1}{2}\)</span> corresponding markers far enough apart on a chromosome that many recombination events occur between them (loci on different automosomes also have a <span class="math notranslate nohighlight">\(c=\frac{1}{2}\)</span>). In practice we’ll often be interested in relatively short regions such that recombination is relatively rare, and so we might think that <span class="math notranslate nohighlight">\(c=c_{BP}L \ll \frac{1}{2}\)</span>, where <span class="math notranslate nohighlight">\(c_{BP}\)</span> is the average recombination rate (in Morgans) per base pair (typically <span class="math notranslate nohighlight">\(\sim 10^{-8}\)</span> ) and L is the number of base pairs separating our two
+loci.</p>
+</section>
+<section id="linkage-disequilibrium">
+<h3>Linkage disequilibrium<a class="headerlink" href="#linkage-disequilibrium" title="Permalink to this headline">#</a></h3>
+<p>The (horrible) phrase linkage disequilibrium (LD) refers to the statistical non-independence (i.e. a correlation) of alleles in a population at different loci <span id="id24">[<a class="reference internal" href="../chapter-00-bibliography.html#id19" title="RC Lewontin and Ken-ichi Kojima. The evolutionary dynamics of complex polymorphisms. Evolution, pages 458–472, 1960.">Lewontin and Kojima, 1960</a>, <a class="reference internal" href="../chapter-00-bibliography.html#id17" title="Montgomery Slatkin. Linkage disequilibrium—understanding the evolutionary past and mapping the medical future. Nature Reviews Genetics, 9(6):477–485, 2008.">Slatkin, 2008</a>]</span>. It’s a fantastically useful concept; LD is key to our understanding of diverse topics, from sexual selection and speciation to the limits of genome-wide association studies.</p>
+<p>Our two biallelic loci, which segregate alleles <span class="math notranslate nohighlight">\(A/a\)</span> and <span class="math notranslate nohighlight">\(B/b\)</span>, have allele frequencies of <span class="math notranslate nohighlight">\(p_A\)</span> and <span class="math notranslate nohighlight">\(p_B\)</span> respectively. The frequency of the two locus haplotype <span class="math notranslate nohighlight">\(AB\)</span> is <span class="math notranslate nohighlight">\(p_{AB}\)</span>, and likewise for our other three combinations. If our loci were statistically independent then <span class="math notranslate nohighlight">\(p_{AB} = p_Ap_B\)</span>, otherwise <span class="math notranslate nohighlight">\(p_{AB} \neq p_Ap_B\)</span> We can define a covariance between the <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> alleles at our two loci as</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Here again we are making use of a covariance of discrete random variables, see <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.41</span></code>, where the first variable is drawing haplotype with an A at the first locus, and the second is drawing a B allele at the other locus.</p>
+</aside>
+<div class="math notranslate nohighlight" id="equation-eq-3-15">
+<span class="eqno">(28)<a class="headerlink" href="#equation-eq-3-15" title="Permalink to this equation">#</a></span>\[D_{AB} = p_{AB} - p_Ap_B\]</div>
+<p>and likewise for our other combinations at our two loci (<span class="math notranslate nohighlight">\(D_{Ab},~D_{aB},~D_{ab}\)</span>). Gametes with two similar case alleles (e.g. A and B, or a and b) are known as <em>coupling</em> gametes, and those with different case alleles are known as <em>repulsion</em> gametes (e.g. a and B, or A and b). Then, we can think of <span class="math notranslate nohighlight">\(D\)</span> as measuring the <em>excess</em> of coupling to repulsion gametes. These <span class="math notranslate nohighlight">\(D\)</span> statistics are all closely related to each other as <span class="math notranslate nohighlight">\(D_{AB} = - D_{Ab}\)</span> and so on. Thus we only need to specify one <span class="math notranslate nohighlight">\(D_{AB}\)</span> to know them all, so we’ll drop the subscript and just refer to <span class="math notranslate nohighlight">\(D\)</span>. Also a handy result is that we can rewrite our haplotype frequency <span class="math notranslate nohighlight">\(p_{AB}\)</span> as</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-16">
+<span class="eqno">(29)<a class="headerlink" href="#equation-eq-3-16" title="Permalink to this equation">#</a></span>\[p_{AB} = p_Ap_B+D\]</div>
+<p>If <span class="math notranslate nohighlight">\(D=0\)</span> we’ll say the two loci are in linkage equilibrium, while if <span class="math notranslate nohighlight">\(D&gt;0\)</span> or <span class="math notranslate nohighlight">\(D&lt;0\)</span> we’ll say that the loci are in linkage disequilibrium (we’ll perhaps want to test whether <span class="math notranslate nohighlight">\(D\)</span> is statistically different from <span class="math notranslate nohighlight">\(0\)</span> before making this choice). Linkage disequilibrium is a horrible phrase, as it risks muddling the concepts of genetic linkage and linkage disequilibrium. Genetic linkage refers to the linkage of multiple loci due to the fact that they are transmitted through meiosis together (most often because the loci are on the same chromosome). Linkage disequilibrium merely refers to the covariance between the alleles at different loci; this may in part be due to the genetic linkage of these loci but does not necessarily imply this (e.g. genetically unlinked loci can be in LD due to population structure).</p>
+<div class="admonition-question-4 admonition" id="question-3-4">
+<p class="admonition-title">Question 4</p>
+<p>You genotype 2 bi-allelic loci (A &amp; B) segregating in two mouse
+subspecies (1 &amp; 2) which mate randomly among themselves, but have not
+historically interbreed since they speciated. The frequencies of
+haplotypes in each population are:</p>
+<center>
+<div style="width: 50%;">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Pop</p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(p_{AB}\)</span></p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(p_{Ab}\)</span></p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(p_{aB}\)</span></p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(p_{ab}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>1</p></td>
+<td class="text-align:center"><p>.02</p></td>
+<td class="text-align:center"><p>.18</p></td>
+<td class="text-align:center"><p>.08</p></td>
+<td class="text-align:center"><p>.72</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>2</p></td>
+<td class="text-align:center"><p>.72</p></td>
+<td class="text-align:center"><p>.18</p></td>
+<td class="text-align:center"><p>.08</p></td>
+<td class="text-align:center"><p>.02</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</center>
+<ul class="simple">
+<li><p><strong>A)</strong> How much LD is there within species? (i.e. estimate D)</p></li>
+<li><p><strong>B)</strong> If we mixed individuals from the two species together in equal proportions, we could form a new population with <span class="math notranslate nohighlight">\(p_{AB}\)</span> equal to the average frequency of <span class="math notranslate nohighlight">\(p_{AB}\)</span> across species 1 and 2. What value would D take in this new population before any mating has had the chance to occur?</p></li>
+</ul>
+</div>
+<figure class="align-left" id="figure-3-12">
+<img alt="chapters/Journal_figs/alleles_genotypes/TAPS_hotspot/Taps_hotspot.png" src="chapters/Journal_figs/alleles_genotypes/TAPS_hotspot/Taps_hotspot.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 34 </span><span class="caption-text">- LD across the TAP2 gene region in a sample of Humans and Chimps, from <span id="id25">Ptak <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id132" title="Susan E Ptak, Amy D Roeder, Matthew Stephens, Yoav Gilad, Svante Pääbo, and Molly Przeworski. Absence of the tap2 human recombination hotspot in chimpanzees. PLoS biology, 2(6):e155, 2004.">2004</a>]</span>, licensed under CC BY 4.0. The rows and columns are consecutive SNPs, with each cell giving the absolute <span class="math notranslate nohighlight">\(D^{\prime}\)</span> value between a pair of SNPs. Note that these are different sets of SNPs in the two species, as shared polymorphisms are very rare.</span><a class="headerlink" href="#figure-3-12" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Our linkage disequilibrium statistic <span class="math notranslate nohighlight">\(D\)</span> depends strongly on the allele frequencies of the two loci involved. One common way to partially remove this dependence, and make it more comparable across loci, is to divide <span class="math notranslate nohighlight">\(D\)</span> through by its maximum possible value given the frequency of the loci. This normalized statistic is called <span class="math notranslate nohighlight">\(D^{\prime}\)</span> and varies between <span class="math notranslate nohighlight">\(+1\)</span> and <span class="math notranslate nohighlight">\(-1\)</span>. In <a class="reference internal" href="#figure-3-12"><span class="std std-numref">Fig. 34</span></a>, there’s an example of LD across the TAP2 region in human and chimp. Notice how physically close SNPs, i.e. those close to the diagonal, have higher absolute values of <span class="math notranslate nohighlight">\(D^{\prime}\)</span> as closely linked alleles are separated by recombination less often allowing high levels of LD to accumulate. Over large physical distances, away from the diagonal, there is lower <span class="math notranslate nohighlight">\(D^{\prime}\)</span>. This is especially notable in humans as there is an intense, human-specific recombination hotspot in this region, which is breaking down LD between opposite sides of this region.</p>
+<p>Another common statistic for summarizing LD is <span class="math notranslate nohighlight">\(r^2\)</span> which we write as</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-17">
+<span class="eqno">(30)<a class="headerlink" href="#equation-eq-3-17" title="Permalink to this equation">#</a></span>\[r^2 = \frac{D^2}{p_A(1-p_A) p_B(1-p_B) }\]</div>
+<p>As <span class="math notranslate nohighlight">\(D\)</span> is a covariance, and <span class="math notranslate nohighlight">\(p_A(1-p_A)\)</span> is the variance of an allele drawn at random from locus <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(r^2\)</span> is the squared correlation coefficient.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>See <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.43</span></code> for the definition of a correlation coefficient.</p>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-3-13">
+<img alt="chapters/illustration_images/alleles_genotypes/Mus_musculus/20746324002_e014b4fcc6_z.jpg" src="chapters/illustration_images/alleles_genotypes/Mus_musculus/20746324002_e014b4fcc6_z.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 35 </span><span class="caption-text">- <em>Mus musculus</em>. <span style="font-size: smaller;">
+A history of British quadrupeds, including the Cetacea. 1874. Bell T., Tomes, R. F.m Alston E. R. Image from the <a class="reference external" href="https://www.flickr.com/photos/internetarchivebookimages/20746324002/in/photolist-x4m4C7-v8ZA8q-x5EdgX-w8gFve-x57DCB-v8ZCQE-xBhkkq-vdFPLY-x2JeQJ-x5WJ8J-tG8BSM">Biodiversity Heritage Library</a>. Contributed by Cornell University Library. No known copyright restrictions.</span><a class="headerlink" href="#figure-3-13" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<p><a class="reference internal" href="#figure-3-14"><span class="std std-numref">Fig. 36</span></a> shows <span class="math notranslate nohighlight">\(r^2\)</span> for pairs of SNPs at various physical distances in two population samples of <em>Mus musculus domesticus</em>. Again LD is highest between physically close markers as LD is being generated faster than it can decay via recombination; more distant markers have much lower LD as here recombination is winning out. Note the decay of LD is much slower in the advanced-generation cross population than in the natural wild-caught population. This persistence of LD across megabases is due to the limited number of generations for recombination since the cross was created.</p>
+<figure class="align-left" id="figure-3-14">
+<img alt="chapters/Journal_figs/alleles_genotypes/mouse_LD/mouse_LD_Laurie_et_al.png" src="chapters/Journal_figs/alleles_genotypes/mouse_LD/mouse_LD_Laurie_et_al.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 36 </span><span class="caption-text">- The decay of LD for autosomal SNPin <em>Mus musculus domesticus</em>, as measured by <span class="math notranslate nohighlight">\(r^2\)</span>, in a wild-caught mouse population from Arizona and a set of advanced-generation crosses between inbred lines of lab mice. Each dot gives the <span class="math notranslate nohighlight">\(r^2\)</span> for a pair of SNPs a given physical distance apart, for a total of <span class="math notranslate nohighlight">\(\sim 3000\)</span> SNPs. The solid black line gives the mean, the jagged red line the <span class="math notranslate nohighlight">\(95^{th}\)</span> percentile, and the flat red line a cutoff for significant <span class="math notranslate nohighlight">\(LD\)</span>. From <span id="id26">Laurie <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id233" title="Cathy C Laurie, Deborah A Nickerson, Amy D Anderson, Bruce S Weir, Robert J Livingston, Matthew D Dean, Kimberly L Smith, Eric E Schadt, and Michael W Nachman. Linkage disequilibrium in wild mice. PLOS Genetics, 3(8):1-9, 08 2007. URL: https://doi.org/10.1371/journal.pgen.0030144, doi:10.1371/journal.pgen.0030144.">2007</a>]</span>, licensed under CC BY 4.0.</span><a class="headerlink" href="#figure-3-14" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="the-generation-of-ld">
+<h3>The generation of LD<a class="headerlink" href="#the-generation-of-ld" title="Permalink to this headline">#</a></h3>
+<p>Various population genetic forces can generate LD <span id="id27">[<a class="reference internal" href="../chapter-00-bibliography.html#id17" title="Montgomery Slatkin. Linkage disequilibrium—understanding the evolutionary past and mapping the medical future. Nature Reviews Genetics, 9(6):477–485, 2008.">Slatkin, 2008</a>]</span>. Selection can generate LD by favouring particular combinations of alleles. Genetic drift will also generate LD, not because particular combinations of alleles are favoured, but simply because at random particular haplotypes can by chance drift up in frequency. Mixing between divergent populations can also generate LD <span id="id28">[<a class="reference internal" href="../chapter-00-bibliography.html#id8" title="Masatoshi Nei and Wen-Hsiung Li. Linkage disequilibrium in subdivided populations. Genetics, 75(1):213–219, 1973.">Nei and Li, 1973</a>]</span>, as we saw in the mouse question above.</p>
+</section>
+<section id="the-decay-of-ld-due-to-recombination">
+<h3>The decay of LD due to recombination<a class="headerlink" href="#the-decay-of-ld-due-to-recombination" title="Permalink to this headline">#</a></h3>
+<p>We will now examine what happens to LD over the generations if, in a very large population (i.e. no genetic drift and frequencies of our loci thus follow their expectations), we only allow recombination to occur. To do so, consider the frequency of our <span class="math notranslate nohighlight">\(AB\)</span> haplotype in the next generation, <span class="math notranslate nohighlight">\(p_{AB}^{\prime}\)</span>. We lose a fraction <span class="math notranslate nohighlight">\(c\)</span> of our <span class="math notranslate nohighlight">\(AB\)</span> haplotypes to recombination ripping our alleles apart but gain a fraction <span class="math notranslate nohighlight">\(cp_A p_B\)</span> per generation from other haplotypes recombining together to form <span class="math notranslate nohighlight">\(AB\)</span> haplotypes. Thus in the next generation</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-18">
+<span class="eqno">(31)<a class="headerlink" href="#equation-eq-3-18" title="Permalink to this equation">#</a></span>\[p_{AB}^{\prime} = (1-c)p_{AB} + cp_Ap_B\]</div>
+<p>The last term above, in <a class="reference internal" href="#equation-eq-3-18">(31)</a> is <span class="math notranslate nohighlight">\(c(p_{AB}+p_{Ab})(p_{AB}+p_{aB})\)</span> simplified, which is the probability of recombination in the different diploid genotypes that could generate a <span class="math notranslate nohighlight">\(p_{AB}\)</span> haplotype.</p>
+<p>We can then write the change in the frequency of the <span class="math notranslate nohighlight">\(p_{AB}\)</span> haplotype as</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-19">
+<span class="eqno">(32)<a class="headerlink" href="#equation-eq-3-19" title="Permalink to this equation">#</a></span>\[\Delta p_{AB} = p_{AB}^{\prime} -p_{AB} = -c p_{AB} + cp_Ap_B = - c D\]</div>
+<p>So recombination will cause a decrease in the frequency of <span class="math notranslate nohighlight">\(p_{AB}\)</span> if there is an excess of <span class="math notranslate nohighlight">\(AB\)</span> haplotypes within the population (<span class="math notranslate nohighlight">\(D&gt;0\)</span>), and an increase if there is a deficit of <span class="math notranslate nohighlight">\(AB\)</span> haplotypes within the population (<span class="math notranslate nohighlight">\(D&lt;0\)</span>). Our LD in the next generation is</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-20">
+<span class="eqno">(33)<a class="headerlink" href="#equation-eq-3-20" title="Permalink to this equation">#</a></span>\[\begin{split}D^{\prime} &amp; = p_{AB}^{\prime} - p'_{A}p'_{B} \nonumber\\
+&amp; = (p_{AB} + \Delta p_{AB}) - (p_{A} + \Delta p_{A})(p_{B} + \Delta p_{B}) \nonumber\\
+&amp; = p_{AB} + \Delta p_{AB} - p_{A}p_{B} \nonumber\\
+&amp; = (1-c) D\end{split}\]</div>
+<p>where we can cancel out <span class="math notranslate nohighlight">\(\Delta p_{A}\)</span> and <span class="math notranslate nohighlight">\(\Delta p_{B}\)</span> above because recombination only changes haplotype, not allele, frequencies. So if the level of LD in generation <span class="math notranslate nohighlight">\(0\)</span> is <span class="math notranslate nohighlight">\(D_0\)</span>, the level <span class="math notranslate nohighlight">\(t\)</span> generations later (<span class="math notranslate nohighlight">\(D_t\)</span>) is</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-21">
+<span class="eqno">(34)<a class="headerlink" href="#equation-eq-3-21" title="Permalink to this equation">#</a></span>\[D_t=  (1-c)^t D_0\]</div>
+<p>Recombination is acting to decrease LD, and it does so geometrically at
+a rate given by <span class="math notranslate nohighlight">\((1-c)\)</span> <span id="id29">[<a class="reference internal" href="../chapter-00-bibliography.html#id18" title="Herbert Spencer Jennings. The numerical results of diverse systems of breeding, with respect to two pairs of characters, linked or independent, with special relation to the effects of linkage. Genetics, 2(2):97, 1917.">Jennings, 1917</a>, <a class="reference internal" href="../chapter-00-bibliography.html#id16" title="Wilhelm Weinberg. Über vererbungsgesetze beim menschen. Zeitschrift für induktive Abstammungs-und Vererbungslehre, 2(1):276–330, 1909.">Weinberg, 1909</a>]</span>. If <span class="math notranslate nohighlight">\(c \ll 1\)</span> then we can approximate this by an exponential and say that</p>
+<div class="math notranslate nohighlight" id="equation-eq-3-22">
+<span class="eqno">(35)<a class="headerlink" href="#equation-eq-3-22" title="Permalink to this equation">#</a></span>\[D_t \approx  D_0 e^{-ct}\]</div>
+<p>which follows from a Taylor series expansion, see <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.4</span></code>.</p>
+<div class="admonition-question-5 admonition" id="question-3-5">
+<p class="admonition-title">Question 5</p>
+<p>You find a hybrid population between the two mouse subspecies described in the question above, which appears to be comprised of equal proportions (<span class="math notranslate nohighlight">\(50/50\)</span>) of ancestry from the two subspecies. You estimate LD between the two markers to be <span class="math notranslate nohighlight">\(D=0.0723\)</span>. On the basis of previous work you estimate that the two loci are separated by a recombination fraction of 0.1. Assuming that this hybrid population is large and was formed by a single mixture event, can you estimate how long ago this population formed?</p>
+</div>
+<p>A particularly striking example of the decay of LD generated by the mixing of populations is offered by the LD created by the interbreeding between humans and Neanderthals <span id="id30">[<a class="reference internal" href="../chapter-00-bibliography.html#id232" title="Sriram Sankararaman, Nick Patterson, Heng Li, Svante Pääbo, and David Reich. The date of interbreeding between neandertals and modern humans. PLOS Genetics, 8(10):1-9, 10 2012. URL: https://doi.org/10.1371/journal.pgen.1002947, doi:10.1371/journal.pgen.1002947.">Sankararaman <em>et al.</em>, 2012</a>]</span>. Neanderthals and modern humans diverged from each other likely over half a million years ago, allowing time for allele frequency differences to accumulate between the Neanderthal and modern human populations. The two populations spread back into secondary contact when humans moved out of Africa over the past hundred thousand years or so. One of the most exciting findings from the sequencing of the Neanderthal genome was that modern-day people with Eurasian ancestry carry a few percent of their genome derived from the Neanderthal genome, via interbreeding during this secondary contact <span id="id31">[<a class="reference internal" href="../chapter-00-bibliography.html#id20" title="Richard E Green, Johannes Krause, Adrian W Briggs, Tomislav Maricic, Udo Stenzel, Martin Kircher, Nick Patterson, Heng Li, Weiwei Zhai, Markus Hsi-Yang Fritz, and others. A draft sequence of the neandertal genome. science, 328(5979):710–722, 2010.">Green <em>et al.</em>, 2010</a>]</span>. To date the timing of this interbreeding, <span id="id32">Sankararaman <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id232" title="Sriram Sankararaman, Nick Patterson, Heng Li, Svante Pääbo, and David Reich. The date of interbreeding between neandertals and modern humans. PLOS Genetics, 8(10):1-9, 10 2012. URL: https://doi.org/10.1371/journal.pgen.1002947, doi:10.1371/journal.pgen.1002947.">2012</a>]</span> looked at the LD in modern humans between pairs of alleles found to be derived from the Neanderthal genome (and nearly absent from African populations). In <a class="reference internal" href="#figure-3-18"><span class="std std-numref">Fig. 37</span></a>, we show the average LD between these loci as a function of the genetic distance (<span class="math notranslate nohighlight">\(c\)</span>) between them, from the work of <span id="id33">Sankararaman <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id232" title="Sriram Sankararaman, Nick Patterson, Heng Li, Svante Pääbo, and David Reich. The date of interbreeding between neandertals and modern humans. PLOS Genetics, 8(10):1-9, 10 2012. URL: https://doi.org/10.1371/journal.pgen.1002947, doi:10.1371/journal.pgen.1002947.">2012</a>]</span>.</p>
+<figure class="align-left" id="figure-3-18">
+<img alt="chapters/Journal_figs/alleles_genotypes/Neanderthal_LD/European_neanderthal_LD.pdf" src="chapters/Journal_figs/alleles_genotypes/Neanderthal_LD/European_neanderthal_LD.pdf" />
+<figcaption>
+<p><span class="caption-number">Fig. 37 </span><span class="caption-text">- The LD between putative-Neanderthal alleles in a modern European population (the CEU sample from the 1000 Genomes Project). Each point represents the average D statistic between a pair of alleles at loci at a given genetic distance apart (as given on the x-axis and measured in centiMorgans (cM)). The putative Neanderthal alleles are alleles where the Neanderthal genome has a derived allele that is at very low frequency in a modern-human West African population sample (thought to have little admixture from Neanderthals). The red line is the fit of an exponential decay of LD, using non-linear least squared (nls in R).</span><a class="headerlink" href="#figure-3-18" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Assuming a recombination rate <span class="math notranslate nohighlight">\(r\)</span>, we can fit the exponential decay of LD predicted by <a class="reference internal" href="#equation-eq-3-22">(35)</a> to the data points in this figure; the fit is shown as a red line. Doing this we estimate <span class="math notranslate nohighlight">\(t=1200\)</span> generations, or about 35 thousand years (using a human generation time of 29 years). Thus the LD in modern Eurasians, between alleles derived from the interbreeding with Neanderthals, represents over thirty thousand years of recombination slowly breaking down these old associations.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>The calculation done <span id="id34">[<a class="reference internal" href="../chapter-00-bibliography.html#id232" title="Sriram Sankararaman, Nick Patterson, Heng Li, Svante Pääbo, and David Reich. The date of interbreeding between neandertals and modern humans. PLOS Genetics, 8(10):1-9, 10 2012. URL: https://doi.org/10.1371/journal.pgen.1002947, doi:10.1371/journal.pgen.1002947.">Sankararaman <em>et al.</em>, 2012</a>]</span> is actually a bit more involved as they account for inhomogeneity in recombination rates and arrive at a date of 47,334 – 63,146 years.</p>
+</aside>
+</section>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters/chapter-03"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../chapter-02/chapter-02.5-further-questions.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Further Questions</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="chapter-03.2-chapter-summary.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter Summary</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Graham Coop<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
