@@ -10,5 +10,8 @@ chapters:
   - file: chapters/chapter-02/chapter-02.3-allele-sharing-among-related-individuals-and-identity-by-descent
   - file: chapters/chapter-02/chapter-02.4-chapter-summary
   - file: chapters/chapter-02/chapter-02.5-further-questions
-- file: chapters/chapter-03-population-structure-and-correlations-among-loci
+- file: chapters/chapter-03/chapter-03.1-population-structure-and-correlations-among-loci
+  sections:
+  - file: chapters/chapter-03/chapter-03.2-chapter-summary
+  - file: chapters/chapter-03/chapter-03.3-further-questions
 - file: chapters/chapter-00-bibliography

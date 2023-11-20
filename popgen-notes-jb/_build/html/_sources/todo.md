@@ -11,3 +11,6 @@ done with python script - View CSV as table
 - Table header line bold or not?
 done - Dropdown TOC
 - Margin references to specific sentence
+- Figure 3.11
+- On page 53, there's an extra "fraction." halfway down
+- Comma at the end of Question3.6B should be .
