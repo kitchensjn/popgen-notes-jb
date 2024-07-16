@@ -14,4 +14,11 @@ chapters:
   sections:
   - file: chapters/chapter-03/chapter-03.2-chapter-summary
   - file: chapters/chapter-03/chapter-03.3-further-questions
+- file: chapters/chapter-04/chapter-04.1-genetic-drift-and-neutral-diversity
+  sections:
+  - file: chapters/chapter-04/chapter-04.2-loss-of-heterozygosity-due-to-drift
+  - file: chapters/chapter-04/chapter-04.3-the-coalescent-and-patterns-of-neutral-diversity
+  - file: chapters/chapter-04/chapter-04.4-the-coalescent-process-of-a-sample-of-alleles
+  - file: chapters/chapter-04/chapter-04.5-chapter-summary
+  - file: chapters/chapter-04/chapter-04.6-further-questions
 - file: chapters/chapter-00-bibliography

@@ -14,3 +14,5 @@ done - Dropdown TOC
 - Figure 3.11
 - On page 53, there's an extra "fraction." halfway down
 - Comma at the end of Question3.6B should be .
+- Page 66 change "contraint" to "constraint"
+- Missing Eq 4.8

@@ -1,0 +1,1744 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Genetic Drift and Neutral Diversity. {#Chapter:Drift} &#8212; Population And Quantitative Genetics</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Population And Quantitative Genetics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="chapter-01-introduction.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="chapter-02/chapter-02.1-allele-and-genotype-frequencies.html">
+   Allele And Genotype Frequencies
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-02/chapter-02.2-allele-frequencies.html">
+     Allele Frequencies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-02/chapter-02.3-allele-sharing-among-related-individuals-and-identity-by-descent.html">
+     Allele Sharing Among Related Individuals And Identity By Descent
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-02/chapter-02.4-chapter-summary.html">
+     Chapter Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-02/chapter-02.5-further-questions.html">
+     Further Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="chapter-03/chapter-03.1-population-structure-and-correlations-among-loci.html">
+   Population Structure and Correlations Among Loci
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-03/chapter-03.2-chapter-summary.html">
+     Chapter Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-03/chapter-03.3-further-questions.html">
+     Further Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="chapter-04/chapter-04.1-genetic-drift-and-neutral-diversity.html">
+   Genetic Drift and Neutral Diversity
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-04/chapter-04.2-loss-of-heterozygosity-due-to-drift.html">
+     Loss of heterozygosity due to drift
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-04/chapter-04.3-the-coalescent-and-patterns-of-neutral-diversity.html">
+     The Coalescent and patterns of neutral diversity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-04/chapter-04.4-the-coalescent-process-of-a-sample-of-alleles.html">
+     The coalescent process of a sample of alleles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-04/chapter-04.5-chapter-summary.html">
+     Chapter Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-04/chapter-04.6-further-questions.html">
+     Further Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter-00-bibliography.html">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapters/chapter-04.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/chapters/chapter-04.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-neutral-theory-of-molecular-evolution">
+   The neutral theory of molecular evolution.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#loss-of-heterozygosity-due-to-drift-lossofhet">
+   Loss of heterozygosity due to drift. {#LossofHet}
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#levels-of-diversity-maintained-by-a-balance-between-mutation-and-drift-driftmutationbalance">
+     Levels of diversity maintained by a balance between mutation and drift {#DriftMutationBalance}
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-neutral-mutation-rate">
+       The neutral mutation rate.
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#levels-of-heterozygosity-maintained-as-a-balance-between-mutation-and-drift">
+       Levels of heterozygosity maintained as a balance between mutation and drift.
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-effective-population-size">
+     The effective population size
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#more-details-on-the-pairwise-coalescent-and-the-randomness-of-mutation">
+       More details on the pairwise coalescent and the randomness of mutation.
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-coalescent-process-of-a-sample-of-alleles">
+   The coalescent process of a sample of alleles.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#simulating-a-coalescent-genealogy">
+     Simulating a coalescent genealogy
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#expected-properties-of-coalescent-genealogies-and-mutations">
+     Expected properties of coalescent genealogies and mutations.
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-expected-time-to-the-most-recent-common-ancestor">
+       The expected time to the most recent common ancestor.
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-expected-total-time-in-a-genealogy-and-the-number-of-segregating-sites">
+       The expected total time in a genealogy and the number of segregating sites.
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-neutral-site-frequency-spectrum">
+       The neutral site-frequency spectrum.
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tests-based-on-the-site-frequency-spectrum">
+       Tests based on the site frequency spectrum
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#demography-and-the-coalescent">
+     Demography and the coalescent
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Genetic Drift and Neutral Diversity. {#Chapter:Drift}</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-neutral-theory-of-molecular-evolution">
+   The neutral theory of molecular evolution.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#loss-of-heterozygosity-due-to-drift-lossofhet">
+   Loss of heterozygosity due to drift. {#LossofHet}
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#levels-of-diversity-maintained-by-a-balance-between-mutation-and-drift-driftmutationbalance">
+     Levels of diversity maintained by a balance between mutation and drift {#DriftMutationBalance}
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-neutral-mutation-rate">
+       The neutral mutation rate.
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#levels-of-heterozygosity-maintained-as-a-balance-between-mutation-and-drift">
+       Levels of heterozygosity maintained as a balance between mutation and drift.
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-effective-population-size">
+     The effective population size
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#more-details-on-the-pairwise-coalescent-and-the-randomness-of-mutation">
+       More details on the pairwise coalescent and the randomness of mutation.
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-coalescent-process-of-a-sample-of-alleles">
+   The coalescent process of a sample of alleles.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#simulating-a-coalescent-genealogy">
+     Simulating a coalescent genealogy
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#expected-properties-of-coalescent-genealogies-and-mutations">
+     Expected properties of coalescent genealogies and mutations.
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-expected-time-to-the-most-recent-common-ancestor">
+       The expected time to the most recent common ancestor.
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-expected-total-time-in-a-genealogy-and-the-number-of-segregating-sites">
+       The expected total time in a genealogy and the number of segregating sites.
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-neutral-site-frequency-spectrum">
+       The neutral site-frequency spectrum.
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tests-based-on-the-site-frequency-spectrum">
+       Tests based on the site frequency spectrum
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#demography-and-the-coalescent">
+     Demography and the coalescent
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="genetic-drift-and-neutral-diversity-chapter-drift">
+<h1>Genetic Drift and Neutral Diversity. {#Chapter:Drift}<a class="headerlink" href="#genetic-drift-and-neutral-diversity-chapter-drift" title="Permalink to this headline">#</a></h1>
+<p>, from the lucky birds blown off course to colonize some new oceanic
+island, to which mutations arise first in the HIV strain infecting an
+individual taking anti-retroviral drugs. One major source of
+stochasticity in evolutionary biology is genetic drift. Genetic drift
+occurs because more or less copies of an allele by chance can be
+transmitted to the next generation [&#64;wright1931evolution]. This can
+occur because, by chance, the individuals carrying a particular allele
+can leave more or less offspring in the next generation. In a sexual
+population, genetic drift also occurs because Mendelian transmission
+means that only one of the two alleles in an individual, chosen at
+random at a locus, is transmitted to the offspring.</p>
+<p>Genetic drift can play a role in the dynamics of all alleles in all
+populations, but it will play the biggest role for neutral alleles. A
+neutral polymorphism occurs when the segregating alleles at a
+polymorphic site have no discernible differences in their effect on
+fitness. We’ll make clear what we mean by “discernible” later, but for
+the moment think of this as “no effect” on fitness.</p>
+<section id="the-neutral-theory-of-molecular-evolution">
+<h2>The neutral theory of molecular evolution.<a class="headerlink" href="#the-neutral-theory-of-molecular-evolution" title="Permalink to this headline">#</a></h2>
+<p>The role of genetic drift in molecular evolution has been hotly debated
+since the 60s when the Neutral theory of molecular evolution was
+proposed [see &#64;ohta1996development for a
+history][&#64;kimura:68; &#64;king:69; &#64;kimura:83]. The central premise of
+Neutral theory is that patterns of molecular polymorphism within species
+and substitution between species can be well understood by supposing
+that the vast majority of these molecular polymorphisms and
+substitutions were neutral alleles, whose dynamics were just subject to
+the vagaries of genetic drift and mutation. Early proponents of this
+view suggested that the vast majority of new mutations are either
+neutral or highly deleterious (e.g. mutations that disrupt important
+protein functions). This latter class of mutations are too deleterious
+to contribute much to common polymorphisms or substitutions between
+species, because they are quickly weeded out of the population by
+selection.</p>
+<p>Neutral theory can sound strange given that much of the time our first
+brush with evolution often focuses on adaptation and phenotypic
+evolution. However, proponents of this world-view didn’t deny the
+existence of advantageous mutations, they simply thought that beneficial
+mutations are rare enough that their contribution to the bulk of
+polymorphism or divergence can be largely ignored. They also often
+thought that much of phenotypic evolution may well be adaptive, but
+again the loci responsible for these phenotypes are a small fraction of
+all the molecular change that occur. The neutral theory of molecular
+evolution was originally proposed to explain protein polymorphism.
+However, we can apply it more broadly to think about neutral evolution
+genome-wide. With that in mind, what types of molecular changes could be
+neutral? Perhaps:</p>
+<ol class="simple">
+<li><p>Changes in non-coding DNA that don’t disrupt regulatory sequences.
+For example, in the human genome only about 2% of the genome codes
+for proteins. The rest is mostly made up of old transposable element
+and retrovirus insertions, repeats, pseudo-genes, and general
+genomic clutter. Current estimates suggest that, even counting
+conserved, functional, non-coding regions, less than 10% of our
+genome is subject to evolutionary constraint [&#64;rands:14].</p></li>
+<li><p>Synonymous changes in coding regions, i.e. those that don’t change
+the amino-acid encoded by a codon.</p></li>
+<li><p>Non-synonymous changes that don’t have a strong effect on the
+functional properties of the amino acid encoded, e.g. changes that
+don’t change the size, charge, or hydrophobic properties of the
+amino acid too much.</p></li>
+<li><p>An amino-acid change with phenotypic consequences, but little
+relevance to fitness, e.g. a mutation that causes your ears to be a
+slightly different shape, or that prevents an organism from living
+past 50 in a species where most individuals reproduce and die by
+their 20s.</p></li>
+</ol>
+<p>There are counter examples to all of these ideas, e.g. synonymous
+changes can affect the translation speed and accuracy of proteins and so
+are subject to selection. However, the list above hopefully convinces
+you that the general thinking that some portion of molecular change may
+not be subject to selection isn’t as daft as it may have initially
+sounded.</p>
+<p>Various features of molecular polymorphism and divergence have been
+viewed as consistent with the neutral theory of molecular evolution. In
+this chapter we’ll focus on the prediction of a high level of molecular
+polymorphism in many species (see for example Figure
+<a class="reference external" href="#fig:Leffer">[fig:Leffer]</a>{reference-type=”ref”
+reference=”fig:Leffer”}). In a subsequent chapter we’ll talk about the
+prediction of a molecular clock. We’ll see that various aspects of the
+original neutral theory have merit in describing some features and types
+of molecular change, but we’ll also see that it is demonstrably wrong in
+some cases. We’ll also see the primary utility of the neutral theory
+isn’t whether it is right or wrong, but that it serves as a simple null
+model that can be tested and in some cases rejected, and subsequently
+built on. The broader debate currently in the field of molecular
+evolution is the balance of neutral, adaptive, and deleterious changes
+that drive different types of evolutionary change.</p>
+</section>
+<section id="loss-of-heterozygosity-due-to-drift-lossofhet">
+<h2>Loss of heterozygosity due to drift. {#LossofHet}<a class="headerlink" href="#loss-of-heterozygosity-due-to-drift-lossofhet" title="Permalink to this headline">#</a></h2>
+<p>Genetic drift will, in the absence of new mutations, slowly purge our
+population of neutral genetic diversity, as alleles slowly drift to high
+or low frequencies and are lost or fixed over time.<br />
+Imagine a randomly mating population of a constant size <span class="math notranslate nohighlight">\(N\)</span> diploid
+individuals, and that we are examining a locus segregating for two
+alleles that are neutral with respect to each other. This population is
+randomly mating with respect to the alleles at this locus. See Figures
+<a class="reference external" href="#fig:LossHet_two_alleles">1.1</a>{reference-type=”ref”
+reference=”fig:LossHet_two_alleles”} and
+<a class="reference external" href="#fig:LossHet_many_alleles">1.2</a>{reference-type=”ref”
+reference=”fig:LossHet_many_alleles”} to see how genetic drift proceeds,
+by tracking alleles within a small population.<br />
+In generation <span class="math notranslate nohighlight">\(t\)</span> our current level of heterozygosity is <span class="math notranslate nohighlight">\(H_t\)</span>, i.e. the
+probability that two randomly sampled alleles in generation <span class="math notranslate nohighlight">\(t\)</span> are
+non-identical is <span class="math notranslate nohighlight">\(H_t\)</span>. Assuming that the mutation rate is zero (or
+vanishingly small), what is our level of heterozygosity in generation
+<span class="math notranslate nohighlight">\(t+1\)</span>?\</p>
+<p><img alt="Loss of heterozygosity over time, in the absence of new mutations. Adiploid population of 5 individuals over the generations, with linesshowing transmission. In the first generation every individual is aheterozygote." src="chapters/figures/Loss_of_he_col_two_alleles.png" />{#fig:LossHet_two_alleles
+width=”\textwidth”}</p>
+<p><img alt="Loss of heterozygosity over time, in the absence of new mutations. Adiploid population of 5 individuals. In the first generation I colourevery allele a different colour so we can track their descendants." src="chapters/figures/Loss_of_het_2_many_alleles.png" />{#fig:LossHet_many_alleles
+width=”\textwidth”}</p>
+<p>In the next generation (<span class="math notranslate nohighlight">\(t+1\)</span>) we are looking at the alleles in the
+offspring of generation <span class="math notranslate nohighlight">\(t\)</span>. If we randomly sample two alleles in
+generation <span class="math notranslate nohighlight">\(t+1\)</span> which had different parental alleles in generation <span class="math notranslate nohighlight">\(t\)</span>,
+that is just like drawing two random alleles from generation <span class="math notranslate nohighlight">\(t\)</span>. So the
+probability that these two alleles in generation <span class="math notranslate nohighlight">\(t+1\)</span>, that have
+different parental alleles in generation <span class="math notranslate nohighlight">\(t\)</span>, are non-identical is
+<span class="math notranslate nohighlight">\(H_t\)</span>.<br />
+Conversely, if the two alleles in our pair had the same parental allele
+in the proceeding generation (i.e. the alleles are identical by descent
+one generation back) then these two alleles must be identical (as we are
+not allowing for any mutation).<br />
+In a diploid population of size <span class="math notranslate nohighlight">\(N\)</span> individuals there are <span class="math notranslate nohighlight">\(2N\)</span> alleles.
+The probability that our two alleles have the same parental allele in
+the proceeding generation is <span class="math notranslate nohighlight">\(\nicefrac{1}{(2N)}\)</span> and the probability
+that they have different parental alleles is is <span class="math notranslate nohighlight">\(1-\nicefrac{1}{(2N)}\)</span>.
+So by the above argument, the expected heterozygosity in generation
+<span class="math notranslate nohighlight">\(t+1\)</span> is
+$<span class="math notranslate nohighlight">\(H_{t+1} = \frac{1}{2N} \times 0 + \left(1-\frac{1}{2N} \right)H_t\)</span><span class="math notranslate nohighlight">\(
+Thus, if the heterozygosity in generation \)</span>0<span class="math notranslate nohighlight">\( is \)</span>H_0<span class="math notranslate nohighlight">\(, our expected
+heterozygosity in generation \)</span>t<span class="math notranslate nohighlight">\( is
+\)</span><span class="math notranslate nohighlight">\(H_t = \left(1-\frac{1}{2N} \right)^tH_0  \label{eqn:loss_het_discrete}\)</span>$</p>
+<p>i.e. the expected heterozygosity within our population is decaying
+geometrically with each passing generation. If we assume that
+<span class="math notranslate nohighlight">\(\nicefrac{1}{(2N)}
+\ll 1\)</span> then we can approximate this geometric decay by an exponential
+decay (see Question <a class="reference external" href="#geoquestion">[geoquestion]</a>{reference-type=”ref”
+reference=”geoquestion”} below), such that
+$<span class="math notranslate nohighlight">\(H_t =H_{0} e^{ - \nicefrac{t}{(2N)} }\)</span><span class="math notranslate nohighlight">\( i.e. heterozygosity decays
+exponentially at a rate \)</span>\nicefrac{1}{(2N)}$.</p>
+<p>In Figure <a class="reference external" href="#fig:LossHet_WF_N50">1.3</a>{reference-type=”ref”
+reference=”fig:LossHet_WF_N50”} we show trajectories through time for 40
+independently simulated loci drifting in a population of 50 individuals.
+Each population was started from a frequency of <span class="math notranslate nohighlight">\(30\%\)</span>. Some drift up
+and some drift down, eventually being lost or fixed from the population,
+but, on average across simulations, the allele frequency doesn’t change.
+We also track heterozygosity, you can see that heterozygosity sometimes
+goes up, and sometimes goes down, but on average we are losing
+heterozygosity, and this rate of loss is well predicted by eqn.
+<a class="reference external" href="#eqn:loss_het_discrete">[eqn:loss_het_discrete]</a>{reference-type=”eqref”
+reference=”eqn:loss_het_discrete”}.</p>
+<p><img alt="Change in allele frequency and loss of heterozygosity over time for 40replicates. Simulations of genetic drift in a diploid population of 50individuals, in the absence of new mutations. We start 40 independent,biallelic loci each with an initial allele at 30% frequency. The leftpanel shows the allele frequency over time and the right panel shows theheterozygosity over time, with the mean decay matching eqn.[eqn:loss_het_discrete]{reference-type=&quot;eqref&quot;reference=&quot;eqn:loss_het_discrete&quot;}." src="chapters/figures/WF_loss_het/WF_loss_het_N50.pdf" />{#fig:LossHet_WF_N50
+width=”\textwidth”}</p>
+<p><img alt="image" src="chapters/illustration_images/Genetic_drift/smelt/20497452375_9be855d9ff_z.jpg" />{width=”\textwidth”}</p>
+<p>You are in charge of maintaining a population of delta smelt in the
+Sacramento River delta. Using a large set of microsatellites you
+estimate that the mean level of heterozygosity in this population is
+0.005. You set yourself a goal of maintaining a level of heterozygosity
+of at least 0.0049 for the next two hundred years. Assuming that the
+smelt have a generation time of 3 years, and that only genetic drift
+affects these loci, what is the smallest fully outbreeding population
+that you would need to maintain to meet this goal?</p>
+<p>Note how this picture of decreasing heterozygosity stands in contrast to
+the consistency of Hardy-Weinberg equilibrium from the previous chapter.
+However, our Hardy-Weinberg <em>proportions</em> still hold in forming each new
+generation. As the offspring genotypes in the next generation (<span class="math notranslate nohighlight">\(t+1\)</span>)
+represent a random draw from the previous generation (<span class="math notranslate nohighlight">\(t\)</span>), if the
+parental frequency is <span class="math notranslate nohighlight">\(p_t\)</span>, we <em>expect</em> a proportion <span class="math notranslate nohighlight">\(2p_t(1-p_t)\)</span> of
+our offspring to be heterozygotes (and HW proportions for our
+homozygotes). However, because population size is finite, the observed
+genotype frequencies in the offspring will (likely) not match exactly
+with our expectations. As our genotype frequencies likely change
+slightly due to sampling, biologically this reflects random variation in
+family size and Mendelian segregation, the allele frequency will
+changed. Therefore, while each generation represents a sample from
+Hardy-Weinberg proportions based on the generation before, our genotype
+proportions are not at an equilibrium (an unchanging state) as the
+underlying allele frequency changes over the generations. We’ll develop
+some mathematical models for these allele frequency changes later on.
+For now, we’ll simply note that under our simple model of drift
+(formally the Wright-Fisher model), our allele count in the <span class="math notranslate nohighlight">\(t+1^{th}\)</span>
+generation represents a binomial sample (of size <span class="math notranslate nohighlight">\(2N\)</span>) from the
+population frequency <span class="math notranslate nohighlight">\(p_t\)</span> in the previous generation. If you’ve read to
+here, please email Prof Coop a picture of JBS Haldane in a striped suit
+with the title “I’m reading the chapter 3 notes”. (It’s well worth
+googling JBS Haldane and to read more about his life; he’s a true
+character and one of the last great polymaths. )</p>
+<p><img alt="Loss of heterozygosity in the Black-footed Ferrets in their decliningpopulation. Numbers in brackets give estimated number of individualsalive at that time. Data from &#64;Wisely:02." src="chapters/Journal_figs/genetic_drift/black_footed_ferrets/black_footed_ferrets_He.pdf" />{#fig:LossHet_ferrets
+width=”\textwidth”}</p>
+<p>To see how a decline in population size can affect levels of
+heterozygosity, let’s consider the case of black-footed ferrets
+(<em>Mustela nigripes</em>). The black-footed ferret population has declined
+dramatically through the twentieth century due to destruction of their
+habitat and sylvatic plague. In 1979, when the last known black-footed
+ferret died in captivity, they were thought to be extinct. In 1981, a
+very small wild population was rediscovered (<span class="math notranslate nohighlight">\(40\)</span> individuals), but in
+1985 this population suffered a number of disease outbreaks.</p>
+<p><img alt="image" src="chapters/illustration_images/Genetic_drift/Black_footed_ferrets/Black_footed_ferret.pdf" />{width=”\textwidth”}</p>
+<p>At that point of the <span class="math notranslate nohighlight">\(18\)</span> remaining wild individuals were brought into
+captivity, 7 of which reproduced. Thanks to intense captive breeding
+efforts and conservation work, a wild population of over 300 individuals
+has been established since. However, because all of these individuals
+are descended from those 7 individuals who survived the bottleneck,
+diversity levels remain low. &#64;Wisely:02 measured heterozygosity at a
+number of microsatellites in individuals from museum collections,
+showing the sharp drop in diversity as population sizes crashed (see
+Figure <a class="reference external" href="#fig:LossHet_ferrets">1.4</a>{reference-type=”ref”
+reference=”fig:LossHet_ferrets”}).</p>
+<p>[[geoquestion]]{#geoquestion label=”geoquestion”} In mathematical
+population genetics, a commonly used approximation is
+<span class="math notranslate nohighlight">\((1-x) \approx e^{-x}\)</span> for <span class="math notranslate nohighlight">\(x &lt;&lt; 1\)</span> (formally, this follows from the
+Taylor series expansion of <span class="math notranslate nohighlight">\(\exp(-x)\)</span>, ignoring second order and higher
+terms of <span class="math notranslate nohighlight">\(x\)</span>, see Appendix
+<a class="reference external" href="#eqn:Taylor_geo">[eqn:Taylor_geo]</a>{reference-type=”eqref”
+reference=”eqn:Taylor_geo”}). This approximation is especially useful
+for approximating a geometric decay process by an exponential decay
+process, e.g. <span class="math notranslate nohighlight">\((1 - x)^t \approx e^{-xt}\)</span>. Using your calculator, or R,
+check how well this expression approximates the exact expression for two
+values of <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(x = 0.1\)</span>, and <span class="math notranslate nohighlight">\(0.01\)</span>, across two different values of t,
+<span class="math notranslate nohighlight">\(t=5\)</span> and <span class="math notranslate nohighlight">\(t=50\)</span>. Briefly comment on your results.</p>
+<section id="levels-of-diversity-maintained-by-a-balance-between-mutation-and-drift-driftmutationbalance">
+<h3>Levels of diversity maintained by a balance between mutation and drift {#DriftMutationBalance}<a class="headerlink" href="#levels-of-diversity-maintained-by-a-balance-between-mutation-and-drift-driftmutationbalance" title="Permalink to this headline">#</a></h3>
+<p>Next we’re going to consider the amount of neutral polymorphism that can
+be maintained in a population as a balance between genetic drift
+removing variation and mutation introducing new neutral variation, see
+Figure <a class="reference external" href="#fig:Mut_Sel_balance">1.5</a>{reference-type=”ref”
+reference=”fig:Mut_Sel_balance”} for an example. Note in our example,
+how no single allele is maintained at a stable equilibrium, rather an
+equilibrium level of polymorphism is maintained by a constantly shifting
+set of alleles.</p>
+<p><img alt="Mutation-drift balance. A diploid population of 5 individuals. In thefirst generation everyone has the same allele (black). Each generationthe transmitted allele can mutate and we generate a new colour. In thebottom plot, I trace the frequency of alleles in our population overtime. The mutation rate we use is very high, simply to maintaindiversity in this small population." src="chapters/figures/Mut_drift_balance.png" />{#fig:Mut_Sel_balance
+width=”\textwidth”}</p>
+<section id="the-neutral-mutation-rate">
+<h4>The neutral mutation rate.<a class="headerlink" href="#the-neutral-mutation-rate" title="Permalink to this headline">#</a></h4>
+<p>We’ll first want to consider the rate at which neutral mutations arise
+in the population.Thinking back to our discussion of the neutral theory
+of molecular evolution, let’s suppose that there are only two classes of
+mutation that can arise in our genomic region of interest: neutral
+mutations and highly deleterious mutations. The total mutation rate at
+our locus is <span class="math notranslate nohighlight">\(\mu\)</span> per generation, i.e. per transmission from parent to
+child. A fraction <span class="math notranslate nohighlight">\(C\)</span> of our mutations are new alleles that are highly
+deleterious and so quickly removed from the population. We’ll call this
+<span class="math notranslate nohighlight">\(C\)</span> parameter the constraint, and it will differ according to the
+genomic region we consider. The remaining fraction <span class="math notranslate nohighlight">\((1-C)\)</span> are our
+neutral mutations, such that our neutral mutation rate is <span class="math notranslate nohighlight">\((1-C)\mu\)</span>.
+This is the per generation rate. In the rest of the chapter for
+simplicity we’ll assume that <span class="math notranslate nohighlight">\(C=0\)</span> and use a neutral mutation rate of
+<span class="math notranslate nohighlight">\(\mu\)</span>. However, we’ll return to this discussion of constaint when we
+discuss molecular divergence in a subsequent chapter.</p>
+<p>It’s worth taking a minute to get familiar with both how rare, and how
+common, mutation is. The per base pair mutation rate in humans is around
+<span class="math notranslate nohighlight">\(1.5\)</span> <span class="math notranslate nohighlight">\(\times\)</span> <span class="math notranslate nohighlight">\(10^{-8}\)</span> per generation. That means, on average, we have
+to monitor a site for <span class="math notranslate nohighlight">\(\sim 66.6\)</span> million transmissions from parent to
+child to see a mutation. Yet populations and genomes are big places, so
+mutations are common at these levels.<br />
+<strong>A)</strong> Your autosomal genome is <span class="math notranslate nohighlight">\(\sim\)</span> 3 billion base pairs long (<span class="math notranslate nohighlight">\(3\)</span>
+<span class="math notranslate nohighlight">\(\times\)</span> <span class="math notranslate nohighlight">\(10^9\)</span>). You have two copies, the one you received from your
+mum and one from your dad. What is the average (i.e. the expected)
+number of mutations that occurred in the transmission from your mum and
+your dad to you?<br />
+<strong>B)</strong> The current human population size is <span class="math notranslate nohighlight">\(\sim\)</span>7 billion individuals.
+How many times, at the level of the entire human population, is a single
+base-pair mutated in the transmission from one generation to the next?</p>
+</section>
+<section id="levels-of-heterozygosity-maintained-as-a-balance-between-mutation-and-drift">
+<h4>Levels of heterozygosity maintained as a balance between mutation and drift.<a class="headerlink" href="#levels-of-heterozygosity-maintained-as-a-balance-between-mutation-and-drift" title="Permalink to this headline">#</a></h4>
+<p>Looking backwards in time from one generation to the previous
+generation, we are going to say that two alleles which have the same
+parental allele (i.e. find their common ancestor) in the preceding
+generation have <em>coalesced</em>, and refer to this event as a <em>coalescent
+event</em>. If our pairs of alleles are to be different from each other in
+the present day, a mutation must have occured more recently on one or
+other lineage before they found a common ancestor.</p>
+<p>The probability that our pair of randomly sampled alleles have coalesced
+in the preceding generation is <span class="math notranslate nohighlight">\(\nicefrac{1}{(2N)}\)</span>, and the probability
+that our pair of alleles fail to coalesce is <span class="math notranslate nohighlight">\(1-\nicefrac{1}{(2N)}\)</span>.</p>
+<p>The probability that a mutation changes the identity of the transmitted
+allele is <span class="math notranslate nohighlight">\(\mu\)</span> per generation. So the probability of no mutation
+occurring is <span class="math notranslate nohighlight">\((1-\mu)\)</span>. We’ll assume that when a mutation occurs it
+creates some new allelic type which is not present in the population.
+This assumption (commonly called the infinitely-many-alleles model)
+makes the math slightly cleaner, and also is not too bad an assumption
+biologically. See Figure
+<a class="reference external" href="#fig:Mut_Sel_balance">1.5</a>{reference-type=”ref”
+reference=”fig:Mut_Sel_balance”} for a depiction of mutation-drift
+balance in this model over the generations.</p>
+<p>This model lets us calculate when our two alleles last shared a common
+ancestor and whether these alleles are identical as a result of failing
+to mutate since this shared ancestor. For example, we can work out the
+probability that our two randomly sampled alleles coalesce <span class="math notranslate nohighlight">\(2\)</span>
+generations in the past (i.e. they fail to coalesce in generation <span class="math notranslate nohighlight">\(1\)</span>
+and then coalesce in generation <span class="math notranslate nohighlight">\(2\)</span>), and that they are identical as
+$<span class="math notranslate nohighlight">\(\left(1- \frac{1}{2N} \right) \frac{1}{2N} (1-\mu)^4\)</span><span class="math notranslate nohighlight">\( Note the power
+of \)</span>4<span class="math notranslate nohighlight">\( is because our two alleles have to have failed to mutate through
+\)</span>2$ meioses each.</p>
+<p>More generally, the probability that our alleles coalesce in generation
+<span class="math notranslate nohighlight">\(t+1\)</span> (counting backwards in time) and are identical due to no mutation
+to either allele in the subsequent generations is
+$<span class="math notranslate nohighlight">\(\P(\textrm{coal. in t+1 \&amp; no mutations}) =  \frac{1}{2N} \left(1- \frac{1}{2N} \right)^t \left(1-\mu \right)^{2(t+1)}\)</span><span class="math notranslate nohighlight">\(
+To make this slightly easier on ourselves let's further assume that \)</span>t
+\approx t+1<span class="math notranslate nohighlight">\( and so rewrite this as:
+\)</span><span class="math notranslate nohighlight">\(\P(\textrm{coal. in t+1 \&amp; no mutations}) \approx \frac{1}{2N} \left(1- \frac{1}{2N} \right)^t \left(1-\mu \right)^{2t}\)</span>$</p>
+<p>This gives us the approximate probability that two alleles will coalesce
+in the <span class="math notranslate nohighlight">\((t+1)^\text{th}\)</span> generation. In general, we may not know when
+two alleles may coalesce: they could coalesce in generation
+<span class="math notranslate nohighlight">\(t=1, t=2, \ldots\)</span>, and so on. Thus, to calculate the probability that
+two alleles coalesce in <em>any</em> generation before mutating, we can write:
+$$\begin{aligned}
+\P(\textrm{coal. in any generation &amp; no mutations}) \approx &amp; \P(\textrm{coal. in} ; t=1 ; \textrm{&amp; no mutations}) ; + \nonumber\
+&amp;  \P(\textrm{coal. in} ; t=2 ; \textrm{&amp; no mutations}) + \ldots \nonumber\</p>
+<p>= &amp; \sum_{t=1}^\infty \P(\textrm{coal. in } ; t ; \textrm{generations &amp; no mutation})\end{aligned}$$</p>
+<p>an example of using the Law of Total Probability, see Appendix eqn
+<a class="reference external" href="#eqn:law_tot_prob">[eqn:law_tot_prob]</a>{reference-type=”eqref”
+reference=”eqn:law_tot_prob”}, combined with the fact that coalescing in
+a particular generation is mutually exclusive with coalescing in a
+different generation.</p>
+<p>While we could calculate a value for this sum given <span class="math notranslate nohighlight">\(N\)</span> and <span class="math notranslate nohighlight">\(\mu\)</span>, it’s
+difficult to get a sense of what’s going on with such a complicated
+expression. Here, we turn to a common approximation in population
+genetics (and all applied mathematics), where we assume that
+<span class="math notranslate nohighlight">\(\nicefrac{1}{(2N)} \ll 1\)</span> and <span class="math notranslate nohighlight">\(\mu \ll 1\)</span>. This allows us to
+approximate the geometric decay as an exponential decay (see Appendix
+eqn <a class="reference external" href="#eqn:Taylor_exp">[eqn:Taylor_exp]</a>{reference-type=”eqref”
+reference=”eqn:Taylor_exp”}). Then, the probability two alleles coalesce
+in generation <span class="math notranslate nohighlight">\(t+1\)</span> and don’t mutate can be written as:
+$<span class="math notranslate nohighlight">\(\begin{aligned}
+ \P(\textrm{coal. in t+1 \&amp; no mutations}) &amp;\approx \frac{1}{2N}
+\left(1- \frac{1}{2N} \right)^t \left(1-\mu \right)^{2t} \\
+&amp; \approx \frac{1}{2N} e^{-t/(2N)} e^{-2\mu t } \\
+&amp;=\frac{1}{2N} e^{-t(2\mu+1/(2N))} \end{aligned}\)</span>$ Then we can
+approximate the summation by an integral, giving us:</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2N} \int_0^{\infty} e^{-t(2\mu+1/(2N))} dt =
+\frac{1/(2N)}{1/(2N)+2\mu} \label{eqn:coal_no_mut}\]</div>
+<p>The equation above gives us the probability that our two alleles
+coalesce at some point in time, and do not mutate before reaching their
+common ancestor. Equivalently, this can be thought of as the probability
+our two alleles coalesce <em>before</em> mutating, i.e. that they are
+homozygous.</p>
+<p>Then, the complementary probability that our pair of alleles are
+non-identical (or heterozygous) is simply one minus this. The following
+equation gives the equilibrium heterozygosity in a population at
+equilibrium between mutation and drift:</p>
+<div class="math notranslate nohighlight">
+\[H = \frac{2\mu}{1/(2N)+2\mu}  = \frac{4N\mu}{1+4N\mu} \label{eqn:hetero}\]</div>
+<p>The compound parameter <span class="math notranslate nohighlight">\(4N\mu\)</span>, the population-scaled mutation rate,
+will come up a number of times so we’ll give it its own name:
+$<span class="math notranslate nohighlight">\(\theta = 4N\mu\)</span><span class="math notranslate nohighlight">\( What's the intuition of our
+[\[eqn:hetero\]](#eqn:hetero){reference-type=&quot;eqref&quot;
+reference=&quot;eqn:hetero&quot;}, well the probability that any event happens in
+a particular generation is
+\)</span>\P(\textrm{mutation or coalescence}) \approx \nicefrac{1}{(2N)}+2\mu<span class="math notranslate nohighlight">\(,
+so conditional on an event happening the probability that it is a
+mutation is
+\)</span>\P(\textrm{mutation} \mid \textrm{mutation or coalescence}) =  \nicefrac{2\mu}{\left(\nicefrac{1}{(2N)}+2\mu \right)}$.</p>
+<p>So all else being equal, species with larger population sizes should
+have proportionally higher levels of neutral polymorphism. Indeed,
+populations of animals, e.g. birds, on small islands have lower levels
+of diversity than closely related species on the mainland with larger
+ranges. More generally, we do see higher levels of heterozygosity in
+larger census population sizes across animals Figure
+<a class="reference external" href="#fig:allozyme_N">1.6</a>{reference-type=”ref” reference=”fig:allozyme_N”}.
+However, while census population sizes vary over many orders of
+magnitude, levels of diversity vary much less than that. So, if levels
+of diversity in natural populations represent a balance between genetic
+drift and mutation, levels of genetic drift in large populations must be
+a lot faster than their census population size suggests. In the next
+section we’ll talk about some possible reasons why.</p>
+<p><img alt="Average basepair heterozygosity plotted against the log of range sizefor endemic island and mainland bird populations [&#64;leroy2020endemic].Average allozyme heterozygosity plotted against the log of censuspopulation size (N) for animals. Data from &#64;soule1976allozyme[&#64;frankham1996relationship]" src="chapters/Journal_figs/genetic_drift/Allozyme_pop_size/bird_allozyme_pop_size.pdf" />{#fig:allozyme_N
+width=”\textwidth”}</p>
+</section>
+</section>
+<section id="the-effective-population-size">
+<h3>The effective population size<a class="headerlink" href="#the-effective-population-size" title="Permalink to this headline">#</a></h3>
+<p>In practice, populations rarely conform to our assumptions of being
+constant in size with low variance in reproductive success. Real
+populations experience dramatic fluctuations in size, and there is often
+high variance in reproductive success. Thus rates of drift in natural
+populations are often a lot higher than the census population size would
+imply. See Figure <a class="reference external" href="#fig:LossHet_varying_pop">1.7</a>{reference-type=”ref”
+reference=”fig:LossHet_varying_pop”} for a depiction of a repeatedly
+bottlenecked population losing diversity at a fast rate.</p>
+<p><img alt="Loss of heterozygosity over time in a bottlenecking population. Adiploid population of 10 individuals, that bottlenecks down to threeindividuals repeatedly. In the first generation, I colour every allele adifferent colour so we can track their descendants. There are no newmutations." src="chapters/figures/Loss_of_he_col_alleles_varying_pop_dark.png" />{#fig:LossHet_varying_pop
+width=”\textwidth”}</p>
+<p>To cope with this discrepancy, population geneticists often invoke the
+concept of an <em>effective population size</em> (<span class="math notranslate nohighlight">\(N_e\)</span>). In many situations
+(but not all), departures from model assumptions can be captured by
+substituting <span class="math notranslate nohighlight">\(N_e\)</span> for <span class="math notranslate nohighlight">\(N\)</span>.<br />
+If population sizes vary rapidly in size, we can (if certain conditions
+are met) replace our population size by the harmonic mean population
+size. Consider a diploid population of variable size, whose size is
+<span class="math notranslate nohighlight">\(N_t\)</span> <span class="math notranslate nohighlight">\(t\)</span> generations into the past. The probability our pairs of
+alleles have not coalesced by generation <span class="math notranslate nohighlight">\(t\)</span> is given by
+$<span class="math notranslate nohighlight">\(\prod_{i=1}^{t} \left(1-\frac{1}{2N_i} \right) \label{eqn:var_pop_coal}\)</span><span class="math notranslate nohighlight">\(
+Note that this simply collapses to our original expression
+\)</span>\left(1-\frac{1}{2N } \right)^t<span class="math notranslate nohighlight">\( if \)</span>N_i<span class="math notranslate nohighlight">\( is constant. Under this
+model, the rate of loss of heterozygosity in this population is
+equivalent to a population of effective size
+\)</span><span class="math notranslate nohighlight">\(N_e =\frac{1}{\frac{1}{t} \sum_{i=1}^{t} \frac{1}{N_i} }. \label{eq:Ne_harmonic}\)</span>$
+This is the harmonic mean of the varying population size.</p>
+<p>Thus our effective population size, the size of an idealized constant
+population which matches the rate of genetic drift, is the harmonic mean
+true population size over time. The harmonic mean is very strongly
+affected by small values, such that if our population size is one
+million <span class="math notranslate nohighlight">\(99\%\)</span> of the time but drops to <span class="math notranslate nohighlight">\(1000\)</span> every hundred or so
+generations, <span class="math notranslate nohighlight">\(N_e\)</span> will be much closer to <span class="math notranslate nohighlight">\(1000\)</span> than a million.\</p>
+<p><img alt="High variance on reproductive success increases the rate of geneticdrift. A diploid population of 10 individuals, where the circledindividuals have much higher reproductive success. In the firstgeneration I colour every allele a different colour so we can tracktheir descendants, there are no new mutations." src="chapters/figures/Loss_of_he_col_alleles_varying_RS.png" />{#fig:LossHet_varying_RS
+width=”\textwidth”}</p>
+<p>Variance in reproductive success will also affect our effective
+population size. Even if our population has a large constant size <span class="math notranslate nohighlight">\(N\)</span>
+individuals, if only small proportion of them get to reproduce, then the
+rate of drift will reflect this much smaller number of reproducing
+individuals. See Figure
+<a class="reference external" href="#fig:LossHet_varying_RS">1.8</a>{reference-type=”ref”
+reference=”fig:LossHet_varying_RS”} for a depiction of the higher rate
+of drift in a population where there is high variance in reproductive
+success.</p>
+<p>To see one example of this, consider the case where <span class="math notranslate nohighlight">\(N_F\)</span> of females get
+to reproduce and <span class="math notranslate nohighlight">\(N_M\)</span> males get reproduce. While every individual has a
+biological mother and father, not every individual gets to be a parent.
+In practice, in many animal species far more females get to reproduce
+than males, i.e. <span class="math notranslate nohighlight">\(N_M &lt;N_F\)</span>, as a few males get many mating
+opportunities and many males get no/few mating opportunities [see
+&#64;janicke:16 for a broad analysis, and note that there a certainly many
+exceptions to this general pattern]. When our two alleles pick an
+ancestor, <span class="math notranslate nohighlight">\(25\%\)</span> of the time our alleles were both in a female ancestor,
+in which case they are IBD with probability <span class="math notranslate nohighlight">\(1/(2N_F)\)</span>, and <span class="math notranslate nohighlight">\(25\%\)</span> of
+the time they are both in a male ancestor, in which case they coalesce
+with probability <span class="math notranslate nohighlight">\(1/(2N_M)\)</span>. The remaining <span class="math notranslate nohighlight">\(50\%\)</span> of the time, our
+alleles trace back to two individuals of different sexes in the prior
+generation and so cannot coalesce. Therefore, our probability of
+coalescence in the preceding generation is
+$$\frac{1}{4}\left(\frac{1}{2N_M} \right)+\frac{1}{4}\left(\frac{1}{2N_F} \right) %=</p>
+<p>harmonic mean of the two sexes’ population sizes, equating this to
+<span class="math notranslate nohighlight">\(\frac{1}{2N_e}\)</span> we find</p>
+<p><img alt="image" src="chapters/illustration_images/Genetic_drift/Hamadryas_baboon/Hamadryas_baboon.pdf" />{width=”0.7 \textwidth”}</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}N_e = \frac{4N_FN_M}{N_F+N_M}$$ Thus if reproductive success is very
+skewed in one sex (e.g. $N_M \ll
+N/2$), our autosomal effective population size will be much reduced as a
+result. For more on how different evolutionary forces affect the rate of
+genetic drift, and their impact on the effective population size, see
+&#64;charlesworth:09.\\\You are studying a population of 500 male and 500 female Hamadryas
+baboons. Assume that all of the females but only 1/10 of the males get
+to mate. What is the effective population size for the autosome?\\\Variance in male and female reproductive success can have very different
+effects on chromosomes with differing modes of inheritance such as the X
+chromosome, mitochondria, and Y chromosome. The mitochondria (mtDNA) and
+Y chromosome are haploid and only inherited through the females and
+males respectively, so they have a haploid effective population sizes of
+$N_M$ and $N_F$.\\\begin{split}![Levels of genome-wide diversity in Scythian horses from $2300$ year
+old Scythian horses and Modern horses (Nordic). The numbers next to each
+column given the fraction of diversity remaining in the present day,
+Data from &#64;librado2017ancient. .
+](Journal_figs/genetic_drift/Scythian_horses/Scythian_horses.pdf){#fig:Scythian_horses_pi
+width=&quot;0.6 \\textwidth&quot;}\end{split}\\To see the impact of differential variance in male and female
+reproductive success, let's look at how levels of genetic diversity over
+thousands of years in domestic horses.\\\begin{split}![image](illustration_images/Genetic_drift/Scythian_rider/616px-Szkíta.jpg){width=&quot;\\textwidth&quot;}\end{split}\\&#64;librado2017ancient sequenced ancient DNA from 13 sacrificed stallions
+from an $2300$ year old Scythian burial mound in Kazakhstan. The
+Scythian were a nomadic people whose Russian Steppe empire stretched
+from the Black Sea to the borders of China. They were among the first
+people to master horseback warfare with both men and women riding armed
+with short bows. \\By comparing these data to modern horses, &#64;librado2017ancient found that
+levels of diversity had been substantially reduced on the autosomes and
+greatly reduced on the Y chromosome. This constrasts with the mtDNA
+where levels of diversity have decreased only slightly. This pattern
+likely reflects the fact that much of modern horse breeding relies on a
+breeding a small number of stallions to a large number of mares, and so
+the effective population size of the Y chromosome has been much smaller
+than the mtDNA leading to a much higher rate of loss of diversity on the
+Y than on other chromosomes.\\Using the data on the reduction in horse genetic diversity in Figure
+[1.9](#fig:Scythian_horses_pi){reference-type=&quot;ref&quot;
+reference=&quot;fig:Scythian_horses_pi&quot;}:\
+**A)** Estimate the effective number of stallions and mares contributing
+to the horse population using the mtDNA and Y chromosome data. B)
+Predict what the reduction in diversity over the $2300$ years should be
+on the autosomes using these numbers?\
+Assume a horse generation time of $8$ years. Assume no new mutations
+during this time interval.\\One of the highest levels of genetic diversity is seen in the diploid
+split-gill fungus, *Schizophyllum commune*. Populations in the USA have
+a sequence-level heterozygosity of $0.13$ per synonymous base
+[&#64;baranova2015extraordinary]. &#64;baranova2015extraordinary sequenced
+parents and multiple offspring to estimate that
+$\mu= 2 \times 10^{-8} bp^{-1}$ per generation. What is your estimate of
+the effective population size of *S. commune*?\\\begin{split}![image](illustration_images/Genetic_drift/splitgill_mushroom/splitgill_mushrooms.png){width=&quot;\\textwidth&quot;}\end{split}\\The Coalescent and patterns of neutral diversity
+------------------------------------------------\\&gt; &quot;Life can only be understood backwards; but it must be lived forwards&quot;
+&gt; -- Kierkegaard\\##### Pairwise Coalescent time distribution and the number of pairwise differences.\\Thinking back to our calculations we made about the loss of neutral
+heterozygosity and equilibrium levels of diversity (in Sections
+[1.1](#LossofHet){reference-type=&quot;ref&quot; reference=&quot;LossofHet&quot;} and
+[1.1.1](#DriftMutationBalance){reference-type=&quot;ref&quot;
+reference=&quot;DriftMutationBalance&quot;}), you'll note that we could first
+specify which generation a pair of sequences coalesce in, and then
+calculate some properties of heterozygosity based on that. That's
+because neutral mutations do not affect the probability that an
+individual transmits an allele, and so don't affect the way in which we
+can trace ancestral lineages back through the generations.\\\As such, it will often be helpful to consider the time to the common
+ancestor of a pair of sequences ($T_2$), and then think of the impact of
+that time to coalescence on patterns of diversity. See Figure
+[1.10](#fig:Coalescent_simulation){reference-type=&quot;ref&quot;
+reference=&quot;fig:Coalescent_simulation&quot;} for an example of this.\\\begin{split}![A simple demonstration of the coalescent process. The simulation
+consists of a diploid population of 10 individuals (20 alleles). In each
+generation, each individual is equally likely to be the parent of an
+offspring (and the allele transmitted is indicated by a light grey
+line). We track a pair of alleles, chosen in the present day, back 14
+generations until they find a common ancestor. Deeper in time than 14
+generations those two alleles have the same ancestral lineage and
+completely share their history, e.g. the mutations that occur on that
+lineage. ](figures/Coalescent.png){#fig:Coalescent_simulation
+width=&quot;\\textwidth&quot;}\end{split}\\The probability that a pair of alleles have failed to coalesce in $t$
+generations and then coalesce in the $t+1$ generation back is
+$$\P(T_2=t+1) = \frac{1}{2N} \left(1- \frac{1}{2N} \right)^{t} \label{eqn:coal_time_dist}\end{aligned}\end{align} \]</div>
+<p>For example, the probability that a pair of sequences coalesce three
+generations back is the probability that they fail to coalesce in
+generation 1 and 2, which is
+<span class="math notranslate nohighlight">\(\left(1- \nicefrac{1}{2N} \right) \times \left(1- \nicefrac{1}{2N} \right)\)</span>,
+multipled by the probability that they find a common ancestor, i.e.
+coalesce, in the third generation, which happens with probability
+<span class="math notranslate nohighlight">\(\nicefrac{1}{2N}\)</span>.</p>
+<p>From the form of eqn
+<a class="reference external" href="#eqn:coal_time_dist">[eqn:coal_time_dist]</a>{reference-type=”eqref”
+reference=”eqn:coal_time_dist”} we can see that the coalescent time of
+our pair of alleles is a Geometrically distributed random variable,
+where the probability of success is <span class="math notranslate nohighlight">\(p=\nicefrac{1}{2N}\)</span>. The waiting
+time for a pair of lineages to coalesce is like the number of tails
+thrown while waiting for a head on a coin with the probability of a head
+is <span class="math notranslate nohighlight">\(\nicefrac{1}{2N}\)</span>, i.e. if the population is large we might be
+waiting for a long time for our pair to coalesce. We’ll denote this
+geometric distribution by <span class="math notranslate nohighlight">\(T_2 \sim  \text{Geo}(1/(2N))\)</span>. The expected
+(i.e. the mean over many replicates) coalescent time of a pair of
+alleles is then $<span class="math notranslate nohighlight">\(\E(T_2) = 2N\)</span><span class="math notranslate nohighlight">\( generations. This form to the
+expectation follows from the fact that the mean of an geometric random
+variable is \)</span>\nicefrac{1}{p}<span class="math notranslate nohighlight">\(.\
+Conditional on a pair of alleles coalescing \)</span>t<span class="math notranslate nohighlight">\( generations ago, there
+are \)</span>2t<span class="math notranslate nohighlight">\( generations in which a mutation could occur. See Figure
+[\[fig:pair_coal_muts\]](#fig:pair_coal_muts){reference-type=&quot;ref&quot;
+reference=&quot;fig:pair_coal_muts&quot;} for an example. If the per generation
+mutation rate is \)</span>\mu<span class="math notranslate nohighlight">\(, then the expected number of mutations between a
+pair of alleles coalescing \)</span>t<span class="math notranslate nohighlight">\( generations ago is \)</span>2 t\mu<span class="math notranslate nohighlight">\( (the alleles
+have gone through a total of \)</span>2t$ meioses since they last shared a
+common ancestor).</p>
+<p><img alt="image" src="chapters/figures/Coalescent/Coal_two_lineages_muts.pdf" />{width=”\textwidth”}</p>
+<p>So we can write the expected number of mutations (<span class="math notranslate nohighlight">\(S_2\)</span>) separating two
+alleles drawn at random from the population as $<span class="math notranslate nohighlight">\(\begin{aligned}
+\E(S_2) &amp;= \sum_{t=0}^{\infty} \E(S_2 | T_2=t) P(T_2=t) \nonumber\\
+&amp; =\sum_{t=0}^{\infty} 2 \mu t P(T_2=t) \nonumber\\
+&amp; =2\mu \E(T_2)  \nonumber\\
+&amp; = 4 \mu N \end{aligned}\)</span><span class="math notranslate nohighlight">\( this makes use of the law of total
+expectation (see Appendix eqn
+[\[eqn:tot_exptation_def\]](#eqn:tot_exptation_def){reference-type=&quot;eqref&quot;
+reference=&quot;eqn:tot_exptation_def&quot;}) to average which generation our pair
+of sequences coalesce in. We'll assume that mutation is rare enough that
+it never happens at the same basepair twice, i.e. no multiple hits, such
+that we get to see all of the mutation events that separate our pair of
+sequences. This is assumption that repeat mutation is vanishingly rare
+at a basepair is called the *i*nfinitely-many-sites assumption, which
+should hold if \)</span>N\mu_{BP} \ll 1<span class="math notranslate nohighlight">\(, where \)</span>\mu_{BP}<span class="math notranslate nohighlight">\( is the mutation rate
+per basepair. Thus the number of mutations between a pair of sites is
+the observed number of differences between a pair of sequences. In the
+previous chapter we denote the observed number of pairwise differences
+at putatively neutral sites separating a pair of sequences as \)</span>\pi<span class="math notranslate nohighlight">\( (we
+usually average this over a number of pairs of sequences for a region).
+Therefore, under our simple, neutral, constant population-size model we
+expect \)</span><span class="math notranslate nohighlight">\(\E(\pi) = 4 N \mu = \theta \label{eqn:pi_expectation}\)</span><span class="math notranslate nohighlight">\( So we
+can get an empirical estimate of \)</span>\theta<span class="math notranslate nohighlight">\( from \)</span>\pi<span class="math notranslate nohighlight">\(, let's call this
+\)</span>\widehat{\theta}<em>{\pi}<span class="math notranslate nohighlight">\(, by setting \)</span>\widehat{\theta}</em>{\pi}=\pi<span class="math notranslate nohighlight">\(, i.e.
+our observed level of pairwise genetic diversity. If we have an
+independent estimate of \)</span>\mu<span class="math notranslate nohighlight">\(, then from setting
+\)</span>\pi =\widehat{\theta}<em>{\pi} = 4N\mu<span class="math notranslate nohighlight">\( we can furthermore obtain an
+estimate of the population size \)</span>N<span class="math notranslate nohighlight">\( that is consistent with our levels
+of neutral polymorphism. If we estimate the population size this way, we
+should call it the effective coalescent population size (\)</span>N_e<span class="math notranslate nohighlight">\(). It's
+best to think about \)</span>N</em>{e}<span class="math notranslate nohighlight">\( estimated from neutral diversity as a
+long-term effective population size for the species, but there are many
+caveats that come along with that assumption. For example, past
+bottlenecks and population expansions are all subsumed into a single
+number and so this estimated \)</span>N_{e}$ may not be very representative of
+the population size at any time. That said, it’s not a bad place to
+start when thinking about the rate of genetic drift for neutral
+diversity in our population over long time-periods.</p>
+<p>Let’s take a moment to distinguish our expected heterozygosity (eqn.
+<a class="reference external" href="#eqn:hetero">[eqn:hetero]</a>{reference-type=”ref”
+reference=”eqn:hetero”}) from our expected number of pairwise
+differences (<span class="math notranslate nohighlight">\(\pi\)</span>). Our expected heterozygosity is the probability that
+two alleles at a locus, sampled from a population at random, are
+different from each other. If one or more mutations have occurred since
+a pair of alleles last shared a common ancestor, then our sequences will
+be different from each other. On the other hand, our <span class="math notranslate nohighlight">\(\pi\)</span> measure keeps
+track of the average total number of differences between our loci. As
+such, <span class="math notranslate nohighlight">\(\pi\)</span> is often a more useful measure, as it records the number of
+differences between the sequences, not just whether they are different
+from each other (however, for certain types of loci, e.g.
+microsatellites, heterozygosity is often used as we cannot usually count
+up the minimum number of mutations in a sensible way). In the case where
+our locus is a single basepair, the two measures will usually be close
+to one another, as <span class="math notranslate nohighlight">\(H \approx \theta\)</span> for small values of <span class="math notranslate nohighlight">\(\theta\)</span>. For
+example, comparing two sequences at random in humans,
+<span class="math notranslate nohighlight">\(\pi \approx 1/1000\)</span> per basepair, and the probability that a specific
+base pair differs between two sequences is <span class="math notranslate nohighlight">\(\approx 1/1000\)</span>. However,
+these two quantities start to differ from each other when we consider
+regions with higher mutation rates. For example, if we consider a 10kb
+region, our mutation rate will 10,000 times larger than a single base
+pair. For this length of sequence the probability that two randomly
+chosen haplotypes differ is quite different from the number of
+mutational differences between them. (Try a mutation rate of <span class="math notranslate nohighlight">\(10^{-8}\)</span>
+per base and a population size of <span class="math notranslate nohighlight">\(10,000\)</span> in our calculations of
+<span class="math notranslate nohighlight">\(\E[\pi]\)</span> and H to see this.)</p>
+<p><img alt="image" src="chapters/illustration_images/Quant_gen/Grey_fox/14770789583_4db7ec5164_o.jpg" />{width=”\textwidth”}</p>
+<p>&#64;robinson:16 found that the endangered Californian Channel Island fox on
+San Nicolas had very low levels of diversity
+(<span class="math notranslate nohighlight">\(\pi =0.000014 \text{bp}^{-1}\)</span>) compared to its close relative the
+California mainland gray fox (<span class="math notranslate nohighlight">\(0.0012\text{bp}^{-1}\)</span>).<br />
+<strong>A)</strong> Assuming a mutation rate of <span class="math notranslate nohighlight">\(2\times 10^{-8}\)</span> per bp, what
+effective population sizes do you estimate for these two populations?<br />
+<strong>B)</strong> Why is the effective population size of the Channel Island fox so
+low? [Hint: quickly google Channel island foxes to read up on their
+history, also to see how ridiculously cute they are.]</p>
+<p>In your own words describe why the coalescent time of a pair of lineages
+scales linearly with the (effective) population size.</p>
+<section id="more-details-on-the-pairwise-coalescent-and-the-randomness-of-mutation">
+<h4>More details on the pairwise coalescent and the randomness of mutation.<a class="headerlink" href="#more-details-on-the-pairwise-coalescent-and-the-randomness-of-mutation" title="Permalink to this headline">#</a></h4>
+<p>We found that our pairwise coalescent times followed a Geometric
+distribution, eqn
+<a class="reference external" href="#eqn:coal_time_dist">[eqn:coal_time_dist]</a>{reference-type=”eqref”
+reference=”eqn:coal_time_dist”}. However, that assumes discrete
+generations, and we’ll often was to think about populations that lack
+discrete generations (i.e. individuals reproducing at random times with
+some mean generation time). Using our exponential approximation, we can
+see that is $<span class="math notranslate nohighlight">\(\approx \frac{1}{2N} e^{-t/(2N)}\)</span><span class="math notranslate nohighlight">\( and so think of a
+continuous random variable, i.e. we could say that the coalescent time
+of a pair of sequences (\)</span>T_2<span class="math notranslate nohighlight">\() is approximately exponentially
+distributed with a rate \)</span>1/(2N)<span class="math notranslate nohighlight">\(, i.e.
+\)</span>T_2 \sim \text{Exp}\left( 1/(2N) \right)$. Formally we can do this by
+taking the limit of the discrete process more carefully. See Appendix
+eqn <a class="reference external" href="#eqn:exp_rv_def">[eqn:exp_rv_def]</a>{reference-type=”eqref”
+reference=”eqn:exp_rv_def”} for more on exponential random variables.</p>
+<p>We’ve derived the expected number of differences between a pair of
+sequences and talked about the variability of the coalescent time for a
+pair of sequences. The mutation process is also very variable; even if
+two sequences coalesce in the very distant past by chance, they may
+still be identical in the present if there was no mutation during that
+time.</p>
+<p>Conditional on the coalescent time <span class="math notranslate nohighlight">\(t\)</span>, the probability that our pair of
+alleles are separated by <span class="math notranslate nohighlight">\(S_2\)</span> mutations since they last shared a common
+ancestor is bionomially distributed
+$<span class="math notranslate nohighlight">\(\P(S_2 | T_2 = t ) = {2t \choose j} \mu^{j} (1-\mu)^{2t-j}\)</span><span class="math notranslate nohighlight">\( i.e.
+mutations happen in \)</span>j<span class="math notranslate nohighlight">\( generations and do not happen in \)</span>2t-j<span class="math notranslate nohighlight">\(
+generations (with \)</span>{2t \choose j}<span class="math notranslate nohighlight">\( ways this combination of events can
+possibly happen). See Appendix eqn
+[\[eqn:binomial_dist\]](#eqn:binomial_dist){reference-type=&quot;eqref&quot;
+reference=&quot;eqn:binomial_dist&quot;} for discussion of the binomial
+distribution. Assuming that \)</span>\mu \ll 1<span class="math notranslate nohighlight">\( and that \)</span>2t-j \approx 2t<span class="math notranslate nohighlight">\(, then
+we can approximate the probability that we have \)</span>S_2<span class="math notranslate nohighlight">\( mutations as a
+Poisson distribution:
+\)</span><span class="math notranslate nohighlight">\(\P(S_2 | T_2 = t ) = \frac{ (2 \mu t )^{j} e^{-2\mu t}}{j!}\)</span><span class="math notranslate nohighlight">\( i.e. a
+Poisson with mean \)</span>2\mu t$. This is an example of taking the binomial
+distribution to its Poisson distribution limit, see Appendix eqn
+<a class="reference external" href="#eqn:bionom_to_poiss">[eqn:bionom_to_poiss]</a>{reference-type=”eqref”
+reference=”eqn:bionom_to_poiss”} for more details. We’ll not make much
+use of this result, but it is very useful in thinking about how to
+simulate the process of mutation.\</p>
+</section>
+</section>
+</section>
+<section id="the-coalescent-process-of-a-sample-of-alleles">
+<h2>The coalescent process of a sample of alleles.<a class="headerlink" href="#the-coalescent-process-of-a-sample-of-alleles" title="Permalink to this headline">#</a></h2>
+<p>Usually we are not just interested in pairs of alleles, or the average
+pairwise diversity. Generally we are interested in the properties of
+diversity in samples of a number of alleles drawn from the population.
+Instead of just following a pair of lineages back until they coalesce,
+we can follow the history of a sample of alleles back through the
+population.</p>
+<p>Consider first sampling three alleles at random from the population. The
+probability that all three alleles choose exactly the same ancestral
+allele one generation back is <span class="math notranslate nohighlight">\(\nicefrac{1}{(2N)^2}\)</span>. If <span class="math notranslate nohighlight">\(N\)</span> is
+reasonably large, then this is a very small probability. As such, it is
+very unlikely that our three alleles coalesce all at once, and in a
+moment we’ll see that it is safe to ignore such unlikely events.\</p>
+<p><img alt="A simple simulation of the coalescent process for three lineages. Wetrack the ancestry of three modern-day alleles, the first pair (red andpurple) coalesce four generations back, after which there are only twoindependent lineages we are tracking. This pair then coalesces twelvegenerations in the past. Note that different random realizations of thisprocess will differ from each other a lot. The  is .The total time in the tree is  generations." src="chapters/figures/Coalescent/Coal_three_lineages.pdf" />{#fig:Coalescent_simulation_3
+width=”0.75 \textwidth”}</p>
+<p>The probability that a specific pair of alleles find a common ancestor
+in the preceding generation is still <span class="math notranslate nohighlight">\(\nicefrac{1}{(2N)}\)</span>. There are
+three possible pairs of alleles, so the probability that no pair finds a
+common ancestor in the preceding generation is
+$<span class="math notranslate nohighlight">\(\left(1-\frac{1}{2N} \right)^3 \approx \left( 1- \frac{3}{2N} \right)\)</span><span class="math notranslate nohighlight">\(
+In making this approximation we are multiplying out the right hand-side
+and ignoring terms of \)</span>1/N^2<span class="math notranslate nohighlight">\( and higher (a Taylor approximation, see
+Appendix eqn
+[\[eqn:Taylor_exp\]](#eqn:Taylor_exp){reference-type=&quot;eqref&quot;
+reference=&quot;eqn:Taylor_exp&quot;}). See Figure
+[1.11](#fig:Coalescent_simulation_3){reference-type=&quot;ref&quot;
+reference=&quot;fig:Coalescent_simulation_3&quot;} for a random realization of
+this process.\
+More generally, when we sample \)</span>i<span class="math notranslate nohighlight">\( alleles there are \)</span>{i \choose 2}<span class="math notranslate nohighlight">\(
+pairs, i.e. \)</span>i(i-1)/2<span class="math notranslate nohighlight">\( pairs. Thus, the probability that no pair of
+alleles in a sample of size \)</span>i<span class="math notranslate nohighlight">\( coalesces in the preceding generation is
+\)</span><span class="math notranslate nohighlight">\(\left(1-\frac{1}{(2N)} \right)^{{i \choose
+ 2}} \approx \left( 1- \frac{{i \choose
+ 2}}{2N}\right)\)</span><span class="math notranslate nohighlight">\( while the probability any pair coalesces is
+\)</span>\approx \nicefrac{2N}<span class="math notranslate nohighlight">\(, again using eqn
+[\[eqn:Taylor_exp\]](#eqn:Taylor_exp){reference-type=&quot;eqref&quot;
+reference=&quot;eqn:Taylor_exp&quot;}.\
+We can ignore the possibility that more than pairs of alleles (e.g.
+tripletons) simultaneously coalesce at once as terms of
+\)</span>\nicefrac{1}{N^2}<span class="math notranslate nohighlight">\( and higher can be ignored as they are vanishingly
+rare. Obviously in reasonable sample sizes there are many more triples
+(\)</span>{i \choose 3}<span class="math notranslate nohighlight">\() and higher order combinations than there are pairs
+(\)</span>{i \choose 2}<span class="math notranslate nohighlight">\(), but if \)</span>i \ll N$ then we are safe to ignore these
+terms.</p>
+<p>When there are <span class="math notranslate nohighlight">\(i\)</span> alleles, the probability that we wait until the <span class="math notranslate nohighlight">\(t+1\)</span>
+generation before any pair of alleles coalesces is
+$<span class="math notranslate nohighlight">\(\P(T_i =t+1) = \frac{{i \choose
+ 2}}{2N}\left( 1- \frac{{i \choose
+ 2}}{2N}\right)^{t} \label{eqn:T_i}\)</span><span class="math notranslate nohighlight">\( Thus the waiting time to the first
+coalescent event while there are \)</span>i<span class="math notranslate nohighlight">\( lineages is a geometrically
+distributed random variable with probability of success
+\)</span>p=\nicefrac{2N}<span class="math notranslate nohighlight">\(, which we denote by
+\)</span><span class="math notranslate nohighlight">\(T_i \sim \text{Geo}
+\left(  \nicefrac{{i \choose
+      2}}{2N} \right).\)</span><span class="math notranslate nohighlight">\( The mean waiting time till any of pair within
+our sample coalesces is
+\)</span><span class="math notranslate nohighlight">\(\E( T_i) = \frac{2N}{{i \choose  2}}  \label{eqn:E_T_i}\)</span><span class="math notranslate nohighlight">\( which again
+follows from the mean of a geometric random variable being
+\)</span>\nicefrac{1}{p}$.</p>
+<p>After a pair of alleles first finds a common ancestral allele some
+number of generations back in the past, we only have to keep track of
+that common ancestral allele for the pair when looking further into the
+past. In our example coalescent genealogy for our 3 alleles, shown in
+Figure <a class="reference external" href="#fig:Coalescent_simulation_3">1.11</a>{reference-type=”ref”
+reference=”fig:Coalescent_simulation_3”}, we start by tracking the 3
+lineages, then by chance the blue and purple coalesce in the four
+generations back. Then we’re tracking just two lineages, the red lineage
+and the ancestral lineage of the blue and purple alleles; then those two
+coalesce and we’ve found our most recent common ancestor of our sample.
+Another example with four tips is shown in Figure
+<a class="reference external" href="#fig:Coal_w_muts">1.12</a>{reference-type=”ref”
+reference=”fig:Coal_w_muts”}; we’re track four lineages, then a pair
+coalesce, then we tracking three lineages, then a pair coalesce, then
+we’re tracking two lineages, then this final pair coalesce and we’ve
+found the most recent common ancestor of our sample (fin, end scene).</p>
+<p>More generally, when a pair of alleles in our sample of <span class="math notranslate nohighlight">\(i\)</span> alleles
+coalesces, we then switch to having to follow <span class="math notranslate nohighlight">\(i-1\)</span> alleles back in
+time. Then when a pair of these <span class="math notranslate nohighlight">\(i-1\)</span> alleles coalesce, we then only
+have to follow <span class="math notranslate nohighlight">\(i-2\)</span> alleles back. This process continues until we
+coalesce back to a sample of two, and from there to a single most recent
+common ancestor (MRCA).\</p>
+<section id="simulating-a-coalescent-genealogy">
+<h3>Simulating a coalescent genealogy<a class="headerlink" href="#simulating-a-coalescent-genealogy" title="Permalink to this headline">#</a></h3>
+<p>To simulate a coalescent genealogy at a locus for a sample of <span class="math notranslate nohighlight">\(n\)</span>
+alleles we therefore simply follow the following algorithm:</p>
+<ol class="simple">
+<li><p>Set <span class="math notranslate nohighlight">\(i=n\)</span>.</p></li>
+<li><p>Simulate a random variable to be the time <span class="math notranslate nohighlight">\(T_i\)</span> to the next
+coalescent event from <span class="math notranslate nohighlight">\(T_i \sim
+  \text{Exp}\left(\nicefrac{{i \choose
+ 2}}{2N} \right)\)</span></p></li>
+<li><p>Choose a pair of alleles to coalesce at random from all possible
+pairs.</p></li>
+<li><p>Set <span class="math notranslate nohighlight">\(i=i-1\)</span></p></li>
+<li><p>Continue looping steps 2-4 until <span class="math notranslate nohighlight">\(i=1\)</span>, i.e. the most recent common
+ancestor of the sample is found.</p></li>
+</ol>
+<p>By following this algorithm we are generating realizations of the
+genealogy of our sample.\</p>
+</section>
+<section id="expected-properties-of-coalescent-genealogies-and-mutations">
+<h3>Expected properties of coalescent genealogies and mutations.<a class="headerlink" href="#expected-properties-of-coalescent-genealogies-and-mutations" title="Permalink to this headline">#</a></h3>
+<p><img alt="A simple coalescent tree from a single coalescent simulation, tracingthe genealogy of 4 alleles with mutational changes marked with dashesshowing transitions away from the MRCA sequence (AGTTT) . The is . The total time in the tree is generations." src="chapters/figures/Coalescent/Coal_w_muts.pdf" />{#fig:Coal_w_muts
+width=”\textwidth”}</p>
+<section id="the-expected-time-to-the-most-recent-common-ancestor">
+<h4>The expected time to the most recent common ancestor.<a class="headerlink" href="#the-expected-time-to-the-most-recent-common-ancestor" title="Permalink to this headline">#</a></h4>
+<p>We will first consider the time to the most recent common ancestor of
+the entire sample (<span class="math notranslate nohighlight">\(T_{MRCA}\)</span>). This is $<span class="math notranslate nohighlight">\(T_{MRCA} = \sum_{i=n}^2 T_i\)</span><span class="math notranslate nohighlight">\(
+generations back, where we are summing from \)</span>i=n<span class="math notranslate nohighlight">\( alleles counting
+backwards to \)</span>i=2<span class="math notranslate nohighlight">\( alleles (see Figure
+[1.12](#fig:Coal_w_muts){reference-type=&quot;ref&quot;
+reference=&quot;fig:Coal_w_muts&quot;} for example). As our coalescent times for
+different \)</span>i<span class="math notranslate nohighlight">\( are independent, the expected time to the most recent
+common ancestor is
+\)</span><span class="math notranslate nohighlight">\(\E(T_{MRCA}) = \sum_{i=n}^2 \E(T_i) = \sum_{i=n}^2  2N/{i \choose
+ 2}\)</span><span class="math notranslate nohighlight">\( Using the fact that \)</span>\frac{1}{i(i-1)}=\frac{1}{i-1} - \frac{1}{i}<span class="math notranslate nohighlight">\(
+and a bit of rearrangement, we can rewrite this as
+\)</span><span class="math notranslate nohighlight">\(\E(T_{MRCA}) = 4N\left(1- \frac{1}{n} \right) \label{TMRCA_neutral}\)</span><span class="math notranslate nohighlight">\(
+So the average \)</span>T_{MRCA}<span class="math notranslate nohighlight">\( scales linearly with population size \)</span>N<span class="math notranslate nohighlight">\(.
+Interestingly, as we move to larger and larger samples (i.e. \)</span>n \gg 1<span class="math notranslate nohighlight">\(),
+the average time to the most recent common ancestor converges on \)</span>4N$.
+What’s happening here is that in large samples our lineages typically
+coalesce rapidly at the start and very soon coalesce down to a much
+smaller number of lineages.\</p>
+<p>Assume an autosomal effective population of 10,000 individuals (roughly
+the long-term human estimate) and a generation time of 30 years. What is
+the expected time to the most recent common ancestor of a sample of 20
+people? What is this time for a sample of 500 people?</p>
+</section>
+<section id="the-expected-total-time-in-a-genealogy-and-the-number-of-segregating-sites">
+<h4>The expected total time in a genealogy and the number of segregating sites.<a class="headerlink" href="#the-expected-total-time-in-a-genealogy-and-the-number-of-segregating-sites" title="Permalink to this headline">#</a></h4>
+<p>Mutations fall on specific lineages of the coalescent genealogy and are
+transmitted to all descendants of their lineage. Furthermore, under the
+infinitely-many-sites assumption, each mutation creates a new
+segregating site. The mutation process is a <em>Poisson process</em>, and the
+longer a particular lineage, i.e. the more generations of meioses it
+represents, the more mutations that can accumulate on it. The total
+number of segregating sites in a sample is thus a function of the
+<em>total</em> amount of time in the genealogy of the sample, or the sum of all
+the branch lengths on the genealogical tree, <span class="math notranslate nohighlight">\(T_{tot}\)</span>. Our total amount
+of time in the genealogy is</p>
+<div class="math notranslate nohighlight">
+\[T_{tot} = \sum_{i=n}^2 iT_i$$ as when there are $i$ lineages, each
+contributes a time $T_i$ to the total time (see Figure
+[1.12](#fig:Coal_w_muts){reference-type=&quot;ref&quot;
+reference=&quot;fig:Coal_w_muts&quot;} for an example). Taking the expectation of
+the total time in the genealogy,
+$$\E(T_{tot}) = \sum_{i=n}^2 i \frac{2N}{{i \choose
+ 2} } = \sum_{i=n}^2 \frac{4N}{i -1} =\sum_{i=n-1}^1 \frac{4N}{i} \label{eqn:E_T_tot}\]</div>
+<p>we see that our expected total amount of time in the genealogy scales
+linearly with our population size <span class="math notranslate nohighlight">\(N\)</span>. Our expected total amount of time
+is also increasing with sample size <span class="math notranslate nohighlight">\(n\)</span>, but is doing so very slowly.
+This again follows from the fact that in large samples, the initial
+coalescence usually happens very rapidly, so that extra samples add
+little to the total amount of time in the genealogical tree.<br />
+We saw above that the number of mutational differences between a pair of
+alleles that coalescence <span class="math notranslate nohighlight">\(T_2\)</span> generations ago was Poisson with a mean
+of <span class="math notranslate nohighlight">\(2 \mu T_2\)</span>, where <span class="math notranslate nohighlight">\(2T_{2}\)</span> is the total branch length in this simple
+2-sample genealogical tree. A mutation that occurs on any branch of our
+genealogy will cause a segregating polymorphism in the sample (meeting
+our infinitely-many-sites assumption). Thus, if the total time in the
+genealogy is <span class="math notranslate nohighlight">\(T_{tot}\)</span>, there are <span class="math notranslate nohighlight">\(T_{tot}\)</span> generations for mutations.
+So the total number of mutations segregating in our sample (<span class="math notranslate nohighlight">\(S\)</span>) is
+Poisson with mean <span class="math notranslate nohighlight">\(\mu T_{tot}\)</span>. Thus the expected number of segregating
+sites in a sample of size <span class="math notranslate nohighlight">\(n\)</span> is
+$<span class="math notranslate nohighlight">\(\E(S) = \mu \E(T_{tot}) = \sum_{i=n-1}^1 \frac{4N\mu }{i} = \theta
+\sum_{i=n-1}^1 \frac{1}{i} \label{eqn:seg_sites}\)</span><span class="math notranslate nohighlight">\( Note that this is
+growing with the sample size \)</span>n<span class="math notranslate nohighlight">\(, albeit very slowly (roughly at the
+rate of the \)</span>\log<span class="math notranslate nohighlight">\( of the sample size). We can use this formula to
+derive another estimate of the population scaled mutation rate \)</span>\theta<span class="math notranslate nohighlight">\(,
+by setting our observed number of segregating sites in a sample (\)</span>S<span class="math notranslate nohighlight">\()
+equal to this expectation. We'll call this estimator
+\)</span>\widehat{\theta}_W<span class="math notranslate nohighlight">\(:
+\)</span><span class="math notranslate nohighlight">\(\widehat{\theta}_W =\frac{ S}{\sum_{i=n-1}^1 \nicefrac{1}{i}}   \label{watterson_theta}\)</span><span class="math notranslate nohighlight">\(
+This estimator of \)</span>\theta<span class="math notranslate nohighlight">\( was devised by &#64;watterson:75, hence the \)</span>W$.</p>
+</section>
+<section id="the-neutral-site-frequency-spectrum">
+<h4>The neutral site-frequency spectrum.<a class="headerlink" href="#the-neutral-site-frequency-spectrum" title="Permalink to this headline">#</a></h4>
+<p>We can use our coalescent process to find the expected number of derived
+alleles present <span class="math notranslate nohighlight">\(i\)</span> times out of a sample size <span class="math notranslate nohighlight">\(n\)</span>, e.g. how many
+singletons (<span class="math notranslate nohighlight">\(i = 1\)</span>) do we expect to find in our sample? For example, in
+Figure <a class="reference external" href="#fig:Coal_w_muts">1.12</a>{reference-type=”ref”
+reference=”fig:Coal_w_muts”} in our sample of four sequences, there are
+3 singletons and 2 doubletons. The number of sites with these different
+allele frequencies depends on the lengths of specific genealogical
+branches. A mutation that falls on a branch with <span class="math notranslate nohighlight">\(i\)</span> descendants will
+create a derived allele with frequency <span class="math notranslate nohighlight">\(i\)</span>. For example, in our example
+tree in Figure <a class="reference external" href="#fig:Coal_w_muts">1.12</a>{reference-type=”ref”
+reference=”fig:Coal_w_muts”}, the total number of generations where a
+mutation could arise and be a doubleton is <span class="math notranslate nohighlight">\(T_3+2T_2\)</span>, the total length
+of the branch ancestral to just the orange and red allele <span class="math notranslate nohighlight">\((T_3+T_2)\)</span>
+plus the branch ancestral to just the blue and purple allele <span class="math notranslate nohighlight">\((T_2)\)</span>.</p>
+<p><img alt="image" src="chapters/figures/Genetic_drift/freq_spec_tree.pdf" />{width=”\textwidth”}</p>
+<p>To see how we could go about working this out, let’s start by
+considering the simple coalescent tree, shown in Figure
+<a class="reference external" href="#fig:freq_coal">[fig:freq_coal]</a>{reference-type=”ref”
+reference=”fig:freq_coal”}, for sample of <span class="math notranslate nohighlight">\(3\)</span> alleles drawn from a
+population. Mutations that fall on the branches coloured in black will
+be derived singletons, while mutations that fall along the orange branch
+will be doubletons in the sample. The total number of generations where
+a singleton mutation could arise is <span class="math notranslate nohighlight">\(3 T_3 + T_2\)</span>. Note that we only
+count the time where there are two lineages <span class="math notranslate nohighlight">\((T_{2})\)</span> once. So our
+expected number of singletons, using eqn
+<a class="reference external" href="#eqn:E_T_i">[eqn:E_T_i]</a>{reference-type=”eqref”
+reference=”eqn:E_T_i”}, is
+$<span class="math notranslate nohighlight">\(\E(S_i) = \mu \left( 3\E(T_3) +  \E(T_2) \right) = \mu \left( 3
+  \frac{2N}{3}+ 2N \right) = \theta\)</span><span class="math notranslate nohighlight">\( By similar logic, the time where
+doubletons could arise is \)</span>T_2<span class="math notranslate nohighlight">\( and our expected number of doubletons is
+\)</span>\E(S_i)
+=\theta/2$. Thus, there are on average half as many doubletons as
+singletons.</p>
+<p>Extending this logic to larger samples might be doable, but is tedious
+(I mean really tedious: for 10 alleles there are thousands of possible
+tree shapes and the task quickly gets impossible even computationally).
+A nice, relatively simple proof of the neutral site frequency spectrum
+is given by [&#64;Hudson:15], but we won’t give this here. The general form
+is: $<span class="math notranslate nohighlight">\(\E(S_i) = \frac{\theta }{i}   \label{eqn:neutral_freq_spec}\)</span>$ i.e.
+there are twice as many singletons as doubletons, three times as many
+singletons as tripletons, and so on. The other thing that will be
+helpful for us to know is that neutral alleles at intermediate frequency
+tend to be old, and those that are rare in the sample are on average
+young. We expect to see a lot more rare alleles in our sample than
+common alleles.</p>
+<p>There are two possible tree shapes that could relate four samples. Draw
+both of them and separately colour (or otherwise mark) the branches by
+where singletons, doubletons, and tripleton derived alleles could arise.</p>
+<p>We can also ask the probability of observing a derived allele
+segregating at frequency <span class="math notranslate nohighlight">\(i/n\)</span> given that the site is polymorphic in our
+sample of size <span class="math notranslate nohighlight">\(n\)</span> (i.e. given that <span class="math notranslate nohighlight">\(0&lt;i&lt;n\)</span> ). We can obtain this
+probability by dividing the expected number of sites segregating for an
+allele at frequency <span class="math notranslate nohighlight">\(i\)</span> by the expected number segregating at all of the
+possible allele frequencies for polymorphisms in our sample
+$<span class="math notranslate nohighlight">\(\begin{aligned}
+\P(i |0&lt;i&lt;n) &amp;=\frac{\E(S_i)}{\sum_{j=1}^{n-1} \E(S_j)} = \frac{\nicefrac{1}{i}}{\sum_{j=1}^{n-1} \nicefrac{1}{j}}.\end{aligned}\)</span><span class="math notranslate nohighlight">\(
+We can interpret this probability as the fraction of polymorphic sites
+we expect to find at a frequency \)</span>i/n$.</p>
+</section>
+<section id="tests-based-on-the-site-frequency-spectrum">
+<h4>Tests based on the site frequency spectrum<a class="headerlink" href="#tests-based-on-the-site-frequency-spectrum" title="Permalink to this headline">#</a></h4>
+<p>Population geneticists have proposed a variety of ways to test whether
+an observed site frequency spectrum conforms to its neutral,
+constant-size expectations. These tests are useful for detecting
+population size changes using data across many loci, or for detecting
+the signal of selection at individual loci. One of the first tests was
+proposed by [&#64;tajima:89], and is called Tajima’s <span class="math notranslate nohighlight">\(D\)</span>. Tajima’s <span class="math notranslate nohighlight">\(D\)</span> is
+$<span class="math notranslate nohighlight">\(D = \frac{\hat{\theta}_{\pi}-\hat{\theta}_{W}}{C} \label{eqn_Tajimas_D}\)</span><span class="math notranslate nohighlight">\(
+where the numerator is the difference between the estimate of \)</span>\theta<span class="math notranslate nohighlight">\(
+based on pairwise differences and that based on segregating sites. As
+these two estimators both have expectation \)</span>\theta<span class="math notranslate nohighlight">\( under the neutral,
+constant-size model, the expectation of \)</span>D<span class="math notranslate nohighlight">\( is zero. The denominator \)</span>C<span class="math notranslate nohighlight">\(
+is a positive constant; it's the square-root of an estimator of the
+variance of this difference under the constant population size, neutral
+model. This constant was chosen for \)</span>D<span class="math notranslate nohighlight">\( to have mean zero and variance
+\)</span>1<span class="math notranslate nohighlight">\( under the null model, so we can test for departures from this simple
+null model.\
+An excess of rare alleles compared to the constant-size, neutral model
+will result in a negative Tajima's \)</span>D<span class="math notranslate nohighlight">\(, because each additional rare
+allele increases the number of segregating sites by \)</span>1<span class="math notranslate nohighlight">\(, but only has a
+small effect on the number of pairwise differences between samples. In
+contrast, a positive Tajima's \)</span>D<span class="math notranslate nohighlight">\( reflects an excess of intermediate
+frequency alleles relative to the constant-size, neutral expectation.
+Alleles at intermediate-frequency increase pairwise diversity more per
+segregating site than typical, thus increasing \)</span>\theta_{\pi}<span class="math notranslate nohighlight">\( more than
+\)</span>\theta_{W}<span class="math notranslate nohighlight">\(. In the next section we'll see how long-term changes in
+population size systematically change the site frequency spectrum and so
+are detectable by statistics such as Tajima's \)</span>D$.</p>
+</section>
+</section>
+<section id="demography-and-the-coalescent">
+<h3>Demography and the coalescent<a class="headerlink" href="#demography-and-the-coalescent" title="Permalink to this headline">#</a></h3>
+<p><img alt="image" src="chapters/Journal_figs/genetic_drift/human_pop_growth/Nelson_pop_growth.pdf" />{width=”\textwidth”}</p>
+<p>We’ve already seen how changes in population size can change the rate at
+which heterozygosity is lost from the population (see the discussion
+around eqn.
+<a class="reference external" href="#eqn:var_pop_coal">[eqn:var_pop_coal]</a>{reference-type=”eqref”
+reference=”eqn:var_pop_coal”}). If the population size in generation <span class="math notranslate nohighlight">\(i\)</span>
+is <span class="math notranslate nohighlight">\(N_i\)</span>, the probability that a pair of lineages coalesce is
+<span class="math notranslate nohighlight">\(\nicefrac{1}{(2N_i)}\)</span>; this conforms to our intuition that if the
+population size is small, the rate at which pairs of lineages find their
+common ancestor is faster. We can potentially accommodate rapid random
+fluctuations in population size by simply using the effective population
+size <span class="math notranslate nohighlight">\(N_e\)</span> in place of <span class="math notranslate nohighlight">\(N\)</span>. However, longer-term, more systematic
+changes in population size will distort the coalescent genealogies, and
+hence patterns of diversity, in more systematic ways.</p>
+<p>We can see how demography potentially distorts the observed frequency
+spectrum away from the neutral expectation in a very large sample of
+humans shown in Figure
+<a class="reference external" href="#fig:Human_growth">[fig:Human_growth]</a>{reference-type=”ref”
+reference=”fig:Human_growth”}. For comparison, the neutral frequency
+spectrum, eqn
+<a class="reference external" href="#eqn:neutral_freq_spec">[eqn:neutral_freq_spec]</a>{reference-type=”eqref”
+reference=”eqn:neutral_freq_spec”}, is shown as a red line. There are
+vastly more rare alleles than expected under our neutral,
+constant-size-size model, but the neutral prediction and reality agree
+somewhat more for alleles that are more common.</p>
+<p><img alt="image" src="chapters/figures/Genetic_drift/Demography/Growth_genealogy.pdf" />{width=”\textwidth”}</p>
+<p>Why is this? Well, these patterns are likely the result of the very
+recent explosive growth in human populations. If the population has
+grown rapidly, then the pairwise-coalescent rate in the past may be much
+higher than the coalescent rate closer to the present. (see Figure
+<a class="reference external" href="#fig:Genealogy_growth">[fig:Genealogy_growth]</a>{reference-type=”ref”
+reference=”fig:Genealogy_growth”}).</p>
+<p>One consequence of a recent population expansion is that there is much
+less genetic diversity in the population than you’d predict using the
+census population size. Humans are one example of this effect; there are
+<span class="math notranslate nohighlight">\(7\)</span> billion of us alive today, but this is due to very rapid population
+growth over the past thousand to tens of thousands of years. Our level
+of genetic diversity is very much lower than you’d predict given our
+census size, reflecting our much smaller ancestral population. A second
+consequence of recent population expansion is that the deeper coalescent
+branches are much more squished together in time compared to those in a
+constant-sized population. Mutations on deeper branches are the source
+of alleles at more intermediate frequencies, and so there are even fewer
+intermediate-frequency alleles in growing populations. That’s why there
+are so many rare alleles, especially singletons, in this large sample of
+Europeans.</p>
+<p>Another common demographic scenario is a population bottleneck. In a
+bottleneck, the population size crashes dramatically, and subsequently
+recovers. For example, our population may have had size
+<span class="math notranslate nohighlight">\(N_{\textrm{Big}}\)</span> and crashed down to <span class="math notranslate nohighlight">\(N_{\textrm{Small}}\)</span>. One example
+of a bottleneck is shown in Figure
+<a class="reference external" href="#fig:Genealogy_crash">[fig:Genealogy_crash]</a>{reference-type=”ref”
+reference=”fig:Genealogy_crash”}.</p>
+<p><img alt="image" src="chapters/figures/Genetic_drift/Demography/Crash_genealogy.pdf" />{width=”\textwidth”}</p>
+<p>Looking at a sample of lineages drawn from the population today, if the
+bottleneck was somewhat recent (<span class="math notranslate nohighlight">\(\ll N_{\textrm{Big}}\)</span> generations in
+the past) many of our lineages will not have coalesced before reaching
+the bottleneck, moving backward in time. But during the bottleneck our
+lineages coalesce at a much higher rate, such that many of our lineages
+will coalesce if the bottleneck lasts long enough
+(<span class="math notranslate nohighlight">\(\sim N_{\textrm{Small}}\)</span> generations). If the bottleneck is very
+strong, then all of our lineages will coalesce during the bottleneck,
+and the resulting site frequency spectrum may look very much like our
+population growth model (i.e. an excess of rare alleles). However, if
+some pairs of lineages escape coalescing during the bottleneck, they
+will coalesce much more deeply in time (e.g. the blue and orange
+ancestral lineages in
+<a class="reference external" href="#fig:Genealogy_crash">[fig:Genealogy_crash]</a>{reference-type=”ref”
+reference=”fig:Genealogy_crash”}).</p>
+<p><img alt="Diversity along a region of the Mimulus genome. Black dots give in 1kb windows between chromosomes sampled from two individuals, the redline is a moving average (data from &#64;brandvain:14). Pairwise coalescenttimes () estimated assuming  using." src="chapters/figures/Genetic_drift/Demography/Mimulus_coalescent_times.pdf" />{#fig:Mimulus_bottleneck
+width=”\textwidth”}</p>
+<p>An example of this is shown Figure
+<a class="reference external" href="#fig:Mimulus_bottleneck">1.13</a>{reference-type=”ref”
+reference=”fig:Mimulus_bottleneck”}, data from &#64;brandvain:14. <em>Mimulus
+nasutus</em> is a selfing species that arose recently from an out-crossing
+progenitor <em>M. guttatus</em>, and experienced a strong bottleneck. <em>M.
+guttatus</em> has very high levels of genetic diversity (<span class="math notranslate nohighlight">\(\pi=4\%\)</span> at
+synonymous sites), but <em>M. nasutus</em> has lost much of this diversity
+(<span class="math notranslate nohighlight">\(\pi =1\%\)</span>). Looking along the genome, between a pair of <em>M. guttatus</em>
+chromosomes, levels of diversity are fairly uniformly high.</p>
+<p><img alt="image" src="chapters/illustration_images/Genetic_drift/Mimulus/Mimulus.png" />{width=”0.75 \textwidth”}</p>
+<p>But in comparing two <em>M. nasutus</em> chromosomes, diversity is low because
+the pair of lineages generally coalesce recently. Yet in a few places we
+see levels of diversity comparable to <em>M. guttatus</em>; these regions
+correspond to genomic sites where our pair of lineages fail to coalesce
+during the bottleneck and subsequently coalesce much more deeply in the
+ancestral <em>M. guttatus</em> population.</p>
+<p><img alt="Data for polymorphism from Maize and Teosinite: 774 loci from&#64;Wright:05. Left) Genetic diversity levels in maize and and teosintesamples at each of these loci. Note how diversity levels are lower inmaize than teosinte, i.e. most points are below the red  line.Right) The distribution of Tajima's D in maize and teosinte, see howthe maize distribution is shifted towards positive values." src="chapters/Journal_figs/genetic_drift/Maize_bottleneck/Wright_Tajima_D.pdf" />{#fig:maize_Tajimas_D
+width=”\textwidth”}</p>
+<p><img alt="image" src="chapters/illustration_images/Genetic_drift/teosinte/17960129408_21ad0a16f7_k.jpg" />{width=”0.7 \textwidth”}</p>
+<p>Mutations that arise on deeper lineages will be at intermediate
+frequency in our sample, and so mild bottlenecks can lead to an excess
+of intermediate frequency alleles compared to the standard constant-size
+model. This can skew Tajima’s D (see eqn
+<a class="reference external" href="#eqn_Tajimas_D">[eqn_Tajimas_D]</a>{reference-type=”ref”
+reference=”eqn_Tajimas_D”}) towards positive values and away from its
+expectation of zero. One example of this skew is shown in Figure
+<a class="reference external" href="#fig:maize_Tajimas_D">1.14</a>{reference-type=”ref”
+reference=”fig:maize_Tajimas_D”}. Maize (<em>Zea mays</em> subsp. <em>mays</em>) was
+domesticated from its wild progenitor teosinte (<em>Zea mays subsp.
+parviglumis</em>) roughly ten thousand years ago. We can see how the
+bottleneck associated with domestication has resulted in a loss of
+genetic diversity in maize compared to teosinte, and the polymorphism
+that remains is somewhat skewed towards intermediate frequencies
+resulting in more positive values of Tajima’s D.</p>
+<p>&#64;voight2005interrogating sequenced 40 autosomal regions from 15 diploid
+samples of Hausa people from Yaounde, Cameroon. The average length of
+locus they sequenced for each region was <span class="math notranslate nohighlight">\(2365\)</span>bp. They found that the
+average number of segregating sites per locus was <span class="math notranslate nohighlight">\(S= 11.1\)</span> and the
+average <span class="math notranslate nohighlight">\(\pi = 0.0011\)</span> per base over the loci. Is Tajima’s D positive or
+negative? Is a demographic model with a bottleneck or growth more
+consistent with this result?</p>
+<p>Genetic drift is the random change in allele frequencies due to alleles
+by chance leaving more or fewer copies of themselves to the next
+generation. It is directionless, with alleles equally likely to go up or
+down in frequency thanks to drift. Genetic drift occurs at a slower rate
+in larger populations as there is a greater degree of averaging in
+larger populations that reduces the impact of the randomness in
+individuals’ reproduction.</p>
+<p>On average genetic drift acts to remove genetic diversity (e.g.
+heterozygosity) from the population. The rate at which neutral genetic
+diversity is lost from the population is inversely proportional the
+population size.</p>
+<p>A balance of mutation and genetic drift can maintain an equilibrium
+level of neutral genetic diversity in a population. This equilibrium
+level is determined by the population-scaled mutation rate (<span class="math notranslate nohighlight">\(N \mu\)</span>).</p>
+<p>In practice, genetic drift will rarely occur at the rate suggested by
+the census population size, e.g. due to large variance in reproductive
+success and short-term population size fluctuations. In many situations,
+we can address this by using an effective population size in place of
+the census population size. We can estimate this effective population
+size by matching our observed rate of genetic drift to that expected in
+an idealized population.</p>
+<p>A key insight in thinking about patterns of neutral diversity is to
+realize that neutral mutations do not alter the shape of the genetic
+tree (or genealogy) relating individuals, and so it is often helpful to
+think about the tree first and then think of neutral mutations scattered
+on top of this tree.</p>
+<p>Coalescent theory describes the properties of these trees, and the
+mutational patterns generated, under a model of neutral evolution.</p>
+<p>Long-term changes in population size alter the rate of coalescence in a
+predictable way that impacts patterns of variation. These patterns can
+be used to detect violations of a constant population model and to
+estimate more complex demographic models.</p>
+<p>Based on museum samples from <span class="math notranslate nohighlight">\(\sim 1800\)</span>, you estimate that the average
+heterozygosity in Northern Elephant Seals was <span class="math notranslate nohighlight">\(0.0304\)</span> across many loci.
+Based on further samples, you estimate that in <span class="math notranslate nohighlight">\(1960\)</span> this had dropped
+to <span class="math notranslate nohighlight">\(0.011\)</span>. Elephant Seals have a generation time of <span class="math notranslate nohighlight">\(8\)</span> years.<br />
+What effective population size do you estimate is consistent with this
+drop?</p>
+<p><strong>A)</strong> Why are large populations expected to harbor more neutral
+variation?<br />
+<strong>B)</strong> What is the effective population size? Is it usually higher or
+lower than the census population size?<br />
+<strong>C)</strong> Why does the effective population size differ across the
+autosomes, Y chromosome, and mtDNA?</p>
+<p>You sequence a genomic region of a species of Baboon. Out of 100
+thousand basepairs, on average, 200 differ between each pair of
+sequences. Assume a per base mutation rate of <span class="math notranslate nohighlight">\(1 \times 10^{-8}\)</span> and a
+generation time of ten years.<br />
+<strong>A)</strong> What is the effective population size of these Baboons?<br />
+<strong>B)</strong> What is the average coalescent time (in years) of a pair of
+sequences in this species?</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Graham Coop<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
