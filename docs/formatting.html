@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>To Do List &#8212; Population And Quantitative Genetics</title>
+    <title>Formatting &#8212; Population And Quantitative Genetics</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,6 +50,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -181,6 +183,26 @@ const thebe_selector_output = ".output, .cell_output"
      Loss of heterozygosity due to drift
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapters/chapter-04/chapter-04.3-the-coalescent-and-patterns-of-neutral-diversity.html">
+     The Coalescent and patterns of neutral diversity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapters/chapter-04/chapter-04.4-the-coalescent-process-of-a-sample-of-alleles.html">
+     The coalescent process of a sample of alleles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapters/chapter-04/chapter-04.5-chapter-summary.html">
+     Chapter Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapters/chapter-04/chapter-04.6-further-questions.html">
+     Further Questions
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1">
@@ -278,7 +300,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftodo.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fformatting.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -306,7 +328,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/todo.md"
+        <a href="_sources/formatting.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -343,23 +365,100 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#citations">
+   Citations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#math">
+   Math
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#figures">
+   Figures
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#margins">
+   Margins
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>To Do List</h1>
+                <h1>Formatting</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#citations">
+   Citations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#math">
+   Math
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#figures">
+   Figures
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#margins">
+   Margins
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -367,26 +466,58 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="to-do-list">
-<h1>To Do List<a class="headerlink" href="#to-do-list" title="Permalink to this headline">#</a></h1>
-<p>done - Figure numbers for figures in margin
-done with python script - View CSV as table</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="formatting">
+<h1>Formatting<a class="headerlink" href="#formatting" title="Permalink to this headline">#</a></h1>
+<p>This file contains the formatting to be used within the Jupyter Notebook.</p>
+<section id="citations">
+<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>Equation list</p></li>
-<li><p>Bibliography citation format</p></li>
-<li><p>Chapter 2. fix Hardy and others citation</p></li>
-<li><p>Convert Figure 2.10 to png</p></li>
-<li><p>Convert Figure 2.11 to png</p></li>
-<li><p>Covert all pdfs to png</p></li>
-<li><p>Table header line bold or not?
-done - Dropdown TOC</p></li>
-<li><p>Margin references to specific sentence</p></li>
-<li><p>Figure 3.11</p></li>
-<li><p>On page 53, there’s an extra “fraction.” halfway down</p></li>
-<li><p>Comma at the end of Question3.6B should be .</p></li>
-<li><p>Page 66 change “contraint” to “constraint”</p></li>
-<li><p>Missing Eq 4.8</p></li>
+<li><p>Within text citation, year in parentheses - <span id="id1">Janicke <em>et al.</em> [<a class="reference internal" href="chapters/chapter-00-bibliography.html#id200" title="Tim Janicke, Ines K Häderer, Marc J Lajeunesse, and Nils Anthes. Darwinian sex roles confirmed across the animal kingdom. Science advances, 2(2):e1500983, 2016.">2016</a>]</span></p></li>
+<li><p>Parentheses citation - <span id="id2">[<a class="reference internal" href="chapters/chapter-00-bibliography.html#id12" title="Godfrey H Hardy and others. Mendelian proportions in a mixed population. Science, 28(706):49–50, 1908.">Hardy and others, 1908</a>]</span></p>
+<ul>
+<li><p>If multiple citations, separate with a comma - <span id="id3">[<a class="reference internal" href="chapters/chapter-00-bibliography.html#id12" title="Godfrey H Hardy and others. Mendelian proportions in a mixed population. Science, 28(706):49–50, 1908.">Hardy and others, 1908</a>, <a class="reference internal" href="chapters/chapter-00-bibliography.html#id14" title="Wilhelm Weinberg. Über den nachweis der vererbung beim menschen. Jahres. Wiertt. Ver. Vaterl. Natkd., 64:369–382, 1908.">Weinberg, 1908</a>]</span></p></li>
 </ul>
+</li>
+</ul>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Equations - equation <a class="reference internal" href="chapters/chapter-04/chapter-04.2-loss-of-heterozygosity-due-to-drift.html#equation-eq-4-13">(45)</a></p></li>
+<li><p>Figures - <a class="reference internal" href="chapters/chapter-04/chapter-04.2-loss-of-heterozygosity-due-to-drift.html#figure-4-9"><span class="std std-numref">Fig. 39</span></a></p></li>
+</ul>
+<p>Note that the figures reference automatically adds “Fig.” to the reference.</p>
+</section>
+<section id="math">
+<h2>Math<a class="headerlink" href="#math" title="Permalink to this headline">#</a></h2>
+<div class="math notranslate nohighlight" id="equation-eq-4-14">
+<span class="eqno">()<a class="headerlink" href="#equation-eq-4-14" title="Permalink to this equation">#</a></span>\[    \theta = 4N\mu\]</div>
+</section>
+<section id="figures">
+<h2>Figures<a class="headerlink" href="#figures" title="Permalink to this headline">#</a></h2>
+<figure class="align-left" id="figure-2-10">
+<img alt="../../figures/Cousins_IBD_chromo_cartoon.png" src="../../figures/Cousins_IBD_chromo_cartoon.png" />
+<figcaption>
+<p><span class="caption-text">- First cousins sharing a stretch of chromosome identical by descent. The different grandparental diploid chromosomes are coloured so we can track them and recombinations between them across the generations. Notice that the identity by descent between the cousins persists for a long stretch of chromosome due to the limited number of generations for recombination. The squares represent males and circles females.</span><a class="headerlink" href="#figure-2-10" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="margins">
+<h2>Margins<a class="headerlink" href="#margins" title="Permalink to this headline">#</a></h2>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p><span id="id4">[<a class="reference internal" href="chapters/chapter-00-bibliography.html#id307" title="Charles William Cotterman. A calculus for statistico-genetics. PhD thesis, The Ohio State University, 1940.">Cotterman, 1940</a>, <a class="reference internal" href="chapters/chapter-00-bibliography.html#id308">Malécot, 1948</a>]</span></p>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-2-11">
+<img alt="../../figures/sharing_relatives/IBD_0_1_2.pdf" src="../../figures/sharing_relatives/IBD_0_1_2.pdf" />
+<figcaption>
+<p><span class="caption-text">- A pair of diploid individ- uals (i and j) sharing 0, 1, or 2 alleles IBD where lines show the sharing of alleles by descent (e.g. from a shared ancestor). Here we’ll focus on IBD of outbred individuals. Dealing with sharing between inbred individuals requires 6 more identity-by-descent r coefficients, which honestly makes my head spin.</span><a class="headerlink" href="#figure-2-11" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

@@ -1,0 +1,682 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>The Coalescent and patterns of neutral diversity &#8212; Population And Quantitative Genetics</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Bibliography" href="../chapter-00-bibliography.html" />
+    <link rel="prev" title="Loss of heterozygosity due to drift" href="chapter-04.2-loss-of-heterozygosity-due-to-drift.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Population And Quantitative Genetics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../chapter-01-introduction.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chapter-02/chapter-02.1-allele-and-genotype-frequencies.html">
+   Allele And Genotype Frequencies
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter-02/chapter-02.2-allele-frequencies.html">
+     Allele Frequencies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter-02/chapter-02.3-allele-sharing-among-related-individuals-and-identity-by-descent.html">
+     Allele Sharing Among Related Individuals And Identity By Descent
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter-02/chapter-02.4-chapter-summary.html">
+     Chapter Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter-02/chapter-02.5-further-questions.html">
+     Further Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chapter-03/chapter-03.1-population-structure-and-correlations-among-loci.html">
+   Population Structure and Correlations Among Loci
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter-03/chapter-03.2-chapter-summary.html">
+     Chapter Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter-03/chapter-03.3-further-questions.html">
+     Further Questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="chapter-04.1-genetic-drift-and-neutral-diversity.html">
+   Genetic Drift and Neutral Diversity
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-04.2-loss-of-heterozygosity-due-to-drift.html">
+     Loss of heterozygosity due to drift
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     The Coalescent and patterns of neutral diversity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../chapter-00-bibliography.html">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapters/chapter-04/chapter-04.3-the-coalescent-and-patterns-of-neutral-diversity.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/chapters/chapter-04/chapter-04.3-the-coalescent-and-patterns-of-neutral-diversity.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pairwise-coalescent-time-distribution-and-the-number-of-pairwise-differences">
+   Pairwise Coalescent time distribution and the number of pairwise differences
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#more-details-on-the-pairwise-coalescent-and-the-randomness-of-mutation">
+   More details on the pairwise coalescent and the randomness of mutation
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>The Coalescent and patterns of neutral diversity</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pairwise-coalescent-time-distribution-and-the-number-of-pairwise-differences">
+   Pairwise Coalescent time distribution and the number of pairwise differences
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#more-details-on-the-pairwise-coalescent-and-the-randomness-of-mutation">
+   More details on the pairwise coalescent and the randomness of mutation
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="the-coalescent-and-patterns-of-neutral-diversity">
+<h1>The Coalescent and patterns of neutral diversity<a class="headerlink" href="#the-coalescent-and-patterns-of-neutral-diversity" title="Permalink to this headline">#</a></h1>
+<p><em>“Life can only be understood backwards; but it must be lived forwards”</em> - Kierkegaard</p>
+<section id="pairwise-coalescent-time-distribution-and-the-number-of-pairwise-differences">
+<h2>Pairwise Coalescent time distribution and the number of pairwise differences<a class="headerlink" href="#pairwise-coalescent-time-distribution-and-the-number-of-pairwise-differences" title="Permalink to this headline">#</a></h2>
+<p>Thinking back to our calculations we made about the loss of neutral
+heterozygosity and equilibrium levels of diversity (in Sections <a class="reference internal" href="chapter-04.2-loss-of-heterozygosity-due-to-drift.html#sec-4-1"><span class="std std-ref">Loss of heterozygosity due to drift</span></a> and <a class="reference internal" href="chapter-04.2-loss-of-heterozygosity-due-to-drift.html#sec-4-1-1"><span class="std std-ref">Levels of diversity maintained by a balance between mutation and drift</span></a>), you’ll note that we could first
+specify which generation a pair of sequences coalesce in, and then
+calculate some properties of heterozygosity based on that. That’s
+because neutral mutations do not affect the probability that an
+individual transmits an allele, and so don’t affect the way in which we
+can trace ancestral lineages back through the generations.</p>
+<p>As such, it will often be helpful to consider the time to the common
+ancestor of a pair of sequences (<span class="math notranslate nohighlight">\(T_2\)</span>), and then think of the impact of
+that time to coalescence on patterns of diversity. See <a class="reference internal" href="#figure-4-15"><span class="std std-numref">Fig. 42</span></a> for an example of this.</p>
+<figure class="align-left" id="figure-4-15">
+<img alt="../../_images/Coalescent.png" src="../../_images/Coalescent.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 42 </span><span class="caption-text">- A simple demonstration of the coalescent process. The simulation
+consists of a diploid population of 10 individuals (20 alleles). In each
+generation, each individual is equally likely to be the parent of an
+offspring (and the allele transmitted is indicated by a light grey
+line). We track a pair of alleles, chosen in the present day, back 14
+generations until they find a common ancestor. Deeper in time than 14
+generations those two alleles have the same ancestral lineage and
+completely share their history, e.g. the mutations that occur on that
+lineage.</span><a class="headerlink" href="#figure-4-15" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The probability that a pair of alleles have failed to coalesce in <span class="math notranslate nohighlight">\(t\)</span>
+generations and then coalesce in the <span class="math notranslate nohighlight">\(t+1\)</span> generation back is</p>
+<div class="math notranslate nohighlight" id="equation-eq-4-21">
+<span class="eqno">(51)<a class="headerlink" href="#equation-eq-4-21" title="Permalink to this equation">#</a></span>\[    P(T_2=t+1) = \frac{1}{2N} \left(1- \frac{1}{2N} \right)^{t}\]</div>
+<p>For example, the probability that a pair of sequences coalesce three
+generations back is the probability that they fail to coalesce in
+generation 1 and 2, which is <span class="math notranslate nohighlight">\(\left(1- \frac{1}{2N} \right) \times \left(1- \frac{1}{2N} \right)\)</span>,
+multipled by the probability that they find a common ancestor, i.e.
+coalesce, in the third generation, which happens with probability
+<span class="math notranslate nohighlight">\(\frac{1}{2N}\)</span>.</p>
+<p>From the form of equation <a class="reference internal" href="#equation-eq-4-21">(51)</a>, we can see that the coalescent time of
+our pair of alleles is a Geometrically distributed random variable,
+where the probability of success is <span class="math notranslate nohighlight">\(p=\frac{1}{2N}\)</span>. The waiting
+time for a pair of lineages to coalesce is like the number of tails
+thrown while waiting for a head on a coin with the probability of a head
+is <span class="math notranslate nohighlight">\(\frac{1}{2N}\)</span>, i.e. if the population is large we might be
+waiting for a long time for our pair to coalesce. We’ll denote this
+geometric distribution by <span class="math notranslate nohighlight">\(T_2 \sim  \text{Geo}(1/(2N))\)</span>. The expected
+(i.e. the mean over many replicates) coalescent time of a pair of
+alleles is then</p>
+<div class="math notranslate nohighlight" id="equation-eq-4-22">
+<span class="eqno">(52)<a class="headerlink" href="#equation-eq-4-22" title="Permalink to this equation">#</a></span>\[    E(T_2) = 2N\]</div>
+<p>generations. This form to the
+expectation follows from the fact that the mean of an geometric random
+variable is <span class="math notranslate nohighlight">\(\frac{1}{p}\)</span>.<br />
+Conditional on a pair of alleles coalescing <span class="math notranslate nohighlight">\(t\)</span> generations ago, there
+are <span class="math notranslate nohighlight">\(2t\)</span> generations in which a mutation could occur. See <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-4.16</span></code> for an example. If the per generation
+mutation rate is <span class="math notranslate nohighlight">\(\mu\)</span>, then the expected number of mutations between a
+pair of alleles coalescing <span class="math notranslate nohighlight">\(t\)</span> generations ago is <span class="math notranslate nohighlight">\(2 t\mu\)</span> (the alleles
+have gone through a total of <span class="math notranslate nohighlight">\(2t\)</span> meioses since they last shared a
+common ancestor).</p>
+<p>So we can write the expected number of mutations (<span class="math notranslate nohighlight">\(S_2\)</span>) separating two
+alleles drawn at random from the population as</p>
+<div class="math notranslate nohighlight" id="equation-eq-4-23">
+<span class="eqno">(53)<a class="headerlink" href="#equation-eq-4-23" title="Permalink to this equation">#</a></span>\[\begin{split}    \begin{aligned}
+E(S_2) &amp;= \sum_{t=0}^{\infty} E(S_2 | T_2=t) P(T_2=t) \nonumber\\
+&amp; =\sum_{t=0}^{\infty} 2 \mu t P(T_2=t) \nonumber\\
+&amp; =2\mu E(T_2)  \nonumber\\
+&amp; = 4 \mu N \end{aligned}\end{split}\]</div>
+<p>this makes use of the law of total
+expectation (see Appendix equation <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.27</span></code>) to average which generation our pair
+of sequences coalesce in. We’ll assume that mutation is rare enough that
+it never happens at the same basepair twice, i.e. no multiple hits, such
+that we get to see all of the mutation events that separate our pair of
+sequences. This is assumption that repeat mutation is vanishingly rare
+at a basepair is called the <em>i</em>nfinitely-many-sites assumption, which
+should hold if <span class="math notranslate nohighlight">\(N\mu_{BP} \ll 1\)</span>, where <span class="math notranslate nohighlight">\(\mu_{BP}\)</span> is the mutation rate
+per basepair. Thus the number of mutations between a pair of sites is
+the observed number of differences between a pair of sequences. In the
+previous chapter we denote the observed number of pairwise differences
+at putatively neutral sites separating a pair of sequences as <span class="math notranslate nohighlight">\(\pi\)</span> (we
+usually average this over a number of pairs of sequences for a region).
+Therefore, under our simple, neutral, constant population-size model we
+expect</p>
+<div class="math notranslate nohighlight" id="equation-eq-4-24">
+<span class="eqno">(54)<a class="headerlink" href="#equation-eq-4-24" title="Permalink to this equation">#</a></span>\[    E(\pi) = 4 N \mu = \theta\]</div>
+<p>So we
+can get an empirical estimate of <span class="math notranslate nohighlight">\(\theta\)</span> from <span class="math notranslate nohighlight">\(\pi\)</span>, let’s call this
+<span class="math notranslate nohighlight">\(\widehat{\theta}_{\pi}\)</span>, by setting <span class="math notranslate nohighlight">\(\widehat{\theta}_{\pi}=\pi\)</span>, i.e.
+our observed level of pairwise genetic diversity. If we have an
+independent estimate of <span class="math notranslate nohighlight">\(\mu\)</span>, then from setting
+<span class="math notranslate nohighlight">\(\pi =\widehat{\theta}_{\pi} = 4N\mu\)</span> we can furthermore obtain an
+estimate of the population size <span class="math notranslate nohighlight">\(N\)</span> that is consistent with our levels
+of neutral polymorphism. If we estimate the population size this way, we
+should call it the effective coalescent population size (<span class="math notranslate nohighlight">\(N_e\)</span>). It’s
+best to think about <span class="math notranslate nohighlight">\(N_{e}\)</span> estimated from neutral diversity as a
+long-term effective population size for the species, but there are many
+caveats that come along with that assumption. For example, past
+bottlenecks and population expansions are all subsumed into a single
+number and so this estimated <span class="math notranslate nohighlight">\(N_{e}\)</span> may not be very representative of
+the population size at any time. That said, it’s not a bad place to
+start when thinking about the rate of genetic drift for neutral
+diversity in our population over long time-periods.</p>
+<p>Let’s take a moment to distinguish our expected heterozygosity (equation <a class="reference internal" href="chapter-04.2-loss-of-heterozygosity-due-to-drift.html#equation-eq-4-13">(45)</a>) from our expected number of pairwise
+differences (<span class="math notranslate nohighlight">\(\pi\)</span>). Our expected heterozygosity is the probability that
+two alleles at a locus, sampled from a population at random, are
+different from each other. If one or more mutations have occurred since
+a pair of alleles last shared a common ancestor, then our sequences will
+be different from each other. On the other hand, our <span class="math notranslate nohighlight">\(\pi\)</span> measure keeps
+track of the average total number of differences between our loci. As
+such, <span class="math notranslate nohighlight">\(\pi\)</span> is often a more useful measure, as it records the number of
+differences between the sequences, not just whether they are different
+from each other (however, for certain types of loci, e.g.
+microsatellites, heterozygosity is often used as we cannot usually count
+up the minimum number of mutations in a sensible way). In the case where
+our locus is a single basepair, the two measures will usually be close
+to one another, as <span class="math notranslate nohighlight">\(H \approx \theta\)</span> for small values of <span class="math notranslate nohighlight">\(\theta\)</span>. For
+example, comparing two sequences at random in humans,
+<span class="math notranslate nohighlight">\(\pi \approx 1/1000\)</span> per basepair, and the probability that a specific
+base pair differs between two sequences is <span class="math notranslate nohighlight">\(\approx 1/1000\)</span>. However,
+these two quantities start to differ from each other when we consider
+regions with higher mutation rates. For example, if we consider a 10kb
+region, our mutation rate will 10,000 times larger than a single base
+pair. For this length of sequence the probability that two randomly
+chosen haplotypes differ is quite different from the number of
+mutational differences between them. (Try a mutation rate of <span class="math notranslate nohighlight">\(10^{-8}\)</span>
+per base and a population size of <span class="math notranslate nohighlight">\(10,000\)</span> in our calculations of
+<span class="math notranslate nohighlight">\(E[\pi]\)</span> and H to see this.)</p>
+<div class="admonition-question-7 admonition" id="question-4-7">
+<p class="admonition-title">Question 7</p>
+<p><span id="id1">Robinson <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id299" title="Jacqueline A Robinson, Diego Ortega-Del Vecchyo, Zhenxin Fan, Bernard Y Kim, Clare D Marsden, Kirk E Lohmueller, Robert K Wayne, and others. Genomic flatlining in the endangered island fox. Current Biology, 26(9):1183–1189, 2016.">2016</a>]</span> found that the endangered Californian Channel Island fox on
+San Nicolas had very low levels of diversity
+(<span class="math notranslate nohighlight">\(\pi =0.000014 \text{bp}^{-1}\)</span>) compared to its close relative the
+California mainland gray fox (<span class="math notranslate nohighlight">\(0.0012\text{bp}^{-1}\)</span>).<br />
+<strong>A)</strong> Assuming a mutation rate of <span class="math notranslate nohighlight">\(2\times 10^{-8}\)</span> per bp, what
+effective population sizes do you estimate for these two populations?<br />
+<strong>B)</strong> Why is the effective population size of the Channel Island fox so
+low? [Hint: quickly google Channel island foxes to read up on their
+history, also to see how ridiculously cute they are.]</p>
+</div>
+<div class="admonition-question-8 admonition" id="question-4-8">
+<p class="admonition-title">Question 8</p>
+<p>In your own words describe why the coalescent time of a pair of lineages
+scales linearly with the (effective) population size.</p>
+</div>
+</section>
+<section id="more-details-on-the-pairwise-coalescent-and-the-randomness-of-mutation">
+<h2>More details on the pairwise coalescent and the randomness of mutation<a class="headerlink" href="#more-details-on-the-pairwise-coalescent-and-the-randomness-of-mutation" title="Permalink to this headline">#</a></h2>
+<p>We found that our pairwise coalescent times followed a Geometric
+distribution, equation <a class="reference internal" href="#equation-eq-4-21">(51)</a>. However, that assumes discrete
+generations, and we’ll often was to think about populations that lack
+discrete generations (i.e. individuals reproducing at random times with
+some mean generation time). Using our exponential approximation, we can
+see that is</p>
+<div class="math notranslate nohighlight" id="equation-eq-4-25">
+<span class="eqno">(57)<a class="headerlink" href="#equation-eq-4-25" title="Permalink to this equation">#</a></span>\[    \approx \frac{1}{2N} e^{-t/(2N)}\]</div>
+<p>and so think of a
+continuous random variable, i.e. we could say that the coalescent time
+of a pair of sequences (<span class="math notranslate nohighlight">\(T_2\)</span>) is approximately exponentially
+distributed with a rate <span class="math notranslate nohighlight">\(1/(2N)\)</span>, i.e.
+<span class="math notranslate nohighlight">\(T_2 \sim \text{Exp}\left( 1/(2N) \right)\)</span>. Formally we can do this by
+taking the limit of the discrete process more carefully. See Appendix
+equation <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.34</span></code> for more on exponential random variables.</p>
+<p>We’ve derived the expected number of differences between a pair of
+sequences and talked about the variability of the coalescent time for a
+pair of sequences. The mutation process is also very variable; even if
+two sequences coalesce in the very distant past by chance, they may
+still be identical in the present if there was no mutation during that
+time.</p>
+<p>Conditional on the coalescent time <span class="math notranslate nohighlight">\(t\)</span>, the probability that our pair of
+alleles are separated by <span class="math notranslate nohighlight">\(S_2\)</span> mutations since they last shared a common
+ancestor is binomially distributed</p>
+<div class="math notranslate nohighlight" id="equation-eq-4-25">
+<span class="eqno">(57)<a class="headerlink" href="#equation-eq-4-25" title="Permalink to this equation">#</a></span>\[    P(S_2 | T_2 = t ) = {2t \choose j} \mu^{j} (1-\mu)^{2t-j}\]</div>
+<p>i.e.
+mutations happen in <span class="math notranslate nohighlight">\(j\)</span> generations and do not happen in <span class="math notranslate nohighlight">\(2t-j\)</span>
+generations (with <span class="math notranslate nohighlight">\({2t \choose j}\)</span> ways this combination of events can
+possibly happen). See Appendix equation <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.28</span></code> for discussion of the binomial
+distribution. Assuming that <span class="math notranslate nohighlight">\(\mu \ll 1\)</span> and that <span class="math notranslate nohighlight">\(2t-j \approx 2t\)</span>, then
+we can approximate the probability that we have <span class="math notranslate nohighlight">\(S_2\)</span> mutations as a
+Poisson distribution:</p>
+<div class="math notranslate nohighlight" id="equation-eq-4-25">
+<span class="eqno">(57)<a class="headerlink" href="#equation-eq-4-25" title="Permalink to this equation">#</a></span>\[    P(S_2 | T_2 = t ) = \frac{ (2 \mu t )^{j} e^{-2\mu t}}{j!}\]</div>
+<p>i.e. a
+Poisson with mean <span class="math notranslate nohighlight">\(2\mu t\)</span>. This is an example of taking the binomial
+distribution to its Poisson distribution limit, see Appendix equation <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.32</span></code> for more details. We’ll not make much
+use of this result, but it is very useful in thinking about how to
+simulate the process of mutation.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters/chapter-04"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="chapter-04.2-loss-of-heterozygosity-due-to-drift.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Loss of heterozygosity due to drift</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../chapter-00-bibliography.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Bibliography</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Graham Coop<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
