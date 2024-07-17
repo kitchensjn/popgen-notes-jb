@@ -12,6 +12,12 @@ because neutral mutations do not affect the probability that an
 individual transmits an allele, and so don't affect the way in which we
 can trace ancestral lineages back through the generations.
 
+:::{margin}
+In discussing the coalescent we'll be making use of random variables, e.g. number of generations back to the common
+ancestor of a pair of sequences is a random variable. We'll also use the expectation of random variables, e.g. the average number of generations back to the common
+ancestor of a pair of sequences. Have a look at sections <span style='font-size: bigger; color: red;'>MISSING</span>.
+:::
+
 As such, it will often be helpful to consider the time to the common
 ancestor of a pair of sequences ($T_2$), and then think of the impact of
 that time to coalescence on patterns of diversity. See {numref}`figure-4.15` for an example of this.
@@ -46,6 +52,10 @@ multipled by the probability that they find a common ancestor, i.e.
 coalesce, in the third generation, which happens with probability
 $\frac{1}{2N}$.
 
+:::{margin}
+See Appendix equation {eq}`eq-A.30` and surrounding text for more on the Geometric distribution.
+:::
+
 From the form of equation {eq}`eq-4.21`, we can see that the coalescent time of
 our pair of alleles is a Geometrically distributed random variable,
 where the probability of success is $p=\frac{1}{2N}$. The waiting
@@ -57,6 +67,13 @@ geometric distribution by $T_2 \sim  \text{Geo}(1/(2N))$. The expected
 (i.e. the mean over many replicates) coalescent time of a pair of
 alleles is then
 
+:::{margin}
+```{figure} ../../figures/Coalescent/Coal_two_lineages_muts.pdf
+:name: figure-4.16
+:align: left
+\- The ancestral lineages of a pair of sequences coalesce $t$ generations in the past. There are $2t$ generations where mutations could arise that would lead to  differences between our pair of sequences. Three mutations have occurred in this time. changing the ancestral sequence (AGTTT) to the sequences at the bottom of the picture.
+```
+:::
 
 :::{math}
 :label: eq-4.22
@@ -124,6 +141,10 @@ the population size at any time. That said, it's not a bad place to
 start when thinking about the rate of genetic drift for neutral
 diversity in our population over long time-periods.
 
+:::{margin}
+Up to this point we've been describing only neutral processes, however, selection can also alter levels of polymorphism. For example, if some synonymous sites directly experience selection, then even if we use $\pi$ calculated for synonymous changes we may underestimate the coalescent effective population size. As we'll see later in the notes, selection at linked sites can also impact neutral diversity. As such, if we can, we may want to use genomic sites subject to the weakest selective constraints, and also far from gene-dense or otherwise very constrained regions of the genome, to estimate $N_e$ from $\pi$. But even then caution is warranted.
+:::
+
 Let's take a moment to distinguish our expected heterozygosity (equation {eq}`eq-4.13`) from our expected number of pairwise
 differences ($\pi$). Our expected heterozygosity is the probability that
 two alleles at a locus, sampled from a population at random, are
@@ -149,6 +170,14 @@ chosen haplotypes differ is quite different from the number of
 mutational differences between them. (Try a mutation rate of $10^{-8}$
 per base and a population size of $10,000$ in our calculations of
 $E[\pi]$ and H to see this.)
+
+:::{margin}
+```{figure} ../../illustration_images/Quant_gen/Grey_fox/14770789583_4db7ec5164_o.jpg
+:name: figure-4.17
+:align: left
+\- Gray Fox, *Urocyon cinereoargenteiis*. <span style="font-size: smaller;">Diseases and enemies of poultry. Pearson and Warren. (1897). Image from the [Biodiversity Heritage Library](https://archive.org/stream/diseasesenemieso00pearrich/diseasesenemieso00pearrich\#page/n663/mode/1up). Contributed by University of California Libraries. Not in copyright.</span>
+```
+:::
 
 :::{admonition} Question 7
 :name: question-4.7

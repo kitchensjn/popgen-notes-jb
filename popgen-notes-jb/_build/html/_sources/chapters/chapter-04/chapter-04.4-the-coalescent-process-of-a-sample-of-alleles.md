@@ -42,6 +42,10 @@ and ignoring terms of $1/N^2$ and higher (a Taylor approximation, see
 Appendix equation {eq}`eq-A.2`). See {numref}`figure-4.18` for a random realization of
 this process.
 
+:::{margin}
+said as "i choose 2"
+:::
+
 More generally, when we sample $i$ alleles there are ${i \choose 2}$
 pairs, i.e. $i(i-1)/2$ pairs. Thus, the probability that no pair of
 alleles in a sample of size $i$ coalesces in the preceding generation is
@@ -57,7 +61,7 @@ while the probability any pair coalesces is
 $\approx \frac{{i \choose
  2}}{2N}$, again using Appendix equation {eq}`eq-A.2`.
 
- We can ignore the possibility that more than pairs of alleles (e.g.
+We can ignore the possibility that more than pairs of alleles (e.g.
 tripletons) simultaneously coalesce at once as terms of
 $\frac{1}{N^2}$ and higher can be ignored as they are vanishingly
 rare. Obviously in reasonable sample sizes there are many more triples
@@ -75,6 +79,10 @@ generation before any pair of alleles coalesces is
  2}}{2N}\right)^{t}
 :::
 
+:::{margin}
+see Appendix equation {eq}`eq-A.30`.
+:::
+
 Thus the waiting time to the first
 coalescent event while there are $i$ lineages is a geometrically
 distributed random variable with probability of success
@@ -89,6 +97,22 @@ $p=\frac{{i \choose 2}}{2N}$, which we denote by
 
 The mean waiting time till any of pair within
 our sample coalesces is
+
+```{margin}
+To see the continuous time  version of this, note that equation {eq}`eq-4.30` is
+
+:::{math}
+:label: eq-label
+    \approx  \frac{{i \choose
+ 2}}{2N} \exp \left( - \frac{{i \choose
+ 2}}{2N} t \right)
+:::
+
+The waiting time $T_i$ to the first coalescent event in a sample
+of $i$ alleles is thus exponentially distributed with rate $\frac{{i \choose
+ 2}}{2N}$, i.e. $T_i \sim \text{Exp}\left(\frac{{i \choose
+   2}}{2N} \right)$.
+```
 
 :::{math}
 :label: eq-4.32

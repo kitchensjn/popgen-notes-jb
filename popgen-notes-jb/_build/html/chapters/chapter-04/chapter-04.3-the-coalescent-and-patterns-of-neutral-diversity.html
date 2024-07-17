@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Bibliography" href="../chapter-00-bibliography.html" />
+    <link rel="next" title="The coalescent process of a sample of alleles" href="chapter-04.4-the-coalescent-process-of-a-sample-of-alleles.html" />
     <link rel="prev" title="Loss of heterozygosity due to drift" href="chapter-04.2-loss-of-heterozygosity-due-to-drift.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -188,6 +188,21 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
      The Coalescent and patterns of neutral diversity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-04.4-the-coalescent-process-of-a-sample-of-alleles.html">
+     The coalescent process of a sample of alleles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-04.5-chapter-summary.html">
+     Chapter Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-04.6-further-questions.html">
+     Further Questions
     </a>
    </li>
   </ul>
@@ -435,13 +450,19 @@ calculate some properties of heterozygosity based on that. That’s
 because neutral mutations do not affect the probability that an
 individual transmits an allele, and so don’t affect the way in which we
 can trace ancestral lineages back through the generations.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>In discussing the coalescent we’ll be making use of random variables, e.g. number of generations back to the common
+ancestor of a pair of sequences is a random variable. We’ll also use the expectation of random variables, e.g. the average number of generations back to the common
+ancestor of a pair of sequences. Have a look at sections <span style='font-size: bigger; color: red;'>MISSING</span>.</p>
+</aside>
 <p>As such, it will often be helpful to consider the time to the common
 ancestor of a pair of sequences (<span class="math notranslate nohighlight">\(T_2\)</span>), and then think of the impact of
-that time to coalescence on patterns of diversity. See <a class="reference internal" href="#figure-4-15"><span class="std std-numref">Fig. 42</span></a> for an example of this.</p>
+that time to coalescence on patterns of diversity. See <a class="reference internal" href="#figure-4-15"><span class="std std-numref">Fig. 52</span></a> for an example of this.</p>
 <figure class="align-left" id="figure-4-15">
 <img alt="../../_images/Coalescent.png" src="../../_images/Coalescent.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 42 </span><span class="caption-text">- A simple demonstration of the coalescent process. The simulation
+<p><span class="caption-number">Fig. 52 </span><span class="caption-text">- A simple demonstration of the coalescent process. The simulation
 consists of a diploid population of 10 individuals (20 alleles). In each
 generation, each individual is equally likely to be the parent of an
 offspring (and the allele transmitted is indicated by a light grey
@@ -455,14 +476,18 @@ lineage.</span><a class="headerlink" href="#figure-4-15" title="Permalink to thi
 <p>The probability that a pair of alleles have failed to coalesce in <span class="math notranslate nohighlight">\(t\)</span>
 generations and then coalesce in the <span class="math notranslate nohighlight">\(t+1\)</span> generation back is</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-21">
-<span class="eqno">(51)<a class="headerlink" href="#equation-eq-4-21" title="Permalink to this equation">#</a></span>\[    P(T_2=t+1) = \frac{1}{2N} \left(1- \frac{1}{2N} \right)^{t}\]</div>
+<span class="eqno">(53)<a class="headerlink" href="#equation-eq-4-21" title="Permalink to this equation">#</a></span>\[    P(T_2=t+1) = \frac{1}{2N} \left(1- \frac{1}{2N} \right)^{t}\]</div>
 <p>For example, the probability that a pair of sequences coalesce three
 generations back is the probability that they fail to coalesce in
 generation 1 and 2, which is <span class="math notranslate nohighlight">\(\left(1- \frac{1}{2N} \right) \times \left(1- \frac{1}{2N} \right)\)</span>,
 multipled by the probability that they find a common ancestor, i.e.
 coalesce, in the third generation, which happens with probability
 <span class="math notranslate nohighlight">\(\frac{1}{2N}\)</span>.</p>
-<p>From the form of equation <a class="reference internal" href="#equation-eq-4-21">(51)</a>, we can see that the coalescent time of
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>See Appendix equation <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.30</span></code> and surrounding text for more on the Geometric distribution.</p>
+</aside>
+<p>From the form of equation <a class="reference internal" href="#equation-eq-4-21">(53)</a>, we can see that the coalescent time of
 our pair of alleles is a Geometrically distributed random variable,
 where the probability of success is <span class="math notranslate nohighlight">\(p=\frac{1}{2N}\)</span>. The waiting
 time for a pair of lineages to coalesce is like the number of tails
@@ -472,13 +497,22 @@ waiting for a long time for our pair to coalesce. We’ll denote this
 geometric distribution by <span class="math notranslate nohighlight">\(T_2 \sim  \text{Geo}(1/(2N))\)</span>. The expected
 (i.e. the mean over many replicates) coalescent time of a pair of
 alleles is then</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-4-16">
+<img alt="../../_images/Coal_two_lineages_muts.pdf" src="../../_images/Coal_two_lineages_muts.pdf" />
+<figcaption>
+<p><span class="caption-number">Fig. 53 </span><span class="caption-text">- The ancestral lineages of a pair of sequences coalesce <span class="math notranslate nohighlight">\(t\)</span> generations in the past. There are <span class="math notranslate nohighlight">\(2t\)</span> generations where mutations could arise that would lead to  differences between our pair of sequences. Three mutations have occurred in this time. changing the ancestral sequence (AGTTT) to the sequences at the bottom of the picture.</span><a class="headerlink" href="#figure-4-16" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
 <div class="math notranslate nohighlight" id="equation-eq-4-22">
-<span class="eqno">(52)<a class="headerlink" href="#equation-eq-4-22" title="Permalink to this equation">#</a></span>\[    E(T_2) = 2N\]</div>
+<span class="eqno">(54)<a class="headerlink" href="#equation-eq-4-22" title="Permalink to this equation">#</a></span>\[    E(T_2) = 2N\]</div>
 <p>generations. This form to the
 expectation follows from the fact that the mean of an geometric random
 variable is <span class="math notranslate nohighlight">\(\frac{1}{p}\)</span>.<br />
 Conditional on a pair of alleles coalescing <span class="math notranslate nohighlight">\(t\)</span> generations ago, there
-are <span class="math notranslate nohighlight">\(2t\)</span> generations in which a mutation could occur. See <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-4.16</span></code> for an example. If the per generation
+are <span class="math notranslate nohighlight">\(2t\)</span> generations in which a mutation could occur. See <a class="reference internal" href="#figure-4-16"><span class="std std-numref">Fig. 53</span></a> for an example. If the per generation
 mutation rate is <span class="math notranslate nohighlight">\(\mu\)</span>, then the expected number of mutations between a
 pair of alleles coalescing <span class="math notranslate nohighlight">\(t\)</span> generations ago is <span class="math notranslate nohighlight">\(2 t\mu\)</span> (the alleles
 have gone through a total of <span class="math notranslate nohighlight">\(2t\)</span> meioses since they last shared a
@@ -486,7 +520,7 @@ common ancestor).</p>
 <p>So we can write the expected number of mutations (<span class="math notranslate nohighlight">\(S_2\)</span>) separating two
 alleles drawn at random from the population as</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-23">
-<span class="eqno">(53)<a class="headerlink" href="#equation-eq-4-23" title="Permalink to this equation">#</a></span>\[\begin{split}    \begin{aligned}
+<span class="eqno">(55)<a class="headerlink" href="#equation-eq-4-23" title="Permalink to this equation">#</a></span>\[\begin{split}    \begin{aligned}
 E(S_2) &amp;= \sum_{t=0}^{\infty} E(S_2 | T_2=t) P(T_2=t) \nonumber\\
 &amp; =\sum_{t=0}^{\infty} 2 \mu t P(T_2=t) \nonumber\\
 &amp; =2\mu E(T_2)  \nonumber\\
@@ -507,7 +541,7 @@ usually average this over a number of pairs of sequences for a region).
 Therefore, under our simple, neutral, constant population-size model we
 expect</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-24">
-<span class="eqno">(54)<a class="headerlink" href="#equation-eq-4-24" title="Permalink to this equation">#</a></span>\[    E(\pi) = 4 N \mu = \theta\]</div>
+<span class="eqno">(56)<a class="headerlink" href="#equation-eq-4-24" title="Permalink to this equation">#</a></span>\[    E(\pi) = 4 N \mu = \theta\]</div>
 <p>So we
 can get an empirical estimate of <span class="math notranslate nohighlight">\(\theta\)</span> from <span class="math notranslate nohighlight">\(\pi\)</span>, let’s call this
 <span class="math notranslate nohighlight">\(\widehat{\theta}_{\pi}\)</span>, by setting <span class="math notranslate nohighlight">\(\widehat{\theta}_{\pi}=\pi\)</span>, i.e.
@@ -525,6 +559,10 @@ number and so this estimated <span class="math notranslate nohighlight">\(N_{e}\
 the population size at any time. That said, it’s not a bad place to
 start when thinking about the rate of genetic drift for neutral
 diversity in our population over long time-periods.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Up to this point we’ve been describing only neutral processes, however, selection can also alter levels of polymorphism. For example, if some synonymous sites directly experience selection, then even if we use <span class="math notranslate nohighlight">\(\pi\)</span> calculated for synonymous changes we may underestimate the coalescent effective population size. As we’ll see later in the notes, selection at linked sites can also impact neutral diversity. As such, if we can, we may want to use genomic sites subject to the weakest selective constraints, and also far from gene-dense or otherwise very constrained regions of the genome, to estimate <span class="math notranslate nohighlight">\(N_e\)</span> from <span class="math notranslate nohighlight">\(\pi\)</span>. But even then caution is warranted.</p>
+</aside>
 <p>Let’s take a moment to distinguish our expected heterozygosity (equation <a class="reference internal" href="chapter-04.2-loss-of-heterozygosity-due-to-drift.html#equation-eq-4-13">(45)</a>) from our expected number of pairwise
 differences (<span class="math notranslate nohighlight">\(\pi\)</span>). Our expected heterozygosity is the probability that
 two alleles at a locus, sampled from a population at random, are
@@ -550,6 +588,15 @@ chosen haplotypes differ is quite different from the number of
 mutational differences between them. (Try a mutation rate of <span class="math notranslate nohighlight">\(10^{-8}\)</span>
 per base and a population size of <span class="math notranslate nohighlight">\(10,000\)</span> in our calculations of
 <span class="math notranslate nohighlight">\(E[\pi]\)</span> and H to see this.)</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-4-17">
+<img alt="../../_images/14770789583_4db7ec5164_o.jpg" src="../../_images/14770789583_4db7ec5164_o.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 54 </span><span class="caption-text">- Gray Fox, <em>Urocyon cinereoargenteiis</em>. <span style="font-size: smaller;">Diseases and enemies of poultry. Pearson and Warren. (1897). Image from the <a class="reference external" href="https://archive.org/stream/diseasesenemieso00pearrich/diseasesenemieso00pearrich%5C#page/n663/mode/1up">Biodiversity Heritage Library</a>. Contributed by University of California Libraries. Not in copyright.</span></span><a class="headerlink" href="#figure-4-17" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
 <div class="admonition-question-7 admonition" id="question-4-7">
 <p class="admonition-title">Question 7</p>
 <p><span id="id1">Robinson <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id299" title="Jacqueline A Robinson, Diego Ortega-Del Vecchyo, Zhenxin Fan, Bernard Y Kim, Clare D Marsden, Kirk E Lohmueller, Robert K Wayne, and others. Genomic flatlining in the endangered island fox. Current Biology, 26(9):1183–1189, 2016.">2016</a>]</span> found that the endangered Californian Channel Island fox on
@@ -571,13 +618,13 @@ scales linearly with the (effective) population size.</p>
 <section id="more-details-on-the-pairwise-coalescent-and-the-randomness-of-mutation">
 <h2>More details on the pairwise coalescent and the randomness of mutation<a class="headerlink" href="#more-details-on-the-pairwise-coalescent-and-the-randomness-of-mutation" title="Permalink to this headline">#</a></h2>
 <p>We found that our pairwise coalescent times followed a Geometric
-distribution, equation <a class="reference internal" href="#equation-eq-4-21">(51)</a>. However, that assumes discrete
+distribution, equation <a class="reference internal" href="#equation-eq-4-21">(53)</a>. However, that assumes discrete
 generations, and we’ll often was to think about populations that lack
 discrete generations (i.e. individuals reproducing at random times with
 some mean generation time). Using our exponential approximation, we can
 see that is</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-25">
-<span class="eqno">(57)<a class="headerlink" href="#equation-eq-4-25" title="Permalink to this equation">#</a></span>\[    \approx \frac{1}{2N} e^{-t/(2N)}\]</div>
+<span class="eqno">(59)<a class="headerlink" href="#equation-eq-4-25" title="Permalink to this equation">#</a></span>\[    \approx \frac{1}{2N} e^{-t/(2N)}\]</div>
 <p>and so think of a
 continuous random variable, i.e. we could say that the coalescent time
 of a pair of sequences (<span class="math notranslate nohighlight">\(T_2\)</span>) is approximately exponentially
@@ -595,7 +642,7 @@ time.</p>
 alleles are separated by <span class="math notranslate nohighlight">\(S_2\)</span> mutations since they last shared a common
 ancestor is binomially distributed</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-25">
-<span class="eqno">(57)<a class="headerlink" href="#equation-eq-4-25" title="Permalink to this equation">#</a></span>\[    P(S_2 | T_2 = t ) = {2t \choose j} \mu^{j} (1-\mu)^{2t-j}\]</div>
+<span class="eqno">(59)<a class="headerlink" href="#equation-eq-4-25" title="Permalink to this equation">#</a></span>\[    P(S_2 | T_2 = t ) = {2t \choose j} \mu^{j} (1-\mu)^{2t-j}\]</div>
 <p>i.e.
 mutations happen in <span class="math notranslate nohighlight">\(j\)</span> generations and do not happen in <span class="math notranslate nohighlight">\(2t-j\)</span>
 generations (with <span class="math notranslate nohighlight">\({2t \choose j}\)</span> ways this combination of events can
@@ -604,7 +651,7 @@ distribution. Assuming that <span class="math notranslate nohighlight">\(\mu \ll
 we can approximate the probability that we have <span class="math notranslate nohighlight">\(S_2\)</span> mutations as a
 Poisson distribution:</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-25">
-<span class="eqno">(57)<a class="headerlink" href="#equation-eq-4-25" title="Permalink to this equation">#</a></span>\[    P(S_2 | T_2 = t ) = \frac{ (2 \mu t )^{j} e^{-2\mu t}}{j!}\]</div>
+<span class="eqno">(59)<a class="headerlink" href="#equation-eq-4-25" title="Permalink to this equation">#</a></span>\[    P(S_2 | T_2 = t ) = \frac{ (2 \mu t )^{j} e^{-2\mu t}}{j!}\]</div>
 <p>i.e. a
 Poisson with mean <span class="math notranslate nohighlight">\(2\mu t\)</span>. This is an example of taking the binomial
 distribution to its Poisson distribution limit, see Appendix equation <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.32</span></code> for more details. We’ll not make much
@@ -647,10 +694,10 @@ simulate the process of mutation.</p>
             <p class="prev-next-title">Loss of heterozygosity due to drift</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../chapter-00-bibliography.html" title="next page">
+    <a class='right-next' id="next-link" href="chapter-04.4-the-coalescent-process-of-a-sample-of-alleles.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Bibliography</p>
+        <p class="prev-next-title">The coalescent process of a sample of alleles</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

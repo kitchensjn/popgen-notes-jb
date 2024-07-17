@@ -190,6 +190,21 @@ const thebe_selector_output = ".output, .cell_output"
      The Coalescent and patterns of neutral diversity
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-04.4-the-coalescent-process-of-a-sample-of-alleles.html">
+     The coalescent process of a sample of alleles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-04.5-chapter-summary.html">
+     Chapter Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter-04.6-further-questions.html">
+     Further Questions
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1">
@@ -450,9 +465,26 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="loss-of-heterozygosity-due-to-drift">
 <span id="sec-4-1"></span><h1>Loss of heterozygosity due to drift<a class="headerlink" href="#loss-of-heterozygosity-due-to-drift" title="Permalink to this headline">#</a></h1>
 <p>Genetic drift will, in the absence of new mutations, slowly purge our population of neutral genetic diversity, as alleles slowly drift to high or low frequencies and are lost or fixed over time.</p>
-<p>Imagine a randomly mating population of a constant size <span class="math notranslate nohighlight">\(N\)</span> diploid individuals, and that we are examining a locus segregating for two alleles that are neutral with respect to each other. This population is randomly mating with respect to the alleles at this locus. See <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-4.1</span></code> and <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-4.2</span></code> to see how genetic drift proceeds,
+<p>Imagine a randomly mating population of a constant size <span class="math notranslate nohighlight">\(N\)</span> diploid individuals, and that we are examining a locus segregating for two alleles that are neutral with respect to each other. This population is randomly mating with respect to the alleles at this locus. See <a class="reference internal" href="#figure-4-1"><span class="std std-numref">Fig. 38</span></a> and <a class="reference internal" href="#figure-4-2"><span class="std std-numref">Fig. 39</span></a> to see how genetic drift proceeds,
 by tracking alleles within a small population.</p>
 <p>In generation <span class="math notranslate nohighlight">\(t\)</span> our current level of heterozygosity is <span class="math notranslate nohighlight">\(H_t\)</span>, i.e. the probability that two randomly sampled alleles in generation <span class="math notranslate nohighlight">\(t\)</span> are non-identical is <span class="math notranslate nohighlight">\(H_t\)</span>. Assuming that the mutation rate is zero (or vanishingly small), what is our level of heterozygosity in generation <span class="math notranslate nohighlight">\(t+1\)</span>?</p>
+<figure class="align-left" id="figure-4-1">
+<img alt="../../_images/Loss_of_he_col_two_alleles.png" src="../../_images/Loss_of_he_col_two_alleles.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 38 </span><span class="caption-text">- Loss of heterozygosity over time, in the absence of new mutations. A
+diploid population of 5 individuals over the generations, with lines
+showing transmission. In the first generation every individual is a
+heterozygote.</span><a class="headerlink" href="#figure-4-1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="figure-4-2">
+<img alt="../../_images/Loss_of_het_2_many_alleles.png" src="../../_images/Loss_of_het_2_many_alleles.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 39 </span><span class="caption-text">- Loss of heterozygosity over time, in the absence of new mutations. A
+diploid population of 5 individuals. In the first generation I colour
+every allele a different colour so we can track their descendants.</span><a class="headerlink" href="#figure-4-2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>In the next generation (<span class="math notranslate nohighlight">\(t+1\)</span>) we are looking at the alleles in the offspring of generation <span class="math notranslate nohighlight">\(t\)</span>. If we randomly sample two alleles in generation <span class="math notranslate nohighlight">\(t+1\)</span> which had different parental alleles in generation <span class="math notranslate nohighlight">\(t\)</span>, that is just like drawing two random alleles from generation <span class="math notranslate nohighlight">\(t\)</span>. So the probability that these two alleles in generation <span class="math notranslate nohighlight">\(t+1\)</span>, that have different parental alleles in generation <span class="math notranslate nohighlight">\(t\)</span>, are non-identical is <span class="math notranslate nohighlight">\(H_t\)</span>.</p>
 <p>Conversely, if the two alleles in our pair had the same parental allele in the proceeding generation (i.e. the alleles are identical by descent one generation back) then these two alleles must be identical (as we are
 not allowing for any mutation).</p>
@@ -462,25 +494,73 @@ not allowing for any mutation).</p>
 <p>Thus, if the heterozygosity in generation <span class="math notranslate nohighlight">\(0\)</span> is <span class="math notranslate nohighlight">\(H_0\)</span>, our expected heterozygosity in generation <span class="math notranslate nohighlight">\(t\)</span> is</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-2">
 <span class="eqno">(37)<a class="headerlink" href="#equation-eq-4-2" title="Permalink to this equation">#</a></span>\[H_t = \left(1-\frac{1}{2N} \right)^tH_0\]</div>
-<p>i.e. the expected heterozygosity within our population is decaying geometrically with each passing generation. If we assume that <span class="math notranslate nohighlight">\(\frac{1}{(2N)}\ll 1\)</span> then we can approximate this geometric decay by an exponential decay (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">question-3.4</span></code>, such that</p>
+<p>i.e. the expected heterozygosity within our population is decaying geometrically with each passing generation. If we assume that <span class="math notranslate nohighlight">\(\frac{1}{(2N)}\ll 1\)</span> then we can approximate this geometric decay by an exponential decay (see <a class="reference external" href="#question-4.1">Question 4.1</a>, such that</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-3">
 <span class="eqno">(38)<a class="headerlink" href="#equation-eq-4-3" title="Permalink to this equation">#</a></span>\[H_t =H_{0} e^{ - \frac{t}{(2N)} }\]</div>
 <p>i.e. heterozygosity decays exponentially at a rate <span class="math notranslate nohighlight">\(\frac{1}{(2N)}\)</span>.</p>
-<p>In <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-4.3</span></code>, we show trajectories through time for 40 independently simulated loci drifting in a population of 50 individuals. Each population was started from a frequency of <span class="math notranslate nohighlight">\(30\%\)</span>. Some drift up and some drift down, eventually being lost or fixed from the population, but, on average across simulations, the allele frequency doesn’t change. We also track heterozygosity, you can see that heterozygosity sometimes goes up, and sometimes goes down, but on average we are losing heterozygosity, and this rate of loss is well predicted by equation <a class="reference internal" href="#equation-eq-4-2">(37)</a>.</p>
+<p>In <a class="reference internal" href="#figure-4-3"><span class="std std-numref">Fig. 41</span></a>, we show trajectories through time for 40 independently simulated loci drifting in a population of 50 individuals. Each population was started from a frequency of <span class="math notranslate nohighlight">\(30\%\)</span>. Some drift up and some drift down, eventually being lost or fixed from the population, but, on average across simulations, the allele frequency doesn’t change. We also track heterozygosity, you can see that heterozygosity sometimes goes up, and sometimes goes down, but on average we are losing heterozygosity, and this rate of loss is well predicted by equation <a class="reference internal" href="#equation-eq-4-2">(37)</a>.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-4-4">
+<img alt="../../_images/20497452375_9be855d9ff_z.jpg" src="../../_images/20497452375_9be855d9ff_z.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 40 </span><span class="caption-text">- Pond smelt (<em>Hypomesus olidus</em>), a close relative of delta smelt. <span style="font-size: smaller;">Bulletin of the United States Fish Commission. 1906.</span> <span style='font-size: bigger; color: red;'>MISSING</span></span><a class="headerlink" href="#figure-4-4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<figure class="align-left" id="figure-4-3">
+<img alt="../../_images/WF_loss_het_N50.pdf" src="../../_images/WF_loss_het_N50.pdf" />
+<figcaption>
+<p><span class="caption-number">Fig. 41 </span><span class="caption-text">- Change in allele frequency and loss of heterozygosity over time for 40
+replicates. Simulations of genetic drift in a diploid population of 50
+individuals, in the absence of new mutations. We start 40 independent,
+biallelic loci each with an initial allele at 30% frequency. The left
+panel shows the allele frequency over time and the right panel shows the
+heterozygosity over time, with the mean decay matching equation <a class="reference internal" href="#equation-eq-4-2">(37)</a>. Code <a class="reference external" href="https://github.com/cooplab/popgen-notes/blob/master/Rcode/Genetic_drift/WF_loss_of_het.R">here</a>.</span><a class="headerlink" href="#figure-4-3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="admonition-question-1 admonition" id="question-4-1">
 <p class="admonition-title">Question 1</p>
 <p>You are in charge of maintaining a population of delta smelt in the Sacramento River delta. Using a large set of microsatellites you estimate that the mean level of heterozygosity in this population is 0.005. You set yourself a goal of maintaining a level of heterozygosity of at least 0.0049 for the next two hundred years. Assuming that the smelt have a generation time of 3 years, and that only genetic drift affects these loci, what is the smallest fully outbreeding population that you would need to maintain to meet this goal?</p>
 </div>
 <p>Note how this picture of decreasing heterozygosity stands in contrast to the consistency of Hardy-Weinberg equilibrium from the previous chapter. However, our Hardy-Weinberg <em>proportions</em> still hold in forming each new generation. As the offspring genotypes in the next generation (<span class="math notranslate nohighlight">\(t+1\)</span>) represent a random draw from the previous generation (<span class="math notranslate nohighlight">\(t\)</span>), if the parental frequency is <span class="math notranslate nohighlight">\(p_t\)</span>, we <em>expect</em> a proportion <span class="math notranslate nohighlight">\(2p_t(1-p_t)\)</span> of our offspring to be heterozygotes (and HW proportions for our homozygotes). However, because population size is finite, the observed genotype frequencies in the offspring will (likely) not match exactly with our expectations. As our genotype frequencies likely change slightly due to sampling, biologically this reflects random variation in family size and Mendelian segregation, the allele frequency will changed. Therefore, while each generation represents a sample from Hardy-Weinberg proportions based on the generation before, our genotype proportions are not at an equilibrium (an unchanging state) as the underlying allele frequency changes over the generations. We’ll develop some mathematical models for these allele frequency changes later on. For now, we’ll simply note that under our simple model of drift (formally the Wright-Fisher model), our allele count in the <span class="math notranslate nohighlight">\(t+1^{th}\)</span> generation represents a binomial sample (of size <span class="math notranslate nohighlight">\(2N\)</span>) from the population frequency <span class="math notranslate nohighlight">\(p_t\)</span> in the previous generation. If you’ve read to here, please email Prof Coop a picture of JBS Haldane in a striped suit with the title “I’m reading the chapter 3 notes”. (It’s well worth googling JBS Haldane and to read more about his life; he’s a true character and one of the last great polymaths.)</p>
+<figure class="align-left" id="figure-4-5">
+<img alt="../../_images/black_footed_ferrets_He.pdf" src="../../_images/black_footed_ferrets_He.pdf" />
+<figcaption>
+<p><span class="caption-number">Fig. 42 </span><span class="caption-text">- Loss of heterozygosity in the Black-footed Ferrets in their declining
+population. Numbers in brackets give estimated number of individuals
+alive at that time. Data from <span id="id1">Wisely <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id289" title="S. M. Wisely, S. W. Buskirk, M. A. Fleming, D. B. McDonald, and E. A. Ostrander. Genetic diversity and fitness in black-footed ferrets before and during a bottleneck. Journal of Heredity, 93(4):231-237, 2002. URL: http://dx.doi.org/10.1093/jhered/93.4.231, arXiv:/oup/backfile/content_public/journal/jhered/93/4/10.1093/jhered/93.4.231/2/231.pdf, doi:10.1093/jhered/93.4.231.">2002</a>]</span>. <span style='font-size: bigger; color: red;'>MISSING</span></span><a class="headerlink" href="#figure-4-5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-4-6">
+<img alt="../../_images/Black_footed_ferret.pdf" src="../../_images/Black_footed_ferret.pdf" />
+<figcaption>
+<p><span class="caption-number">Fig. 43 </span><span class="caption-text">- The black-footed ferret (<em>M. nigripes</em>). <span style="font-size: smaller;">Wild animals of North America, The National geographical society, 1918.</span> <span style='font-size: bigger; color: red;'>MISSING</span></span><a class="headerlink" href="#figure-4-6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
 <p>To see how a decline in population size can affect levels of heterozygosity, let’s consider the case of black-footed ferrets (<em>Mustela nigripes</em>). The black-footed ferret population has declined dramatically through the twentieth century due to destruction of their habitat and sylvatic plague. In 1979, when the last known black-footed ferret died in captivity, they were thought to be extinct. In 1981, a very small wild population was rediscovered (<span class="math notranslate nohighlight">\(40\)</span> individuals), but in 1985 this population suffered a number of disease outbreaks.</p>
-<p>At that point of the <span class="math notranslate nohighlight">\(18\)</span> remaining wild individuals were brought into captivity, 7 of which reproduced. Thanks to intense captive breeding efforts and conservation work, a wild population of over 300 individuals has been established since. However, because all of these individuals are descended from those 7 individuals who survived the bottleneck, diversity levels remain low. <span id="id1">Wisely <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id289" title="S. M. Wisely, S. W. Buskirk, M. A. Fleming, D. B. McDonald, and E. A. Ostrander. Genetic diversity and fitness in black-footed ferrets before and during a bottleneck. Journal of Heredity, 93(4):231-237, 2002. URL: http://dx.doi.org/10.1093/jhered/93.4.231, arXiv:/oup/backfile/content_public/journal/jhered/93/4/10.1093/jhered/93.4.231/2/231.pdf, doi:10.1093/jhered/93.4.231.">2002</a>]</span> measured heterozygosity at a number of microsatellites in individuals from museum collections, showing the sharp drop in diversity as population sizes crashed (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-4.5</span></code>).</p>
+<p>At that point of the <span class="math notranslate nohighlight">\(18\)</span> remaining wild individuals were brought into captivity, 7 of which reproduced. Thanks to intense captive breeding efforts and conservation work, a wild population of over 300 individuals has been established since. However, because all of these individuals are descended from those 7 individuals who survived the bottleneck, diversity levels remain low. <span id="id2">Wisely <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id289" title="S. M. Wisely, S. W. Buskirk, M. A. Fleming, D. B. McDonald, and E. A. Ostrander. Genetic diversity and fitness in black-footed ferrets before and during a bottleneck. Journal of Heredity, 93(4):231-237, 2002. URL: http://dx.doi.org/10.1093/jhered/93.4.231, arXiv:/oup/backfile/content_public/journal/jhered/93/4/10.1093/jhered/93.4.231/2/231.pdf, doi:10.1093/jhered/93.4.231.">2002</a>]</span> measured heterozygosity at a number of microsatellites in individuals from museum collections, showing the sharp drop in diversity as population sizes crashed (see <a class="reference internal" href="#figure-4-5"><span class="std std-numref">Fig. 42</span></a>).</p>
 <div class="admonition-question-2 admonition" id="question-4-2">
 <p class="admonition-title">Question 2</p>
 <p>In mathematical population genetics, a commonly used approximation is <span class="math notranslate nohighlight">\((1-x) \approx e^{-x}\)</span> for <span class="math notranslate nohighlight">\(x &lt;&lt; 1\)</span> (formally, this follows from the Taylor series expansion of <span class="math notranslate nohighlight">\(\exp(-x)\)</span>, ignoring second order and higher terms of <span class="math notranslate nohighlight">\(x\)</span>, see <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.4</span></code>). This approximation is especially useful for approximating a geometric decay process by an exponential decay process, e.g. <span class="math notranslate nohighlight">\((1 - x)^t \approx e^{-xt}\)</span>. Using your calculator, or R, check how well this expression approximates the exact expression for two values of <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(x = 0.1\)</span>, and <span class="math notranslate nohighlight">\(0.01\)</span>, across two different values of t, <span class="math notranslate nohighlight">\(t=5\)</span> and <span class="math notranslate nohighlight">\(t=50\)</span>. Briefly comment on your results.</p>
 </div>
 <section id="levels-of-diversity-maintained-by-a-balance-between-mutation-and-drift">
 <span id="sec-4-1-1"></span><h2>Levels of diversity maintained by a balance between mutation and drift<a class="headerlink" href="#levels-of-diversity-maintained-by-a-balance-between-mutation-and-drift" title="Permalink to this headline">#</a></h2>
-<p>Next we’re going to consider the amount of neutral polymorphism that can be maintained in a population as a balance between genetic drift removing variation and mutation introducing new neutral variation, see <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-4.7</span></code> for an example. Note in our example, how no single allele is maintained at a stable equilibrium, rather an equilibrium level of polymorphism is maintained by a constantly shifting set of alleles.</p>
+<p>Next we’re going to consider the amount of neutral polymorphism that can be maintained in a population as a balance between genetic drift removing variation and mutation introducing new neutral variation, see <a class="reference internal" href="#figure-4-7"><span class="std std-numref">Fig. 44</span></a> for an example. Note in our example, how no single allele is maintained at a stable equilibrium, rather an equilibrium level of polymorphism is maintained by a constantly shifting set of alleles.</p>
+<figure class="align-left" id="figure-4-7">
+<img alt="../../_images/Mut_drift_balance.png" src="../../_images/Mut_drift_balance.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 44 </span><span class="caption-text">- Mutation-drift balance. A diploid population of 5 individuals. In the
+first generation everyone has the same allele (black). Each generation
+the transmitted allele can mutate and we generate a new colour. In the
+bottom plot, I trace the frequency of alleles in our population over
+time. The mutation rate we use is very high, simply to maintain
+diversity in this small population. <span style='font-size: bigger; color: red;'>MISSING</span></span><a class="headerlink" href="#figure-4-7" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <section id="the-neutral-mutation-rate">
 <h3>The neutral mutation rate<a class="headerlink" href="#the-neutral-mutation-rate" title="Permalink to this headline">#</a></h3>
 <p>We’ll first want to consider the rate at which neutral mutations arise in the population.Thinking back to our discussion of the neutral theory of molecular evolution, let’s suppose that there are only two classes of mutation that can arise in our genomic region of interest: neutral mutations and highly deleterious mutations. The total mutation rate at our locus is <span class="math notranslate nohighlight">\(\mu\)</span> per generation, i.e. per transmission from parent to child. A fraction <span class="math notranslate nohighlight">\(C\)</span> of our mutations are new alleles that are highly deleterious and so quickly removed from the population. We’ll call this <span class="math notranslate nohighlight">\(C\)</span> parameter the constraint, and it will differ according to the genomic region we consider. The remaining fraction <span class="math notranslate nohighlight">\((1-C)\)</span> are our neutral mutations, such that our neutral mutation rate is <span class="math notranslate nohighlight">\((1-C)\mu\)</span>. This is the per generation rate. In the rest of the chapter for simplicity we’ll assume that <span class="math notranslate nohighlight">\(C=0\)</span> and use a neutral mutation rate of <span class="math notranslate nohighlight">\(\mu\)</span>. However, we’ll return to this discussion of constraint when we discuss molecular divergence in a subsequent chapter.</p>
@@ -495,7 +575,7 @@ not allowing for any mutation).</p>
 <h3>Levels of heterozygosity maintained as a balance between mutation and drift<a class="headerlink" href="#levels-of-heterozygosity-maintained-as-a-balance-between-mutation-and-drift" title="Permalink to this headline">#</a></h3>
 <p>Looking backwards in time from one generation to the previous generation, we are going to say that two alleles which have the same parental allele (i.e. find their common ancestor) in the preceding generation have <em>coalesced</em>, and refer to this event as a <em>coalescent event</em>. If our pairs of alleles are to be different from each other in the present day, a mutation must have occured more recently on one or other lineage before they found a common ancestor.</p>
 <p>The probability that our pair of randomly sampled alleles have coalesced in the preceding generation is <span class="math notranslate nohighlight">\(\frac{1}{(2N)}\)</span>, and the probability that our pair of alleles fail to coalesce is <span class="math notranslate nohighlight">\(1-\frac{1}{(2N)}\)</span>.</p>
-<p>The probability that a mutation changes the identity of the transmitted allele is <span class="math notranslate nohighlight">\(\mu\)</span> per generation. So the probability of no mutation occurring is <span class="math notranslate nohighlight">\((1-\mu)\)</span>. We’ll assume that when a mutation occurs it creates some new allelic type which is not present in the population. This assumption (commonly called the infinitely-many-alleles model) makes the math slightly cleaner, and also is not too bad an assumption biologically. See <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-4.7</span></code> for a depiction of mutation-drift balance in this model over the generations.</p>
+<p>The probability that a mutation changes the identity of the transmitted allele is <span class="math notranslate nohighlight">\(\mu\)</span> per generation. So the probability of no mutation occurring is <span class="math notranslate nohighlight">\((1-\mu)\)</span>. We’ll assume that when a mutation occurs it creates some new allelic type which is not present in the population. This assumption (commonly called the infinitely-many-alleles model) makes the math slightly cleaner, and also is not too bad an assumption biologically. See <a class="reference internal" href="#figure-4-7"><span class="std std-numref">Fig. 44</span></a> for a depiction of mutation-drift balance in this model over the generations.</p>
 <p>This model lets us calculate when our two alleles last shared a common ancestor and whether these alleles are identical as a result of failing to mutate since this shared ancestor. For example, we can work out the probability that our two randomly sampled alleles coalesce <span class="math notranslate nohighlight">\(2\)</span> generations in the past (i.e. they fail to coalesce in generation <span class="math notranslate nohighlight">\(1\)</span> and then coalesce in generation <span class="math notranslate nohighlight">\(2\)</span>), and that they are identical as</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-5">
 <span class="eqno">(39)<a class="headerlink" href="#equation-eq-4-5" title="Permalink to this equation">#</a></span>\[    \left(1- \frac{1}{2N} \right) \frac{1}{2N} (1-\mu)^4\]</div>
@@ -522,21 +602,33 @@ not allowing for any mutation).</p>
 <p>Then we can approximate the summation by an integral, giving us:</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-12">
 <span class="eqno">(44)<a class="headerlink" href="#equation-eq-4-12" title="Permalink to this equation">#</a></span>\[    \frac{1}{2N} \int_0^{\infty} e^{-t(2\mu+1/(2N))} dt = \frac{1/(2N)}{1/(2N)+2\mu} \label{eqn:coal_no_mut}\]</div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>We can use a very similar argument for a haploid population and replace <span class="math notranslate nohighlight">\(\theta=4N\mu\)</span> with <span class="math notranslate nohighlight">\(\theta=2N \mu\)</span>. Haploids can’t be heterozygous, but we interpret `heterozygosity’ as the probability that two alleles paired at random in our population differ from each other.</p>
+</aside>
 <p>The equation above gives us the probability that our two alleles coalesce at some point in time, and do not mutate before reaching their common ancestor. Equivalently, this can be thought of as the probability our two alleles coalesce <em>before</em> mutating, i.e. that they are homozygous.</p>
 <p>Then, the complementary probability that our pair of alleles are non-identical (or heterozygous) is simply one minus this. The following equation gives the equilibrium heterozygosity in a population at equilibrium between mutation and drift:</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>This result was derived by <span id="id3">Kimura and Crow [<a class="reference internal" href="../chapter-00-bibliography.html#id197" title="Motoo Kimura and James F Crow. The number of alleles that can be maintained in a finite population. Genetics, 49(4):725, 1964.">1964</a>]</span> and <span id="id4">Malécot [<a class="reference internal" href="../chapter-00-bibliography.html#id308">1948</a>]</span> (see <span id="id5">Malécot [<a class="reference internal" href="../chapter-00-bibliography.html#id309" title="Gustave Malécot. The mathematics of heredity (revised, edited and translated by yermanos, dm). 1969.">1969</a>]</span> for an English translation, the lack of earlier translation meant this result was missed). Technically we’re assuming that every new mutation creates a new allele, the so-called “infinitely many alleles” model, otherwise our pair of sequences could be identical due to repeat or back mutation. See this GENETICS <a class="reference external" href="http://genestogenomes.org/kimura-crow-infinite-alleles/">blog post</a> and <span id="id6">Ewens [<a class="reference internal" href="../chapter-00-bibliography.html#id306" title="Warren J Ewens. Motoo kimura and james crow on the infinitely many alleles model. Genetics, 202(4):1243–1245, 2016.">2016</a>]</span> for a nice discussion of the history.</p>
+</aside>
 <div class="math notranslate nohighlight" id="equation-eq-4-13">
 <span class="eqno">(45)<a class="headerlink" href="#equation-eq-4-13" title="Permalink to this equation">#</a></span>\[    H = \frac{2\mu}{1/(2N)+2\mu}  = \frac{4N\mu}{1+4N\mu} \label{eqn:hetero}\]</div>
 <p>The compound parameter <span class="math notranslate nohighlight">\(4N\mu\)</span>, the population-scaled mutation rate,
 will come up a number of times so we’ll give it its own name:</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-14">
 <span class="eqno">(46)<a class="headerlink" href="#equation-eq-4-14" title="Permalink to this equation">#</a></span>\[    \theta = 4N\mu\]</div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>See Math Appendix equation <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.9</span></code> for more background on conditional probabilities.</p>
+</aside>
 <p>What’s the intuition of our equation <a class="reference internal" href="#equation-eq-4-13">(45)</a>, well the probability that any event happens in a particular generation is <span class="math notranslate nohighlight">\(P(\textrm{mutation or coalescence}) \approx \frac{1}{(2N)}+2\mu\)</span>, so conditional on an event happening the probability that it is a mutation is <span class="math notranslate nohighlight">\(P(\textrm{mutation} \mid \textrm{mutation or coalescence}) =  \frac{2\mu}{\left(\frac{1}{(2N)}+2\mu \right)}\)</span>.</p>
 <p>So all else being equal, species with larger population sizes should
 have proportionally higher levels of neutral polymorphism. Indeed,
 populations of animals, e.g. birds, on small islands have lower levels
 of diversity than closely related species on the mainland with larger
 ranges. More generally, we do see higher levels of heterozygosity in
-larger census population sizes across animals <a class="reference internal" href="#figure-4-8"><span class="std std-numref">Fig. 38</span></a>.
+larger census population sizes across animals <a class="reference internal" href="#figure-4-8"><span class="std std-numref">Fig. 45</span></a>.
 However, while census population sizes vary over many orders of
 magnitude, levels of diversity vary much less than that. So, if levels
 of diversity in natural populations represent a balance between genetic
@@ -546,24 +638,31 @@ section we’ll talk about some possible reasons why.</p>
 <figure class="align-left" id="figure-4-8">
 <img alt="../../_images/bird_allozyme_pop_size.pdf" src="../../_images/bird_allozyme_pop_size.pdf" />
 <figcaption>
-<p><span class="caption-number">Fig. 38 </span><span class="caption-text">- Average basepair heterozygosity plotted against the log of range size for endemic island and mainland bird populations <span id="id2">[<a class="reference internal" href="../chapter-00-bibliography.html#id193" title="Thibault Leroy, Marjolaine Rousselle, Marie-Ka Tilak, Aude Caizergues, Celine Scornavacca, Maria Recuerda Carrasco, Jerome Fuchs, Juan Carlos Illera, Dawie H De Swardt, Christophe Thebaud, and others. Endemic island songbirds as windows into evolution in small effective population sizes. bioRxiv, 2020.">Leroy <em>et al.</em>, 2020</a>]</span>. Average allozyme heterozygosity plotted against the log of census population size (N) for animals. Data from <span id="id3">Soulé [<a class="reference internal" href="../chapter-00-bibliography.html#id11" title="Michael E Soulé. Molecular Evolution, chapter Allozyme variation, its determinats in space and time, pages 60–77. Sinauer associates, 1976.">1976</a>]</span> and <span id="id4">Frankham [<a class="reference internal" href="../chapter-00-bibliography.html#id13" title="Richard Frankham. Relationship of genetic variation to population size in wildlife. Conservation biology, 10(6):1500–1508, 1996.">1996</a>]</span>. Code <a class="reference external" href="https://github.com/cooplab/popgen-notes/blob/master/Journal_figs/genetic_drift/Allozyme_pop_size/allozyme_pop_size.R">here</a>.</span><a class="headerlink" href="#figure-4-8" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 45 </span><span class="caption-text">- Average basepair heterozygosity plotted against the log of range size for endemic island and mainland bird populations <span id="id7">[<a class="reference internal" href="../chapter-00-bibliography.html#id193" title="Thibault Leroy, Marjolaine Rousselle, Marie-Ka Tilak, Aude Caizergues, Celine Scornavacca, Maria Recuerda Carrasco, Jerome Fuchs, Juan Carlos Illera, Dawie H De Swardt, Christophe Thebaud, and others. Endemic island songbirds as windows into evolution in small effective population sizes. bioRxiv, 2020.">Leroy <em>et al.</em>, 2020</a>]</span>. Average allozyme heterozygosity plotted against the log of census population size (N) for animals. Data from <span id="id8">Soulé [<a class="reference internal" href="../chapter-00-bibliography.html#id11" title="Michael E Soulé. Molecular Evolution, chapter Allozyme variation, its determinats in space and time, pages 60–77. Sinauer associates, 1976.">1976</a>]</span> and <span id="id9">Frankham [<a class="reference internal" href="../chapter-00-bibliography.html#id13" title="Richard Frankham. Relationship of genetic variation to population size in wildlife. Conservation biology, 10(6):1500–1508, 1996.">1996</a>]</span>. Code <a class="reference external" href="https://github.com/cooplab/popgen-notes/blob/master/Journal_figs/genetic_drift/Allozyme_pop_size/allozyme_pop_size.R">here</a>.</span><a class="headerlink" href="#figure-4-8" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
 <section id="the-effective-population-size">
 <h2>The effective population size<a class="headerlink" href="#the-effective-population-size" title="Permalink to this headline">#</a></h2>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>The effective population size (<span class="math notranslate nohighlight">\(N_e\)</span>) is the population size that
+would result in the same rate of drift in an idealized population of constant size (following our modeling
+assumptions)
+as that observed in our true population.</p>
+</aside>
 <p>In practice, populations rarely conform to our assumptions of being
 constant in size with low variance in reproductive success. Real
 populations experience dramatic fluctuations in size, and there is often
 high variance in reproductive success. Thus rates of drift in natural
 populations are often a lot higher than the census population size would
-imply. See <a class="reference internal" href="#figure-4-9"><span class="std std-numref">Fig. 39</span></a> for a depiction of a repeatedly
+imply. See <a class="reference internal" href="#figure-4-9"><span class="std std-numref">Fig. 46</span></a> for a depiction of a repeatedly
 bottlenecked population losing diversity at a fast rate.</p>
 <figure class="align-left" id="figure-4-9">
 <img alt="../../_images/Loss_of_he_col_alleles_varying_pop_dark.png" src="../../_images/Loss_of_he_col_alleles_varying_pop_dark.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 39 </span><span class="caption-text">- Loss of heterozygosity over time in a bottlenecking population. A diploid population of 10 individuals, that bottlenecks down to three individuals repeatedly. In the first generation, I colour every allele a different colour so we can track their descendants. There are no new mutations.</span><a class="headerlink" href="#figure-4-9" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 46 </span><span class="caption-text">- Loss of heterozygosity over time in a bottlenecking population. A diploid population of 10 individuals, that bottlenecks down to three individuals repeatedly. In the first generation, I colour every allele a different colour so we can track their descendants. There are no new mutations. <span style='font-size: bigger; color: red;'>MISSING</span></span><a class="headerlink" href="#figure-4-9" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>To cope with this discrepancy, population geneticists often invoke the
@@ -575,14 +674,27 @@ are met) replace our population size by the harmonic mean population
 size. Consider a diploid population of variable size, whose size is
 <span class="math notranslate nohighlight">\(N_t\)</span> <span class="math notranslate nohighlight">\(t\)</span> generations into the past. The probability our pairs of
 alleles have not coalesced by generation <span class="math notranslate nohighlight">\(t\)</span> is given by</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>To see this, note that if <span class="math notranslate nohighlight">\(1/(N_i)\)</span> is
+small, then we can approximate equation <a class="reference internal" href="#equation-eq-4-15">(49)</a> using the exponential approximation:</p>
+<div class="math notranslate nohighlight" id="equation-eq-4-17">
+<span class="eqno">(47)<a class="headerlink" href="#equation-eq-4-17" title="Permalink to this equation">#</a></span>\[    \prod_{i=1}^{t} \exp \left( -\frac{1}{2N_i} \right)   =
+\exp \left(- \sum_{i=1}^{t} \frac{1}{2N_i} \right) .\]</div>
+<p>When we put the product inside the exponent, it becomes a sum.  We can also write the probability of not coalescing by generation <span class="math notranslate nohighlight">\(t\)</span> in a population of constant size (<span class="math notranslate nohighlight">\(N_e\)</span>) as an exponential, so that it takes the same form as the expression above on the right. Comparing the exponent in the two cases, we see</p>
+<div class="math notranslate nohighlight" id="equation-eq-4-18">
+<span class="eqno">(48)<a class="headerlink" href="#equation-eq-4-18" title="Permalink to this equation">#</a></span>\[    \frac{t}{2N_e} = \sum_{i=1}^{t} \frac{1}{(2N_i)}\]</div>
+<p>So that if we want a constant effective population size (<span class="math notranslate nohighlight">\(N_e\)</span>) that has the same
+rate of loss of heterozygosity as our variable population, we need to rearrange and solve this equation to give equation <a class="reference internal" href="#equation-eq-4-16">(50)</a>.</p>
+</aside>
 <div class="math notranslate nohighlight" id="equation-eq-4-15">
-<span class="eqno">(47)<a class="headerlink" href="#equation-eq-4-15" title="Permalink to this equation">#</a></span>\[    \prod_{i=1}^{t} \left(1-\frac{1}{2N_i} \right)\]</div>
+<span class="eqno">(49)<a class="headerlink" href="#equation-eq-4-15" title="Permalink to this equation">#</a></span>\[    \prod_{i=1}^{t} \left(1-\frac{1}{2N_i} \right)\]</div>
 <p>Note that this simply collapses to our original expression
 <span class="math notranslate nohighlight">\(\left(1-\frac{1}{2N } \right)^t\)</span> if <span class="math notranslate nohighlight">\(N_i\)</span> is constant. Under this
 model, the rate of loss of heterozygosity in this population is
 equivalent to a population of effective size</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-16">
-<span class="eqno">(48)<a class="headerlink" href="#equation-eq-4-16" title="Permalink to this equation">#</a></span>\[    N_e =\frac{1}{\frac{1}{t} \sum_{i=1}^{t} \frac{1}{N_i} }.\]</div>
+<span class="eqno">(50)<a class="headerlink" href="#equation-eq-4-16" title="Permalink to this equation">#</a></span>\[    N_e =\frac{1}{\frac{1}{t} \sum_{i=1}^{t} \frac{1}{N_i} }.\]</div>
 <p>This is the harmonic mean of the varying population size.</p>
 <p>Thus our effective population size, the size of an idealized constant
 population which matches the rate of genetic drift, is the harmonic mean
@@ -593,14 +705,14 @@ generations, <span class="math notranslate nohighlight">\(N_e\)</span> will be m
 <figure class="align-left" id="figure-4-10">
 <img alt="../../_images/Loss_of_he_col_alleles_varying_RS.png" src="../../_images/Loss_of_he_col_alleles_varying_RS.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 40 </span><span class="caption-text">- High variance on reproductive success increases the rate of genetic drift. A diploid population of 10 individuals, where the circled individuals have much higher reproductive success. In the first generation I colour every allele a different colour so we can track their descendants, there are no new mutations.</span><a class="headerlink" href="#figure-4-10" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 47 </span><span class="caption-text">- High variance on reproductive success increases the rate of genetic drift. A diploid population of 10 individuals, where the circled individuals have much higher reproductive success. In the first generation I colour every allele a different colour so we can track their descendants, there are no new mutations. <span style='font-size: bigger; color: red;'>MISSING</span></span><a class="headerlink" href="#figure-4-10" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Variance in reproductive success will also affect our effective
 population size. Even if our population has a large constant size <span class="math notranslate nohighlight">\(N\)</span>
 individuals, if only small proportion of them get to reproduce, then the
 rate of drift will reflect this much smaller number of reproducing
-individuals. See <a class="reference internal" href="#figure-4-10"><span class="std std-numref">Fig. 40</span></a> for a depiction of the higher rate
+individuals. See <a class="reference internal" href="#figure-4-10"><span class="std std-numref">Fig. 47</span></a> for a depiction of the higher rate
 of drift in a population where there is high variance in reproductive
 success.</p>
 <p>To see one example of this, consider the case where <span class="math notranslate nohighlight">\(N_F\)</span> of females get
@@ -609,7 +721,7 @@ biological mother and father, not every individual gets to be a parent.
 In practice, in many animal species far more females get to reproduce
 than males, i.e. <span class="math notranslate nohighlight">\(N_M &lt;N_F\)</span>, as a few males get many mating
 opportunities and many males get no/few mating opportunities (see
-<span id="id5">Janicke <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id200" title="Tim Janicke, Ines K Häderer, Marc J Lajeunesse, and Nils Anthes. Darwinian sex roles confirmed across the animal kingdom. Science advances, 2(2):e1500983, 2016.">2016</a>]</span> for a broad analysis, and note that there a certainly many
+<span id="id10">Janicke <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id200" title="Tim Janicke, Ines K Häderer, Marc J Lajeunesse, and Nils Anthes. Darwinian sex roles confirmed across the animal kingdom. Science advances, 2(2):e1500983, 2016.">2016</a>]</span> for a broad analysis, and note that there a certainly many
 exceptions to this general pattern). When our two alleles pick an
 ancestor, <span class="math notranslate nohighlight">\(25\%\)</span> of the time our alleles were both in a female ancestor,
 in which case they are IBD with probability <span class="math notranslate nohighlight">\(1/(2N_F)\)</span>, and <span class="math notranslate nohighlight">\(25\%\)</span> of
@@ -618,14 +730,24 @@ with probability <span class="math notranslate nohighlight">\(1/(2N_M)\)</span>.
 alleles trace back to two individuals of different sexes in the prior
 generation and so cannot coalesce. Therefore, our probability of
 coalescence in the preceding generation is</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-4-11">
+<img alt="../../_images/Hamadryas_baboon.pdf" src="../../_images/Hamadryas_baboon.pdf" />
+<figcaption>
+<p><span class="caption-number">Fig. 48 </span><span class="caption-text">- Male Hamadryas baboons. Up to ten females live in a harem with a single male. <span style="font-size=smaller;">Brehm’s Tierleben (Brehm’s animal life). Brehm,
+A.E. 1893.</span> <span style='font-size: bigger; color: red;'>MISSING</span></span><a class="headerlink" href="#figure-4-11" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
 <div class="math notranslate nohighlight" id="equation-eq-4-19">
-<span class="eqno">(49)<a class="headerlink" href="#equation-eq-4-19" title="Permalink to this equation">#</a></span>\[    \frac{1}{4}\left(\frac{1}{2N_M} \right)+\frac{1}{4}\left(\frac{1}{2N_F} \right)\]</div>
+<span class="eqno">(51)<a class="headerlink" href="#equation-eq-4-19" title="Permalink to this equation">#</a></span>\[    \frac{1}{4}\left(\frac{1}{2N_M} \right)+\frac{1}{4}\left(\frac{1}{2N_F} \right)\]</div>
 <p>i.e. the rate of coalescence is the
 harmonic mean of the two sexes’ population sizes, equating this to
 <span class="math notranslate nohighlight">\(\frac{1}{2N_e}\)</span> we find</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-20">
-<span class="eqno">(50)<a class="headerlink" href="#equation-eq-4-20" title="Permalink to this equation">#</a></span>\[    N_e = \frac{4N_FN_M}{N_F+N_M}\]</div>
-<p>Thus if reproductive success is very skewed in one sex (e.g. <span class="math notranslate nohighlight">\(N_M \ll N/2\)</span>), our autosomal effective population size will be much reduced as a result. For more on how different evolutionary forces affect the rate of genetic drift, and their impact on the effective population size, see <span id="id6">Charlesworth [<a class="reference internal" href="../chapter-00-bibliography.html#id199" title="Brian Charlesworth. Effective population size and patterns of molecular evolution and variation. Nature Reviews Genetics, 10(3):195, 2009.">2009</a>]</span>.</p>
+<span class="eqno">(52)<a class="headerlink" href="#equation-eq-4-20" title="Permalink to this equation">#</a></span>\[    N_e = \frac{4N_FN_M}{N_F+N_M}\]</div>
+<p>Thus if reproductive success is very skewed in one sex (e.g. <span class="math notranslate nohighlight">\(N_M \ll N/2\)</span>), our autosomal effective population size will be much reduced as a result. For more on how different evolutionary forces affect the rate of genetic drift, and their impact on the effective population size, see <span id="id11">Charlesworth [<a class="reference internal" href="../chapter-00-bibliography.html#id199" title="Brian Charlesworth. Effective population size and patterns of molecular evolution and variation. Nature Reviews Genetics, 10(3):195, 2009.">2009</a>]</span>.</p>
 <div class="admonition-question-4 admonition" id="question-4-4">
 <p class="admonition-title">Question 4</p>
 <p>You are studying a population of 500 male and 500 female Hamadryas baboons. Assume that all of the females but only 1/10 of the males get to mate. What is the effective population size for the autosome?</p>
@@ -634,19 +756,28 @@ harmonic mean of the two sexes’ population sizes, equating this to
 <figure class="align-left" id="figure-4-12">
 <img alt="../../_images/Scythian_horses.pdf" src="../../_images/Scythian_horses.pdf" />
 <figcaption>
-<p><span class="caption-number">Fig. 41 </span><span class="caption-text">- Levels of genome-wide diversity in Scythian horses from <span class="math notranslate nohighlight">\(2300\)</span> year
+<p><span class="caption-number">Fig. 49 </span><span class="caption-text">- Levels of genome-wide diversity in Scythian horses from <span class="math notranslate nohighlight">\(2300\)</span> year
 old Scythian horses and Modern horses (Nordic). The numbers next to each
 column given the fraction of diversity remaining in the present day,
-Data from <span id="id7">Librado <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id38" title="Pablo Librado, Cristina Gamba, Charleen Gaunitz, Clio Der Sarkissian, Mélanie Pruvost, Anders Albrechtsen, Antoine Fages, Naveed Khan, Mikkel Schubert, Vidhya Jagannathan, and others. Ancient genomic changes associated with domestication of the horse. Science, 356(6336):442–445, 2017.">2017</a>]</span>. Code <a class="reference external" href="https://github.com/cooplab/popgen-notes/blob/master/Journal_figs/genetic_drift/Scythian_horses/Scythian_horses.r">here</a>.</span><a class="headerlink" href="#figure-4-12" title="Permalink to this image">#</a></p>
+Data from <span id="id12">Librado <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id38" title="Pablo Librado, Cristina Gamba, Charleen Gaunitz, Clio Der Sarkissian, Mélanie Pruvost, Anders Albrechtsen, Antoine Fages, Naveed Khan, Mikkel Schubert, Vidhya Jagannathan, and others. Ancient genomic changes associated with domestication of the horse. Science, 356(6336):442–445, 2017.">2017</a>]</span>. Code <a class="reference external" href="https://github.com/cooplab/popgen-notes/blob/master/Journal_figs/genetic_drift/Scythian_horses/Scythian_horses.r">here</a>.</span><a class="headerlink" href="#figure-4-12" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p><span id="id8">Librado <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id38" title="Pablo Librado, Cristina Gamba, Charleen Gaunitz, Clio Der Sarkissian, Mélanie Pruvost, Anders Albrechtsen, Antoine Fages, Naveed Khan, Mikkel Schubert, Vidhya Jagannathan, and others. Ancient genomic changes associated with domestication of the horse. Science, 356(6336):442–445, 2017.">2017</a>]</span> sequenced ancient DNA from 13 sacrificed stallions
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-4-13">
+<img alt="../../_images/616px-Szkíta.jpg" src="../../_images/616px-Szkíta.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 50 </span><span class="caption-text">- A gold plaque showing Scythian rider found in a burial mound in eastern Crimera (c400–350 BC). <span style="font-size: smaller;">Photograph: V Terebenin/State Hermitage Museum. Image from <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Szk%5C%C3%5C%ADta.jpg">wikimedia</a>. This is a faithful photographic reproduction of a two-dimensional, public domain work of art.</span></span><a class="headerlink" href="#figure-4-13" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<p><span id="id13">Librado <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id38" title="Pablo Librado, Cristina Gamba, Charleen Gaunitz, Clio Der Sarkissian, Mélanie Pruvost, Anders Albrechtsen, Antoine Fages, Naveed Khan, Mikkel Schubert, Vidhya Jagannathan, and others. Ancient genomic changes associated with domestication of the horse. Science, 356(6336):442–445, 2017.">2017</a>]</span> sequenced ancient DNA from 13 sacrificed stallions
 from an <span class="math notranslate nohighlight">\(2300\)</span> year old Scythian burial mound in Kazakhstan. The
 Scythian were a nomadic people whose Russian Steppe empire stretched
 from the Black Sea to the borders of China. They were among the first
 people to master horseback warfare with both men and women riding armed
 with short bows.</p>
-<p>By comparing these data to modern horses, <span id="id9">Librado <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id38" title="Pablo Librado, Cristina Gamba, Charleen Gaunitz, Clio Der Sarkissian, Mélanie Pruvost, Anders Albrechtsen, Antoine Fages, Naveed Khan, Mikkel Schubert, Vidhya Jagannathan, and others. Ancient genomic changes associated with domestication of the horse. Science, 356(6336):442–445, 2017.">2017</a>]</span> found that
+<p>By comparing these data to modern horses, <span id="id14">Librado <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id38" title="Pablo Librado, Cristina Gamba, Charleen Gaunitz, Clio Der Sarkissian, Mélanie Pruvost, Anders Albrechtsen, Antoine Fages, Naveed Khan, Mikkel Schubert, Vidhya Jagannathan, and others. Ancient genomic changes associated with domestication of the horse. Science, 356(6336):442–445, 2017.">2017</a>]</span> found that
 levels of diversity had been substantially reduced on the autosomes and
 greatly reduced on the Y chromosome. This contrasts with the mtDNA
 where levels of diversity have decreased only slightly. This pattern
@@ -657,18 +788,27 @@ than the mtDNA leading to a much higher rate of loss of diversity on the
 Y than on other chromosomes.</p>
 <div class="admonition-question-5 admonition" id="question-4-5">
 <p class="admonition-title">Question 5</p>
-<p>Using the data on the reduction in horse genetic diversity in <a class="reference internal" href="#figure-4-12"><span class="std std-numref">Fig. 41</span></a>:</p>
+<p>Using the data on the reduction in horse genetic diversity in <a class="reference internal" href="#figure-4-12"><span class="std std-numref">Fig. 49</span></a>:</p>
 <p><strong>A)</strong> Estimate the effective number of stallions and mares contributing to the horse population using the mtDNA and Y chromosome data.</p>
 <p><strong>B)</strong> Predict what the reduction in diversity over the <span class="math notranslate nohighlight">\(2300\)</span> years should be on the autosomes using these numbers?</p>
 <p>Assume a horse generation time of <span class="math notranslate nohighlight">\(8\)</span> years. Assume no new mutations
 during this time interval.</p>
 </div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<figure class="align-left" id="figure-4-14">
+<img alt="../../_images/splitgill_mushrooms.png" src="../../_images/splitgill_mushrooms.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 51 </span><span class="caption-text">- Split-gill fungus (<em>Schizophyllum commune</em>). <span style="font-size=smaller;">长江三角洲及邻近地区孢子植物志 (Spore Flora of the Yangtze River Delta and Adjacent Areas) 1989. 上海自然博物馆. Image from the <a class="reference external" href="https://www.biodiversitylibrary.org/item/112321%5C#page/142/mode/1up">Biodiversity Heritage Library</a>. Contributed by Institute of Botany, Chinese Academy of Sciences. No known copyright restrictions.</span></span><a class="headerlink" href="#figure-4-14" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
 <div class="admonition-question-6 admonition" id="question-4-6">
 <p class="admonition-title">Question 6</p>
 <p>One of the highest levels of genetic diversity is seen in the diploid
 split-gill fungus, <em>Schizophyllum commune</em>. Populations in the USA have
 a sequence-level heterozygosity of <span class="math notranslate nohighlight">\(0.13\)</span> per synonymous base
-<span id="id10">[<a class="reference internal" href="../chapter-00-bibliography.html#id10" title="Maria A Baranova, Maria D Logacheva, Aleksey A Penin, Vladimir B Seplyarskiy, Yana Y Safonova, Sergey A Naumenko, Anna V Klepikova, Evgeny S Gerasimov, Georgii A Bazykin, Timothy Y James, and others. Extraordinary genetic diversity in a wood decay mushroom. Molecular biology and evolution, 32(10):2775–2783, 2015.">Baranova <em>et al.</em>, 2015</a>]</span>. <span id="id11">Baranova <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id10" title="Maria A Baranova, Maria D Logacheva, Aleksey A Penin, Vladimir B Seplyarskiy, Yana Y Safonova, Sergey A Naumenko, Anna V Klepikova, Evgeny S Gerasimov, Georgii A Bazykin, Timothy Y James, and others. Extraordinary genetic diversity in a wood decay mushroom. Molecular biology and evolution, 32(10):2775–2783, 2015.">2015</a>]</span> sequenced
+<span id="id15">[<a class="reference internal" href="../chapter-00-bibliography.html#id10" title="Maria A Baranova, Maria D Logacheva, Aleksey A Penin, Vladimir B Seplyarskiy, Yana Y Safonova, Sergey A Naumenko, Anna V Klepikova, Evgeny S Gerasimov, Georgii A Bazykin, Timothy Y James, and others. Extraordinary genetic diversity in a wood decay mushroom. Molecular biology and evolution, 32(10):2775–2783, 2015.">Baranova <em>et al.</em>, 2015</a>]</span>. <span id="id16">Baranova <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id10" title="Maria A Baranova, Maria D Logacheva, Aleksey A Penin, Vladimir B Seplyarskiy, Yana Y Safonova, Sergey A Naumenko, Anna V Klepikova, Evgeny S Gerasimov, Georgii A Bazykin, Timothy Y James, and others. Extraordinary genetic diversity in a wood decay mushroom. Molecular biology and evolution, 32(10):2775–2783, 2015.">2015</a>]</span> sequenced
 parents and multiple offspring to estimate that
 <span class="math notranslate nohighlight">\(\mu= 2 \times 10^{-8} bp^{-1}\)</span> per generation. What is your estimate of
 the effective population size of <em>S. commune</em>?</p>

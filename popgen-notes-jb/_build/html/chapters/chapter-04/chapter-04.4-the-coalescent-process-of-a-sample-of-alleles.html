@@ -509,7 +509,7 @@ moment we’ll see that it is safe to ignore such unlikely events.</p>
 <figure class="align-left" id="figure-4-18">
 <img alt="../../_images/Coal_three_lineages.pdf" src="../../_images/Coal_three_lineages.pdf" />
 <figcaption>
-<p><span class="caption-number">Fig. 43 </span><span class="caption-text">- A simple simulation of the coalescent process for three lineages. We
+<p><span class="caption-number">Fig. 55 </span><span class="caption-text">- A simple simulation of the coalescent process for three lineages. We
 track the ancestry of three modern-day alleles, the first pair (red and
 purple) coalesce four generations back, after which there are only two
 independent lineages we are tracking. This pair then coalesces twelve
@@ -523,16 +523,20 @@ in the preceding generation is still <span class="math notranslate nohighlight">
 three possible pairs of alleles, so the probability that no pair finds a
 common ancestor in the preceding generation is</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-28">
-<span class="eqno">(58)<a class="headerlink" href="#equation-eq-4-28" title="Permalink to this equation">#</a></span>\[    \left(1-\frac{1}{2N} \right)^3 \approx \left( 1- \frac{3}{2N} \right)\]</div>
+<span class="eqno">(60)<a class="headerlink" href="#equation-eq-4-28" title="Permalink to this equation">#</a></span>\[    \left(1-\frac{1}{2N} \right)^3 \approx \left( 1- \frac{3}{2N} \right)\]</div>
 <p>In making this approximation we are multiplying out the right hand-side
 and ignoring terms of <span class="math notranslate nohighlight">\(1/N^2\)</span> and higher (a Taylor approximation, see
-Appendix equation <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.2</span></code>). See <a class="reference internal" href="#figure-4-18"><span class="std std-numref">Fig. 43</span></a> for a random realization of
+Appendix equation <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.2</span></code>). See <a class="reference internal" href="#figure-4-18"><span class="std std-numref">Fig. 55</span></a> for a random realization of
 this process.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>said as “i choose 2”</p>
+</aside>
 <p>More generally, when we sample <span class="math notranslate nohighlight">\(i\)</span> alleles there are <span class="math notranslate nohighlight">\({i \choose 2}\)</span>
 pairs, i.e. <span class="math notranslate nohighlight">\(i(i-1)/2\)</span> pairs. Thus, the probability that no pair of
 alleles in a sample of size <span class="math notranslate nohighlight">\(i\)</span> coalesces in the preceding generation is</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-29">
-<span class="eqno">(59)<a class="headerlink" href="#equation-eq-4-29" title="Permalink to this equation">#</a></span>\[    \left(1-\frac{1}{(2N)} \right)^{{i \choose
+<span class="eqno">(61)<a class="headerlink" href="#equation-eq-4-29" title="Permalink to this equation">#</a></span>\[    \left(1-\frac{1}{(2N)} \right)^{{i \choose
  2}} \approx \left( 1- \frac{{i \choose
  2}}{2N}\right)\]</div>
 <p>while the probability any pair coalesces is
@@ -548,33 +552,49 @@ terms.</p>
 <p>When there are <span class="math notranslate nohighlight">\(i\)</span> alleles, the probability that we wait until the <span class="math notranslate nohighlight">\(t+1\)</span>
 generation before any pair of alleles coalesces is</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-30">
-<span class="eqno">(60)<a class="headerlink" href="#equation-eq-4-30" title="Permalink to this equation">#</a></span>\[    P(T_i =t+1) = \frac{{i \choose
+<span class="eqno">(62)<a class="headerlink" href="#equation-eq-4-30" title="Permalink to this equation">#</a></span>\[    P(T_i =t+1) = \frac{{i \choose
  2}}{2N}\left( 1- \frac{{i \choose
  2}}{2N}\right)^{t}\]</div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>see Appendix equation <code class="xref eq docutils literal notranslate"><span class="pre">eq-A.30</span></code>.</p>
+</aside>
 <p>Thus the waiting time to the first
 coalescent event while there are <span class="math notranslate nohighlight">\(i\)</span> lineages is a geometrically
 distributed random variable with probability of success
 <span class="math notranslate nohighlight">\(p=\frac{{i \choose 2}}{2N}\)</span>, which we denote by</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-31">
-<span class="eqno">(61)<a class="headerlink" href="#equation-eq-4-31" title="Permalink to this equation">#</a></span>\[    T_i \sim \text{Geo}
+<span class="eqno">(63)<a class="headerlink" href="#equation-eq-4-31" title="Permalink to this equation">#</a></span>\[    T_i \sim \text{Geo}
 \left(  \frac{{i \choose
       2}}{2N} \right).\]</div>
 <p>The mean waiting time till any of pair within
 our sample coalesces is</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>To see the continuous time  version of this, note that equation <a class="reference internal" href="#equation-eq-4-30">(62)</a> is</p>
+<div class="math notranslate nohighlight" id="equation-eq-label">
+<span class="eqno">(64)<a class="headerlink" href="#equation-eq-label" title="Permalink to this equation">#</a></span>\[    \approx  \frac{{i \choose
+ 2}}{2N} \exp \left( - \frac{{i \choose
+ 2}}{2N} t \right)\]</div>
+<p>The waiting time <span class="math notranslate nohighlight">\(T_i\)</span> to the first coalescent event in a sample
+of <span class="math notranslate nohighlight">\(i\)</span> alleles is thus exponentially distributed with rate <span class="math notranslate nohighlight">\(\frac{{i \choose
+ 2}}{2N}\)</span>, i.e. <span class="math notranslate nohighlight">\(T_i \sim \text{Exp}\left(\frac{{i \choose
+   2}}{2N} \right)\)</span>.</p>
+</aside>
 <div class="math notranslate nohighlight" id="equation-eq-4-32">
-<span class="eqno">(62)<a class="headerlink" href="#equation-eq-4-32" title="Permalink to this equation">#</a></span>\[    E( T_i) = \frac{2N}{{i \choose  2}}\]</div>
+<span class="eqno">(65)<a class="headerlink" href="#equation-eq-4-32" title="Permalink to this equation">#</a></span>\[    E( T_i) = \frac{2N}{{i \choose  2}}\]</div>
 <p>which again
 follows from the mean of a geometric random variable being
 <span class="math notranslate nohighlight">\(\frac{1}{p}\)</span>.</p>
 <p>After a pair of alleles first finds a common ancestral allele some
 number of generations back in the past, we only have to keep track of
 that common ancestral allele for the pair when looking further into the
-past. In our example coalescent genealogy for our 3 alleles, shown in <a class="reference internal" href="#figure-4-18"><span class="std std-numref">Fig. 43</span></a>, we start by tracking the 3
+past. In our example coalescent genealogy for our 3 alleles, shown in <a class="reference internal" href="#figure-4-18"><span class="std std-numref">Fig. 55</span></a>, we start by tracking the 3
 lineages, then by chance the blue and purple coalesce in the four
 generations back. Then we’re tracking just two lineages, the red lineage
 and the ancestral lineage of the blue and purple alleles; then those two
 coalesce and we’ve found our most recent common ancestor of our sample.
-Another example with four tips is shown in <a class="reference internal" href="#figure-4-19"><span class="std std-numref">Fig. 44</span></a>; we’re track four lineages, then a pair
+Another example with four tips is shown in <a class="reference internal" href="#figure-4-19"><span class="std std-numref">Fig. 56</span></a>; we’re track four lineages, then a pair
 coalesce, then we tracking three lineages, then a pair coalesce, then
 we’re tracking two lineages, then this final pair coalesce and we’ve
 found the most recent common ancestor of our sample (fin, end scene).</p>
@@ -608,7 +628,7 @@ genealogy of our sample.</p>
 <figure class="align-left" id="figure-4-19">
 <img alt="../../_images/Coal_w_muts.pdf" src="../../_images/Coal_w_muts.pdf" />
 <figcaption>
-<p><span class="caption-number">Fig. 44 </span><span class="caption-text">- A simple coalescent tree from a single coalescent simulation, tracing
+<p><span class="caption-number">Fig. 56 </span><span class="caption-text">- A simple coalescent tree from a single coalescent simulation, tracing
 the genealogy of 4 alleles with mutational changes marked with dashes
 showing transitions away from the MRCA sequence (AGTTT) . The <span class="math notranslate nohighlight">\(T_{MRCA}\)</span>
 is <span class="math notranslate nohighlight">\(T_4+T_3+T_2\)</span>. The total time in the tree is
@@ -620,18 +640,18 @@ is <span class="math notranslate nohighlight">\(T_4+T_3+T_2\)</span>. The total 
 <p>We will first consider the time to the most recent common ancestor of
 the entire sample (<span class="math notranslate nohighlight">\(T_{MRCA}\)</span>). This is</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-34">
-<span class="eqno">(63)<a class="headerlink" href="#equation-eq-4-34" title="Permalink to this equation">#</a></span>\[    T_{MRCA} = \sum_{i=n}^2 T_i\]</div>
+<span class="eqno">(66)<a class="headerlink" href="#equation-eq-4-34" title="Permalink to this equation">#</a></span>\[    T_{MRCA} = \sum_{i=n}^2 T_i\]</div>
 <p>generations back, where we are summing from <span class="math notranslate nohighlight">\(i=n\)</span> alleles counting
-backwards to <span class="math notranslate nohighlight">\(i=2\)</span> alleles (see <a class="reference internal" href="#figure-4-19"><span class="std std-numref">Fig. 44</span></a> for example). As our coalescent times for
+backwards to <span class="math notranslate nohighlight">\(i=2\)</span> alleles (see <a class="reference internal" href="#figure-4-19"><span class="std std-numref">Fig. 56</span></a> for example). As our coalescent times for
 different <span class="math notranslate nohighlight">\(i\)</span> are independent, the expected time to the most recent
 common ancestor is</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-35">
-<span class="eqno">(64)<a class="headerlink" href="#equation-eq-4-35" title="Permalink to this equation">#</a></span>\[    E(T_{MRCA}) = \sum_{i=n}^2 E(T_i) = \sum_{i=n}^2  2N/{i \choose
+<span class="eqno">(67)<a class="headerlink" href="#equation-eq-4-35" title="Permalink to this equation">#</a></span>\[    E(T_{MRCA}) = \sum_{i=n}^2 E(T_i) = \sum_{i=n}^2  2N/{i \choose
  2}\]</div>
 <p>Using the fact that <span class="math notranslate nohighlight">\(\frac{1}{i(i-1)}=\frac{1}{i-1} - \frac{1}{i}\)</span>
 and a bit of rearrangement, we can rewrite this as</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-36">
-<span class="eqno">(65)<a class="headerlink" href="#equation-eq-4-36" title="Permalink to this equation">#</a></span>\[    E(T_{MRCA}) = 4N\left(1- \frac{1}{n} \right)\]</div>
+<span class="eqno">(68)<a class="headerlink" href="#equation-eq-4-36" title="Permalink to this equation">#</a></span>\[    E(T_{MRCA}) = 4N\left(1- \frac{1}{n} \right)\]</div>
 <p>So the average <span class="math notranslate nohighlight">\(T_{MRCA}\)</span> scales linearly with population size <span class="math notranslate nohighlight">\(N\)</span>.
 Interestingly, as we move to larger and larger samples (i.e. <span class="math notranslate nohighlight">\(n \gg 1\)</span>),
 the average time to the most recent common ancestor converges on <span class="math notranslate nohighlight">\(4N\)</span>.
@@ -659,12 +679,12 @@ number of segregating sites in a sample is thus a function of the
 the branch lengths on the genealogical tree, <span class="math notranslate nohighlight">\(T_{tot}\)</span>. Our total amount
 of time in the genealogy is</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-37">
-<span class="eqno">(66)<a class="headerlink" href="#equation-eq-4-37" title="Permalink to this equation">#</a></span>\[    T_{tot} = \sum_{i=n}^2 iT_i\]</div>
+<span class="eqno">(69)<a class="headerlink" href="#equation-eq-4-37" title="Permalink to this equation">#</a></span>\[    T_{tot} = \sum_{i=n}^2 iT_i\]</div>
 <p>as when there are <span class="math notranslate nohighlight">\(i\)</span> lineages, each
-contributes a time <span class="math notranslate nohighlight">\(T_i\)</span> to the total time (see <a class="reference internal" href="#figure-4-19"><span class="std std-numref">Fig. 44</span></a> for an example). Taking the expectation of
+contributes a time <span class="math notranslate nohighlight">\(T_i\)</span> to the total time (see <a class="reference internal" href="#figure-4-19"><span class="std std-numref">Fig. 56</span></a> for an example). Taking the expectation of
 the total time in the genealogy,</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-38">
-<span class="eqno">(67)<a class="headerlink" href="#equation-eq-4-38" title="Permalink to this equation">#</a></span>\[    E(T_{tot}) = \sum_{i=n}^2 i \frac{2N}{{i \choose
+<span class="eqno">(70)<a class="headerlink" href="#equation-eq-4-38" title="Permalink to this equation">#</a></span>\[    E(T_{tot}) = \sum_{i=n}^2 i \frac{2N}{{i \choose
  2} } = \sum_{i=n}^2 \frac{4N}{i -1} =\sum_{i=n-1}^1 \frac{4N}{i}\]</div>
 <p>we see that our expected total amount of time in the genealogy scales
 linearly with our population size <span class="math notranslate nohighlight">\(N\)</span>. Our expected total amount of time
@@ -683,7 +703,7 @@ So the total number of mutations segregating in our sample (<span class="math no
 Poisson with mean <span class="math notranslate nohighlight">\(\mu T_{tot}\)</span>. Thus the expected number of segregating
 sites in a sample of size <span class="math notranslate nohighlight">\(n\)</span> is</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-39">
-<span class="eqno">(68)<a class="headerlink" href="#equation-eq-4-39" title="Permalink to this equation">#</a></span>\[    E(S) = \mu \E(T_{tot}) = \sum_{i=n-1}^1 \frac{4N\mu }{i} = \theta
+<span class="eqno">(71)<a class="headerlink" href="#equation-eq-4-39" title="Permalink to this equation">#</a></span>\[    E(S) = \mu \E(T_{tot}) = \sum_{i=n-1}^1 \frac{4N\mu }{i} = \theta
 \sum_{i=n-1}^1 \frac{1}{i}\]</div>
 <p>Note that this is
 growing with the sample size <span class="math notranslate nohighlight">\(n\)</span>, albeit very slowly (roughly at the
@@ -693,7 +713,7 @@ by setting our observed number of segregating sites in a sample (<span class="ma
 equal to this expectation. We’ll call this estimator
 <span class="math notranslate nohighlight">\(\widehat{\theta}_W\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-40">
-<span class="eqno">(69)<a class="headerlink" href="#equation-eq-4-40" title="Permalink to this equation">#</a></span>\[    \widehat{\theta}_W =\frac{ S}{\sum_{i=n-1}^1 \frac{1}{i}}\]</div>
+<span class="eqno">(72)<a class="headerlink" href="#equation-eq-4-40" title="Permalink to this equation">#</a></span>\[    \widehat{\theta}_W =\frac{ S}{\sum_{i=n-1}^1 \frac{1}{i}}\]</div>
 <p>This estimator of <span class="math notranslate nohighlight">\(\theta\)</span> was devised by <span id="id1">Watterson [<a class="reference internal" href="../chapter-00-bibliography.html#id301" title="GA Watterson. On the number of segregating sites in genetical models without recombination. Theoretical population biology, 7(2):256–276, 1975.">1975</a>]</span>, hence the <span class="math notranslate nohighlight">\(W\)</span>.</p>
 </section>
 <section id="the-neutral-site-frequency-spectrum">
@@ -701,12 +721,12 @@ equal to this expectation. We’ll call this estimator
 <p>We can use our coalescent process to find the expected number of derived
 alleles present <span class="math notranslate nohighlight">\(i\)</span> times out of a sample size <span class="math notranslate nohighlight">\(n\)</span>, e.g. how many
 singletons (<span class="math notranslate nohighlight">\(i = 1\)</span>) do we expect to find in our sample? For example, in
-<a class="reference internal" href="#figure-4-19"><span class="std std-numref">Fig. 44</span></a> in our sample of four sequences, there are
+<a class="reference internal" href="#figure-4-19"><span class="std std-numref">Fig. 56</span></a> in our sample of four sequences, there are
 3 singletons and 2 doubletons. The number of sites with these different
 allele frequencies depends on the lengths of specific genealogical
 branches. A mutation that falls on a branch with <span class="math notranslate nohighlight">\(i\)</span> descendants will
 create a derived allele with frequency <span class="math notranslate nohighlight">\(i\)</span>. For example, in our example
-tree in <a class="reference internal" href="#figure-4-19"><span class="std std-numref">Fig. 44</span></a>, the total number of generations where a
+tree in <a class="reference internal" href="#figure-4-19"><span class="std std-numref">Fig. 56</span></a>, the total number of generations where a
 mutation could arise and be a doubleton is <span class="math notranslate nohighlight">\(T_3+2T_2\)</span>, the total length
 of the branch ancestral to just the orange and red allele <span class="math notranslate nohighlight">\((T_3+T_2)\)</span>
 plus the branch ancestral to just the blue and purple allele <span class="math notranslate nohighlight">\((T_2)\)</span>.</p>
@@ -717,9 +737,9 @@ be derived singletons, while mutations that fall along the orange branch
 will be doubletons in the sample. The total number of generations where
 a singleton mutation could arise is <span class="math notranslate nohighlight">\(3 T_3 + T_2\)</span>. Note that we only
 count the time where there are two lineages <span class="math notranslate nohighlight">\((T_{2})\)</span> once. So our
-expected number of singletons, using equation <a class="reference internal" href="#equation-eq-4-32">(62)</a>, is</p>
+expected number of singletons, using equation <a class="reference internal" href="#equation-eq-4-32">(65)</a>, is</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-41">
-<span class="eqno">(70)<a class="headerlink" href="#equation-eq-4-41" title="Permalink to this equation">#</a></span>\[    E(S_i) = \mu \left( 3E(T_3) +  E(T_2) \right) = \mu \left( 3
+<span class="eqno">(73)<a class="headerlink" href="#equation-eq-4-41" title="Permalink to this equation">#</a></span>\[    E(S_i) = \mu \left( 3E(T_3) +  E(T_2) \right) = \mu \left( 3
   \frac{2N}{3}+ 2N \right) = \theta\]</div>
 <p>By similar logic, the time where
 doubletons could arise is <span class="math notranslate nohighlight">\(T_2\)</span> and our expected number of doubletons is
@@ -733,7 +753,7 @@ A nice, relatively simple proof of the neutral site frequency spectrum
 is given by <span id="id2">Hudson [<a class="reference internal" href="../chapter-00-bibliography.html#id231" title="Richard R. Hudson. A new proof of the expected frequency spectrum under the standard neutral model. PLOS ONE, 10(7):1-5, 07 2015. URL: https://doi.org/10.1371/journal.pone.0118087, doi:10.1371/journal.pone.0118087.">2015</a>]</span>, but we won’t give this here. The general form
 is:</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-42">
-<span class="eqno">(71)<a class="headerlink" href="#equation-eq-4-42" title="Permalink to this equation">#</a></span>\[    E(S_i) = \frac{\theta }{i}\]</div>
+<span class="eqno">(74)<a class="headerlink" href="#equation-eq-4-42" title="Permalink to this equation">#</a></span>\[    E(S_i) = \frac{\theta }{i}\]</div>
 <p>i.e.
 there are twice as many singletons as doubletons, three times as many
 singletons as tripletons, and so on. The other thing that will be
@@ -754,7 +774,7 @@ probability by dividing the expected number of sites segregating for an
 allele at frequency <span class="math notranslate nohighlight">\(i\)</span> by the expected number segregating at all of the
 possible allele frequencies for polymorphisms in our sample</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-43">
-<span class="eqno">(72)<a class="headerlink" href="#equation-eq-4-43" title="Permalink to this equation">#</a></span>\[    \begin{aligned}
+<span class="eqno">(75)<a class="headerlink" href="#equation-eq-4-43" title="Permalink to this equation">#</a></span>\[    \begin{aligned}
     P(i |0&lt;i&lt;n) &amp;=\frac{E(S_i)}{\sum_{j=1}^{n-1} E(S_j)} = \frac{\frac{1}{i}}{\sum_{j=1}^{n-1} \frac{1}{j}}.\end{aligned}\]</div>
 <p>We can interpret this probability as the fraction of polymorphic sites
 we expect to find at a frequency <span class="math notranslate nohighlight">\(i/n\)</span>.</p>
@@ -768,7 +788,7 @@ population size changes using data across many loci, or for detecting
 the signal of selection at individual loci. One of the first tests was
 proposed by <span id="id3">Tajima [<a class="reference internal" href="../chapter-00-bibliography.html#id254" title="Fumio Tajima. Statistical method for testing the neutral mutation hypothesis by dna polymorphism. Genetics, 123(3):585–595, 1989.">1989</a>]</span>, and is called Tajima’s <span class="math notranslate nohighlight">\(D\)</span>. Tajima’s <span class="math notranslate nohighlight">\(D\)</span> is</p>
 <div class="math notranslate nohighlight" id="equation-eq-4-44">
-<span class="eqno">(73)<a class="headerlink" href="#equation-eq-4-44" title="Permalink to this equation">#</a></span>\[    D = \frac{\hat{\theta}_{\pi}-\hat{\theta}_{W}}{C}\]</div>
+<span class="eqno">(76)<a class="headerlink" href="#equation-eq-4-44" title="Permalink to this equation">#</a></span>\[    D = \frac{\hat{\theta}_{\pi}-\hat{\theta}_{W}}{C}\]</div>
 <p>where the numerator is the difference between the estimate of <span class="math notranslate nohighlight">\(\theta\)</span>
 based on pairwise differences and that based on segregating sites. As
 these two estimators both have expectation <span class="math notranslate nohighlight">\(\theta\)</span> under the neutral,
@@ -795,7 +815,7 @@ are detectable by statistics such as Tajima’s <span class="math notranslate no
 <h2>Demography and the coalescent<a class="headerlink" href="#demography-and-the-coalescent" title="Permalink to this headline">#</a></h2>
 <p>We’ve already seen how changes in population size can change the rate at
 which heterozygosity is lost from the population (see the discussion
-around equation <a class="reference internal" href="chapter-04.2-loss-of-heterozygosity-due-to-drift.html#equation-eq-4-15">(47)</a>). If the population size in generation <span class="math notranslate nohighlight">\(i\)</span>
+around equation <a class="reference internal" href="chapter-04.2-loss-of-heterozygosity-due-to-drift.html#equation-eq-4-15">(49)</a>). If the population size in generation <span class="math notranslate nohighlight">\(i\)</span>
 is <span class="math notranslate nohighlight">\(N_i\)</span>, the probability that a pair of lineages coalesce is
 <span class="math notranslate nohighlight">\(\frac{1}{(2N_i)}\)</span>; this conforms to our intuition that if the
 population size is small, the rate at which pairs of lineages find their
@@ -807,7 +827,7 @@ hence patterns of diversity, in more systematic ways.</p>
 <p>We can see how demography potentially distorts the observed frequency
 spectrum away from the neutral expectation in a very large sample of
 humans shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-4.21</span></code>. For comparison, the neutral frequency
-spectrum, equation <a class="reference internal" href="#equation-eq-4-42">(71)</a>, is shown as a red line. There are
+spectrum, equation <a class="reference internal" href="#equation-eq-4-42">(74)</a>, is shown as a red line. There are
 vastly more rare alleles than expected under our neutral,
 constant-size-size model, but the neutral prediction and reality agree
 somewhat more for alleles that are more common.</p>
@@ -849,14 +869,14 @@ ancestral lineages in <code class="xref std std-numref docutils literal notransl
 <figure class="align-left" id="figure-4-24">
 <img alt="../../_images/Mimulus_coalescent_times.pdf" src="../../_images/Mimulus_coalescent_times.pdf" />
 <figcaption>
-<p><span class="caption-number">Fig. 45 </span><span class="caption-text">- Diversity along a region of the Mimulus genome. Black dots give <span class="math notranslate nohighlight">\(\pi\)</span>
+<p><span class="caption-number">Fig. 57 </span><span class="caption-text">- Diversity along a region of the Mimulus genome. Black dots give <span class="math notranslate nohighlight">\(\pi\)</span>
 in 1kb windows between chromosomes sampled from two individuals, the red
 line is a moving average (data from <span id="id4">Brandvain <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id266" title="Yaniv Brandvain, Amanda M Kenney, Lex Flagel, Graham Coop, and Andrea L Sweigart. Speciation and introgression between mimulus nasutus and mimulus guttatus. PLoS Genetics, 10(6):e1004410, 2014.">2014</a>]</span>). Pairwise coalescent
 times (<span class="math notranslate nohighlight">\(t\)</span>) estimated assuming <span class="math notranslate nohighlight">\(t= \frac{\pi}{2 \mu}\)</span> using
 <span class="math notranslate nohighlight">\(\mu_{BP}=10^{-9}\)</span>.</span><a class="headerlink" href="#figure-4-24" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>An example of this is shown <a class="reference internal" href="#figure-4-24"><span class="std std-numref">Fig. 45</span></a>, data from <span id="id5">Brandvain <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id266" title="Yaniv Brandvain, Amanda M Kenney, Lex Flagel, Graham Coop, and Andrea L Sweigart. Speciation and introgression between mimulus nasutus and mimulus guttatus. PLoS Genetics, 10(6):e1004410, 2014.">2014</a>]</span>. <em>Mimulus
+<p>An example of this is shown <a class="reference internal" href="#figure-4-24"><span class="std std-numref">Fig. 57</span></a>, data from <span id="id5">Brandvain <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id266" title="Yaniv Brandvain, Amanda M Kenney, Lex Flagel, Graham Coop, and Andrea L Sweigart. Speciation and introgression between mimulus nasutus and mimulus guttatus. PLoS Genetics, 10(6):e1004410, 2014.">2014</a>]</span>. <em>Mimulus
 nasutus</em> is a selfing species that arose recently from an out-crossing
 progenitor <em>M. guttatus</em>, and experienced a strong bottleneck. <em>M.
 guttatus</em> has very high levels of genetic diversity (<span class="math notranslate nohighlight">\(\pi=4\%\)</span> at
@@ -872,7 +892,7 @@ ancestral <em>M. guttatus</em> population.</p>
 <figure class="align-left" id="figure-4-26">
 <img alt="../../_images/Wright_Tajima_D.pdf" src="../../_images/Wright_Tajima_D.pdf" />
 <figcaption>
-<p><span class="caption-number">Fig. 46 </span><span class="caption-text">- Data for polymorphism from Maize and Teosinite: 774 loci from
+<p><span class="caption-number">Fig. 58 </span><span class="caption-text">- Data for polymorphism from Maize and Teosinite: 774 loci from
 <span id="id6">Wright <em>et al.</em> [<a class="reference internal" href="../chapter-00-bibliography.html#id230" title="Stephen I. Wright, Irie Vroh Bi, Steve G. Schroeder, Masanori Yamasaki, John F. Doebley, Michael D. McMullen, and Brandon S. Gaut. The effects of artificial selection on the maize genome. Science, 308(5726):1310–1314, 2005. URL: http://science.sciencemag.org/content/308/5726/1310, arXiv:http://science.sciencemag.org/content/308/5726/1310.full.pdf, doi:10.1126/science.1107891.">2005</a>]</span>. <strong>Left)</strong> Genetic diversity levels in maize and and teosinte
 samples at each of these loci. Note how diversity levels are lower in
 maize than teosinte, i.e. most points are below the red <span class="math notranslate nohighlight">\(x=y\)</span> line.
@@ -883,8 +903,8 @@ the maize distribution is shifted towards positive values.</span><a class="heade
 <p>Mutations that arise on deeper lineages will be at intermediate
 frequency in our sample, and so mild bottlenecks can lead to an excess
 of intermediate frequency alleles compared to the standard constant-size
-model. This can skew Tajima’s D (see equation <a class="reference internal" href="#equation-eq-4-44">(73)</a>) towards positive values and away from its
-expectation of zero. One example of this skew is shown in <a class="reference internal" href="#figure-4-26"><span class="std std-numref">Fig. 46</span></a>. Maize (<em>Zea mays</em> subsp. <em>mays</em>) was
+model. This can skew Tajima’s D (see equation <a class="reference internal" href="#equation-eq-4-44">(76)</a>) towards positive values and away from its
+expectation of zero. One example of this skew is shown in <a class="reference internal" href="#figure-4-26"><span class="std std-numref">Fig. 58</span></a>. Maize (<em>Zea mays</em> subsp. <em>mays</em>) was
 domesticated from its wild progenitor teosinte (<em>Zea mays subsp.
 parviglumis</em>) roughly ten thousand years ago. We can see how the
 bottleneck associated with domestication has resulted in a loss of
