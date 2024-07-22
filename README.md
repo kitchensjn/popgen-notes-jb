@@ -4,9 +4,9 @@ This repository hosts an online and interactive version of Graham Coop's Populat
 
 ## Repository Organization
 
-- /chapters - Graham's original latex files
-- /docs - contains the static HTML from JupyterBook and used for the GitHub Pages deployment
-- /popgen-notes-jb - all of the source files
+- `/chapters` - Graham's original latex files
+- `/docs` - contains the static HTML from JupyterBook and used for the GitHub Pages deployment
+- `/popgen-notes-jb` - all of the source files
 
 ## Updating The Book
 
