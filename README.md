@@ -18,6 +18,12 @@ This repository hosts an online and interactive version of Graham Coop's Populat
 
 `pandoc -s <latex file> -o <markdown file>`
 
+### Formatting Markdown
+
+[Style Guide](popgen-notes-jb/formatting.md)
+
+It may be necessary to replace `:::` with `'''` or vice versa if there are lots of nested statements. It is helpful to program these styles as shortcuts in your text editor to speed up the formatting process.
+
 ### Building HTML
 
 `jupyter-book build popgen-notes-jb`

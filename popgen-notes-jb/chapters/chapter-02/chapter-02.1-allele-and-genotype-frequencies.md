@@ -6,7 +6,7 @@ A *locus* (plural: *loci*) is a specific spot in the genome. The term allele was
 
 In this chapter we will work through how the basics of Mendelian genetics play out at the population level in sexually reproducing organisms.
 
-Loci and alleles are the basic currency of population genetics--and indeed of genetics. A locus may be an entire gene, or a single nucleotide base pair such as A-T. At each locus, there may be multiple genetic variants segregating in the population---these different genetic variants are known as *alleles*. If all individuals in the population carry the same allele, we say that the locus is *monomorphic*; at this locus there is no genetic variability in the population. If there are multiple alleles in the population at a locus, we say that this locus is *polymorphic* (this is sometimes referred to as a segregating site).
+Loci and alleles are the basic currency of population genetics--and indeed of genetics. A locus may be an entire gene, or a single nucleotide base pair such as A-T. At each locus, there may be multiple genetic variants segregating in the population --- these different genetic variants are known as *alleles*. If all individuals in the population carry the same allele, we say that the locus is *monomorphic*; at this locus there is no genetic variability in the population. If there are multiple alleles in the population at a locus, we say that this locus is *polymorphic* (this is sometimes referred to as a segregating site).
 
 :::{margin}
 ```{figure} ../../illustration_images/alleles_genotypes/Drosophila_mel/Drosophila_mel_mutants.jpg
