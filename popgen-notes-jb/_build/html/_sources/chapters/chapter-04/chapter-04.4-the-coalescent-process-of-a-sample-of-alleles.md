@@ -24,7 +24,7 @@ purple) coalesce four generations back, after which there are only two
 independent lineages we are tracking. This pair then coalesces twelve
 generations in the past. Note that different random realizations of this
 process will differ from each other a lot. The $T_{MRCA}$ is $T_3+T_2$.
-The total time in the tree is $T_{tot}=3T_3 + 2T_2= 25$ generations.
+The total time in the tree is $T_{tot}=3T_3 + 2T_2= 25$ generations. <span style='font-size: bigger; color: red;'>MISSING</span>
 ```
 
 The probability that a specific pair of alleles find a common ancestor
@@ -176,7 +176,7 @@ genealogy of our sample.
 the genealogy of 4 alleles with mutational changes marked with dashes
 showing transitions away from the MRCA sequence (AGTTT) . The $T_{MRCA}$
 is $T_4+T_3+T_2$. The total time in the tree is
-$T_{tot}=4 T_4+3T_3 + 2T_2= 54$ generations.
+$T_{tot}=4 T_4+3T_3 + 2T_2= 54$ generations. <span style='font-size: bigger; color: red;'>MISSING</span>
 ```
 
 ### The expected time to the most recent common ancestor

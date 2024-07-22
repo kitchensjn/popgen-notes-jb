@@ -1,48 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Population Structure and Correlations Among Loci. &#8212; Population And Quantitative Genetics</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -52,59 +64,102 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/chapter-03/chapter-03';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
 
-    
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../chapter-01-introduction.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../../_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Population And Quantitative Genetics</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Population And Quantitative Genetics - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Population And Quantitative Genetics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -114,442 +169,253 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../chapter-02/chapter-02.1-allele-and-genotype-frequencies.html">
-   Allele And Genotype Frequencies
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter-02/chapter-02.2-allele-frequencies.html">
-     Allele Frequencies
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter-02/chapter-02.3-allele-sharing-among-related-individuals-and-identity-by-descent.html">
-     Allele Sharing Among Related Individuals And Identity By Descent
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter-02/chapter-02.4-chapter-summary.html">
-     Chapter Summary
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter-02/chapter-02.5-further-questions.html">
-     Further Questions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="chapter-03.1-population-structure-and-correlations-among-loci.html">
-   Population Structure and Correlations Among Loci
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="chapter-03.2-chapter-summary.html">
-     Chapter Summary
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="chapter-03.3-further-questions.html">
-     Further Questions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../chapter-04/chapter-04.1-genetic-drift-and-neutral-diversity.html">
-   Genetic Drift and Neutral Diversity
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter-04/chapter-04.2-loss-of-heterozygosity-due-to-drift.html">
-     Loss of heterozygosity due to drift
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter-04/chapter-04.3-the-coalescent-and-patterns-of-neutral-diversity.html">
-     The Coalescent and patterns of neutral diversity
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter-04/chapter-04.4-the-coalescent-process-of-a-sample-of-alleles.html">
-     The coalescent process of a sample of alleles
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter-04/chapter-04.5-chapter-summary.html">
-     Chapter Summary
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter-04/chapter-04.6-further-questions.html">
-     Further Questions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../chapter-00-bibliography.html">
-   Bibliography
-  </a>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter-02/chapter-02.1-allele-and-genotype-frequencies.html">Allele And Genotype Frequencies</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter-02/chapter-02.2-allele-frequencies.html">Allele Frequencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter-02/chapter-02.3-allele-sharing-among-related-individuals-and-identity-by-descent.html">Allele Sharing Among Related Individuals And Identity By Descent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter-02/chapter-02.4-chapter-summary.html">Chapter Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter-02/chapter-02.5-further-questions.html">Further Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="chapter-03.1-population-structure-and-correlations-among-loci.html">Population Structure and Correlations Among Loci</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter-03.2-chapter-summary.html">Chapter Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-03.3-further-questions.html">Further Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter-04/chapter-04.1-genetic-drift-and-neutral-diversity.html">Genetic Drift and Neutral Diversity</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter-04/chapter-04.2-loss-of-heterozygosity-due-to-drift.html">Loss of heterozygosity due to drift</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter-04/chapter-04.3-the-coalescent-and-patterns-of-neutral-diversity.html">The Coalescent and patterns of neutral diversity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter-04/chapter-04.4-the-coalescent-process-of-a-sample-of-alleles.html">The coalescent process of a sample of alleles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter-04/chapter-04.5-chapter-summary.html">Chapter Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter-04/chapter-04.6-further-questions.html">Further Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-00-bibliography.html">Bibliography</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapters/chapter-03/chapter-03.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
 </div>
 
 
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
 
 
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/chapter-03/chapter-03.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
   </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
 
-      </li>
-      
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapters/chapter-03/chapter-03.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../_sources/chapters/chapter-03/chapter-03.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#inbreeding-as-a-summary-of-population-structure-section-f-stats">
-   Inbreeding as a summary of population structure. {#section:F_stats}
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#interpretations-of-f-statistics">
-     Interpretations of F-statistics
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#other-approaches-to-population-structure">
-   Other approaches to population structure
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#assignment-methods">
-   Assignment Methods
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#a-simple-assignment-method">
-     A simple assignment method
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#clustering-based-on-assignment-methods">
-     Clustering based on assignment methods
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#principal-components-analysis">
-   Principal components analysis
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#correlations-between-loci-linkage-disequilibrium-and-recombination">
-   Correlations between loci, linkage disequilibrium, and recombination
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#recombination">
-     Recombination
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#linkage-disequilibrium">
-     Linkage disequilibrium
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-generation-of-ld">
-     The generation of LD.
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-decay-of-ld-due-to-recombination">
-     The decay of LD due to recombination
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Population Structure and Correlations Among Loci.</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#inbreeding-as-a-summary-of-population-structure-section-f-stats">
-   Inbreeding as a summary of population structure. {#section:F_stats}
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#interpretations-of-f-statistics">
-     Interpretations of F-statistics
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#other-approaches-to-population-structure">
-   Other approaches to population structure
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#assignment-methods">
-   Assignment Methods
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#a-simple-assignment-method">
-     A simple assignment method
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#clustering-based-on-assignment-methods">
-     Clustering based on assignment methods
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#principal-components-analysis">
-   Principal components analysis
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#correlations-between-loci-linkage-disequilibrium-and-recombination">
-   Correlations between loci, linkage disequilibrium, and recombination
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#recombination">
-     Recombination
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#linkage-disequilibrium">
-     Linkage disequilibrium
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-generation-of-ld">
-     The generation of LD.
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-decay-of-ld-due-to-recombination">
-     The decay of LD due to recombination
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Population Structure and Correlations Among Loci.</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inbreeding-as-a-summary-of-population-structure-section-f-stats">Inbreeding as a summary of population structure. {#section:F_stats}</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretations-of-f-statistics">Interpretations of F-statistics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-approaches-to-population-structure">Other approaches to population structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-methods">Assignment Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-simple-assignment-method">A simple assignment method</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering-based-on-assignment-methods">Clustering based on assignment methods</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principal-components-analysis">Principal components analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlations-between-loci-linkage-disequilibrium-and-recombination">Correlations between loci, linkage disequilibrium, and recombination</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recombination">Recombination</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linkage-disequilibrium">Linkage disequilibrium</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-generation-of-ld">The generation of LD.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-decay-of-ld-due-to-recombination">The decay of LD due to recombination</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="population-structure-and-correlations-among-loci">
-<h1>Population Structure and Correlations Among Loci.<a class="headerlink" href="#population-structure-and-correlations-among-loci" title="Permalink to this headline">#</a></h1>
+<h1>Population Structure and Correlations Among Loci.<a class="headerlink" href="#population-structure-and-correlations-among-loci" title="Permalink to this heading">#</a></h1>
 <p>; your parents weren’t two Bilateria plucked at random from the tree of
 life. Even within species, there’s often geographically-restricted
 mating among individuals. Individuals tend to mate with individuals from
@@ -569,7 +435,7 @@ population genomic analyses. Thus you’ll often encounter summaries and
 visualizations of population structure when we read research papers, so
 it’s good to have some understanding of what they represent.</p>
 <section id="inbreeding-as-a-summary-of-population-structure-section-f-stats">
-<h2>Inbreeding as a summary of population structure. {#section:F_stats}<a class="headerlink" href="#inbreeding-as-a-summary-of-population-structure-section-f-stats" title="Permalink to this headline">#</a></h2>
+<h2>Inbreeding as a summary of population structure. {#section:F_stats}<a class="headerlink" href="#inbreeding-as-a-summary-of-population-structure-section-f-stats" title="Permalink to this heading">#</a></h2>
 <p>Our statements about inbreeding, and inbreeding coefficients, represent
 one natural way to summarize population structure. In the previous
 chapter, we defined inbreeding as having parents that are more closely
@@ -587,7 +453,7 @@ Building on this idea of inbreeding coefficients estimated at various
 levels, &#64;Wright:43 developed a set of ‘F-statistics’ (also called
 ‘fixation indices’) that formalize the idea of inbreeding with respect
 to different levels of population structure [&#64;Wright:43; &#64;Wright:49].
-See Figure <a class="reference external" href="#fig:FST_pig">[fig:FST_pig]</a>{reference-type=”ref”
+See Figure <span class="xref myst">[fig:FST_pig]</span>{reference-type=”ref”
 reference=”fig:FST_pig”} for a schematic diagram. Wright defined
 <span class="math notranslate nohighlight">\(F_{\mathrm{XY}}\)</span> as the correlation between random gametes, drawn from
 the same level <span class="math notranslate nohighlight">\(X\)</span>, relative to level <span class="math notranslate nohighlight">\(Y\)</span>. We will return to why
@@ -646,7 +512,7 @@ What is <span class="math notranslate nohighlight">\(F_{IT}\)</span>, <span clas
 individual loci we can look at some data from blue- and golden-winged
 warblers (<em>Vermivora cyanoptera</em> and <em>V. chrysoptera</em> 1-2 &amp; 5-6 in
 Figure
-<a class="reference external" href="#fig:blue_golden_warblers">[fig:blue_golden_warblers]</a>{reference-type=”ref”
+<span class="xref myst">[fig:blue_golden_warblers]</span>{reference-type=”ref”
 reference=”fig:blue_golden_warblers”}).</p>
 <p><img alt="image" src="chapters/chapter-03/illustration_images/alleles_genotypes/blue_golden_winged_warblers/The_warblers_of_North_America_6309257188.jpg" />{width=”\textwidth”}</p>
 <p>These two species are spread across eastern Northern America, with the
@@ -655,7 +521,7 @@ quite different in terms of plumage, but have long been known to have
 similar songs and ecologies. The two species hybridize readily in the
 wild; in fact two other previously-recognized species, Brewster’s and
 Lawrence’s warbler (4 &amp; 3 in
-<a class="reference external" href="#fig:blue_golden_warblers">[fig:blue_golden_warblers]</a>{reference-type=”ref”
+<span class="xref myst">[fig:blue_golden_warblers]</span>{reference-type=”ref”
 reference=”fig:blue_golden_warblers”}), are actually found to just be
 hybrids between theses two species. The golden-winged warbler is listed
 as ‘threatened’ under the Canadian endangered species act as its habitat
@@ -665,7 +531,7 @@ its range. &#64;Toews:16 investigated the population genomics of these
 warblers, sequencing ten golden- and ten blue-winged warblers. They
 found very low divergence among these species, with a genome-wide
 <span class="math notranslate nohighlight">\(F_{ST}=0.0045\)</span>. In Figure
-<a class="reference external" href="#fig:warbler_FST">[fig:warbler_FST]</a>{reference-type=”ref”
+<span class="xref myst">[fig:warbler_FST]</span>{reference-type=”ref”
 reference=”fig:warbler_FST”}, per SNP <span class="math notranslate nohighlight">\(F_{ST}\)</span> is averaged in <span class="math notranslate nohighlight">\(2000\)</span>bp
 windows moving along the genome. The average is very low, but some
 regions of very high <span class="math notranslate nohighlight">\(F_{ST}\)</span> stand out. Nearly all of these regions
@@ -691,7 +557,7 @@ Golden-winged       48       12   1</p>
 compared to the combined sample.<br />
 <strong>C)</strong> Calculate mean <span class="math notranslate nohighlight">\(F_{ST}\)</span> across both sub-populations.</p>
 <section id="interpretations-of-f-statistics">
-<h3>Interpretations of F-statistics<a class="headerlink" href="#interpretations-of-f-statistics" title="Permalink to this headline">#</a></h3>
+<h3>Interpretations of F-statistics<a class="headerlink" href="#interpretations-of-f-statistics" title="Permalink to this heading">#</a></h3>
 <p>Let’s now return to Wright’s definition of the <span class="math notranslate nohighlight">\(F\)</span>-statistics as
 correlations between random gametes, drawn from the same level <span class="math notranslate nohighlight">\(X\)</span>,
 relative to level <span class="math notranslate nohighlight">\(Y\)</span>. Without loss of generality, we may think about
@@ -725,14 +591,14 @@ proportion of the variance explained by the subpopulation labels.</p>
 </section>
 </section>
 <section id="other-approaches-to-population-structure">
-<h2>Other approaches to population structure<a class="headerlink" href="#other-approaches-to-population-structure" title="Permalink to this headline">#</a></h2>
+<h2>Other approaches to population structure<a class="headerlink" href="#other-approaches-to-population-structure" title="Permalink to this heading">#</a></h2>
 <p>There is a broad spectrum of methods to describe patterns of population
 structure in population genetic datasets. We’ll briefly discuss two
 broad-classes of methods that appear often in the literature: assignment
 methods and principal components analysis.</p>
 </section>
 <section id="assignment-methods">
-<h2>Assignment Methods<a class="headerlink" href="#assignment-methods" title="Permalink to this headline">#</a></h2>
+<h2>Assignment Methods<a class="headerlink" href="#assignment-methods" title="Permalink to this heading">#</a></h2>
 <p>Here we’ll describe a simple probabilistic assignment to find the
 probability that an individual of unknown population comes from one of
 <span class="math notranslate nohighlight">\(K\)</span> predefined populations. For example, there are three broad
@@ -747,7 +613,7 @@ individuals into <span class="math notranslate nohighlight">\(K\)</span> initial
 simplified version of what population genetics clustering algorithms
 such as STRUCTURE and ADMIXTURE do. [&#64;pritchard:00; &#64;alexander:09]</p>
 <section id="a-simple-assignment-method">
-<h3>A simple assignment method<a class="headerlink" href="#a-simple-assignment-method" title="Permalink to this headline">#</a></h3>
+<h3>A simple assignment method<a class="headerlink" href="#a-simple-assignment-method" title="Permalink to this heading">#</a></h3>
 <p>We have genotype data from unlinked <span class="math notranslate nohighlight">\(S\)</span> biallelic loci for <span class="math notranslate nohighlight">\(K\)</span>
 populations. The allele frequency of allele <span class="math notranslate nohighlight">\(A_1\)</span> at locus <span class="math notranslate nohighlight">\(l\)</span> in
 population <span class="math notranslate nohighlight">\(k\)</span> is denoted by <span class="math notranslate nohighlight">\(p_{k,l}\)</span>, so that the allele frequencies
@@ -811,19 +677,19 @@ does your plot change if our individual is heterozygous at both loci?</p>
 <p><img alt="image" src="chapters/chapter-03/Journal_figs/alleles_genotypes/chimp/chimp.png" />{width=”\textwidth”}</p>
 </section>
 <section id="clustering-based-on-assignment-methods">
-<h3>Clustering based on assignment methods<a class="headerlink" href="#clustering-based-on-assignment-methods" title="Permalink to this headline">#</a></h3>
+<h3>Clustering based on assignment methods<a class="headerlink" href="#clustering-based-on-assignment-methods" title="Permalink to this heading">#</a></h3>
 <p>While it is great to be able to assign our individuals to a particular
 population, these ideas can be pushed to learn about how best to
 describe our genotype data in terms of discrete populations without
 assigning any of our individuals to populations <em>a priori</em>. We wish to
 cluster our individuals into <span class="math notranslate nohighlight">\(K\)</span> unknown populations. We begin by
 assigning our individuals at random to these <span class="math notranslate nohighlight">\(K\)</span> populations.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Given these assignments we estimate the allele frequencies at all of
 our loci in each population.</p></li>
 <li><p>Given these allele frequencies we chose to reassign each individual
 to a population <span class="math notranslate nohighlight">\(k\)</span> with a probability given by
-<a class="reference external" href="#eqn_assignment">[eqn_assignment]</a>{reference-type=”eqref”
+<span class="xref myst">[eqn_assignment]</span>{reference-type=”eqref”
 reference=”eqn_assignment”}.</p></li>
 </ol>
 <p>We iterate steps 1 and 2 for many iterations (technically, this approach
@@ -840,7 +706,7 @@ frequencies and assignments. Programs like STRUCTURE, use this type of
 algorithm to cluster the individuals in an “unsupervised” manner (i.e.
 they work out how to assign individuals to an unknown set of
 populations). See Figure
-<a class="reference external" href="#fig:chimp_structure">1.1</a>{reference-type=”ref”
+<span class="xref myst">1.1</span>{reference-type=”ref”
 reference=”fig:chimp_structure”} for an example of &#64;becquet:07 using
 STRUCTURE to determine the population structure of chimpanzees.</p>
 <p>STRUCTURE-like methods have proven incredible popular and useful in
@@ -872,7 +738,7 @@ mixture of distinct ancestral groups.</p>
 </section>
 </section>
 <section id="principal-components-analysis">
-<h2>Principal components analysis<a class="headerlink" href="#principal-components-analysis" title="Permalink to this headline">#</a></h2>
+<h2>Principal components analysis<a class="headerlink" href="#principal-components-analysis" title="Permalink to this heading">#</a></h2>
 <p>Principal component analysis (PCA) is a common statistical approach to
 visualize high dimensional data, and used by many fields. The idea of
 PCA is to give a location to each individual data-point on each of a
@@ -899,9 +765,9 @@ mean frequency (\)</span>\sqrt{2 p_{\ell}
 matrix (of dimension \)</span>N \times S$). We can then perform principal
 component analysis of this data matrix to uncover the major axes of
 genotype variance in our sample. Figure
-<a class="reference external" href="#fig:chimp_PCA">1.2</a>{reference-type=”ref” reference=”fig:chimp_PCA”}
+<span class="xref myst">1.2</span>{reference-type=”ref” reference=”fig:chimp_PCA”}
 shows a PCA from &#64;becquet:07 using the same chimpanzee data as in Figure
-<a class="reference external" href="#fig:chimp_structure">1.1</a>{reference-type=”ref”
+<span class="xref myst">1.1</span>{reference-type=”ref”
 reference=”fig:chimp_structure”}.</p>
 <p><img alt=" Principal Component Analysis by &#64;becquet:07 using the same chimpanzeedata as in Figure 1.1{reference-type=&quot;ref&quot;reference=&quot;fig:chimp_structure&quot;}. Here &#64;becquet:07 plot the location ofeach individual on the first two principal components (calledeigenvectors) in the left panel, and on the second and third principalcomponents (eigenvectors) in the right panel (). In the PCA, individualsidentified as all of one ancestry by STRUCTURE cluster together bypopulation (solid circles). While the nine individuals identified bySTRUCTURE as hybrids (open circles) for the most part fall atintermediate locations in the PCA. There are two individuals (red opencircles) reported as being of a particular population but that butappear to behybrids." src="chapters/chapter-03/figures/Becquet_et_al_STRUCTURE_journal_pgen_0030066_g002.png" />{#fig:chimp_PCA
 width=”\textwidth”}</p>
@@ -919,7 +785,7 @@ frequencies
 ([\[eqn:std_allele_freq\]](#eqn:std_allele_freq){reference-type=&quot;eqref&quot;
 reference=&quot;eqn:std_allele_freq&quot;}), and is very similar to those we
 encountered in discussing \)</span>F$-statistics as correlations (
-<a class="reference external" href="#eqn:Fascorr">[eqn:Fascorr]</a>{reference-type=”eqref”
+<span class="xref myst">[eqn:Fascorr]</span>{reference-type=”eqref”
 reference=”eqn:Fascorr”}), except now we are asking about the covariance
 between two individuals above that expected if they were both drawn from
 the total sample at random (rather than the covariance of alleles within
@@ -931,7 +797,7 @@ trochiloides</em>) species complex. This set of subspecies exists in a ring
 around the edge of the Himalayan plateau. &#64;alcaide:14 collected <span class="math notranslate nohighlight">\(95\)</span>
 greenish warbler samples from <span class="math notranslate nohighlight">\(22\)</span> sites around the ring, and the
 sampling locations are shown in Figure
-<a class="reference external" href="#fig:Gwarbler_geo">1.3</a>{reference-type=”ref”
+<span class="xref myst">1.3</span>{reference-type=”ref”
 reference=”fig:Gwarbler_geo”}.</p>
 <p><img alt="The sampling locations of 22 populations of greenish warblers from&#64;alcaide:14. The samples are coloured by the subspecies." src="chapters/chapter-03/figures/warbler_PCA_figs/warbler_geo_map.jpg" />{#fig:Gwarbler_geo
 width=”0.75 \textwidth”}</p>
@@ -947,10 +813,10 @@ independently north around the plateau, such that <em>P. t. viridanus</em>
 stable hybrid zone.</p>
 <p><img alt="image" src="chapters/chapter-03/illustration_images/alleles_genotypes/greenish_warbler/10036311396_14915d1715_z.jpg" />{width=”\textwidth”}</p>
 <p>&#64;alcaide:14 obtained sequence data for their samples at 2,334 snps. In
-Figure <a class="reference external" href="#fig:warbler_heat">1.4</a>{reference-type=”ref”
+Figure <span class="xref myst">1.4</span>{reference-type=”ref”
 reference=”fig:warbler_heat”} you can see the matrix of kinship
 coefficients, using
-<a class="reference external" href="#eqn:kinship_mat">[eqn:kinship_mat]</a>{reference-type=”eqref”
+<span class="xref myst">[eqn:kinship_mat]</span>{reference-type=”eqref”
 reference=”eqn:kinship_mat”}, between all pairs of samples. You can
 already see a lot about population structure in this matrix. Note how
 the red and yellow samples, thought to be derived from the Eastern route
@@ -961,7 +827,7 @@ similarly close group in terms of their higher kinship.</p>
 width=”0.75 \textwidth”}</p>
 <p>We can then perform PCA on this kinship matrix to identify the major
 axes of variation in the dataset. Figure
-<a class="reference external" href="#fig:warbler_PCA">1.5</a>{reference-type=”ref”
+<span class="xref myst">1.5</span>{reference-type=”ref”
 reference=”fig:warbler_PCA”} shows the samples plotted on the first two
 PCs.</p>
 <p><img alt=" The 95 greenish warbler samples plotted on their locations on thefirst two principal components. The labels of individuals are thepopulation labels from Figure1.3{reference-type=&quot;ref&quot;reference=&quot;fig:Gwarbler_geo&quot;}, and coloured by subspecies label as inthat figure." src="chapters/chapter-03/figures/warbler_PCA_figs/warbler_PCAmap.jpg" />{#fig:warbler_PCA
@@ -978,9 +844,9 @@ warblers as an unbroken ring species, a case of speciation by continuous
 geographic isolation. The <em>Ludlowi</em> subspecies shows a significant
 genetic break, with the southern most MN samples clustering with the
 <em>Trochiloides</em> subspecies, in both the PCA and kinship matrix (Figures
-<a class="reference external" href="#fig:warbler_PCA">1.5</a>{reference-type=”ref”
+<span class="xref myst">1.5</span>{reference-type=”ref”
 reference=”fig:warbler_PCA”} and
-<a class="reference external" href="#fig:warbler_heat">1.4</a>{reference-type=”ref”
+<span class="xref myst">1.4</span>{reference-type=”ref”
 reference=”fig:warbler_heat”}), despite being much more geographically
 close to the other <em>Ludlowi</em> samples. This suggests that genetic
 isolation is not just a result of geographic distance, and other
@@ -1000,7 +866,7 @@ application of a range of tools; see &#64;alcaide:14 and &#64;bradburd:16 for
 more discussion of the greenish warblers.</p>
 </section>
 <section id="correlations-between-loci-linkage-disequilibrium-and-recombination">
-<h2>Correlations between loci, linkage disequilibrium, and recombination<a class="headerlink" href="#correlations-between-loci-linkage-disequilibrium-and-recombination" title="Permalink to this headline">#</a></h2>
+<h2>Correlations between loci, linkage disequilibrium, and recombination<a class="headerlink" href="#correlations-between-loci-linkage-disequilibrium-and-recombination" title="Permalink to this heading">#</a></h2>
 <p>Up to now we have been interested in correlations between alleles at the
 same locus, e.g. correlations within individuals (inbreeding) or between
 individuals (relatedness). We have seen how relatedness between parents
@@ -1008,7 +874,7 @@ affects the extent to which their offspring is inbred. We now turn to
 correlations between alleles at different loci.\</p>
 <p><img alt="image" src="chapters/chapter-03/figures/LD_decay/recom_cartoon.pdf" />{width=”0.8 \textwidth”}</p>
 <section id="recombination">
-<h3>Recombination<a class="headerlink" href="#recombination" title="Permalink to this headline">#</a></h3>
+<h3>Recombination<a class="headerlink" href="#recombination" title="Permalink to this heading">#</a></h3>
 <p>To understand correlations between loci we need to understand
 recombination a bit more carefully. Let us consider a heterozygous
 individual, containing <span class="math notranslate nohighlight">\(AB\)</span> and <span class="math notranslate nohighlight">\(ab\)</span> haplotypes. If no recombination
@@ -1018,7 +884,7 @@ recombination (i.e. an odd number of crossing over events) occurs
 between the two parental haplotypes, then <span class="math notranslate nohighlight">\(\nicefrac{1}{2}\)</span> the time the
 child receives an <span class="math notranslate nohighlight">\(Ab\)</span> haplotype and <span class="math notranslate nohighlight">\(\nicefrac{1}{2}\)</span> the time the
 child receives an <span class="math notranslate nohighlight">\(aB\)</span> haplotype. See Figure
-<a class="reference external" href="#fig:recom_cartoon">[fig:recom_cartoon]</a>{reference-type=”ref”
+<span class="xref myst">[fig:recom_cartoon]</span>{reference-type=”ref”
 reference=”fig:recom_cartoon”}. Effectively, recombination breaks up the
 association between loci. For linked markers we’ll define the
 recombination fraction (<span class="math notranslate nohighlight">\(x\)</span>) to be the probability of an odd number of
@@ -1035,7 +901,7 @@ the average recombination rate (in Morgans) per base pair (typically
 loci.\</p>
 </section>
 <section id="linkage-disequilibrium">
-<h3>Linkage disequilibrium<a class="headerlink" href="#linkage-disequilibrium" title="Permalink to this headline">#</a></h3>
+<h3>Linkage disequilibrium<a class="headerlink" href="#linkage-disequilibrium" title="Permalink to this heading">#</a></h3>
 <p>The (horrible) phrase linkage disequilibrium (LD) refers to the
 statistical non-independence (i.e. a correlation) of alleles in a
 population at different loci
@@ -1096,7 +962,7 @@ this dependence, and make it more comparable across loci, is to divide
 <span class="math notranslate nohighlight">\(D\)</span> through by its maximum possible value given the frequency of the
 loci. This normalized statistic is called <span class="math notranslate nohighlight">\(D^{\prime}\)</span> and varies
 between <span class="math notranslate nohighlight">\(+1\)</span> and <span class="math notranslate nohighlight">\(-1\)</span>. In Figure
-<a class="reference external" href="#fig:TAPS_hotspot">1.6</a>{reference-type=”ref”
+<span class="xref myst">1.6</span>{reference-type=”ref”
 reference=”fig:TAPS_hotspot”} there’s an example of LD across the TAP2
 region in human and chimp. Notice how physically close SNPs, i.e. those
 close to the diagonal, have higher absolute values of <span class="math notranslate nohighlight">\(D^{\prime}\)</span> as
@@ -1112,7 +978,7 @@ $<span class="math notranslate nohighlight">\(r^2 = \frac{D^2}{p_A(1-p_A) p_B(1-
 \)</span>A<span class="math notranslate nohighlight">\(, \)</span>r^2$ is the squared correlation coefficient.<br />
 fraction.\</p>
 <p><img alt="image" src="chapters/chapter-03/illustration_images/alleles_genotypes/Mus_musculus/20746324002_e014b4fcc6_z.jpg" />{width=”\textwidth”}</p>
-<p>Figure <a class="reference external" href="#fig:Mouse_LD">1.7</a>{reference-type=”ref”
+<p>Figure <span class="xref myst">1.7</span>{reference-type=”ref”
 reference=”fig:Mouse_LD”} shows <span class="math notranslate nohighlight">\(r^2\)</span> for pairs of SNPs at various
 physical distances in two population samples of <em>Mus musculus
 domesticus</em>. Again LD is highest between physically close markers as LD
@@ -1126,7 +992,7 @@ recombination since the cross was created.</p>
 width=”0.8 \textwidth”}</p>
 </section>
 <section id="the-generation-of-ld">
-<h3>The generation of LD.<a class="headerlink" href="#the-generation-of-ld" title="Permalink to this headline">#</a></h3>
+<h3>The generation of LD.<a class="headerlink" href="#the-generation-of-ld" title="Permalink to this heading">#</a></h3>
 <p>Various population genetic forces can generate LD [&#64;slatkin2008linkage].
 Selection can generate LD by favouring particular combinations of
 alleles. Genetic drift will also generate LD, not because particular
@@ -1136,7 +1002,7 @@ between divergent populations can also generate LD [&#64;nei1973linkage], as
 we saw in the mouse question above.</p>
 </section>
 <section id="the-decay-of-ld-due-to-recombination">
-<h3>The decay of LD due to recombination<a class="headerlink" href="#the-decay-of-ld-due-to-recombination" title="Permalink to this headline">#</a></h3>
+<h3>The decay of LD due to recombination<a class="headerlink" href="#the-decay-of-ld-due-to-recombination" title="Permalink to this heading">#</a></h3>
 <p>We will now examine what happens to LD over the generations if, in a
 very large population (i.e. no genetic drift and frequencies of our loci
 thus follow their expectations), we only allow recombination to occur.
@@ -1173,7 +1039,7 @@ a rate given by \)</span>(1-c)<span class="math notranslate nohighlight">\(
 then we can approximate this by an exponential and say that
 \)</span><span class="math notranslate nohighlight">\(D_t \approx  D_0 e^{-ct}  \label{eqn_LD_decay}\)</span>$<br />
 which follows from a Taylor series expansion, see Appendix
-<a class="reference external" href="#eqn:Taylor_geo">[eqn:Taylor_geo]</a>{reference-type=”eqref”
+<span class="xref myst">[eqn:Taylor_geo]</span>{reference-type=”eqref”
 reference=”eqn:Taylor_geo”}.</p>
 <p>You find a hybrid population between the two mouse subspecies described
 in the question above, which appears to be comprised of equal
@@ -1199,14 +1065,14 @@ this secondary contact [&#64;green2010draft]. To date the timing of this
 interbreeding, &#64;Sankararaman:12 looked at the LD in modern humans
 between pairs of alleles found to be derived from the Neanderthal genome
 (and nearly absent from African populations). In Figure
-<a class="reference external" href="#fig:LD_Neanderthal">1.8</a>{reference-type=”ref”
+<span class="xref myst">1.8</span>{reference-type=”ref”
 reference=”fig:LD_Neanderthal”} we show the average LD between these
 loci as a function of the genetic distance (<span class="math notranslate nohighlight">\(c\)</span>) between them, from the
 work of &#64;Sankararaman:12.</p>
 <p><img alt="The LD between putative-Neanderthal alleles in a modern Europeanpopulation (the CEU sample from the 1000 Genomes Project). Each pointrepresents the average D statistic between a pair of alleles at loci ata given genetic distance apart (as given on the x-axis and measured incentiMorgans (cM)). The putative Neanderthal alleles are alleles wherethe Neanderthal genome has a derived allele that is at very lowfrequency in a modern-human West African population sample (thought tohave little admixture from Neanderthals). The red line is the fit of anexponential decay of LD, using non-linear least squared (nls inR)." src="chapters/chapter-03/Journal_figs/alleles_genotypes/Neanderthal_LD/European_neanderthal_LD.pdf" />{#fig:LD_Neanderthal
 width=”0.8 \textwidth”}</p>
 <p>Assuming a recombination rate <span class="math notranslate nohighlight">\(r\)</span>, we can fit the exponential decay of
-LD predicted by <a class="reference external" href="#eqn_LD_decay">[eqn_LD_decay]</a>{reference-type=”eqref”
+LD predicted by <span class="xref myst">[eqn_LD_decay]</span>{reference-type=”eqref”
 reference=”eqn_LD_decay”} to the data points in this figure; the fit is
 shown as a red line. Doing this we estimate <span class="math notranslate nohighlight">\(t=1200\)</span> generations, or
 about 35 thousand years (using a human generation time of 29 years).
@@ -1287,7 +1153,7 @@ that crossing over only occurred in females and not in males?</p>
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./chapters/chapter-03"
         },
         predefinedOutput: true
@@ -1295,36 +1161,101 @@ that crossing over only occurred in females and not in males?</p>
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inbreeding-as-a-summary-of-population-structure-section-f-stats">Inbreeding as a summary of population structure. {#section:F_stats}</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretations-of-f-statistics">Interpretations of F-statistics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-approaches-to-population-structure">Other approaches to population structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-methods">Assignment Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-simple-assignment-method">A simple assignment method</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering-based-on-assignment-methods">Clustering based on assignment methods</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principal-components-analysis">Principal components analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlations-between-loci-linkage-disequilibrium-and-recombination">Correlations between loci, linkage disequilibrium, and recombination</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recombination">Recombination</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linkage-disequilibrium">Linkage disequilibrium</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-generation-of-ld">The generation of LD.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-decay-of-ld-due-to-recombination">The decay of LD due to recombination</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By Graham Coop<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By Graham Coop
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

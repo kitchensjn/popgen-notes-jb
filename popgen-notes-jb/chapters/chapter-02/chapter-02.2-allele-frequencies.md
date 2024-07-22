@@ -58,14 +58,14 @@ align: left
 ```
 :::
 
-The first observations of molecular genetic diversity within natural populations were made from surveys of allozyme data, but we can revisit these general patterns with modern data. For example, {cite:p}`leffler:12` compiled data on levels of within-population, autosomal nucleotide diversity ($\pi$) for 167 species across 14 phyla from non-coding and synonymous sites ({numref}`figure-2.3`). The species with the lowest levels of $\pi$ in their survey was Lynx, with $\pi = 0.01\%$, i.e. only $\frac{1}{10000}$ bases differed between two sequences. In contrast, some of the highest levels of diversity were found in *Ciona savignyi*, Sea Squirts, where a remarkable $\frac{1}{12}$ bases differ between pairs of sequences. This 800-fold range of diversity seems impressive, but census population sizes have a much larger range.
+The first observations of molecular genetic diversity within natural populations were made from surveys of allozyme data, but we can revisit these general patterns with modern data. For example, {cite:t}`leffler:12` compiled data on levels of within-population, autosomal nucleotide diversity ($\pi$) for 167 species across 14 phyla from non-coding and synonymous sites ({numref}`figure-2.3`). The species with the lowest levels of $\pi$ in their survey was Lynx, with $\pi = 0.01\%$, i.e. only $\frac{1}{10000}$ bases differed between two sequences. In contrast, some of the highest levels of diversity were found in *Ciona savignyi*, Sea Squirts, where a remarkable $\frac{1}{12}$ bases differ between pairs of sequences. This 800-fold range of diversity seems impressive, but census population sizes have a much larger range.
 
 ```{figure} ../../Journal_figs/alleles_genotypes/Leffer_riddle/Leffer_riddle_diversity.png
 ---
 name: figure-2.3
 align: left
 ---
-\- Levels of autosomal nucleotide diversity for 167 species across 14 phyla. Figure 1 from {cite:p}`leffler:12`, licensed under CC BY 4.0. Points are ranked by their $\pi$, and coloured by their phylum. Note the log-scale.
+\- Levels of autosomal nucleotide diversity for 167 species across 14 phyla. Figure 1 from {cite:t}`leffler:12`, licensed under CC BY 4.0. Points are ranked by their $\pi$, and coloured by their phylum. Note the log-scale.
 ```
 
 :::{margin}
@@ -198,7 +198,7 @@ You extract a DNA sample from a crime scene. The genotype is 100/80 at the D16S5
 
 **B)** The FBI uses $\geq$ 13 markers. Why is this higher number necessary to make the match statement convincing evidence in court?
 
-**C)** An early case that triggered debate among forensic geneticists was a crime among the Abenaki, a Native American community in Vermont (see {cite:p}`lewontin:94` for discussion). There was a DNA sample from the crime scene, and the perpetrator was thought likely to be a member of the Abenaki community. Given that allele frequencies vary among populations, why would people be concerned about using data from a non-Abenaki population to compute a false match probability?
+**C)** An early case that triggered debate among forensic geneticists was a crime among the Abenaki, a Native American community in Vermont (see {cite:t}`lewontin:94` for discussion). There was a DNA sample from the crime scene, and the perpetrator was thought likely to be a member of the Abenaki community. Given that allele frequencies vary among populations, why would people be concerned about using data from a non-Abenaki population to compute a false match probability?
 :::
 
 ```{figure} ../../figures/CEU_YRI_separately_HWE.png
@@ -216,7 +216,7 @@ One major violation of the assumptions of Hardy Weinberg is non-random mating wi
 :name: figure-2.7
 :align: left
 
-\- Wing pattern phenotypes of top, *H. cydno chioneus* (left), *H. melpomene rosina* (right), their nonmimetic first-generation hybrid (center); and bottom, their sympatric comimics *H. sapho sapho* (left) and *H. erato demophoon* (right). Figure and caption modified from {cite:p}`merrill2019genetic`, licensed under CC BY 4.0.
+\- Wing pattern phenotypes of top, *H. cydno chioneus* (left), *H. melpomene rosina* (right), their nonmimetic first-generation hybrid (center); and bottom, their sympatric comimics *H. sapho sapho* (left) and *H. erato demophoon* (right). Figure and caption modified from {cite:t}`merrill2019genetic`, licensed under CC BY 4.0.
 :::
 
 Positive assortative mating on the basis of a phenotype can create an excess of homozygotes. Heliconius butterflies are famous for their mimicry, where poisonous pairs of distantly related species mimic each others' bright colour patterns and so share the benefits of being avoided by visual predators (Müllerian mimics). *H. melpomene rosina* and *H. cydno chioneus* are closely related species that co-occur in central Panama, but mimic different other co-occuring species ({numref}`figure-2.7`). These differences in colouration pattern are due to a few loci with large phenotypic effects. The two species can hybridize and produce viable F1 hybrids. These F1 hybrids are heterozygotes at the colour loci, and their intermediate appearance means that they're poor mimics and so are quickly eaten by predators. However, these heterzygote (F1) hybrids are very rare in nature $<\frac{1}{1000}$, as the parental species show strong positive assortatively mating based on colour pattern, based on genetic differences in mate preference {cite:p}`merrill2019genetic`.
@@ -254,6 +254,6 @@ Disassortative mating, mating of unlike individuals, can lead to an excess of he
 ```
 :::
 
-There are almost no 2m homozygotes (so called Super white individuals) despite the 2m allele being common in the population (data from {cite:p}`tuttle2016divergence`, table S1).
+There are almost no 2m homozygotes (so called Super white individuals) despite the 2m allele being common in the population (data from {cite:t}`tuttle2016divergence`, table S1).
 
 Another important example of disassortative mating are mating type systems, which are present in many fungi, algae, and protozoa. Gametes of the same species can only fuse to form a zygote if they differ in mating type. The mating type of gametes is genetically controled by a mating type locus, and so individuals are nearly always heterozygous at this locus. In some groups of organisms, there are just two different alleles, in other clades these loci have tens or hundreds of alleles.

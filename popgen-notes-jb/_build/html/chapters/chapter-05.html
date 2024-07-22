@@ -1,0 +1,1189 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>The Population Genetics of Divergence and Molecular Substitution. &#8212; Population And Quantitative Genetics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/chapter-05';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="chapter-01-introduction.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Population And Quantitative Genetics - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Population And Quantitative Genetics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="chapter-01-introduction.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="chapter-02/chapter-02.1-allele-and-genotype-frequencies.html">Allele And Genotype Frequencies</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter-02/chapter-02.2-allele-frequencies.html">Allele Frequencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-02/chapter-02.3-allele-sharing-among-related-individuals-and-identity-by-descent.html">Allele Sharing Among Related Individuals And Identity By Descent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-02/chapter-02.4-chapter-summary.html">Chapter Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-02/chapter-02.5-further-questions.html">Further Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="chapter-03/chapter-03.1-population-structure-and-correlations-among-loci.html">Population Structure and Correlations Among Loci</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter-03/chapter-03.2-chapter-summary.html">Chapter Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-03/chapter-03.3-further-questions.html">Further Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="chapter-04/chapter-04.1-genetic-drift-and-neutral-diversity.html">Genetic Drift and Neutral Diversity</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter-04/chapter-04.2-loss-of-heterozygosity-due-to-drift.html">Loss of heterozygosity due to drift</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-04/chapter-04.3-the-coalescent-and-patterns-of-neutral-diversity.html">The Coalescent and patterns of neutral diversity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-04/chapter-04.4-the-coalescent-process-of-a-sample-of-alleles.html">The coalescent process of a sample of alleles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-04/chapter-04.5-chapter-summary.html">Chapter Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-04/chapter-04.6-further-questions.html">Further Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chapter-00-bibliography.html">Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapters/chapter-05.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/chapters/chapter-05.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>The Population Genetics of Divergence and Molecular Substitution.</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-neutral-substitution-process">The Neutral Substitution process.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-of-the-eventual-fixation-of-a-neutral-allele">probability of the eventual fixation of a neutral allele</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rate-of-substitution-of-neutral-alleles">Rate of substitution of neutral alleles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implications-for-the-molecular-clock">Implications for the Molecular Clock.</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tests-of-molecular-evolution">Tests of molecular evolution.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-the-rates-of-non-synonymous-to-synonymous-substitutions-dnds">Comparing the rates of non-synonymous to synonymous substitutions <span class="math notranslate nohighlight">\(\dNdS\)</span></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#loss-of-constraint-at-pseudogenes">Loss of constraint at pseudogenes.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adaptive-evolution-and-dnds">Adaptive evolution and <span class="math notranslate nohighlight">\(\dNdS\)</span>.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="the-population-genetics-of-divergence-and-molecular-substitution">
+<h1>The Population Genetics of Divergence and Molecular Substitution.<a class="headerlink" href="#the-population-genetics-of-divergence-and-molecular-substitution" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>“History is just one damn thing after another.” -sometimes attributed
+to Arnold Toynbee</p>
+</div></blockquote>
+<p>There are over <span class="math notranslate nohighlight">\(30\)</span> million base pair substitutions between human and
+chimpanzees, sites where humans carry one allele and chimps another at
+orthologous locations. These changes have occurred in the seven million
+years or so since human and chimp last shared a common ancestor. Other
+subsitutions are shared between the sister species human and chimp to
+the exclusion of gorilla, yet others are shared between human, chimps
+and Gorilla but not Orangs. Long-term evolution, from the molecular
+perspective, is just one damn substitution after another. These
+substitutions represent changes at just a small percentage of sites
+genome-wide as we share the majority of our genome, our evolutionary
+history, and our biology with the other great apes. Each of the
+substitutions must have arisen as a mutation in the population, spread
+through the population as a polymorphism before eventually reaching
+fixation. What forces drove the spread of these alleles through the
+population to become substitutions?</p>
+<div class="highlight-table* notranslate"><div class="highlight"><pre><span></span>  --------------------- --------------------------------------------------------------------------
+                  Human `accacagcatttgttagttactgccaagaagcctgtatctgtagggtaaaatcctcgctgaagtgggttg`
+                  Chimp `......................................g...........c...................`
+                Gorilla `..................................................cc..................`
+              Orangutan `.........c.........c..............................c...................`
+                 Gibbon `...................c..............................—.................`
+    Crab-eating macaque `g.............gg...c..............................c..t.t..............`
+  --------------------- --------------------------------------------------------------------------
+</pre></div>
+</div>
+<p>Many substitutions were driven by selection, as there has undoubtedly
+been plenty of adaptive phenotypic adaptive evolution in great apes.
+However, these adaptive changes may be a small minority of all the
+subsitutions, for a start many of these substitutions have occurred in
+non-coding DNA with no known functional effect. Thus it is reasonable
+initial position that the majority of substitutions genome-wide may well
+be neutral. How can we hope to identify regions undergoing adaptive
+divergence? How could we hope to address the claim that many amino-acid
+changing substitutions are also neutral, as posited by the Neutral
+theory of molecular evolution. One way forward is to understand what
+neutral theory predicts for the rate of molecular substition, and then
+develop ways to test these ideas.</p>
+<div class="highlight-center notranslate"><div class="highlight"><pre><span></span>![Illustration by Benjamin Waterhouse Hawkins from Huxley&#39;s &quot;Evidence as
+to Man&#39;s Place in Nature&quot; (1863). Image from the
+[wikimedia](https://en.wikipedia.org/wiki/Pithecometra_principle#/media/File:Huxley_-_Mans_Place_in_Nature.jpg),
+public domain.
+](illustration_images/Genetic_drift/Huxley_mans_place/Huxley_Mans_Place_in_Nature.jpg){#fig:Huxley_man
+width=&quot;\\textwidth&quot;}
+</pre></div>
+</div>
+<section id="the-neutral-substitution-process">
+<h2>The Neutral Substitution process.<a class="headerlink" href="#the-neutral-substitution-process" title="Permalink to this heading">#</a></h2>
+<p>So how then do neutral substitutions occur? It is very unlikely that a
+rare neutral allele accidentally drifts up to fixation; more likely,
+such an allele will be eventually lost from the population. However,
+populations experience a large and constant influx of rare alleles due
+to mutation, so even if it is very unlikely that an individual allele
+fixes within the population, some neutral alleles will fix by chance. So
+we’ll need to understand the probability that a neutral mutation fixes,
+and then how we can think about the rate of substitutions accumulate
+over time.\</p>
+<section id="probability-of-the-eventual-fixation-of-a-neutral-allele">
+<h3>probability of the eventual fixation of a neutral allele<a class="headerlink" href="#probability-of-the-eventual-fixation-of-a-neutral-allele" title="Permalink to this heading">#</a></h3>
+<div class="highlight-center notranslate"><div class="highlight"><pre><span></span>![Each allele initially present in a small diploid population is given a
+different colour so we can track their descendants over time. By the 9th
+generation, all of the alleles present in the population can trace their
+ancestry back to the orange allele.
+](figures/Substitution_sim.png){#fig:subs_simulation
+width=&quot;\\textwidth&quot;}
+</pre></div>
+</div>
+<p>An allele which reaches fixation within a population is an ancestor to
+the entire population. In a particular generation there can only be a
+single allele that all other alleles at the locus in a later generation
+can claim as an ancestor (See Figure
+<span class="xref myst">1.2</span>{reference-type=”ref”
+reference=”fig:subs_simulation”}). At a neutral locus, the actual allele
+does not affect the number of descendants that the allele has (this
+follows from the definition of neutrality: neutral alleles don’t leave
+more or less descendants on average than other neutral alleles). An
+equivalent way to state this is that the allele labels don’t affect
+anything; thus the alleles are <em>exchangeable</em>. As a consequence of being
+exchangeable, any allele is equally likely to be the ancestor of the
+entire population. In a diploid population of size <span class="math notranslate nohighlight">\(N\)</span>, there are <span class="math notranslate nohighlight">\(2N\)</span>
+alleles, all of which are equally likely to be the ancestor of the
+entire population at some later time point. So if our allele is present
+in a single copy, the chance that it is the ancestor to the entire
+population in some future generation is <span class="math notranslate nohighlight">\(\nicefrac{1}{(2N)}\)</span>, i.e. the
+chance our neutral allele is eventually fixed is <span class="math notranslate nohighlight">\(\nicefrac{1}{(2N)}\)</span>.
+In Figure <span class="xref myst">1.2</span>{reference-type=”ref”
+reference=”fig:subs_simulation”}, our orange allele in the first
+generation is one of 10 differently coloured alleles, and so has a
+<span class="math notranslate nohighlight">\(1/10\)</span> chance of being the ancestor of the entire population at some
+later time point (and in this simulation it does become the common
+ancestor, by the 9th generation).<br />
+More generally, if our neutral allele is present in <span class="math notranslate nohighlight">\(i\)</span> copies in the
+population, of <span class="math notranslate nohighlight">\(2N\)</span> alleles, the probability that this allele becomes
+fixed is <span class="math notranslate nohighlight">\(\nicefrac{i}{(2N)}\)</span>, i.e. the probability that a neutral
+allele is eventually fixed is simply given by its frequency (<span class="math notranslate nohighlight">\(p\)</span>) in the
+population. (We can also derive this result by letting
+<span class="math notranslate nohighlight">\(Ns \rightarrow 0\)</span> in eqn.
+<span class="xref myst">[eqn:prob_fixed]</span>{reference-type=”eqref”
+reference=”eqn:prob_fixed”}, a result we’ll encounter later.)</p>
+<p>How long does it take on average for such an allele to fix within our
+population? In developing equation
+<span class="xref myst">[TMRCA_neutral]</span>{reference-type=”eqref”
+reference=”TMRCA_neutral”} we’ve seen that it takes on average <span class="math notranslate nohighlight">\(4N\)</span>
+generations for a large sample of alleles to all trace their ancestry
+back to a single most recent common ancestral allele. Any single-base
+pair change which arose as a single mutation at a locus, and fixed in
+the population, must have been present in the sequence transmitted by
+the most recent common ancestor of the population at that locus. Thus it
+must take roughly <span class="math notranslate nohighlight">\(4N\)</span> generations for a neutral allele present in a
+single copy within the population to fix. This argument can be made more
+precise, but in general we would still find that it takes <span class="math notranslate nohighlight">\(\approx 4N\)</span>
+generations for a neutral allele to go from its introduction to fixation
+with the population.\</p>
+</section>
+<section id="rate-of-substitution-of-neutral-alleles">
+<h3>Rate of substitution of neutral alleles<a class="headerlink" href="#rate-of-substitution-of-neutral-alleles" title="Permalink to this heading">#</a></h3>
+<p>A substitution between populations that do not exchange gene flow is
+simply a fixation event within one population. The rate of substitution
+is therefore the rate at which new alleles fix in the population, so
+that the long-term substitution rate is the rate at which mutations
+arise that will eventually become fixed within our population.<br />
+Let’s assume, based on our discussion of the neutral theory of molecular
+evolution, that there are only two classes of mutational changes that
+can occur with a region, highly deleterious mutations and neutral
+mutations. A fraction <span class="math notranslate nohighlight">\(C\)</span> of all mutational changes are highly
+deleterious, and cannot possibly contribute to substitution nor
+polymorphism. The other <span class="math notranslate nohighlight">\(1-C\)</span> fraction of mutations are neutral. If our
+total mutation rate is <span class="math notranslate nohighlight">\(\mu\)</span> per transmitted allele per generation, then
+a total of <span class="math notranslate nohighlight">\(2N \mu (1-C)\)</span> neutral mutations enter our population each
+generation.<br />
+Each of these neutral mutations has a <span class="math notranslate nohighlight">\(\nicefrac{1}{(2N)}\)</span> probability
+chance of eventually becoming fixed in the population. Therefore, the
+rate at which neutral mutations arise that eventually become fixed
+within our population is $<span class="math notranslate nohighlight">\(2N\mu(1-C)\frac{1}{2N} = \mu(1-C)\)</span><span class="math notranslate nohighlight">\( Thus the
+rate of substitution, under a model where newly arising alleles are
+either highly deleterious or neutral, is simply given by the mutation
+rate of neutral alleles, i.e. \)</span>\mu(1-C)<span class="math notranslate nohighlight">\(.\
+Consider a pair of species that have diverged for \)</span>T<span class="math notranslate nohighlight">\( generations, i.e.
+orthologous sequences shared between the species last shared a common
+ancestor \)</span>T<span class="math notranslate nohighlight">\( generations ago. If these species have maintained a
+constant \)</span>\mu<span class="math notranslate nohighlight">\( over that time, they will have accumulated an average of
+\)</span><span class="math notranslate nohighlight">\(2\mu(1-C)T \label{eqn:moleclock}\)</span><span class="math notranslate nohighlight">\( neutral substitutions. This assumes
+that \)</span>T<span class="math notranslate nohighlight">\( is a lot longer than the time it takes to fix a neutral allele,
+such that the total number of alleles introduced into the population
+that will eventually fix is the total number of substitutions.\
+This is a really pretty result as the population size has completely
+canceled out of the neutral substitution rate. However, there is another
+way to see this in a more straight forward way. If I look at a sequence
+in me compared to, say, a particular chimp, I'm looking at the mutations
+that have occurred in both of our germlines since they parted ways \)</span>T<span class="math notranslate nohighlight">\(
+generations ago. Since neutral alleles do not alter the probability of
+their transmission to the next generation, we are simply looking at the
+mutations that have occurred in \)</span>2T<span class="math notranslate nohighlight">\( generations worth of transmissions.
+Thus the average number of neutral mutational differences separating our
+pair of species is simply \)</span>2\mu (1-C) T$.\</p>
+</section>
+<section id="implications-for-the-molecular-clock">
+<h3>Implications for the Molecular Clock.<a class="headerlink" href="#implications-for-the-molecular-clock" title="Permalink to this heading">#</a></h3>
+<p>A number of observations follow under this model, from equation
+<span class="xref myst">[eqn:moleclock]</span>{reference-type=”eqref”
+reference=”eqn:moleclock”}. The first is that a primary determinant of
+patterns of molecular evolution in a genomic region is the level of
+constraint (<span class="math notranslate nohighlight">\(C\)</span>). This pattern generally seems to hold empirically:
+non-coding regions often evolve more rapidly than coding regions,
+synonymous substitutions accumulate faster than nonsynonymous, and
+nonsynonymous substitutions accumulate faster in less vital proteins
+than ones that are absolutely necessary for early development. For
+example, fibrinopeptides evolve in a less constrained manner than the
+cytochrome c gene, see Figure
+<span class="xref myst">1.3</span>{reference-type=”ref”
+reference=”fig:Dickerson_mole_clock”}. Note that this constraint
+prediction is not a unique prediction of the neutral model, e.g. less
+constrained regions may also be better able to evolve adaptively.
+However, it is a fantastically useful general insight, e.g. it allows us
+to spot putatively functional non-coding regions by looking for genomic
+regions that have very low levels of divergence among distantly related
+species.</p>
+<div class="highlight-center notranslate"><div class="highlight"><pre><span></span>![The numbers of substitutions in three proteins, corrected for multiple
+hits, between various pairs of groups plotted against the time these
+groups shared a common ancestor in the fossil record. Data from
+@dickerson1971structure. The lines give the linear regression through
+the origin for each protein. The slope of the regression is given next
+to the protein name. See [@robinson2016revisiting] who revisited this
+classic study and confirmed the
+conclusions.](Journal_figs/genetic_drift/Molecular_clock_Dickerson/Dickerson_1979_mole_clock_fig.pdf){#fig:Dickerson_mole_clock
+width=&quot;0.8 \\textwidth&quot;}
+</pre></div>
+</div>
+<div class="highlight-marginfigure notranslate"><div class="highlight"><pre><span></span>
+::: center
+![image](illustration_images/Genetic_drift/rattlesnake/rattlesnake.jpg){width=&quot;0.7 \\textwidth&quot;}
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+The second important insight, and critical for the development of the
+neutral theory, is that equation
+[\[eqn:moleclock\]](#eqn:moleclock){reference-type=&quot;eqref&quot;
+reference=&quot;eqn:moleclock&quot;} is seemingly consistent with
+@zuckerkandl1965evolutionary&#39;s hypothesis of a surprisingly constant,
+protein molecular clock. The protein molecular clock is the observation
+that for some proteins there&#39;s a linear relationship between the number
+of non-synonymous (NS) substitutions and the time species last shared a
+common ancestor in the fossil record. @dickerson1971structure provided
+an for early example of this observation (Figure
+[1.3](#fig:Dickerson_mole_clock){reference-type=&quot;ref&quot;
+reference=&quot;fig:Dickerson_mole_clock&quot;}), by comparing various organisms
+whose molecular sequences were available to him. For example, he found
+that humans and rattlesnakes, who last share a common ancestor in the
+fossil record around 300 million years, are separated by roughly $15$ NS
+substitutions per $100$ sites in the cytochrome c protein. While, humans
+and dogfish, which diverged around 400 million years, are separated by
+$19$ NS substitutions per $100$ sites in this gene.\
+
+::: marginfigure
+::: center
+![image](illustration_images/Genetic_drift/dogfish/dogfish.jpg){width=&quot;\\textwidth&quot;}
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+In equation [\[eqn:moleclock\]](#eqn:moleclock){reference-type=&quot;eqref&quot;
+reference=&quot;eqn:moleclock&quot;}, if we double the amount of time separating a
+pair of species $T$, we double the number of substitutions predicted.
+Note that for this to be true $T$ must be measured in generations. To
+explain a protein molecular clock between species that clearly differed
+dramatically in generation time it was hypothesized that the mutation
+rate actually scaled with generation time, i.e. short-lived organisms
+introduced fewer mutations per generation, e.g. as they had fewer rounds
+of mitosis. This generation-time assumption meant that the mutation rate
+per year could be constant, such that $\mu T$ would be a constant for
+pairs of species that had diverged for similar geological times, which
+are measured in years, even if the organisms differed in generation
+time. This assumption would allow neutral theory to be consistent with a
+protein molecular clock measured in years. We now know that this
+critical generation time assumption is false: organisms with shorter
+generation times have somewhat higher mutation rates per year so a
+strict neutral model is inconsistent with the protein molecular clock.
+We&#39;ll return to these ideas when we discuss the fate of very weakly
+selected mutations in Chapter
+[\[Selection_Stochasticity\]](#Selection_Stochasticity){reference-type=&quot;ref&quot;
+reference=&quot;Selection_Stochasticity&quot;} and @ohta1973slightly&#39;s Nearly
+Neutral theory. If you are still reading this send Graham a picture of
+Tomoko Ohta receiving the Crafoord Prize, an analog of the Nobel prize
+for biology, for her contributions to molecular evolution.
+
+##### The contribution of ancestral polymorphism to divergence.
+
+If we are considering $T$ to represent the divergence between
+long-separated species, then we can think of $T$ as the time that the
+species split. However, for more recently diverged populations and
+species, we need to include the fact that the sorting of ancestral
+polymorphism contributes to divergence among species. In Figure
+[\[fig:split_anc_pop\]](#fig:split_anc_pop){reference-type=&quot;ref&quot;
+reference=&quot;fig:split_anc_pop&quot;}, we see our two populations split $T_s$
+generations ago. However, the coalescence of our A and B lineage is
+necessarily deeper in time than $T_s$. The top mutation was polymorphic
+in the ancestral population but now contributes to the divergence
+between A and B. Assuming that our ancestral population had effective
+size $N_A$ individuals, and that our populations split cleanly with no
+subsequent gene flow, then $$T = T_s + 2N_A.$$ If our species split time
+is very large compared to $2N$ then we can think of $T$ as the split
+time.
+
+::: marginfigure
+::: center
+![image](figures/Genetic_drift/ILS/split_anc_pop.pdf){width=&quot;0.8 \\textwidth&quot;}
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+::: question
+For this, and the next question, assume that humans and chimps split
+around 5.5$\times 10^6$ years ago, have a generation time  20 years,
+that the speciation occurred instantaneously in allopatry with no
+subsequent gene flow, and the ancestral effective population size of the
+human and chimp common ancestor population was 10,000 individuals.\
+Nachman and Crowell sequenced 12 pseudogenes in humans and chimps and
+found substitutions at 1.3% of sites.\
+**A)** What is the mutation rate per site per generation at these
+genes?\
+**B)** All of the pseudogenes they sequenced are on the autosomes. What
+would your prediction be for pseudogenes on the X and Y chromosomes,
+given that few mutations occur in the female germline than in the male
+germline per generation.
+</pre></div>
+</div>
+</section>
+</section>
+<section id="tests-of-molecular-evolution">
+<h2>Tests of molecular evolution.<a class="headerlink" href="#tests-of-molecular-evolution" title="Permalink to this heading">#</a></h2>
+<p>One of the great appeals of neutral models is they offer a simple null
+for us to test real data against.</p>
+<section id="comparing-the-rates-of-non-synonymous-to-synonymous-substitutions-dnds">
+<h3>Comparing the rates of non-synonymous to synonymous substitutions <span class="math notranslate nohighlight">\(\dNdS\)</span><a class="headerlink" href="#comparing-the-rates-of-non-synonymous-to-synonymous-substitutions-dnds" title="Permalink to this heading">#</a></h3>
+<p>One common tool in molecular evolution is to compare the estimated
+number (or rates) of substitutions in different classes of genomic
+sites, for example the ratio of the rates of non-synonymous (<span class="math notranslate nohighlight">\(d_N\)</span>) to
+synonymous substitutions (<span class="math notranslate nohighlight">\(d_S\)</span>) in a given gene. The simplest way to
+think about calculating <span class="math notranslate nohighlight">\(d_N\)</span> is to count up the non-synonymous changes
+and divide by the total number of positions in the gene where a
+non-synonymous point mutation could occur and then divide by time. We
+can do likewise for synonymous changes <span class="math notranslate nohighlight">\(d_S\)</span>, and then take the ratio
+<span class="math notranslate nohighlight">\(\dNdS\)</span>.</p>
+<p>For the vast majority of protein-coding genes in the genome we see that
+<span class="math notranslate nohighlight">\(\dNdS &lt; 1\)</span>. This observation is consistent with the view that
+non-synonymous sites are much more constrained than synonymous sites,
+i.e. that most non-synonymous mutations are deleterious and quickly
+removed from the population. If we are willing to make the assumption
+that all synonymous changes are neutral, <span class="math notranslate nohighlight">\(d_S= \mu\)</span>, then we can
+estimate the degree of constraint on non-synonymous sites. (Note that
+synonymous changes can sometimes be subject to both positive and
+negative selection, but this neutral assumption is a useful starting
+place.)</p>
+<p>Assume that a fraction <span class="math notranslate nohighlight">\(C\)</span> of non-synonymous changes are too deleterious
+to contribute to divergence, and that there are no beneficial mutations.
+Then, we expected rate of neutral non-synonymous substitutions is
+$<span class="math notranslate nohighlight">\(d_N = (1-C) \mu\)</span><span class="math notranslate nohighlight">\( Dividing by \)</span>d_S<span class="math notranslate nohighlight">\(, we find \)</span><span class="math notranslate nohighlight">\(\dNdS = (1-C)\)</span><span class="math notranslate nohighlight">\(
+Therefore, if we assume that non-synonymous mutations can only be
+strongly deleterious or neutral, we estimate the fraction of mutational
+changes that are constrained by negative selection as \)</span>C= 1- \dNdS$. C
+has the interpretations of being the fraction of non-synonymous
+mutations that are quickly weeded out of the population by selection,
+and so do not contribute to divergence among species.</p>
+<p>We can test whether our gene is evolving in a constrained way at the
+protein level by estimating <span class="math notranslate nohighlight">\(\dNdS\)</span> and testing whether this is
+significantly less that <span class="math notranslate nohighlight">\(1\)</span>. A <span class="math notranslate nohighlight">\(\dNdS\)</span> test can provide evolutionary
+evidence that a stretch of DNA proposed to be protein-coding is subject
+to selective constraint, and so likely does encode for a functional
+protein. We can also perform a <span class="math notranslate nohighlight">\(\dNdS\)</span> test on specific branches of a
+phylogeny for a gene, to test on which branches the gene is subject to
+constraint, or to test for changes in the level of constraint across the
+phylogeny.</p>
+<section id="loss-of-constraint-at-pseudogenes">
+<h4>Loss of constraint at pseudogenes.<a class="headerlink" href="#loss-of-constraint-at-pseudogenes" title="Permalink to this heading">#</a></h4>
+<p>While most protein genes evolve under constraint, we can find examples
+of genes that are evolving in a much less constrained manner. The
+simplest example of this is where the gene has lost function. Genes can
+lose function because of inactivating mutations that stop them being
+transcribed or translated into functional proteins. Such genes are
+called ‘pseudogenes’. When a gene completely loses function there is no
+longer selection against non-synonynous changes and so such mutations
+are just as free to accumulate as synonymous changes, and so <span class="math notranslate nohighlight">\(\dNdS=1\)</span>.
+Pseudogenes are a wonderful example of the extension of Darwin’s ideas
+about vestigial traits (‘Rudimentary organs’) to the DNA level; we can
+still recognize a once useful word (gene) whose spelling is slowly
+degrading. Our genomes are filled with old pseudogenes whose original
+meanings (functional protein coding sequences) are slowly being eroded
+through the accumulation of neutral substitutions. One nice example of a
+gene that has repeatedly lost function, i.e. become repeatedly
+psuedogenized, is the <em>enamlin</em> gene from the study of &#64;Meredith:09.</p>
+<div class="highlight-center notranslate"><div class="highlight"><pre><span></span>![Examples of frameshift mutations (insertions blue, deletions red) and
+premature stop codons in *enamlin* in Cetacea and Xenarthra. Figure from
+@Meredith:09, .
+](Journal_figs/genetic_drift/Enamelin/Enamlin.pdf){#fig:Enamlin_coding
+width=&quot;\\textwidth&quot;}
+</pre></div>
+</div>
+<div class="highlight-marginfigure notranslate"><div class="highlight"><pre><span></span>
+::: center
+![image](illustration_images/Genetic_drift/sloth/20423856040_6e4360df9c_z.jpg){width=&quot;\\textwidth&quot;}
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+The protein *enamlin* is a key structural protein involved in the outer
+cap of enamel on teeth. Various mammals have secondarily evolved diets
+that do not require hard teeth, and so greatly reduced the selection
+pressure for hard enamel, or even teeth at all. For example, two-toed
+sloths (*Choloepus*), pygmy sperm whales (*Kogia*), and aardvark
+(*Orycteropus*) all lack enamel on teeth. Other mammals have lost their
+teeth entirely, e.g. giant anteaters (*Myrmecophaga*) and baleen whales.
+Due to this relaxation of constraint on the phenotype, the *enamlin*
+gene has accumulated pseudogenizing substitutions such as premature stop
+codons and frameshift mutations (see Figure
+[1.4](#fig:Enamlin_coding){reference-type=&quot;ref&quot;
+reference=&quot;fig:Enamlin_coding&quot;} for examples). @Meredith:09 sequenced
+*enamlin* across a range of species and found that none of the species
+with enamel have frameshift mutations in *enamlin*, while 17/20 of
+species that lack enamel or teeth have frameshifts in *enamlin*, and all
+of them carry premature stop codons.
+
+@Meredith:09 found that the branches of the *enamlin* phylogeny with a
+functional *enamlin* gene had an estimated $\dNdS= 0.51$, consistent
+with the protein evolving in a constrained manner. In contrast, the
+branches with a pseudogenized Enamlin had $\dNdS = 1.02$, consistent
+with the gene evolving a completely unconstrained way. The branches
+where the gene was likely transitioning from a functional to
+non-function state, i.e. pre-mutation and mixed, had intermediate values
+of $\dNdS=0.83-0.98$, consistent with a transition from a constrained to
+unconstrained mode of protein evolution somewhere along these branches
+of the phylogeny.
+
+::: center
+![ A synthetic interpretation of the history of enamel degeneration in
+*Tubulidentata* (the order of aardvarks) based on fossils,
+phylogenetics, molecular clocks, frameshift mutations, and $\dNdS$
+ratios. The oldest fossil aardvarks are *O. minutus* (19 mya) from the
+early Miocene of Kenya and also lack enamel. Figure &amp; caption modified
+from @Meredith:09, .
+](Journal_figs/genetic_drift/Enamelin/Aardvark_pseudogene.png){#fig:Aardvark_pseudogene
+width=&quot;\\textwidth&quot;}
+</pre></div>
+</div>
+<div class="highlight-marginfigure notranslate"><div class="highlight"><pre><span></span>
+::: center
+![image](illustration_images/Genetic_drift/aardvark/20514695666_5a22b53b8c_h.jpg){width=&quot;\\textwidth&quot;}
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+::: question
+The *enamlin* gene was pseudogenized somewhere along the branch leading
+to Aardvarks (*Orycteropus afer*), see Figure
+[1.5](#fig:Aardvark_pseudogene){reference-type=&quot;ref&quot;
+reference=&quot;fig:Aardvark_pseudogene&quot;}. @Meredith:09 estimated that this
+branch has a $\dNdS=0.75$\
+**A)** Calculate the average constraint against amino-acid changes on
+this branch.\
+**B)** Aardvarks last shared a common ancestor with *Afrosoricida*
+(golden moles, tenrecs) and *Macroscelidea* (elephant shrews) around
+$\sim 75.1$ million years ago in the Cretaceous. Assume that for the
+portion of the branch while *enamlin* was functional $\dNdS = 0.51$ and
+after it was pseudogenized there was no constaint (i.e. $\dNdS = 1$).
+Based on the branch&#39;s average $\dNdS=0.75$, can you estimate the time at
+which *enamlin* was pseudogenized? (I.e. when is the star in Figure
+[1.5](#fig:Aardvark_pseudogene){reference-type=&quot;ref&quot;
+reference=&quot;fig:Aardvark_pseudogene&quot;}?)
+</pre></div>
+</div>
+</section>
+<section id="adaptive-evolution-and-dnds">
+<h4>Adaptive evolution and <span class="math notranslate nohighlight">\(\dNdS\)</span>.<a class="headerlink" href="#adaptive-evolution-and-dnds" title="Permalink to this heading">#</a></h4>
+<p>Clearly genes are not only subject to neutral and deleterious mutations;
+beneficial mutations must also arise and fix from from time to time.
+Let’s assume that a fraction <span class="math notranslate nohighlight">\(B\)</span> of non-synonymous mutations that arise
+are beneficial such that <span class="math notranslate nohighlight">\(2 N \mu B\)</span> beneficial mutations arise per
+generation. Newly arisen beneficial alleles are not destined to fix in
+the population, as they may be lost to genetic drift when they are rare
+in the population (we’ll discuss how to calculate the fixation
+probability for beneficial alleles in Chapter
+<span class="xref myst">[Selection_Stochasticity]</span>{reference-type=”ref”
+reference=”Selection_Stochasticity”}). A newly arisen beneficial allele
+reaches fixation in the population with probability <span class="math notranslate nohighlight">\(f_B\)</span> from its
+initial frequency of <span class="math notranslate nohighlight">\(\nicefrac{1}{2N}\)</span>. This fixation probability may
+be much higher than that of neutral mutations, but still much less than
+<span class="math notranslate nohighlight">\(1\)</span>. The expected total rate of non-synonymous substitutions is
+$<span class="math notranslate nohighlight">\(dN= (1-C - B) \mu  +   (2 N \mu B) \times  f_B.\)</span><span class="math notranslate nohighlight">\( Then
+\)</span><span class="math notranslate nohighlight">\(\dNdS = (1-C-B) +  2 N B f_B \label{eqn:dNDS_C_B}\)</span><span class="math notranslate nohighlight">\( assuming again
+that all synonymous mutations are neutral. Note that this means that our
+estimates of \)</span>C<span class="math notranslate nohighlight">\( using \)</span>1-\dNdS<span class="math notranslate nohighlight">\( will be a lower bound on the true
+constraint if even a small fraction of mutations are beneficial. Those
+cases where the gene is evolving more rapidly at the protein level than
+at synonymous sites, i.e. \)</span>d_N/d_S &gt; 1<span class="math notranslate nohighlight">\(, are potentially strong
+candidates for positive selection rapidly driving change at the protein
+level. We can identify genes that have \)</span>\dNdS<span class="math notranslate nohighlight">\( significantly greater
+than one, either on the complete gene phylogeny, or on particular
+branches. Note that is a very conservative test that few genes in the
+genome meet, as many genes that are fixing adaptive non-synonymous
+substitutions will have \)</span>\dNdS&lt;1<span class="math notranslate nohighlight">\(; even if adaptive mutations are
+common, genes may still evolve in a constrained way (i.e. \)</span>\dNdS&lt;1$) if
+the rapid fixation of beneficial mutations due to positive selection is
+outweighed by the loss of non-synonymous mutations to negative
+selection.</p>
+<div class="highlight-center notranslate"><div class="highlight"><pre><span></span>![A phylogram for the primate *lysozyme* gene, data from @Yang:98. For
+each branch, the numbers give the estimated average number of
+non-synonymous to synonymous changes in the lysozyme
+protein.](Journal_figs/genetic_drift/Yang_lysozyme/Yang_lysozyme.pdf){#fig:lysozyme
+width=&quot;0.8 \\textwidth&quot;}
+</pre></div>
+</div>
+<div class="highlight-marginfigure notranslate"><div class="highlight"><pre><span></span>
+::: center
+![image](illustration_images/Genetic_drift/Colobus/19792029373_fcce706e67_k.jpg){width=&quot;0.8 \\textwidth&quot;}
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+A classic example for looking at adaptive evolution using $\dNdS$ is the
+evolution of the *lysozyme* gene in primates [@Messier:97; @Yang:98].
+The lysozyme protein is a key component for the breakdown of bacterial
+walls. The *lysozyme* gene shows very fast protein evolution (see the
+phylogeny in Figure [1.6](#fig:lysozyme){reference-type=&quot;ref&quot;
+reference=&quot;fig:lysozyme&quot;}), notably on the lineages leading to apes
+(e.g. gibbons and humans) and Colobines (e.g. colobus and langur
+monkeys). Colobines have leaf-based diets. They digest these leaves by
+bacterial fermentation in their foregut, and then use lysozymes to break
+down the bacteria to extract energy from the leaves. In Colobines, the
+lysozyme protein has evolved to work well in the high-PH environment of
+the stomach. Remarkably, the Colobine lysozyme protein has convergently
+evolved this activity via very similar amino-acid changes at 5 key
+residuals in cows and Hoatzins [a leaf eating bird,
+@kornegay1994molecular]
+
+::: marginfigure
+::: center
+![image](illustration_images/Genetic_drift/Hoatzin/14747388314_85798ba97e_z.jpg){width=&quot;0.8  \\textwidth&quot;}
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+##### The McDonald-Kreitman test
+
+As noted above, a big issue with using $\dNdS$ to detect adaptation is
+that it is very conservative. For a more powerful test of rapid
+divergence, what we need to do is adjust for the level of constraint a
+gene experiences at non-synonymous sites. One way to do this is to use
+polymorphism data as an internal control. If we see little
+non-synonymous polymorphism at a gene, but a lot of synonymous
+polymorphism, we now know that there is likely strong constraint on the
+gene (i.e. high $C$), thus we expect $\dNdS$ to be low. @mcdonald:91
+devised a simple test of the neutral theory of molecular evolution at a
+gene based on this intuition [building on the conceptually similar HKA
+test @hudson1987test]. @mcdonald:91 took the case where we have
+polymorphism data at a gene for one species and divergence to a closely
+related species. They partitioned polymorphism and fixed differences in
+their sample into the number of non-synonymous and synonymous changes:
+
+::: center
+                Poly.       Fixed
+  ---------- ----------- -----------
+   Non-Syn.     $P_N$       $D_N$
+     Syn.       $P_S$       $D_S$
+    Ratio     $P_N/P_S$   $D_N/D_S$
+</pre></div>
+</div>
+<div class="highlight-marginfigure notranslate"><div class="highlight"><pre><span></span>
+::: center
+![image](figures/Coalescent/MK_tree.pdf){width=&quot;\\textwidth&quot;}
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+Under neutral theory, we expect a smaller number of non-synonymous to
+synonymous fixed differences ($D_N/D_S &lt; 1$) and exactly the same
+expectation holds for polymorphism ($P_N/P_S$). Let&#39;s consider a gene
+with $L_S$ and $L_N$ sites where synonymous and non-synonymous mutations
+could arise respectively. We can think of the underlying gene genealogy
+at our gene, see Figure
+[\[fig:MK_tree\]](#fig:MK_tree){reference-type=&quot;ref&quot;
+reference=&quot;fig:MK_tree&quot;}, with the total time on the coalescent
+genealogy within the species as $T_{tot}$ and the total time for fixed
+differences between our species as $T_{div}&#39;$, note that $T_{div}&#39;$ is
+the total time where a an allele that would appear as a subsitution
+could arise. Then under neutrality we expect $\mu L_N (1-C) T_{tot}$
+non-synonymous polymorphisms (i.e. our number of segregating sites), and
+$\mu L_N (1-C) T_{div}&#39;$ non-synonymous fixed differences. We can then
+fill out the rest of our table as follows:
+
+::: center
+                       Poly.                      Fixed
+  ---------- ------------------------- ---------------------------
+   Non-Syn.   $\mu L_N (1-C) T_{tot}$   $\mu L_N (1-C)  T_{div}&#39;$
+     Syn.        $\mu L_S T_{tot}$         $\mu L_S T_{div}&#39;$
+    Ratio        $L_N(1-C)/( L_S)$        $L_N (1-C) / ( L_S)$
+</pre></div>
+</div>
+<p>Therefore, we expect the ratio of non-synonymous to synonymous changes
+to be the same for polymorphism and divergence under a strict neutral
+model. We can test this expectation of equal ratios via the standard
+tests of a <span class="math notranslate nohighlight">\(2
+\times 2\)</span> table. If the ratio of <span class="math notranslate nohighlight">\(N/S\)</span> is significantly higher for
+divergence than polymorphism we have evidence that non-synonymous
+substitutions are accumulating more rapidly than we would predict given
+levels of constraint alone.</p>
+<p>As example of a Mcdonald-Kreitman (MK) table consider the work of
+&#64;frentiu2007adaptive on the molecular evolution of L photopigment opsin
+in admiral (<em>Limenitis</em>) butterflies, responsible for colour vision in
+the long-wavelength part of the visual spectrum. &#64;frentiu2007adaptive
+found that the sensitivity of this opsin had shifted towards blue in its
+sensitivity in <em>L. archippus archippus</em> (viceroy) compared to <em>L.
+arthemis astyanax</em>. To test whether this molecular evolution reflected
+positive selection they sequenced 24 <em>L. arthemis astyanax</em> individuals
+and one <em>L. archippus archippus</em> sequence. They identified 11
+polymorphic sites in <em>L. arthemis astyanax</em> and 16 fixed differences,
+which break down as follows:</p>
+<div class="highlight-marginfigure notranslate"><div class="highlight"><pre><span></span>
+::: center
+![image](illustration_images/Genetic_drift/Basilarchia_arthemis_archippus/Basilarchia_arthemis_archippus.png){width=&quot;\\textwidth&quot;}
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+::: center
+                    Poly.               Fixed
+  ---------- ------------------- -------------------
+   Non-Syn.          $2$                $12$
+     Syn.            $9$                 $4$
+    Ratio     $\nicefrac{2}{9}$   $\nicefrac{3}{1}$
+</pre></div>
+</div>
+<p>Note the strong excess of non-synonymous to synonymous divergence
+compared to polymorphism (p-value of <span class="math notranslate nohighlight">\(0.006\)</span>, Fisher’s exact test),
+which is consistent with the gene evolving in an adaptive manner among
+the two species. We would expect roughly only <span class="math notranslate nohighlight">\(3\)</span> non-synonymous
+substitutions out of 16 substitutions if the gene was evolving neutrally
+(<span class="math notranslate nohighlight">\(16 \times \nicefrac{2}{11}\)</span>).</p>
+<div class="highlight-ChapterSummary notranslate"><div class="highlight"><pre><span></span>In a diploid population of size $N$, any of a set of $2N$ selectively
+equivalent (ie neutral) alleles are equally likely to be the ancestor of
+the entire population at some future distant time point. Therefore, the
+probability that a new mutation eventually fixes in the population is
+$\nicefrac{1}{2N}$.
+
+Under a model where a fraction $C$ of new mutations are neutral and
+$1-C$ mutations are strongly deleterious, $2NC\mu$ mutations arise every
+generation that can possibly become substitutions. Therefore, the
+per-generation rate of neutral substitution is $2N(1-C)\mu
+    \times \nicefrac{1}{2N} = (1-C)\mu$. This is independent of the
+population size and just depends on levels of constraint and mutation
+rates.
+
+The constant rate of neutral substitution gives rise to a per-generation
+molecular clock, which can potentially be used to estimate constraint
+($C$) and mutation rates.
+
+Many summaries and tests of molecular evolution, e.g. $\dNdS$, are based
+on comparing rates of substitution between functional classes of sites.
+These allow differing levels of constraint to be identified and signals
+of adaptive substitution to be detected.
+
+Tests of molecular evolution for adaptation that also incorporate both
+divergence and polymorphism, e.g. the Mcdonald-Kreitman test, are
+potentially powerful tools as polymorphism levels allow a somewhat
+independent measure of levels of constraint.
+</pre></div>
+</div>
+<div class="highlight-question notranslate"><div class="highlight"><pre><span></span>Assuming that the mutation rate is $\mu$/gamete/generation and the
+population size is N diploid individuals, what is the number of new
+mutations introduced into the population each generation?
+</pre></div>
+</div>
+<div class="highlight-question notranslate"><div class="highlight"><pre><span></span>What is the probability of fixation of a unique new, neutral mutation in
+a population of N haploid individuals?
+</pre></div>
+</div>
+<div class="highlight-question notranslate"><div class="highlight"><pre><span></span>Why is dN/dS much less than one for the majority of genes in our genome?
+</pre></div>
+</div>
+<div class="highlight-question notranslate"><div class="highlight"><pre><span></span>You sequence a gene in *Drosophila melanogaster* and *D. simulans*. You
+observe 5 non-synonymous substitutions out of 500 bases where
+non-synonymous substitutions could occur, and 15 synonymous
+substitutions out of 500 bases where synonymous substitutions could
+occur. What is the level of constraint at nonsynonymous sites?
+</pre></div>
+</div>
+<div class="highlight-question notranslate"><div class="highlight"><pre><span></span>Analyzing polymorphism and divergence data for a gene, you calculate the
+following McDonald-Kreitman table.
+
+  ---------------- ----------- -------
+                   Polymorp.   Fixed
+  Synonymous       40          80
+  Non-synonymous   20          80
+  ---------------- ----------- -------
+
+\
+**A)** Based on the ratio of non-synonymous to synonymous polymorphisms,
+and given the 80 synonymous substitutions, how many nonsynymous
+substitutions would you expect if this gene were evolving neutrally?\
+**B)** Is this table consistent with the gene evolving neutrally? If not
+what could explain the results?
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-neutral-substitution-process">The Neutral Substitution process.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-of-the-eventual-fixation-of-a-neutral-allele">probability of the eventual fixation of a neutral allele</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rate-of-substitution-of-neutral-alleles">Rate of substitution of neutral alleles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implications-for-the-molecular-clock">Implications for the Molecular Clock.</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tests-of-molecular-evolution">Tests of molecular evolution.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-the-rates-of-non-synonymous-to-synonymous-substitutions-dnds">Comparing the rates of non-synonymous to synonymous substitutions <span class="math notranslate nohighlight">\(\dNdS\)</span></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#loss-of-constraint-at-pseudogenes">Loss of constraint at pseudogenes.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adaptive-evolution-and-dnds">Adaptive evolution and <span class="math notranslate nohighlight">\(\dNdS\)</span>.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Graham Coop
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
