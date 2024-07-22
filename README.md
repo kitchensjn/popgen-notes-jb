@@ -12,18 +12,18 @@ This repository hosts an online and interactive version of Graham Coop's Populat
 
 ### Set Up
 
-**conda create --name gc-popgen-notes --file requirements.txt**
+`conda create --name gc-popgen-notes --file requirements.txt`
 
 ### Converting From Latex To Markdown
 
-**pandoc -s <latex file> -o <markdown file>***
+`pandoc -s <latex file> -o <markdown file>`
 
 ### Building HTML
 
-**jupyter-book build popgen-notes-jb**
+`jupyter-book build popgen-notes-jb`
 
-This creates a /_build directory within /popgen-notes-jb using the source files. You can view /popgen-notes-jb/_build/html/index.html in web browser to see your build.
+This creates a `/_build` directory within `/popgen-notes-jb` using the source files. You can view `/popgen-notes-jb/_build/html/index.html` in web browser to see your build.
 
 ### Deploying
 
-Move all files in /_build/html to /docs for deployment.
+Move all files in `/_build/html` to `/docs` for deployment.
