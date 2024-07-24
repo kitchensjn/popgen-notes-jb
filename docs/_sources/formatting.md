@@ -44,3 +44,10 @@ Note that the figures reference automatically adds "Fig." to the reference.
 \- A pair of diploid individ- uals (i and j) sharing 0, 1, or 2 alleles IBD where lines show the sharing of alleles by descent (e.g. from a shared ancestor). Here we’ll focus on IBD of outbred individuals. Dealing with sharing between inbred individuals requires 6 more identity-by-descent r coefficients, which honestly makes my head spin.
 ```
 :::
+
+## Questions
+:::{admonition} Question 1
+:name: question-4.1
+
+You are in charge of maintaining a population of delta smelt in the Sacramento River delta. Using a large set of microsatellites you estimate that the mean level of heterozygosity in this population is 0.005. You set yourself a goal of maintaining a level of heterozygosity of at least 0.0049 for the next two hundred years. Assuming that the smelt have a generation time of 3 years, and that only genetic drift affects these loci, what is the smallest fully outbreeding population that you would need to maintain to meet this goal?
+:::

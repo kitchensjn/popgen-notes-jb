@@ -1,48 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Introduction &#8212; Population And Quantitative Genetics</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -50,60 +62,103 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/chapter-01-introduction';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Allele And Genotype Frequencies" href="chapter-02/chapter-02.1-allele-and-genotype-frequencies.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
 
-    
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Population And Quantitative Genetics</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Population And Quantitative Genetics - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Population And Quantitative Genetics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
@@ -113,320 +168,236 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="chapter-02/chapter-02.1-allele-and-genotype-frequencies.html">
-   Allele And Genotype Frequencies
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="chapter-02/chapter-02.2-allele-frequencies.html">
-     Allele Frequencies
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="chapter-02/chapter-02.3-allele-sharing-among-related-individuals-and-identity-by-descent.html">
-     Allele Sharing Among Related Individuals And Identity By Descent
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="chapter-02/chapter-02.4-chapter-summary.html">
-     Chapter Summary
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="chapter-02/chapter-02.5-further-questions.html">
-     Further Questions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="chapter-03/chapter-03.1-population-structure-and-correlations-among-loci.html">
-   Population Structure and Correlations Among Loci
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="chapter-03/chapter-03.2-chapter-summary.html">
-     Chapter Summary
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="chapter-03/chapter-03.3-further-questions.html">
-     Further Questions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="chapter-04/chapter-04.1-genetic-drift-and-neutral-diversity.html">
-   Genetic Drift and Neutral Diversity
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="chapter-04/chapter-04.2-loss-of-heterozygosity-due-to-drift.html">
-     Loss of heterozygosity due to drift
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="chapter-04/chapter-04.3-the-coalescent-and-patterns-of-neutral-diversity.html">
-     The Coalescent and patterns of neutral diversity
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="chapter-04/chapter-04.4-the-coalescent-process-of-a-sample-of-alleles.html">
-     The coalescent process of a sample of alleles
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="chapter-04/chapter-04.5-chapter-summary.html">
-     Chapter Summary
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="chapter-04/chapter-04.6-further-questions.html">
-     Further Questions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chapter-00-bibliography.html">
-   Bibliography
-  </a>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="chapter-02/chapter-02.1-allele-and-genotype-frequencies.html">Allele And Genotype Frequencies</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter-02/chapter-02.2-allele-frequencies.html">Allele Frequencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-02/chapter-02.3-allele-sharing-among-related-individuals-and-identity-by-descent.html">Allele Sharing Among Related Individuals And Identity By Descent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-02/chapter-02.4-chapter-summary.html">Chapter Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-02/chapter-02.5-further-questions.html">Further Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="chapter-03/chapter-03.1-population-structure-and-correlations-among-loci.html">Population Structure and Correlations Among Loci</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter-03/chapter-03.2-chapter-summary.html">Chapter Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-03/chapter-03.3-further-questions.html">Further Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="chapter-04/chapter-04.1-genetic-drift-and-neutral-diversity.html">Genetic Drift and Neutral Diversity</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter-04/chapter-04.2-loss-of-heterozygosity-due-to-drift.html">Loss of heterozygosity due to drift</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-04/chapter-04.3-the-coalescent-and-patterns-of-neutral-diversity.html">The Coalescent and patterns of neutral diversity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-04/chapter-04.4-the-coalescent-process-of-a-sample-of-alleles.html">The coalescent process of a sample of alleles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-04/chapter-04.5-chapter-summary.html">Chapter Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter-04/chapter-04.6-further-questions.html">Further Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chapter-00-bibliography.html">Bibliography</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapters/chapter-01-introduction.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
 </div>
 
 
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
 
 
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/chapters/chapter-01-introduction.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
   </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
 
-      </li>
-      
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapters/chapter-01-introduction.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/chapters/chapter-01-introduction.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#genetics-eugenics-and-scientific-racism">
-   Genetics, Eugenics, and Scientific Racism
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introduction</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#genetics-eugenics-and-scientific-racism">
-   Genetics, Eugenics, and Scientific Racism
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introduction</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#genetics-eugenics-and-scientific-racism">Genetics, Eugenics, and Scientific Racism</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>– <span id="id1">Dobzhansky [<a class="reference internal" href="chapter-00-bibliography.html#id318" title="Th Dobzhansky. Genetics and the Origin of Species, pages 16. 3rd Ed. edition, 1951.">1951</a>]</span></p>
@@ -452,14 +423,14 @@ title="Print to PDF"
 </aside>
 <p>Population and quantitative genetics are a necessary but not sufficient description of evolution; it is only by combining the insights of many fields that a rich and comprehensive picture of evolution emerges. We certainly do not need to know the genes underlying the displays of the birds of paradise to study how the divergence of these displays, due to sexual selection, may drive speciation. Indeed, as we’ll see in our discussion of quantitative genetics, we can predict how populations respond to selection, including sexual selection and assortative mating, without any knowledge of the loci involved. Nor do we need to know the precise selection pressures and the ordering of genetic changes to study the emergence of the tetrapod body plan. We do not necessarily need to know all the genetic details to appreciate the beauty of these, and many other, evolutionary case studies. However, every student of biology gains from understanding the basics of population and quantitative genetics, allowing them to base their studies on a solid bedrock of understanding of the processes that underpin all evolutionary change.</p>
 <section id="genetics-eugenics-and-scientific-racism">
-<h2>Genetics, Eugenics, and Scientific Racism<a class="headerlink" href="#genetics-eugenics-and-scientific-racism" title="Permalink to this headline">#</a></h2>
+<h2>Genetics, Eugenics, and Scientific Racism<a class="headerlink" href="#genetics-eugenics-and-scientific-racism" title="Permalink to this heading">#</a></h2>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>This is a complex historical topic, with many geneticists adopting differ- ent, sometimes conflicting positions over their lifetimes as their views and those of society changed. I cite both the primary genetics literature and historical analysis (where available).</p>
 </aside>
 <p>The history of genetics and evolutionary biology is intertwined with the history of eugenics and scientific racism. Francis Galton, one of the first people to systematically study human inheritance, coined the term “eugenics” in 1883 to describe the idea of ‘human improvement’ through controlled breeding of humans <span id="id6">[<a class="reference internal" href="chapter-00-bibliography.html#id36" title="Francis Galton. Inquiries into human faculty and its development. Macmillan, 1883.">Galton, 1883</a>]</span>. Historically, eugenics is much more than just the idea that selection through breeding would work in humans; it is the idea that particular people are “genetically inferior” and therefore “unfit” to reproduce <span id="id7">[<a class="reference internal" href="chapter-00-bibliography.html#id15" title="Diane B Paul. What was wrong with eugenics? conflicting narratives and disputed interpretations. Science &amp; Education, 23(2):259–271, 2014.">Paul, 2014</a>]</span>. Eugenicists’ obsession with human worth and genetic inferiority also meant that eugenicists also often held that people from some races and ethnicities are genetically superior to others. Thus, ideas about eugenics also built on older racist fields of science that sought to classify humans into a discrete racial hierarchy, while in parallel scientists in these fields were forcing ideas from genetics and evolution into an essentialist view of race. These deeply flawed hierarchies have frequently been used by the powerful to justify subjugating and disenfranchising minorities and Indigenous people.</p>
 <p>Although eugenics is often correctly associated with the Nazi party and the Holocaust, eugenic ideas and eugenic policies were also widespread in the US and UK during the 1920s and 1930s and sometimes aligned with progressive causes of that era <span id="id8">[<a class="reference internal" href="chapter-00-bibliography.html#id37" title="Daniel J Kevles. In the name of eugenics: Genetics and the uses of human heredity. Harvard University Press, 2nd edition, 1995.">Kevles, 1995</a>, <a class="reference internal" href="chapter-00-bibliography.html#id284" title="Diane Paul. Eugenics and the left. Journal of the History of Ideas, pages 567–590, 1984.">Paul, 1984</a>]</span>. Eugenic ideas were also implemented as policy —with horrific consequences—in a number of countries. Immigration policies based explicitly on eugenic arguments were put in place in the US from the 1920s until their repeal in the 1950s and 60s. These policies strongly favoured immigration from Northern Europe and were a deliberate action to restrict or bar immigration from Asia and eastern and southern Europe based on xenophobic, racist, and anti-Semitic views <span id="id9">[<a class="reference internal" href="chapter-00-bibliography.html#id28" title="Daniel Okrent. The guarded gate: bigotry, eugenics, and the law that kept two generations of Jews, Italians, and other European immigrants out of America. Scribner, 2020.">Okrent, 2020</a>]</span>. During the 20th Century, many US states passed eugenics sterilization laws <span id="id10">[<a class="reference internal" href="chapter-00-bibliography.html#id25" title="Philip R Reilly. Eugenics and involuntary sterilization: 1907–2015. Annual review of genomics and human genetics, 16:351–368, 2015.">Reilly, 2015</a>]</span>, that in practice were often targeted against Black, Latino, and Indigenous people <span id="id11">[<a class="reference internal" href="chapter-00-bibliography.html#id7" title="Randall Hansen and Desmond King. Sterilized by the state: eugenics, race, and the population scare in twentieth-century North America. Cambridge University Press, 2013.">Hansen and King, 2013</a>]</span>. For example, the state of California from 1919 to 1972 used eugenics ideas to justify the sterilization of 20,000 people who had been labelled unfit and mentally defective, a disproportionate number of whom were Latino <span id="id12">[<a class="reference internal" href="chapter-00-bibliography.html#id35" title="Nicole L Novak, Natalie Lira, Kate E O'Connor, Siobán D Harlow, Sharon LR Kardia, and Alexandra Minna Stern. Disproportionate sterilization of latinos under california’s eugenic sterilization program, 1920–1945. American journal of public health, 108(5):611–613, 2018.">Novak <em>et al.</em>, 2018</a>, <a class="reference internal" href="chapter-00-bibliography.html#id34" title="Alexandra Minna Stern, Nicole L Novak, Natalie Lira, Kate O'Connor, Siobán Harlow, and Sharon Kardia. California’s sterilization survivors: an estimate and call for redress. American journal of public health, 107(1):50–54, 2017.">Stern <em>et al.</em>, 2017</a>]</span></p>
-<p>Many early geneticists during this time were proponents of eugenics and many supported racist views in their genetics research. One notable example is R.A. Fisher, who we’ll encounter throughout this book. Fisher is arguably the father of much of evolutionary genetics and modern statistics, having made huge contributions to the foundations of both fields. He pursued these fields in part because of his eugenic interests and concerns about the “genetically inferiority” of the lower classes <span id="id13">[]</span>. For example, he devoted a number of the later chapters in his classic evolutionary genetics book to eugenics <span id="id14">[<a class="reference internal" href="chapter-00-bibliography.html#id102" title="Ronald Aylmer Fisher. The genetical theory of natural selection: a complete variorum edition. Oxford University Press, 1930.">Fisher, 1930</a>]</span>. He was hardly alone in his views, with many prominent geneticists lending their voices to eugenic and racist arguments. Indeed, many famous genetics institutions grew from roots in eugenics. For example, the Cold Spring Harbor Laboratory hosted a large Eugenics Record Office, and prior to 1954, the journal Annals of Human Genetics was called Annals of Eugenics. Scientists and their institutions strongly shaped the eugenic views and policies of their time and at times bent science to lend support to their racist views. Given their lasting contributions to our field, we should not shy away from reading and discussing their work. But despite their scientific accomplishments, we should resist the urge to celebrate or idolize them. We should also guard against inheriting their thinking by continually questioning the frameworks and language they put in place.</p>
+<p>Many early geneticists during this time were proponents of eugenics and many supported racist views in their genetics research. One notable example is R.A. Fisher, who we’ll encounter throughout this book. Fisher is arguably the father of much of evolutionary genetics and modern statistics, having made huge contributions to the foundations of both fields. He pursued these fields in part because of his eugenic interests and concerns about the “genetically inferiority” of the lower classes <span id="id13">[<a class="reference internal" href="chapter-00-bibliography.html#id23" title="Pauline Mazumdar. Eugenics, human genetics and human failings: the Eugenics Society, its sources and its critics in Britain, chapter Ideology and method: RA Fisher and Research in Eugenics. Routledge, 2005.">Mazumdar, 2005</a>, <a class="reference internal" href="chapter-00-bibliography.html#id21" title="Bernard Norton. Fisher’s entrance into evolutionary science: the role of eugenics. Dimensions of Darwinism: Themes and counterthemes in twentieth-century evolutionary theory, pages 9–29, 1983.">Norton, 1983</a>]</span>. For example, he devoted a number of the later chapters in his classic evolutionary genetics book to eugenics <span id="id14">[<a class="reference internal" href="chapter-00-bibliography.html#id102" title="Ronald Aylmer Fisher. The genetical theory of natural selection: a complete variorum edition. Oxford University Press, 1930.">Fisher, 1930</a>]</span>. He was hardly alone in his views, with many prominent geneticists lending their voices to eugenic and racist arguments. Indeed, many famous genetics institutions grew from roots in eugenics. For example, the Cold Spring Harbor Laboratory hosted a large Eugenics Record Office, and prior to 1954, the journal Annals of Human Genetics was called Annals of Eugenics. Scientists and their institutions strongly shaped the eugenic views and policies of their time and at times bent science to lend support to their racist views. Given their lasting contributions to our field, we should not shy away from reading and discussing their work. But despite their scientific accomplishments, we should resist the urge to celebrate or idolize them. We should also guard against inheriting their thinking by continually questioning the frameworks and language they put in place.</p>
 <p>From its inception, geneticists have also been central to movements against eugenics and scientific racism on scientific as well as moral grounds. For instance, Thomas Hunt Morgan and Lancelot Hogben were both prominent geneticists who argued that eugenicists failed to recognize the environmental and social causes of inequality <span id="id15">[<a class="reference internal" href="chapter-00-bibliography.html#id32" title="Garland E Allen. Eugenics and modern biology: critiques of eugenics, 1910–1945. Annals of human genetics, 75(3):314–325, 2011.">Allen, 2011</a>, <a class="reference internal" href="chapter-00-bibliography.html#id283" title="Lancelot Hogben. Nature and Nurture (Being the William Withering Memorial Lectures). George Allen and Unwin Limited, London, 1933.">Hogben, 1933</a>, <a class="reference internal" href="chapter-00-bibliography.html#id33" title="James Tabery. Ra fisher, lancelot hogben, and the origin (s) of genotype–environment interaction. Journal of the History of Biology, 41(4):717–761, 2008.">Tabery, 2008</a>]</span>. These arguments thread into later debates, where geneticists pushed back on simplistic and erroneous claims about genetics, IQ and behavioural differences among human populations <span id="id16">[<a class="reference internal" href="chapter-00-bibliography.html#id29" title="Theodosius Dobzhansky. A bogus “science” of race prejudice. Journal of Heredity, 52(4):189–190, 1961.">Dobzhansky, 1961</a>, <a class="reference internal" href="chapter-00-bibliography.html#id30" title="Richard C Lewontin. Race and intelligence. Bulletin of the Atomic Scientists, 26(3):2–8, 1970.">Lewontin, 1970</a>, <a class="reference internal" href="chapter-00-bibliography.html#id27" title="Diane B Paul. Dobzhansky in the ‘nature-nurture’ debate. The evolution of Theodosius Dobzhansky: essays on his life and thought in Russia and America, pages 219–232, 1994.">Paul, 1994</a>]</span>. Population geneticists have also been central to the pushback against scientific racism, highlighting the close genetic relationships among all humans due to their recent common ancestry and the ephemeral nature of populations <span id="id17">[<a class="reference internal" href="chapter-00-bibliography.html#id26" title="Lisa Gannett. Theodosius dobzhansky and the genetic race concept. Studies in History and Philosophy of Biological and Biomedical Sciences, 44(3):250–261, 2013.">Gannett, 2013</a>, <a class="reference internal" href="chapter-00-bibliography.html#id31" title="Richard C Lewontin. The apportionment of human diversity. In Evolutionary biology, pages 381–398. Springer, 1972.">Lewontin, 1972</a>, <a class="reference internal" href="chapter-00-bibliography.html#id99" title="William B Provine. Geneticists and race. American Zoologist, 26(3):857–888, 1986.">Provine, 1986</a>, <a class="reference internal" href="chapter-00-bibliography.html#id24" title="UNESCO. The Race Concept: Results of an Inquiry. Greenwood Press, 1952.">UNESCO, 1952</a>]</span>. Racists continue to advance a selective view of population-genetic results to further their ends. As scientists, it is too easy to claim that we are just interested in the facts and ignore others who seek to present a distorted view of the science to advance their own political and social agendas. It is our job as population geneticists to argue against misuse of our field. As human genomics and personal genomics rise in prominence, we also need to resist public adoption of genetic determinism and essentialist, racialized thinking. We must question the topics we choose to investigate, the assumptions we make, and the conversations we prioritize as a field. Through exploring our own biases and those embedded in the presentation and use of our field, we can help to combat the misrepresentations of genetics and evolution that continue to cause harm in our society.</p>
 </section>
 <div class="toctree-wrapper compound">
@@ -478,7 +449,7 @@ title="Print to PDF"
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./chapters"
         },
         predefinedOutput: true
@@ -486,43 +457,93 @@ title="Print to PDF"
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="chapter-02/chapter-02.1-allele-and-genotype-frequencies.html" title="next page">
-    <div class="prev-next-info">
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="chapter-02/chapter-02.1-allele-and-genotype-frequencies.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Allele And Genotype Frequencies</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#genetics-eugenics-and-scientific-racism">Genetics, Eugenics, and Scientific Racism</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By Graham Coop<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By Graham Coop
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

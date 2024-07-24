@@ -1,5 +1,9 @@
 # Genetic Drift and Neutral Diversity
 
+:::{margin}
+{cite:t}`fisher1923xxi` also discusses models related to genetic drift, but {cite:t}`wright1931evolution`'s treatment is more extensive and he uses the name 'drift'. Both {cite:t}`wright1931evolution` and {cite:t}`fisher1923xxi` credit earlier authors {cite:p}`gulick1873diversity;Hagedoorn` with the intuition behind the concept of genetic drift.
+:::
+
 *RANDOMNESS IS INHERENT TO EVOLUTION*, from the lucky birds blown off course to colonize some new oceanic island, to which mutations arise first in the HIV strain infecting an individual taking anti-retroviral drugs. One major source of stochasticity in evolutionary biology is genetic drift. Genetic drift occurs because more or less copies of an allele by chance can be transmitted to the next generation {cite:p}`wright1931evolution`. This can occur because, by chance, the individuals carrying a particular allele can leave more or less offspring in the next generation. In a sexual population, genetic drift also occurs because Mendelian transmission means that only one of the two alleles in an individual, chosen at random at a locus, is transmitted to the offspring.
 
 Genetic drift can play a role in the dynamics of all alleles in all populations, but it will play the biggest role for neutral alleles. A neutral polymorphism occurs when the segregating alleles at a polymorphic site have no discernible differences in their effect on fitness. We'll make clear what we mean by "discernible" later, but for the moment think of this as "no effect" on fitness.
